@@ -1,0 +1,21 @@
+name: Feature request or use case
+description: Describe a report, integration or capability you need.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case
+      description: Who needs this, and what problem does it solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: How you imagine it working (optional).
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy considerations
+      description: Does this touch personal or chat data? How should it respect the privacy model?

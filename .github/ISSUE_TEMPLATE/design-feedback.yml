@@ -1,0 +1,18 @@
+name: Design feedback
+description: Comment on the architecture, privacy model or an open question.
+labels: ["design"]
+body:
+  - type: input
+    id: doc
+    attributes:
+      label: Which document or open question?
+      placeholder: docs/architecture.md, "Topic drift"
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: What would you change, and why?
+    validations:
+      required: true
