@@ -1,1 +1,10 @@
 .env
+
+# Pilot data: contains personal conversation content
+research/pilot/sessions.jsonl
+research/pilot/cache/
+research/pilot/g_results.json
+research/pilot/g_output.txt
+__pycache__/
+research/study/data/
+research/study/cache/

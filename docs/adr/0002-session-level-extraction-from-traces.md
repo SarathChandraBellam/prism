@@ -2,6 +2,7 @@
 
 - **Status:** proposed
 - **Date:** 2026-11-05
+- **Blocked on:** the [context study](../research/context-study-proposal.md) (RQ1–RQ5). This ADR is not accepted until the study reports, and it may be superseded.
 
 ## Context
 
@@ -27,6 +28,15 @@ Prism must report on how people work with AI assistants, and increasingly that w
 - **Extract per trace and roll up in SQL.** Cheap, but traces lack context, and drift and outcome are only visible across traces. Kept only for structural facts.
 - **Re-extract the whole session on every change.** Simple and drift-free, but cost grows with session length and re-opened sessions are paid for repeatedly. Kept only as a periodic drift check for sessions within budget.
 - **Full traces with a long-context model.** Highest fidelity, but expensive, still bounded by the context window, and it sends more sensitive content to the model provider.
+
+## Pilot evidence (2026-11-05)
+
+A pilot on one person's Claude Code logs (33 sessions, 196 traces) gave mixed evidence. It is far too small to decide anything:
+
+- **Supports decision 1:** about 31% of user messages are meaningless alone, and labelling traces separately mislabelled a checked session.
+- **Supports decision 2 on cost:** the chat view is about 7% of trace tokens. Its accuracy is not yet validated.
+- **Weakens decision 1's session-level labelling:** a cheap model matched the reference on collaboration pattern in only 3 of 6 sessions. Labelling each turn and computing session patterns in SQL is a candidate alternative.
+- **Untested:** decisions 3–5 (debounce, fold, segments).
 
 ## Consequences
 

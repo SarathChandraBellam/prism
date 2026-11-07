@@ -1,6 +1,6 @@
 # Architecture
 
-> Status: draft. This describes the intended design. Nothing here is implemented yet.
+> **Status: initial proposal.** This is a starting design, not a decision. Nothing here is implemented yet. Several components are hypotheses that the [context study](research/context-study-proposal.md) will test, listed under [Hypotheses under test](#hypotheses-under-test). Expect this document to be revised once the study reports.
 
 ## Overview
 
@@ -17,6 +17,22 @@ Prism is a five-stage pipeline. Each stage has a narrow contract, so stages can 
 ```
 
 Prism works on plain assistant chats and on agent traces (runs with tool calls, subagents and retries). Both are reduced to the same session-level records. The design choices are recorded in [ADR 0002](adr/0002-session-level-extraction-from-traces.md).
+
+## Hypotheses under test
+
+The pipeline shape (adapters, sessions and trace facts, labels, SQL aggregates, one narrator call) is the working assumption. The parts below are not settled. Results so far: [round 1](research/context-study-round1.md), [round 2](research/context-study-round2.md). Each is linked to the research question (RQ) in the [context study](research/context-study-proposal.md#3-research-questions) that tests it.
+
+| Component | Hypothesis | Pilot evidence so far | Tested by |
+|-----------|-----------|-----------------------|-----------|
+| Data model | Traces are the base data. Labels are made per session or segment, not per trace. | Supported: 31% of user messages depend on earlier context; labelling each trace alone gave a wrong pattern on a checked session | RQ1 |
+| Sessionizer and trace facts | Structural facts (tools, errors, subagents, timing) need no LLM | Supported | RQ3 |
+| Extractor: unit | One session-level record per session | **Weakened**: a cheap model matched the reference on collaboration pattern in only 3 of 6 sessions. Turn-level labelling is a candidate alternative. | RQ1, RQ7 |
+| Extractor: input | A compact chat view is enough | Plausible: the chat view is about 7% of trace tokens. Not yet validated against human labels. | RQ2, RQ3 |
+| Extractor: late traces | Folding new traces into the record stays accurate | Untested | RQ4 |
+| Extractor: segments | Topic segments can be detected reliably | Untested; prior work says this is hard | RQ1 |
+| Record fields | `collaboration_mode` with four modes is the right label | **Weakened**: single collaboration categories are not reliably measurable (κ about 0.35 between strong models, unchanged after redefinition). Counts of observable behaviour (corrections, feedback relays, questions) are reliable (ρ 0.62–0.77) and match external labels. | RQ7 |
+| Cost model | Shrinking the input keeps cost low | Supported in round 1: a compact view costs $0.00006–0.00033 per session with cheap models, once reasoning is correctly switched off | RQ5 |
+| Generality | The design works beyond one person's coding sessions | Unknown: the pilot used one user's Claude Code logs | RQ6 |
 
 ## Data model
 
@@ -35,6 +51,8 @@ A plain chat is a session whose traces have no tool calls. **Meaning is analysed
 ### Source adapters
 
 They read chats or traces from wherever they live, such as a platform database, an export file, an API or an OpenTelemetry collector. They emit a common `Session` shape: an ordered list of traces, each with turns, spans (model and tool calls), timestamps and exclusion flags. Adapters are the main extension point for supporting new platforms. An OpenTelemetry GenAI adapter is planned as the vendor-neutral default for agent traces.
+
+Adapters must separate what the person typed from text the agent harness injects as user messages: skill instructions, task notifications, tool notes and pasted files. In the pilot, such text appeared as user turns and was labelled as human behaviour.
 
 ### Sessionizer and trace facts
 
@@ -133,7 +151,7 @@ It must not introduce numbers that are not present in the aggregates. Output is 
 | Aggregation | none | SQL |
 | Narration | one call per report | aggregates and a few summaries |
 
-Clio reports about $0.0005 per conversation for facet extraction, but assumes conversations of about 1,000 tokens. The chat view and the fold step are what keep agent sessions close to that budget. The fixed extraction prompt should be cached, and periodic sweeps can use provider batch APIs.
+Clio reports about $0.0005 per conversation for facet extraction, but assumes conversations of about 1,000 tokens. The chat view and the fold step are meant to keep agent sessions close to that budget. Round 1 of the context study found that the pilot's high reasoning-token use was a configuration error. With reasoning switched off correctly, a compact view costs $0.00006–0.00033 per session (RQ5). The fixed extraction prompt should be cached, and periodic sweeps can use provider batch APIs.
 
 ## Prior art
 
@@ -157,6 +175,8 @@ Proposed answers are in [ADR 0002](adr/0002-session-level-extraction-from-traces
 - **Re-opened chats:** fold into the existing record; add a segment if the topic changes.
 
 Still open:
+
+- **Labelling unit:** label once per session, or label each user turn and compute session-level patterns in SQL? (RQ1)
 
 - **Chat view fidelity:** what share of trace tokens does it keep, and does it give the same facets as the full trace? (spike)
 - **Fold drift:** how far does a folded record drift from full re-extraction, and after how many folds?

@@ -1,6 +1,6 @@
 # Research proposal: what context does a model need to understand how people work with AI?
 
-Status: draft v0.1 · 2026-11-05 · Project: Prism · Related: [architecture](../architecture.md), [ADR 0002](../adr/0002-session-level-extraction-from-traces.md) (proposed)
+Status: draft v0.1 · 2026-11-05 · **Results: [round 1](context-study-round1.md), [round 2](context-study-round2.md)** · Project: Prism · Related: [architecture](../architecture.md), [ADR 0002](../adr/0002-session-level-extraction-from-traces.md) (proposed)
 
 ## 1. Summary
 
@@ -64,11 +64,14 @@ This proposal sets out the research needed to answer that question on broader da
 | **Dialogue topic segmentation** (TS-WikiDialog, Def-DTS, segmentation metric critique) | LLM topic-shift detection. | LLMs struggle with segmentation. Reported scores depend heavily on annotation granularity. |
 | **LLM annotation reliability** (several studies) | LLM-human agreement compared with human-human agreement. | Agreement ranges from kappa 0.25 (conversation completion on WildChat, even between humans) to about 0.9 (concrete labels). Subjective aspects are hard for humans too. |
 | **Debiasing LLM labels** (PPI, DSL) | Combines many LLM labels with a small human-labelled set to get unbiased estimates. | The relevant statistics for population and org views. Guarantees at small sample sizes are debated. |
+| **SWE-chat** (Baumann et al., COLM 2026) | About 18k real, opt-in coding-agent sessions (69% Claude Code) with LLM labels validated against human expert gold labels: prompt intent, pushback, user persona, session success. | **Chooses context per label**: prompt intent from the raw prompt alone; pushback from the full transcript before the prompt; success from the full conversation plus a tool-call summary. That is an existence proof for RQ2, but the choices are not compared systematically. |
+| **How Coding Agents Fail Their Users** (2026) | Misalignment episodes in 20,574 sessions (SpecStory and SWE-chat), labelled with GPT-5.4. | **User turns kept in full; agent turns head-tail truncated** at 5,000 characters per turn in short sessions down to 500 in very long ones, which is close to our chat view. Two humans agreed on 83% of 100 records; the LLM judge reached 81% accuracy. |
+| **Programming by Chat** (2026) | Behavioural analysis of 11,579 IDE sessions (Cursor, Copilot via SpecStory). | Kept **only user messages**, a C1-style condition. |
 | **OpenTelemetry GenAI and Claude Code telemetry** | `invoke_agent` spans and `gen_ai.conversation.id`. Claude Code redacts prompts and tool content by default. | Real-world traces may lack content unless users opt in. `/clear` and cloud sessions change session ids. |
 
 Links are in [§13 References](#13-references).
 
-**Gap:** the reviewed work covers conversation-level labelling of chats and analyst-facing trace analysis. None of it measures **how much and which context is needed per aspect, for agent traces, incrementally**. That is the question this proposal targets.
+**Gap:** the reviewed work labels chats per conversation, and recent agent studies (SWE-chat, the misalignment study) each pick a context per label by judgement. None of them measures **how much and which context is needed per aspect, for agent traces, incrementally**. That is the question this proposal targets.
 
 ## 5. Pilot findings (one user, Claude Code logs)
 
@@ -90,27 +93,30 @@ Links are in [§13 References](#13-references).
 | Turn-act agreement with the reference rose with context: **62%** with the message only, 62% adding agent activity, **70%** adding the previous reply, **72%** adding the previous user turn. In one call the model invented a turn that does not exist. In another, it returned `unclear` for every turn of a 9-turn session. | 6 sessions, 40 turns | RQ2, RQ5 |
 | Session collaboration pattern compared with the reference: a cheap model on the whole session matched **3 of 6**. A hand-written mapping from cheap turn acts matched 3 of 6, and from reference turn acts 4 of 6. The act set lacked a "plan or think together" act. **The pattern label is unstable even between models**, which raises the RQ7 question of whether it is reliably measurable. | 6 sessions | RQ1, RQ7 |
 | **Harness-injected text** appeared as user turns: skill-loading text, task notifications, pasted config files, tool notes. Models labelled it as human behaviour. | Manual inspection | RQ3 |
-| **Reasoning tokens dominated cost**: outputs of 2.5–3k tokens against inputs of 1.5–2k, even with reasoning disabled. Shrinking the input matters less than model choice. | Billing per call | RQ5 |
+| Reasoning tokens appeared to dominate cost: outputs of 2.5–3k tokens against inputs of 1.5–2k. **Corrected in round 1:** this was mostly a configuration error. `reasoning: {enabled: false}` was not honoured; `effort: none` brought reasoning tokens to about 0 for six of seven models. | Billing per call | RQ5 |
 | Context re-explanation derived from turn acts matched the reference on 5 of 6 sessions. | 6 sessions | RQ1 |
 
 ## 6. Datasets for the broader study
 
-All candidates must be checked for licence, consent terms and suitability before use.
+Decision (2026-11-07): use open datasets only. No platform data or volunteer logs in this phase. All licences and terms must be accepted before download.
 
 | Dataset | Type | Gives us | Limitation |
 |---|---|---|---|
-| Volunteer Claude Code / agent logs (5–10 people, opt-in) | Real agent sessions | Real human-in-the-loop agent work across people | Needs consent and an internal privacy protocol; mostly coding |
-| Our platform's chats and traces (if available) | Real, target population | The population Prism actually serves | Access, consent, and whether redaction is in place |
-| WildChat (public, from ChatGPT) | Real chats | Scale, non-coding domains, many languages | Chat only, no tools; older models |
-| LMSYS-Chat-1M (public) | Real chats | Scale, multiple models | Chat only; arena-style, short sessions |
-| Public agent trajectories (e.g. SWE-agent / OpenHands trajectory sets) | Agent traces | Large, tool-heavy traces | Usually **one instruction and no human in the loop**, so not valid for collaboration patterns. Useful only for RQ3 composition and cost. |
+| **SWE-chat v2** (SALT-NLP, Hugging Face, ODC-BY, gated: accept terms while logged in) | ~18k real coding-agent sessions, ~230k user prompts; Claude Code, Codex, Gemini CLI, Cursor and others | **Primary dataset.** Full raw transcripts with tool calls, tool results (truncated to 10 KB), reasoning blocks, timestamps and session ids. Also LLM labels validated against human gold: prompt intent, pushback, persona, success. PII and secrets scrubbed (Presidio, TruffleHog). | Coding only. Early adopters of one logging tool, from public repositories. 47 GB in total, so sample it. |
+| **How Coding Agents Fail Their Users replication package** (GitHub) | Human-validated misalignment episodes | A second external reference for labels that need the whole session | Raw traces not redistributed; episodes only from permissively licensed repositories |
+| **DataClaw Claude Code conversations** (Hugging Face) | 549 sessions, 14 projects, one person | A second single-user corpus to compare with the pilot | One person; check licence and scrubbing |
+| **WildChat-4.8M** (AllenAI, Hugging Face, ODC-BY, non-toxic version not gated) | Real ChatGPT conversations | The non-coding and multilingual stratum (RQ6) | Chat only, no tools |
+| **LMSYS-Chat-1M** | Real chats across many models | A second chat stratum | Chat only; arena-style, short sessions |
 | Synthetic sessions with planted ground truth | Generated | Known answers, for example a planted topic switch or planted re-explanation | Not real behaviour. Only for testing whether the method can detect a signal at all. |
 
-**Sampling:**
-- Stratify by session length (traces), tool intensity, domain and platform.
-- Oversample long and reopened sessions, because that is where context matters most.
+Public agent benchmark trajectories (such as SWE-agent or OpenHands runs) are excluded. They have one instruction and no human in the loop, so they cannot inform collaboration patterns.
 
-**Target size:** about 300 sessions in total, with at least 60 per stratum where possible, and about 1,500 labelled turns.
+**Sampling:**
+- **SWE-chat:** stratify by agent, session length (traces), tool intensity, and coding mode (human-only, collaborative or vibe coding).
+- **WildChat:** stratify by domain and language.
+- **Oversample** long and reopened sessions, because that is where context matters most.
+
+**Target size:** about 300 sessions from SWE-chat and 200 from WildChat for the ablations.
 
 ## 7. Analysis plan
 
@@ -138,11 +144,13 @@ For each aspect, vary the **unit** and the **context**, and keep the model fixed
 
 ### 7.2 Reference labels
 
-- **Human gold:**
-  - two annotators on a subset: about 100 sessions and 500 turns
-  - a written codebook with examples, piloted on 20 sessions before the main labelling
-  - the annotator who owns the data labels where consent allows, because they know their own intent
-- **Strong-model reference:** the strongest affordable model reading the full trace (C6), as a secondary reference only. It is **never used as ground truth alone.**
+Two different questions need two kinds of reference:
+
+1. **Information loss** (RQ2–RQ5): does a smaller or cheaper context give the same label as full context? A **model reference** is enough here, because the question is relative: the strongest affordable model on the full trace (C6), cross-checked by a second model family.
+2. **Validity** (RQ7): is the label actually right? Model references cannot answer this. All models may share the same blind spot; in the pilot, models disagreed on collaboration pattern in half the sessions, and nothing says which was right. This needs **human-validated labels**. We reuse existing ones before making new ones:
+   - **SWE-chat's labels:** prompt intent, pushback, persona and success, which the authors validated against human expert gold labels. Their human gold set is requested from the authors if it is not in the release.
+   - **The misalignment study's** human-validated episodes.
+   - **A small new human audit only for aspects nobody has validated,** mainly collaboration pattern and context re-explanation: about 30–50 sessions, labelled by one person with a codebook, and a second person on 20 of them if possible.
 
 ### 7.3 Metrics
 
@@ -171,7 +179,7 @@ For each aspect, vary the **unit** and the **context**, and keep the model fixed
 
 - Opt-in consent for every non-public dataset, with the right to withdraw.
 - Redact secrets and personal data before any model call, and measure that redaction (metric 7).
-- Use model providers with no data retention, or local models for sensitive subsets.
+- Use OpenRouter with no-retention routing (`data_collection: deny`). Approved for this study on 2026-11-07. Local models remain an option.
 - Store no raw transcripts beyond the study window. Keep labels and statistics only.
 - Annotators see only consented and redacted data.
 
@@ -179,9 +187,9 @@ For each aspect, vary the **unit** and the **context**, and keep the model fixed
 
 | Phase | Work | Model cost (est.) | Human effort |
 |---|---|---|---|
-| P0 | Codebook, consent, data pipeline, injected-text filter | – | 2–3 days |
-| P1 | Codebook pilot on 20 sessions, plus inter-annotator check | < $2 | ~4 hours (2 people) |
-| P2 | Main labelling: ~100 sessions, ~500 turns | – | ~10–12 hours (2 people) |
+| P0 | Data pipeline for SWE-chat and WildChat, injected-text filter | – | 2–3 days |
+| P1 | Download a SWE-chat sample; check SWE-chat labels and gold availability; codebook for unvalidated aspects | < $2 | ~1 hour |
+| P2 | Small human audit: 30–50 sessions for collaboration pattern and re-explanation | – | ~2–3 hours (1 person, +1 on 20 sessions if possible) |
 | P3 | Ablation runs on ~300 sessions × conditions × 2–3 models | $20–60, driven mostly by reasoning tokens | 1–2 days |
 | P4 | Analysis and write-up | – | 2–3 days |
 
@@ -200,12 +208,15 @@ For each aspect, vary the **unit** and the **context**, and keep the model fixed
 3. Evidence on incremental labelling: drift curves and when re-extraction is needed.
 4. A reusable, open evaluation harness and codebook, so others can rerun this on their own data.
 
-## 12. Decisions needed before P0
+## 12. Decisions
 
-1. Which datasets are in scope? In particular: is our platform's data available, and can we recruit volunteers?
-2. Who are the annotators, and is self-labelling acceptable?
-3. Which model providers are acceptable for private data, or must it run locally?
-4. Is the aspect list in §3 complete for what Prism needs to show?
+| # | Decision | Status |
+|---|---|---|
+| 1 | Datasets | **Decided 2026-11-07:** open datasets only, with SWE-chat as primary (§6) |
+| 2 | Annotators | **Decided 2026-11-07:** reuse existing human-validated labels; small new audit only for unvalidated aspects (§7.2) |
+| 3 | Providers | **Decided 2026-11-07:** OpenRouter with no-retention routing |
+| 4 | Aspect list (§3) complete for what Prism needs to show? | Open |
+| 5 | Accept SWE-chat's gated terms on Hugging Face (needs the project owner's account) | Open |
 
 ## 13. References
 
@@ -229,4 +240,9 @@ For each aspect, vary the **unit** and the **context**, and keep the model fixed
 - PPI++ non-asymptotic analysis, ICML 2026: https://icml.cc/virtual/2026/poster/60528
 - Claude Code monitoring (OpenTelemetry): https://code.claude.com/docs/en/monitoring-usage
 - Honeycomb agent telemetry (`gen_ai.conversation.id`): https://docs.honeycomb.io/send-data/agents
+- SWE-chat: Coding Agent Interactions From Real Users in the Wild, COLM 2026: https://arxiv.org/abs/2604.20779 · dataset: https://huggingface.co/datasets/SALT-NLP/SWE-chat
+- How Coding Agents Fail Their Users, 2026: https://arxiv.org/abs/2605.29442
+- Programming by Chat, 2026: https://arxiv.org/abs/2604.00436
+- DataClaw Claude Code conversations (mirror): https://huggingface.co/datasets/Codingxx/dataclaw-peteromallet
+- WildChat-4.8M: https://huggingface.co/datasets/allenai/WildChat-4.8M
 - Reflect in Claude.ai (TechCrunch): https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/
