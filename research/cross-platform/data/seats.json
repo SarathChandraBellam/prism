@@ -1,0 +1,122 @@
+[
+ {
+  "handle": "priya",
+  "platform": "atlas",
+  "monthly_price": 30
+ },
+ {
+  "handle": "priya",
+  "platform": "chatly",
+  "monthly_price": 20
+ },
+ {
+  "handle": "tomas",
+  "platform": "atlas",
+  "monthly_price": 30
+ },
+ {
+  "handle": "hana",
+  "platform": "atlas",
+  "monthly_price": 30
+ },
+ {
+  "handle": "hana",
+  "platform": "beacon",
+  "monthly_price": 20
+ },
+ {
+  "handle": "hana",
+  "platform": "chatly",
+  "monthly_price": 20
+ },
+ {
+  "handle": "jonas",
+  "platform": "beacon",
+  "monthly_price": 20
+ },
+ {
+  "handle": "jonas",
+  "platform": "chatly",
+  "monthly_price": 20
+ },
+ {
+  "handle": "kofi",
+  "platform": "atlas",
+  "monthly_price": 30
+ },
+ {
+  "handle": "kofi",
+  "platform": "beacon",
+  "monthly_price": 20
+ },
+ {
+  "handle": "lucia",
+  "platform": "beacon",
+  "monthly_price": 20
+ },
+ {
+  "handle": "dmitri",
+  "platform": "atlas",
+  "monthly_price": 30
+ },
+ {
+  "handle": "dmitri",
+  "platform": "chatly",
+  "monthly_price": 20
+ },
+ {
+  "handle": "ines",
+  "platform": "atlas",
+  "monthly_price": 30
+ },
+ {
+  "handle": "ines",
+  "platform": "beacon",
+  "monthly_price": 20
+ },
+ {
+  "handle": "ines",
+  "platform": "chatly",
+  "monthly_price": 20
+ },
+ {
+  "handle": "rosa",
+  "platform": "chatly",
+  "monthly_price": 20
+ },
+ {
+  "handle": "rosa",
+  "platform": "atlas",
+  "monthly_price": 30
+ },
+ {
+  "handle": "omar",
+  "platform": "chatly",
+  "monthly_price": 20
+ },
+ {
+  "handle": "freya",
+  "platform": "atlas",
+  "monthly_price": 30
+ },
+ {
+  "handle": "freya",
+  "platform": "beacon",
+  "monthly_price": 20
+ },
+ {
+  "handle": "freya",
+  "platform": "chatly",
+  "monthly_price": 20
+ },
+ {
+  "handle": "ben",
+  "platform": "beacon",
+  "monthly_price": 20
+ },
+ {
+  "handle": "ben",
+  "platform": "atlas",
+  "monthly_price": 30
+ }
+]
