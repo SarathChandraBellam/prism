@@ -36,22 +36,21 @@ The pipeline shape (adapters, sessions and trace facts, labels, SQL aggregates, 
 
 ## Data model
 
-The input units (user, session, turn, inference, tool call, subagent) and how traces map to them are defined in the [trace schema](trace-schema.md). The levels Prism analyses are:
-
 | Level | What it is | Typical source |
 |-------|-----------|----------------|
-| **Turn** | One input to the harness and everything it causes: the reply, model calls, tool calls, subagents, retries | turn root span; `prism.turn.id` |
-| **Session** | All turns in one conversation or thread | `prism.session.id`, from `gen_ai.conversation.id` or the platform's thread id |
+| **Turn** | One user message and the visible reply | chat UI, export |
+| **Trace** | One agent run triggered by a turn: model calls, tool calls, subagents, retries | OpenTelemetry span tree (`invoke_agent` root) |
+| **Session** | All turns and traces in one conversation or thread | `gen_ai.conversation.id`, or the platform's thread id |
 | **Segment** | A part of a session with one coherent topic and its own time range | created by the extractor |
 | **Period** | All segments for a person in a reporting window | report filter |
 
-An OpenTelemetry trace is a transport unit, not an analysis unit: harnesses disagree on trace boundaries. A plain chat is a session whose turns have no tool calls. **Meaning is analysed per session.** A single turn is often not meaningful alone ("now fix the test"), and treating each turn or model call as a separate task inflates task counts and skews delegation figures. **Behaviour is counted per turn**, from structure alone.
+A plain chat is a session whose traces have no tool calls. **Meaning is analysed per session.** A single trace is often not meaningful alone ("now fix the test"), and treating each trace or model call as a separate task inflates task counts and skews delegation figures. **Behaviour is counted per trace**, from structure alone.
 
 ## Components
 
 ### Source adapters
 
-They read chats or traces from wherever they live, such as a platform database, an export file, an API or an OpenTelemetry collector. They emit spans in the [trace schema](trace-schema.md): OpenTelemetry GenAI spans plus a small `prism.*` extension, with excluded sessions already dropped. Adapters are the main extension point for supporting new platforms. An OpenTelemetry GenAI adapter is planned as the vendor-neutral default for agent traces.
+They read chats or traces from wherever they live, such as a platform database, an export file, an API or an OpenTelemetry collector. They emit a common `Session` shape: an ordered list of traces, each with turns, spans (model and tool calls), timestamps and exclusion flags. Adapters are the main extension point for supporting new platforms. An OpenTelemetry GenAI adapter is planned as the vendor-neutral default for agent traces.
 
 Adapters must separate what the person typed from text the agent harness injects as user messages: skill instructions, task notifications, tool notes and pasted files. In the pilot, such text appeared as user turns and was labelled as human behaviour.
 
