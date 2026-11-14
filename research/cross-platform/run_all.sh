@@ -1,5 +1,5 @@
 #!/bin/sh
-# The whole pipeline without model calls. Needs run/chatly/ (python3 chatly.py) and optionally data/labels.json (python3 labels.py).
+# The whole pipeline without model calls. Needs data/chatly_recording/ (python3 chatly.py) and optionally data/labels.json (python3 labels.py).
 set -e
 cd "$(dirname "$0")"
 python3 world.py

@@ -2,14 +2,14 @@
 
     python3 chatly.py          # all 32 scripted sessions; resumable per turn; stops on a daily quota error
 
-Every request is a record, failed attempts included (written to run/chatly/<session>.json).
+Every request is a record, failed attempts included (written to data/chatly_recording/<session>.json).
 The tally of requests is kept in run/requests.json. Model: openrouter/free only.
 """
 import json, os, sys, time
 from common import *
 import agent
 
-OUT = os.path.join(RUN, "chatly"); os.makedirs(OUT, exist_ok=True)
+OUT = os.path.join(D, "chatly_recording"); os.makedirs(OUT, exist_ok=True)   # committed: a recording costs free-tier quota
 TALLY = os.path.join(RUN, "requests.json")
 TEXT = {"num", "has", "any", "not"}
 SYSTEM = """You are Chatly, a general-purpose chat assistant for the staff of Kettle & Crumb, an online shop for coffee gear.

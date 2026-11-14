@@ -28,8 +28,8 @@ agent.post = counted
 
 
 def chatly_view(sid):
-    if not os.path.exists(os.path.join(RUN, "chatly", sid + ".json")): return None            # not recorded yet (run chatly.py first)
-    r = json.load(open(os.path.join(RUN, "chatly", sid + ".json")))
+    if not os.path.exists(os.path.join(D, "chatly_recording", sid + ".json")): return None            # not recorded yet (run chatly.py first)
+    r = json.load(open(os.path.join(D, "chatly_recording", sid + ".json")))
     return {"turns": [({"attributes": {"prism.turn_index": t["turn_index"], "gen_ai.input.text": scenarios()[sid]["turns"][t["turn_index"] - 1]["text"],
                                         "gen_ai.output.text": t["reply"]}}, []) for t in r["turns"]]}
 

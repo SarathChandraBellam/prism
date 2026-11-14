@@ -54,8 +54,8 @@ def load_recordings():
                 "tokens_out": sum(A(k).get("gen_ai.usage.output_tokens") or 0 for k in chats)})
     for sid in rec["atlas"]:
         for p in ("atlas", "beacon"): rec[p][sid].sort(key=lambda t: t["idx"])
-    for f in sorted(os.listdir(os.path.join(RUN, "chatly"))):
-        r = json.load(open(os.path.join(RUN, "chatly", f)))
+    for f in sorted(os.listdir(os.path.join(D, "chatly_recording"))):
+        r = json.load(open(os.path.join(D, "chatly_recording", f)))
         sc = scenarios()[r["session_id"]]
         if len(r["turns"]) < len(sc["turns"]): continue                          # unfinished (quota): the script is out of scope until it is recorded
         rec["chatly"][r["session_id"]] = [{
