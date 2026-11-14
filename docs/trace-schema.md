@@ -64,8 +64,15 @@ The span type is set by `gen_ai.operation.name`.
 | **Tool call** | `execute_tool` | `execute_tool {gen_ai.tool.name}` (refinements add more, see 4.3) | `INTERNAL` |
 | **Plan** | `plan` | `plan {gen_ai.agent.name}`, or `plan` | `INTERNAL` |
 | **Create agent** | `create_agent` | `create_agent {gen_ai.agent.name}` | `CLIENT` |
+| **Embeddings** | `embeddings` | `embeddings {gen_ai.request.model}` | `CLIENT` |
+| **Retrieval** | `retrieval` | `retrieval` | `INTERNAL` |
+| **Memory** | `search_memory`, `create_memory`, `update_memory`, `upsert_memory`, `delete_memory`, `create_memory_store`, `delete_memory_store` | `{operation}` | `CLIENT` (`INTERNAL` for an in-process store) |
+| **Fetch response** | `fetch_response` | `fetch_response` | `CLIENT` |
+| **Realtime model generation** | `realtime_inference` | `realtime_inference {gen_ai.request.model}` | `CLIENT` |
+| **User speech** | `user_speech` | `user_speech` | `INTERNAL` |
+| **A2A call** | (none; `a2a.method.name` instead) | `{a2a.method.name}` | `CLIENT` or `SERVER` |
 
-OpenTelemetry also defines `embeddings`, `retrieval`, memory operations (`search_memory`, `create_memory`, `update_memory`, `upsert_memory`, `delete_memory`, `create_memory_store`, `delete_memory_store`), `fetch_response`, `realtime_inference` and `user_speech`. Prism keeps them when present, but no analysis uses them yet.
+This is every span type in the conventions. All of them are part of the schema.
 
 ## 4. Attributes by span type
 
@@ -147,7 +154,120 @@ OpenTelemetry defines four **refinements**: specialised kinds of tool call that 
 
 A tool call to an MCP server is an `execute_tool` span. The MCP conventions add `mcp.method.name` (`tools/call` for a tool call) and `mcp.session.id`, and `server.address` and `server.port` for remote servers. When the MCP instrumentation cannot add these attributes to an existing tool span, it emits its own `CLIENT` span named `{mcp.method.name} {target}`, for example `tools/call get_order`.
 
-### 4.5 Attributes outside the GenAI conventions
+### 4.5 Embeddings
+
+One call that turns inputs into vectors.
+
+| Attribute | Level | Meaning |
+|-----------|-------|---------|
+| `gen_ai.operation.name` | Required | `embeddings` |
+| `gen_ai.provider.name` | Required | |
+| `gen_ai.request.model` | Cond. required (if available) | |
+| `error.type` | Cond. required (on error) | |
+| `gen_ai.response.model` | Recommended | |
+| `gen_ai.embeddings.dimension.count` | Recommended | Number of dimensions of each vector |
+| `gen_ai.usage.input_tokens` | Recommended | |
+| `server.address`, `server.port` | Recommended / cond. required | |
+
+### 4.6 Retrieval
+
+One run of a framework retrieval pipeline (for example a LangChain or LlamaIndex retriever) that returns documents for a query. The steps inside it, such as embeddings or a database query, are their own spans.
+
+| Attribute | Level | Meaning |
+|-----------|-------|---------|
+| `gen_ai.operation.name` | Required | `retrieval` |
+| `error.type` | Cond. required (on error) | |
+| `gen_ai.retrieval.top_k` | Recommended | Number of documents asked for |
+| `gen_ai.retrieval.query.text` | Opt-in | The query |
+| `gen_ai.retrieval.documents` | Opt-in | The documents returned |
+
+### 4.7 Memory
+
+Operations on an agent's long-term memory. The operation name says which:
+
+| `gen_ai.operation.name` | Meaning |
+|------------------------|---------|
+| `search_memory` | Search or query memories |
+| `create_memory` | Create new memory records |
+| `update_memory` | Update existing records |
+| `upsert_memory` | Create or update, without the caller choosing which |
+| `delete_memory` | Delete records |
+| `create_memory_store` | Create or initialize a memory store |
+| `delete_memory_store` | Delete a memory store |
+
+| Attribute | Level | Meaning |
+|-----------|-------|---------|
+| `gen_ai.operation.name` | Required | One of the values above |
+| `gen_ai.provider.name` | Cond. required | The memory provider |
+| `gen_ai.memory.store.id` | Cond. required (if applicable) | The memory store |
+| `gen_ai.memory.record.id` | Cond. required | When the operation applies to one record |
+| `error.type` | Cond. required (on error) | |
+| `gen_ai.memory.record.count` | Recommended | Number of records affected or returned |
+| `server.address`, `server.port` | Recommended / cond. required | |
+| `gen_ai.memory.query.text` | Opt-in | The search query |
+| `gen_ai.memory.records` | Opt-in | The records |
+
+### 4.8 Fetch response
+
+Fetches a response generated earlier, by its id, without running the model again (for example a background response that is polled). It reports no token usage, so tokens are not counted twice.
+
+| Attribute | Level | Meaning |
+|-----------|-------|---------|
+| `gen_ai.operation.name` | Required | `fetch_response` |
+| `gen_ai.provider.name` | Required | |
+| `gen_ai.response.id` | Required | The response fetched |
+| `error.type` | Cond. required (on error) | |
+| `gen_ai.response.status` | Recommended | `queued`, `in_progress`, `completed`, `incomplete`, `cancelled`, `failed` |
+| `gen_ai.response.model`, `gen_ai.response.finish_reasons` | Recommended | |
+| `server.address`, `server.port` | Recommended / cond. required | |
+| `gen_ai.output.messages`, `gen_ai.system_instructions`, `gen_ai.tool.definitions` | Opt-in | Content |
+
+### 4.9 Realtime and speech
+
+For realtime, two-way streaming sessions (voice agents, for example OpenAI Realtime or Gemini Live). One session holds many generations.
+
+**Realtime model generation** (`realtime_inference`): one model generation inside the session.
+
+| Attribute | Level | Meaning |
+|-----------|-------|---------|
+| `gen_ai.operation.name` | Required | `realtime_inference` |
+| `gen_ai.provider.name` | Required | |
+| `gen_ai.realtime_session.id` | Cond. required | The realtime session |
+| `gen_ai.conversation.id` | Cond. required | |
+| `gen_ai.request.model` | Cond. required (if available) | |
+| `gen_ai.output.type` | Cond. required | |
+| `error.type` | Cond. required (on error) | |
+| `gen_ai.response.id`, `gen_ai.response.model`, `gen_ai.response.finish_reasons` | Recommended | |
+| `gen_ai.usage.*` | Recommended | Tokens, with the audio, image and text splits |
+| `server.address`, `server.port` | Recommended / cond. required | |
+| `gen_ai.input.messages`, `gen_ai.output.messages`, `gen_ai.system_instructions`, `gen_ai.tool.definitions` | Opt-in | Content |
+
+**User speech** (`user_speech`): the time the user is speaking into the session.
+
+| Attribute | Level | Meaning |
+|-----------|-------|---------|
+| `gen_ai.operation.name` | Required | `user_speech` |
+| `gen_ai.realtime_session.id` | Cond. required | |
+| `error.type` | Cond. required (on error) | |
+| `gen_ai.provider.name` | Recommended | |
+
+### 4.10 Agent-to-agent protocol (A2A)
+
+Calls between agents over the [A2A protocol](https://a2a-protocol.org). A `CLIENT` span on the calling side and a `SERVER` span on the receiving side. A2A spans describe the protocol request only; the agent run around them is its own span.
+
+| Attribute | Level | Meaning |
+|-----------|-------|---------|
+| `a2a.method.name` | Required | The A2A method, for example `SendMessage` |
+| `a2a.message.id` | Cond. required | When the request contains a message |
+| `a2a.task.id`, `a2a.task.state` | Cond. required | The A2A task and its state |
+| `a2a.tenant` | Cond. required | When the request sets a tenant |
+| `gen_ai.agent.name`, `gen_ai.agent.description`, `gen_ai.agent.version` | Cond. required | From the remote agent's Agent Card |
+| `gen_ai.conversation.id` | Cond. required | |
+| `error.type` | Cond. required (on error) | |
+| `a2a.protocol.version`, `a2a.message.reference_task_ids` | Recommended | |
+| `server.address`, `server.port` | Recommended | |
+
+### 4.11 Attributes outside the GenAI conventions
 
 General OpenTelemetry attributes that a source may also set, on the span or the resource:
 
@@ -184,7 +304,18 @@ A **message** has a `role` (`system`, `user`, `assistant`, `tool`), a list of `p
 
 The exact shapes are the JSON schemas in the conventions: [input messages](https://github.com/open-telemetry/semantic-conventions-genai/blob/main/model/gen-ai/gen-ai-input-messages.json) and [output messages](https://github.com/open-telemetry/semantic-conventions-genai/blob/main/model/gen-ai/gen-ai-output-messages.json).
 
-## 6. Example
+## 6. Events
+
+Besides spans, the conventions define **events**: OpenTelemetry log records emitted alongside the spans and tied to the span that was active when they happened.
+
+| Event | When | Main attributes |
+|-------|------|-----------------|
+| `gen_ai.client.inference.operation.details` | With a model call. Holds the request's details, including the chat history, so content can be stored apart from traces | As the model call span, plus content |
+| `gen_ai.evaluation.result` | An evaluator scored a model output | `gen_ai.evaluation.name` (required), `gen_ai.evaluation.score.value`, `gen_ai.evaluation.score.label`, `gen_ai.evaluation.explanation`, `gen_ai.response.id` |
+| `gen_ai.client.realtime_session.started`, `gen_ai.client.realtime_session.ended` | A realtime session opened or closed | `gen_ai.provider.name`, `gen_ai.realtime_session.id`, `gen_ai.request.model`, `error.type` on an abnormal end |
+| `gen_ai.client.inference.exception`, `gen_ai.client.embeddings.exception`, `gen_ai.client.fetch_response.exception`, `gen_ai.invoke_agent.exception`, `gen_ai.client.invoke_agent.exception`, `gen_ai.execute_tool.exception` | An operation raised an exception | `exception.type`, `exception.message`, `exception.stacktrace` |
+
+## 7. Example
 
 An agent fixes a failing test: it reads the file, runs the tests, then answers. Content is not recorded.
 
@@ -237,7 +368,7 @@ An agent fixes a failing test: it reads the file, runs the tests, then answers. 
 
 The test run failed (`process.exit.code` 1), but the tool call itself worked, so its status is `OK`.
 
-## 7. Not in this document
+## 8. Not in this document
 
 As [ADR 0003](adr/0003-otel-trace-as-base.md) says, these are decided later, one at a time:
 
