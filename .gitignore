@@ -17,3 +17,7 @@ research/agent-study/data/traces/
 research/agent-study/data/traces-*/
 research/agent-study/data/prism.db
 research/agent-study/*.log
+
+# Cross-platform study: working files (the datasets under data/ are synthetic and are committed)
+research/cross-platform/cache/
+research/cross-platform/run/
