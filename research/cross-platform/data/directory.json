@@ -1,0 +1,88 @@
+{
+ "users": [
+  {
+   "handle": "priya",
+   "name": "Priya Nair",
+   "role": "support",
+   "email": "priya.nair@kettleandcrumb.example",
+   "employee_id": "E1041"
+  },
+  {
+   "handle": "tomas",
+   "name": "Tomas Berg",
+   "role": "support",
+   "email": "tomas.berg@kettleandcrumb.example",
+   "employee_id": "E1048"
+  },
+  {
+   "handle": "hana",
+   "name": "Hana Okafor",
+   "role": "support",
+   "email": "hana.okafor@kettleandcrumb.example",
+   "employee_id": "E1055"
+  },
+  {
+   "handle": "jonas",
+   "name": "Jonas Reid",
+   "role": "support",
+   "email": "jonas.reid@kettleandcrumb.example",
+   "employee_id": "E1062"
+  },
+  {
+   "handle": "kofi",
+   "name": "Kofi Mensah",
+   "role": "operations",
+   "email": "kofi.mensah@kettleandcrumb.example",
+   "employee_id": "E1069"
+  },
+  {
+   "handle": "lucia",
+   "name": "Lucia Ferrer",
+   "role": "operations",
+   "email": "lucia.ferrer@kettleandcrumb.example",
+   "employee_id": "E1076"
+  },
+  {
+   "handle": "dmitri",
+   "name": "Dmitri Volkov",
+   "role": "operations",
+   "email": "dmitri.volkov@kettleandcrumb.example",
+   "employee_id": "E1083"
+  },
+  {
+   "handle": "ines",
+   "name": "Ines Costa",
+   "role": "operations",
+   "email": "ines.costa@kettleandcrumb.example",
+   "employee_id": "E1090"
+  },
+  {
+   "handle": "rosa",
+   "name": "Rosa Lindqvist",
+   "role": "management",
+   "email": "rosa.lindqvist@kettleandcrumb.example",
+   "employee_id": "E1097"
+  },
+  {
+   "handle": "omar",
+   "name": "Omar Haddad",
+   "role": "management",
+   "email": "omar.haddad@kettleandcrumb.example",
+   "employee_id": "E1104"
+  },
+  {
+   "handle": "freya",
+   "name": "Freya Doyle",
+   "role": "management",
+   "email": "freya.doyle@kettleandcrumb.example",
+   "employee_id": "E1111"
+  },
+  {
+   "handle": "ben",
+   "name": "Ben Achterberg",
+   "role": "management",
+   "email": "ben.achterberg@kettleandcrumb.example",
+   "employee_id": "E1118"
+  }
+ ]
+}

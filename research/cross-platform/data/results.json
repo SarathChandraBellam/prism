@@ -1,0 +1,1292 @@
+{
+ "detected_pairs": 13,
+ "label_lookup": {
+  "script_match_correct": 63,
+  "sessions": 64,
+  "sessions_with_label": 0
+ },
+ "lake": {
+  "sessions": 64,
+  "turns": 144
+ },
+ "lake_outcomes": {
+  "all": {
+   "abandoned": 17,
+   "start_atlas": 24,
+   "start_atlas_abandoned": 8,
+   "start_atlas_switched": 3,
+   "start_beacon": 18,
+   "start_beacon_abandoned": 5,
+   "start_beacon_switched": 5,
+   "start_chatly": 9,
+   "start_chatly_abandoned": 4,
+   "start_chatly_switched": 3,
+   "switched": 11,
+   "tasks": 51
+  },
+  "management": {
+   "abandoned": 5,
+   "start_atlas": 5,
+   "start_atlas_abandoned": 0,
+   "start_atlas_switched": 0,
+   "start_beacon": 4,
+   "start_beacon_abandoned": 1,
+   "start_beacon_switched": 0,
+   "start_chatly": 7,
+   "start_chatly_abandoned": 4,
+   "start_chatly_switched": 1,
+   "switched": 1,
+   "tasks": 16
+  },
+  "operations": {
+   "abandoned": 10,
+   "start_atlas": 11,
+   "start_atlas_abandoned": 7,
+   "start_atlas_switched": 2,
+   "start_beacon": 11,
+   "start_beacon_abandoned": 3,
+   "start_beacon_switched": 3,
+   "switched": 5,
+   "tasks": 22
+  },
+  "support": {
+   "abandoned": 2,
+   "start_atlas": 8,
+   "start_atlas_abandoned": 1,
+   "start_atlas_switched": 1,
+   "start_beacon": 3,
+   "start_beacon_abandoned": 1,
+   "start_beacon_switched": 2,
+   "start_chatly": 2,
+   "start_chatly_abandoned": 0,
+   "start_chatly_switched": 2,
+   "switched": 5,
+   "tasks": 13
+  }
+ },
+ "outcomes": {
+  "all": {
+   "abandoned": 12,
+   "sessions": 64,
+   "start_atlas": 24,
+   "start_atlas_abandoned": 3,
+   "start_atlas_switched": 3,
+   "start_beacon": 19,
+   "start_beacon_abandoned": 5,
+   "start_beacon_switched": 6,
+   "start_chatly": 9,
+   "start_chatly_abandoned": 4,
+   "start_chatly_switched": 3,
+   "switched": 12,
+   "tasks": 52
+  },
+  "management": {
+   "abandoned": 4,
+   "sessions": 17,
+   "start_atlas": 5,
+   "start_atlas_abandoned": 0,
+   "start_atlas_switched": 0,
+   "start_beacon": 4,
+   "start_beacon_abandoned": 1,
+   "start_beacon_switched": 0,
+   "start_chatly": 7,
+   "start_chatly_abandoned": 3,
+   "start_chatly_switched": 1,
+   "switched": 1,
+   "tasks": 16
+  },
+  "operations": {
+   "abandoned": 4,
+   "sessions": 27,
+   "start_atlas": 11,
+   "start_atlas_abandoned": 2,
+   "start_atlas_switched": 2,
+   "start_beacon": 11,
+   "start_beacon_abandoned": 2,
+   "start_beacon_switched": 3,
+   "switched": 5,
+   "tasks": 22
+  },
+  "support": {
+   "abandoned": 4,
+   "sessions": 20,
+   "start_atlas": 8,
+   "start_atlas_abandoned": 1,
+   "start_atlas_switched": 1,
+   "start_beacon": 4,
+   "start_beacon_abandoned": 2,
+   "start_beacon_switched": 3,
+   "start_chatly": 2,
+   "start_chatly_abandoned": 1,
+   "start_chatly_switched": 2,
+   "switched": 6,
+   "tasks": 14
+  }
+ },
+ "proxies": {
+  "abandonment_flag_vs_truth": {
+   "f1": 0.552,
+   "fn": 4,
+   "fp": 9,
+   "precision": 0.471,
+   "recall": 0.667,
+   "tp": 8
+  },
+  "by_platform": {
+   "atlas": {
+    "abandonment": 0.276,
+    "composite": 0.12,
+    "failed_request": 0.043,
+    "no_answer": 0.024,
+    "sessions": 29,
+    "switch_away": 0.103,
+    "tool_error": 0.153,
+    "truth_pass": 0.906,
+    "turns": 85,
+    "verifiable_turns": 64
+   },
+   "beacon": {
+    "abandonment": 0.1,
+    "composite": 0.127,
+    "failed_request": 0.0,
+    "no_answer": 0.079,
+    "sessions": 20,
+    "switch_away": 0.3,
+    "tool_error": 0.158,
+    "truth_pass": 0.562,
+    "turns": 38,
+    "verifiable_turns": 32
+   },
+   "chatly": {
+    "abandonment": 0.467,
+    "composite": 0.147,
+    "failed_request": 0.0,
+    "no_answer": 0.0,
+    "sessions": 15,
+    "switch_away": 0.267,
+    "tool_error": 0.0,
+    "truth_pass": 0.235,
+    "turns": 21,
+    "verifiable_turns": 17
+   }
+  },
+  "definitions": {
+   "abandonment": "share of sessions that end on a turn with trouble (no answer, a tool error or an inability phrase in the reply) and have no detected follow-up",
+   "composite": "unweighted mean of the five; lower is better",
+   "failed_request": "share of model requests that failed (not visible on Chatly)",
+   "no_answer": "share of turns whose reply is empty",
+   "switch_away": "share of sessions followed by a detected session of the same user on another platform",
+   "tool_error": "share of turns with at least one failed tool call"
+  },
+  "designed_task_type": {
+   "cells": [
+    {
+     "abandonment": 0.286,
+     "composite": 0.124,
+     "failed_request": 0.056,
+     "group": "analysis",
+     "no_answer": 0.045,
+     "platform": "atlas",
+     "sessions": 7,
+     "switch_away": 0.143,
+     "tool_error": 0.091,
+     "truth_pass": 0.923,
+     "turns": 22,
+     "verifiable_turns": 13
+    },
+    {
+     "abandonment": 0.167,
+     "composite": 0.049,
+     "failed_request": 0.0,
+     "group": "analysis",
+     "no_answer": 0.077,
+     "platform": "beacon",
+     "sessions": 6,
+     "switch_away": 0.0,
+     "tool_error": 0.0,
+     "truth_pass": 0.727,
+     "turns": 13,
+     "verifiable_turns": 11
+    },
+    {
+     "abandonment": 0.25,
+     "composite": 0.129,
+     "failed_request": 0.0,
+     "group": "decide",
+     "no_answer": 0.0,
+     "platform": "atlas",
+     "sessions": 4,
+     "switch_away": 0.25,
+     "tool_error": 0.143,
+     "truth_pass": 0.833,
+     "turns": 14,
+     "verifiable_turns": 12
+    },
+    {
+     "abandonment": 0.0,
+     "composite": 0.067,
+     "failed_request": 0.0,
+     "group": "decide",
+     "no_answer": 0.0,
+     "platform": "chatly",
+     "sessions": 3,
+     "switch_away": 0.333,
+     "tool_error": 0.0,
+     "truth_pass": 0.0,
+     "turns": 3,
+     "verifiable_turns": 3
+    },
+    {
+     "abandonment": 0.4,
+     "composite": 0.14,
+     "failed_request": 0.0,
+     "group": "lookup",
+     "no_answer": 0.0,
+     "platform": "atlas",
+     "sessions": 5,
+     "switch_away": 0.0,
+     "tool_error": 0.3,
+     "truth_pass": 1.0,
+     "turns": 10,
+     "verifiable_turns": 10
+    },
+    {
+     "abandonment": 0.667,
+     "composite": 0.2,
+     "failed_request": 0.0,
+     "group": "lookup",
+     "no_answer": 0.0,
+     "platform": "chatly",
+     "sessions": 3,
+     "switch_away": 0.333,
+     "tool_error": 0.0,
+     "truth_pass": 0.0,
+     "turns": 3,
+     "verifiable_turns": 3
+    },
+    {
+     "abandonment": 0.375,
+     "composite": 0.186,
+     "failed_request": 0.096,
+     "group": "report",
+     "no_answer": 0.048,
+     "platform": "atlas",
+     "sessions": 8,
+     "switch_away": 0.125,
+     "tool_error": 0.286,
+     "truth_pass": 0.842,
+     "turns": 21,
+     "verifiable_turns": 19
+    },
+    {
+     "abandonment": 0.0,
+     "composite": 0.16,
+     "failed_request": 0.0,
+     "group": "report",
+     "no_answer": 0.2,
+     "platform": "beacon",
+     "sessions": 5,
+     "switch_away": 0.6,
+     "tool_error": 0.0,
+     "truth_pass": 0.0,
+     "turns": 5,
+     "verifiable_turns": 5
+    }
+   ],
+   "groups": [
+    {
+     "best_by_proxy": "beacon",
+     "best_by_truth": "atlas",
+     "group": "analysis",
+     "match": false,
+     "platforms": 2,
+     "proxy_tie": false
+    },
+    {
+     "best_by_proxy": "chatly",
+     "best_by_truth": "atlas",
+     "group": "decide",
+     "match": false,
+     "platforms": 2,
+     "proxy_tie": false
+    },
+    {
+     "best_by_proxy": "atlas",
+     "best_by_truth": "atlas",
+     "group": "lookup",
+     "match": true,
+     "platforms": 2,
+     "proxy_tie": false
+    },
+    {
+     "best_by_proxy": "beacon",
+     "best_by_truth": "atlas",
+     "group": "report",
+     "match": false,
+     "platforms": 2,
+     "proxy_tie": false
+    }
+   ],
+   "groups_compared": 4,
+   "groups_matching": 1,
+   "groups_with_proxy_tie": 0,
+   "n_cells": 8,
+   "pairs_compared": 4,
+   "pairs_concordant": 1,
+   "spearman_composite_vs_truth": 0.073,
+   "spearman_single_proxies": {
+    "abandonment": -0.466,
+    "failed_request": -0.495,
+    "no_answer": 0.117,
+    "switch_away": 0.765,
+    "tool_error": -0.884
+   }
+  },
+  "labelled_domain": null,
+  "switch_away_flag_vs_truth": {
+   "f1": 0.96,
+   "fn": 0,
+   "fp": 1,
+   "precision": 0.923,
+   "recall": 1.0,
+   "tp": 12
+  }
+ },
+ "routing": {
+  "best": {
+   "advise": "atlas",
+   "analysis": "atlas",
+   "decide": "atlas",
+   "draft": "atlas",
+   "lookup": "atlas",
+   "report": "atlas",
+   "triage": "atlas"
+  },
+  "cells": [
+   {
+    "cost": 0.10978564,
+    "cost_per_1000_turns": 9.15,
+    "pass_rate": 1.0,
+    "passed": 4,
+    "platform": "atlas",
+    "scripts": 3,
+    "task_type": "advise",
+    "turns": 12,
+    "verifiable_turns": 4
+   },
+   {
+    "cost": 0.11908578,
+    "cost_per_1000_turns": 9.92,
+    "pass_rate": 0.5,
+    "passed": 2,
+    "platform": "beacon",
+    "scripts": 3,
+    "task_type": "advise",
+    "turns": 12,
+    "verifiable_turns": 4
+   },
+   {
+    "cost": 0.00922871,
+    "cost_per_1000_turns": 0.77,
+    "pass_rate": 0.25,
+    "passed": 1,
+    "platform": "chatly",
+    "scripts": 3,
+    "task_type": "advise",
+    "turns": 12,
+    "verifiable_turns": 4
+   },
+   {
+    "cost": 0.16815801,
+    "cost_per_1000_turns": 7.01,
+    "pass_rate": 0.867,
+    "passed": 13,
+    "platform": "atlas",
+    "scripts": 7,
+    "task_type": "analysis",
+    "turns": 24,
+    "verifiable_turns": 15
+   },
+   {
+    "cost": 0.1380101,
+    "cost_per_1000_turns": 5.75,
+    "pass_rate": 0.733,
+    "passed": 11,
+    "platform": "beacon",
+    "scripts": 7,
+    "task_type": "analysis",
+    "turns": 24,
+    "verifiable_turns": 15
+   },
+   {
+    "cost": 0.01112282,
+    "cost_per_1000_turns": 0.46,
+    "pass_rate": 0.133,
+    "passed": 2,
+    "platform": "chatly",
+    "scripts": 7,
+    "task_type": "analysis",
+    "turns": 24,
+    "verifiable_turns": 15
+   },
+   {
+    "cost": 0.03140166,
+    "cost_per_1000_turns": 3.14,
+    "pass_rate": 0.889,
+    "passed": 8,
+    "platform": "atlas",
+    "scripts": 3,
+    "task_type": "decide",
+    "turns": 10,
+    "verifiable_turns": 9
+   },
+   {
+    "cost": 0.07024188,
+    "cost_per_1000_turns": 7.02,
+    "pass_rate": 0.111,
+    "passed": 1,
+    "platform": "beacon",
+    "scripts": 3,
+    "task_type": "decide",
+    "turns": 10,
+    "verifiable_turns": 9
+   },
+   {
+    "cost": 0.00305959,
+    "cost_per_1000_turns": 0.31,
+    "pass_rate": 0.111,
+    "passed": 1,
+    "platform": "chatly",
+    "scripts": 3,
+    "task_type": "decide",
+    "turns": 10,
+    "verifiable_turns": 9
+   },
+   {
+    "cost": 0.02984297,
+    "cost_per_1000_turns": 3.73,
+    "pass_rate": 1.0,
+    "passed": 7,
+    "platform": "atlas",
+    "scripts": 3,
+    "task_type": "draft",
+    "turns": 8,
+    "verifiable_turns": 7
+   },
+   {
+    "cost": 0.035293,
+    "cost_per_1000_turns": 4.41,
+    "pass_rate": 0.714,
+    "passed": 5,
+    "platform": "beacon",
+    "scripts": 3,
+    "task_type": "draft",
+    "turns": 8,
+    "verifiable_turns": 7
+   },
+   {
+    "cost": 0.00380201,
+    "cost_per_1000_turns": 0.48,
+    "pass_rate": 0.571,
+    "passed": 4,
+    "platform": "chatly",
+    "scripts": 3,
+    "task_type": "draft",
+    "turns": 8,
+    "verifiable_turns": 7
+   },
+   {
+    "cost": 0.06562161999999999,
+    "cost_per_1000_turns": 7.29,
+    "pass_rate": 1.0,
+    "passed": 9,
+    "platform": "atlas",
+    "scripts": 4,
+    "task_type": "lookup",
+    "turns": 9,
+    "verifiable_turns": 9
+   },
+   {
+    "cost": 0.046352479999999995,
+    "cost_per_1000_turns": 5.15,
+    "pass_rate": 0.778,
+    "passed": 7,
+    "platform": "beacon",
+    "scripts": 4,
+    "task_type": "lookup",
+    "turns": 9,
+    "verifiable_turns": 9
+   },
+   {
+    "cost": 0.0032448100000000003,
+    "cost_per_1000_turns": 0.36,
+    "pass_rate": 0.111,
+    "passed": 1,
+    "platform": "chatly",
+    "scripts": 4,
+    "task_type": "lookup",
+    "turns": 9,
+    "verifiable_turns": 9
+   },
+   {
+    "cost": 0.10497919,
+    "cost_per_1000_turns": 5.83,
+    "pass_rate": 0.688,
+    "passed": 11,
+    "platform": "atlas",
+    "scripts": 5,
+    "task_type": "report",
+    "turns": 18,
+    "verifiable_turns": 16
+   },
+   {
+    "cost": 0.14748675,
+    "cost_per_1000_turns": 8.19,
+    "pass_rate": 0.188,
+    "passed": 3,
+    "platform": "beacon",
+    "scripts": 5,
+    "task_type": "report",
+    "turns": 18,
+    "verifiable_turns": 16
+   },
+   {
+    "cost": 0.00769666,
+    "cost_per_1000_turns": 0.43,
+    "pass_rate": 0.0,
+    "passed": 0,
+    "platform": "chatly",
+    "scripts": 5,
+    "task_type": "report",
+    "turns": 18,
+    "verifiable_turns": 16
+   },
+   {
+    "cost": 0.0239348,
+    "cost_per_1000_turns": 5.98,
+    "pass_rate": 1.0,
+    "passed": 3,
+    "platform": "atlas",
+    "scripts": 1,
+    "task_type": "triage",
+    "turns": 4,
+    "verifiable_turns": 3
+   },
+   {
+    "cost": 0.0157558,
+    "cost_per_1000_turns": 3.94,
+    "pass_rate": 0.333,
+    "passed": 1,
+    "platform": "beacon",
+    "scripts": 1,
+    "task_type": "triage",
+    "turns": 4,
+    "verifiable_turns": 3
+   },
+   {
+    "cost": 0.0047928,
+    "cost_per_1000_turns": 1.2,
+    "pass_rate": 0.333,
+    "passed": 1,
+    "platform": "chatly",
+    "scripts": 1,
+    "task_type": "triage",
+    "turns": 4,
+    "verifiable_turns": 3
+   }
+  ],
+  "policies": {
+   "actual": {
+    "all": {
+     "cost_per_task": 0.01461,
+     "pass_rate": 0.611,
+     "passed": 77,
+     "shadow_cost": 0.7598,
+     "tasks": 52,
+     "verifiable_turns": 126
+    },
+    "management": {
+     "cost_per_task": 0.01278,
+     "pass_rate": 0.7,
+     "passed": 21,
+     "shadow_cost": 0.2045,
+     "tasks": 16,
+     "verifiable_turns": 30
+    },
+    "operations": {
+     "cost_per_task": 0.01543,
+     "pass_rate": 0.556,
+     "passed": 30,
+     "shadow_cost": 0.3395,
+     "tasks": 22,
+     "verifiable_turns": 54
+    },
+    "support": {
+     "cost_per_task": 0.01541,
+     "pass_rate": 0.619,
+     "passed": 26,
+     "shadow_cost": 0.2158,
+     "tasks": 14,
+     "verifiable_turns": 42
+    }
+   },
+   "routed": {
+    "all": {
+     "cost_per_task": 0.02053,
+     "pass_rate": 0.873,
+     "passed": 110,
+     "shadow_cost": 1.0674,
+     "tasks": 52,
+     "verifiable_turns": 126
+    },
+    "management": {
+     "cost_per_task": 0.02075,
+     "pass_rate": 1.0,
+     "passed": 30,
+     "shadow_cost": 0.3321,
+     "tasks": 16,
+     "verifiable_turns": 30
+    },
+    "operations": {
+     "cost_per_task": 0.02278,
+     "pass_rate": 0.741,
+     "passed": 40,
+     "shadow_cost": 0.5012,
+     "tasks": 22,
+     "verifiable_turns": 54
+    },
+    "support": {
+     "cost_per_task": 0.01673,
+     "pass_rate": 0.952,
+     "passed": 40,
+     "shadow_cost": 0.2342,
+     "tasks": 14,
+     "verifiable_turns": 42
+    }
+   },
+   "routed_loo": {
+    "all": {
+     "cost_per_task": 0.02053,
+     "pass_rate": 0.873,
+     "passed": 110,
+     "shadow_cost": 1.0674,
+     "tasks": 52,
+     "verifiable_turns": 126
+    },
+    "management": {
+     "cost_per_task": 0.02075,
+     "pass_rate": 1.0,
+     "passed": 30,
+     "shadow_cost": 0.3321,
+     "tasks": 16,
+     "verifiable_turns": 30
+    },
+    "operations": {
+     "cost_per_task": 0.02278,
+     "pass_rate": 0.741,
+     "passed": 40,
+     "shadow_cost": 0.5012,
+     "tasks": 22,
+     "verifiable_turns": 54
+    },
+    "support": {
+     "cost_per_task": 0.01673,
+     "pass_rate": 0.952,
+     "passed": 40,
+     "shadow_cost": 0.2342,
+     "tasks": 14,
+     "verifiable_turns": 42
+    }
+   },
+   "start_only": {
+    "all": {
+     "cost_per_task": 0.01728,
+     "pass_rate": 0.635,
+     "passed": 80,
+     "shadow_cost": 0.8988,
+     "tasks": 52,
+     "verifiable_turns": 126
+    },
+    "management": {
+     "cost_per_task": 0.01353,
+     "pass_rate": 0.6,
+     "passed": 18,
+     "shadow_cost": 0.2165,
+     "tasks": 16,
+     "verifiable_turns": 30
+    },
+    "operations": {
+     "cost_per_task": 0.02138,
+     "pass_rate": 0.611,
+     "passed": 33,
+     "shadow_cost": 0.4703,
+     "tasks": 22,
+     "verifiable_turns": 54
+    },
+    "support": {
+     "cost_per_task": 0.01514,
+     "pass_rate": 0.69,
+     "passed": 29,
+     "shadow_cost": 0.212,
+     "tasks": 14,
+     "verifiable_turns": 42
+    }
+   }
+  },
+  "task_counts": {
+   "advise": 6,
+   "analysis": 14,
+   "decide": 6,
+   "draft": 6,
+   "lookup": 8,
+   "report": 10,
+   "triage": 2
+  },
+  "task_types": [
+   "advise",
+   "analysis",
+   "decide",
+   "draft",
+   "lookup",
+   "report",
+   "triage"
+  ]
+ },
+ "seats": {
+  "by_sessions": {
+   "designed_idle": 4,
+   "designed_saving": 90,
+   "f1": 0.545,
+   "flagged": 7,
+   "fn": 1,
+   "fp": 4,
+   "monthly_saving": 150,
+   "precision": 0.429,
+   "recall": 0.75,
+   "tp": 3
+  },
+  "by_task_starts": {
+   "designed_idle": 4,
+   "designed_saving": 90,
+   "f1": 0.667,
+   "flagged": 8,
+   "fn": 0,
+   "fp": 4,
+   "monthly_saving": 170,
+   "precision": 0.5,
+   "recall": 1.0,
+   "tp": 4
+  },
+  "monthly_spend": 570,
+  "rows": [
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "priya",
+    "last_use": "2026-11-11",
+    "platform": "atlas",
+    "price": 30,
+    "sessions": 3,
+    "share": 0.6,
+    "start_share": 0.667,
+    "task_starts": 2
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "priya",
+    "last_use": "2026-11-11",
+    "platform": "chatly",
+    "price": 20,
+    "sessions": 2,
+    "share": 0.4,
+    "start_share": 0.333,
+    "task_starts": 1
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "tomas",
+    "last_use": "2026-11-04",
+    "platform": "atlas",
+    "price": 30,
+    "sessions": 3,
+    "share": 1.0,
+    "start_share": 1.0,
+    "task_starts": 3
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "hana",
+    "last_use": "2026-11-10",
+    "platform": "atlas",
+    "price": 30,
+    "sessions": 3,
+    "share": 1.0,
+    "start_share": 1.0,
+    "task_starts": 3
+   },
+   {
+    "designed_idle": false,
+    "flag": true,
+    "flag_starts": true,
+    "handle": "hana",
+    "last_use": null,
+    "platform": "beacon",
+    "price": 20,
+    "sessions": 0,
+    "share": 0.0,
+    "start_share": 0.0,
+    "task_starts": 0
+   },
+   {
+    "designed_idle": true,
+    "flag": true,
+    "flag_starts": true,
+    "handle": "hana",
+    "last_use": null,
+    "platform": "chatly",
+    "price": 20,
+    "sessions": 0,
+    "share": 0.0,
+    "start_share": 0.0,
+    "task_starts": 0
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "jonas",
+    "last_use": "2026-11-13",
+    "platform": "beacon",
+    "price": 20,
+    "sessions": 5,
+    "share": 0.556,
+    "start_share": 0.75,
+    "task_starts": 3
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "jonas",
+    "last_use": "2026-11-13",
+    "platform": "chatly",
+    "price": 20,
+    "sessions": 4,
+    "share": 0.444,
+    "start_share": 0.25,
+    "task_starts": 1
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "kofi",
+    "last_use": "2026-11-11",
+    "platform": "atlas",
+    "price": 30,
+    "sessions": 7,
+    "share": 0.583,
+    "start_share": 0.444,
+    "task_starts": 4
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "kofi",
+    "last_use": "2026-11-13",
+    "platform": "beacon",
+    "price": 20,
+    "sessions": 5,
+    "share": 0.417,
+    "start_share": 0.556,
+    "task_starts": 5
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "lucia",
+    "last_use": "2026-11-10",
+    "platform": "beacon",
+    "price": 20,
+    "sessions": 6,
+    "share": 1.0,
+    "start_share": 1.0,
+    "task_starts": 6
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "dmitri",
+    "last_use": "2026-11-09",
+    "platform": "atlas",
+    "price": 30,
+    "sessions": 6,
+    "share": 0.75,
+    "start_share": 1.0,
+    "task_starts": 6
+   },
+   {
+    "designed_idle": true,
+    "flag": false,
+    "flag_starts": true,
+    "handle": "dmitri",
+    "last_use": "2026-11-04",
+    "platform": "chatly",
+    "price": 20,
+    "sessions": 2,
+    "share": 0.25,
+    "start_share": 0.0,
+    "task_starts": 0
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "ines",
+    "last_use": "2026-11-03",
+    "platform": "atlas",
+    "price": 30,
+    "sessions": 1,
+    "share": 1.0,
+    "start_share": 1.0,
+    "task_starts": 1
+   },
+   {
+    "designed_idle": false,
+    "flag": true,
+    "flag_starts": true,
+    "handle": "ines",
+    "last_use": null,
+    "platform": "beacon",
+    "price": 20,
+    "sessions": 0,
+    "share": 0.0,
+    "start_share": 0.0,
+    "task_starts": 0
+   },
+   {
+    "designed_idle": true,
+    "flag": true,
+    "flag_starts": true,
+    "handle": "ines",
+    "last_use": null,
+    "platform": "chatly",
+    "price": 20,
+    "sessions": 0,
+    "share": 0.0,
+    "start_share": 0.0,
+    "task_starts": 0
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "rosa",
+    "last_use": "2026-11-05",
+    "platform": "chatly",
+    "price": 20,
+    "sessions": 1,
+    "share": 0.25,
+    "start_share": 0.333,
+    "task_starts": 1
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "rosa",
+    "last_use": "2026-11-05",
+    "platform": "atlas",
+    "price": 30,
+    "sessions": 3,
+    "share": 0.75,
+    "start_share": 0.667,
+    "task_starts": 2
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "omar",
+    "last_use": "2026-11-13",
+    "platform": "chatly",
+    "price": 20,
+    "sessions": 6,
+    "share": 1.0,
+    "start_share": 1.0,
+    "task_starts": 6
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "freya",
+    "last_use": "2026-11-09",
+    "platform": "atlas",
+    "price": 30,
+    "sessions": 3,
+    "share": 1.0,
+    "start_share": 1.0,
+    "task_starts": 3
+   },
+   {
+    "designed_idle": false,
+    "flag": true,
+    "flag_starts": true,
+    "handle": "freya",
+    "last_use": null,
+    "platform": "beacon",
+    "price": 20,
+    "sessions": 0,
+    "share": 0.0,
+    "start_share": 0.0,
+    "task_starts": 0
+   },
+   {
+    "designed_idle": false,
+    "flag": true,
+    "flag_starts": true,
+    "handle": "freya",
+    "last_use": null,
+    "platform": "chatly",
+    "price": 20,
+    "sessions": 0,
+    "share": 0.0,
+    "start_share": 0.0,
+    "task_starts": 0
+   },
+   {
+    "designed_idle": false,
+    "flag": false,
+    "flag_starts": false,
+    "handle": "ben",
+    "last_use": "2026-11-06",
+    "platform": "beacon",
+    "price": 20,
+    "sessions": 4,
+    "share": 1.0,
+    "start_share": 1.0,
+    "task_starts": 4
+   },
+   {
+    "designed_idle": true,
+    "flag": true,
+    "flag_starts": true,
+    "handle": "ben",
+    "last_use": null,
+    "platform": "atlas",
+    "price": 30,
+    "sessions": 0,
+    "share": 0.0,
+    "start_share": 0.0,
+    "task_starts": 0
+   }
+  ],
+  "single_seat_users": 3,
+  "total_seats": 24
+ },
+ "switch_detection": {
+  "best_misses": {
+   "n": 0,
+   "outside_window": 0
+  },
+  "counterfactual_unparaphrased": {
+   "f1": 0.96,
+   "fn": 0,
+   "fp": 1,
+   "precision": 0.923,
+   "recall": 1.0,
+   "threshold": 0.1,
+   "tp": 12
+  },
+  "jaccard_sweep": {
+   "0.00": {
+    "f1": 0.75,
+    "fn": 0,
+    "fp": 8,
+    "precision": 0.6,
+    "recall": 1.0,
+    "tp": 12
+   },
+   "0.05": {
+    "f1": 0.96,
+    "fn": 0,
+    "fp": 1,
+    "precision": 0.923,
+    "recall": 1.0,
+    "tp": 12
+   },
+   "0.10": {
+    "f1": 0.96,
+    "fn": 0,
+    "fp": 1,
+    "precision": 0.923,
+    "recall": 1.0,
+    "tp": 12
+   },
+   "0.15": {
+    "f1": 0.818,
+    "fn": 3,
+    "fp": 1,
+    "precision": 0.9,
+    "recall": 0.75,
+    "tp": 9
+   },
+   "0.20": {
+    "f1": 0.857,
+    "fn": 3,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 0.75,
+    "tp": 9
+   },
+   "0.25": {
+    "f1": 0.8,
+    "fn": 4,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 0.667,
+    "tp": 8
+   },
+   "0.30": {
+    "f1": 0.737,
+    "fn": 5,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 0.583,
+    "tp": 7
+   },
+   "0.35": {
+    "f1": 0.588,
+    "fn": 7,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 0.417,
+    "tp": 5
+   },
+   "0.40": {
+    "f1": 0.588,
+    "fn": 7,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 0.417,
+    "tp": 5
+   },
+   "0.45": {
+    "f1": 0.5,
+    "fn": 8,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 0.333,
+    "tp": 4
+   },
+   "0.50": {
+    "f1": 0.5,
+    "fn": 8,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 0.333,
+    "tp": 4
+   },
+   "0.55": {
+    "f1": 0.154,
+    "fn": 11,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 0.083,
+    "tp": 1
+   },
+   "0.60": {
+    "f1": 0.154,
+    "fn": 11,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 0.083,
+    "tp": 1
+   }
+  },
+  "methods": {
+   "a_window": {
+    "f1": 0.75,
+    "fn": 0,
+    "fp": 8,
+    "precision": 0.6,
+    "recall": 1.0,
+    "tp": 12
+   },
+   "b2_jaccard_whole_session": {
+    "f1": 0.923,
+    "fn": 0,
+    "fp": 2,
+    "precision": 0.857,
+    "recall": 1.0,
+    "threshold": 0.05,
+    "tp": 12
+   },
+   "b_jaccard": {
+    "f1": 0.96,
+    "fn": 0,
+    "fp": 1,
+    "precision": 0.923,
+    "recall": 1.0,
+    "threshold": 0.1,
+    "tp": 12
+   },
+   "c_entities": {
+    "f1": 0.4,
+    "fn": 9,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 0.25,
+    "tp": 3
+   },
+   "c_entities_or_jaccard": {
+    "f1": 0.96,
+    "fn": 0,
+    "fp": 1,
+    "precision": 0.923,
+    "recall": 1.0,
+    "tp": 12
+   },
+   "e_best_combination": {
+    "f1": 0.96,
+    "fn": 0,
+    "fp": 1,
+    "k": 1,
+    "nearest_only": false,
+    "precision": 0.923,
+    "recall": 1.0,
+    "signals": [
+     "jac",
+     "ent"
+    ],
+    "tau": 0.1,
+    "tp": 12
+   }
+  },
+  "n_adjacent_pairs": 12,
+  "n_candidates": 20,
+  "n_true_pairs": 12,
+  "paraphrase": {
+   "adjacent_pairs_in_candidates": 12,
+   "adjacent_pairs_with_jaccard_ge_best": 12,
+   "median_jaccard_first_prompt_false_pairs": 0.0,
+   "median_jaccard_first_prompt_true_pairs": 0.308,
+   "of_which_paraphrased": 12,
+   "switch_sessions": 12,
+   "true_pairs_in_candidates": 12,
+   "true_pairs_with_entity": 3
+  },
+  "window_minutes": 30
+ }
+}

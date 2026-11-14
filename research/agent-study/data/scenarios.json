@@ -1,0 +1,1789 @@
+[
+ {
+  "session_id": "M01",
+  "user": "maya",
+  "role": "Maya, support lead",
+  "sim_start": "2026-11-02T09:07:00",
+  "designed": {
+   "domain": "support",
+   "task_type": "decide",
+   "skill": "refund-eligibility",
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 1,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Customer on order 5001 wants to send the hand grinder back. Can we refund it?",
+    "checks": [
+     [
+      "has",
+      [
+       "APPROVE"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Draft the reply to them.",
+    "checks": [
+     [
+      "has",
+      [
+       "Kettle & Crumb Support"
+      ]
+     ],
+     [
+      "not",
+      [
+       "unfortunately"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "refinement",
+    "text": "Shorter. Two sentences at most before the sign-off.",
+    "checks": [
+     [
+      "has",
+      [
+       "Kettle & Crumb Support"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "M02",
+  "user": "maya",
+  "role": "Maya, support lead",
+  "sim_start": "2026-11-02T11:14:00",
+  "designed": {
+   "domain": "support",
+   "task_type": "decide",
+   "skill": "refund-eligibility",
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 1,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Can order 5002 be refunded? The customer says the dripper is unused.",
+    "checks": [
+     [
+      "has",
+      [
+       "DENY"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "question",
+    "text": "Why do we count 30 days from delivery and not from the order date?",
+    "checks": []
+   },
+   {
+    "act": "request",
+    "text": "And 5003?",
+    "checks": [
+     [
+      "has",
+      [
+       "DENY"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Write a reply for 5003 that explains it kindly.",
+    "checks": [
+     [
+      "has",
+      [
+       "Kettle & Crumb Support"
+      ]
+     ],
+     [
+      "not",
+      [
+       "unfortunately"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "M03",
+  "user": "maya",
+  "role": "Maya, support lead",
+  "sim_start": "2026-11-03T10:21:00",
+  "designed": {
+   "domain": "support",
+   "task_type": "decide",
+   "skill": "refund-eligibility",
+   "servers": [
+    "shop"
+   ],
+   "corrections": 1,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Refund check on order 5004 please. The grinder arrived with a cracked hopper.",
+    "checks": [
+     [
+      "has",
+      [
+       "ESCALATE"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "correction",
+    "text": "No, don't approve or deny that one yourself. Anything over 150 comes to me. Just tell me what the rule says for this order.",
+    "checks": [
+     [
+      "has",
+      [
+       "ESCALATE"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "OK. Add a note on ticket 9005 that it is escalated to me.",
+    "checks": [
+     [
+      "note",
+      9005
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "M04",
+  "user": "maya",
+  "role": "Maya, support lead",
+  "sim_start": "2026-11-04T09:28:00",
+  "designed": {
+   "domain": "support",
+   "task_type": "triage",
+   "skill": "ticket-triage",
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 1,
+   "questions": 1,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Triage the open tickets.",
+    "checks": [
+     [
+      "tickets",
+      {
+       "9001": {
+        "priority": "P2",
+        "category": "shipping"
+       },
+       "9002": {
+        "priority": "P1",
+        "category": "billing"
+       },
+       "9003": {
+        "priority": "P1",
+        "category": "product"
+       },
+       "9004": {
+        "priority": "P3",
+        "category": "product"
+       },
+       "9005": {
+        "priority": "P2",
+        "category": "product"
+       },
+       "9006": {
+        "priority": "P3",
+        "category": "shipping"
+       },
+       "9007": {
+        "priority": "P3",
+        "category": "billing"
+       },
+       "9008": {
+        "priority": "P3",
+        "category": "shipping"
+       }
+      },
+      6
+     ]
+    ]
+   },
+   {
+    "act": "question",
+    "text": "Which ones are P1 and why?",
+    "checks": [
+     [
+      "has",
+      [
+       "9002",
+       "9003"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "refinement",
+    "text": "Give me that as a short list I can paste into the team chat.",
+    "checks": []
+   },
+   {
+    "act": "request",
+    "text": "Draft a reply for the double charge one.",
+    "checks": [
+     [
+      "has",
+      [
+       "Kettle & Crumb Support"
+      ]
+     ],
+     [
+      "not",
+      [
+       "unfortunately"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "M05",
+  "user": "maya",
+  "role": "Maya, support lead",
+  "sim_start": "2026-11-04T14:35:00",
+  "designed": {
+   "domain": "support",
+   "task_type": "lookup",
+   "skill": null,
+   "servers": [
+    "shop",
+    "filesystem"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 1,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "What's the status of order 5006?",
+    "checks": [
+     [
+      "has",
+      [
+       "shipped"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "When was it placed and what's in it?",
+    "checks": [
+     [
+      "any",
+      [
+       "KET-ELEC",
+       "Electric Pour-Over Kettle"
+      ]
+     ],
+     [
+      "any",
+      [
+       "2026-11-01",
+       "1 November",
+       "November 1",
+       "Nov 1"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "question",
+    "text": "Is that late by our own shipping rules? They are in docs/shipping.md.",
+    "checks": [
+     [
+      "any",
+      [
+       "late",
+       "yes"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Draft a reply to the customer on ticket 9001.",
+    "checks": [
+     [
+      "has",
+      [
+       "Kettle & Crumb Support"
+      ]
+     ],
+     [
+      "not",
+      [
+       "unfortunately"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "M06",
+  "user": "maya",
+  "role": "Maya, support lead",
+  "sim_start": "2026-11-05T10:42:00",
+  "designed": {
+   "domain": "support",
+   "task_type": "draft",
+   "skill": "customer-reply",
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 1,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": [
+    3
+   ]
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Order 5005: the customer asks for a refund on the brew scale.",
+    "checks": [
+     [
+      "any",
+      [
+       "DENY",
+       "already",
+       "refunded"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "feedback_relay",
+    "text": "The customer replied: 'I never got the money back, my bank shows nothing.' What do we do?",
+    "checks": []
+   },
+   {
+    "act": "reexplain",
+    "text": "As I said, this is order 5005, the brew scale, already marked refunded on our side. I need wording for the customer, not another eligibility check.",
+    "checks": [
+     [
+      "has",
+      [
+       "Kettle & Crumb Support"
+      ]
+     ],
+     [
+      "not",
+      [
+       "unfortunately"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "M07",
+  "user": "maya",
+  "role": "Maya, support lead",
+  "sim_start": "2026-11-05T15:49:00",
+  "designed": {
+   "domain": "support",
+   "task_type": "lookup",
+   "skill": "customer-reply",
+   "servers": [
+    "filesystem",
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Do we ship to Ireland, and what does it cost?",
+    "checks": [
+     [
+      "has",
+      [
+       "9.50"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Reply to ticket 9006 with that.",
+    "checks": [
+     [
+      "has",
+      [
+       "Kettle & Crumb Support"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Close the ticket after.",
+    "checks": [
+     [
+      "ticket",
+      9006,
+      {
+       "status": "closed"
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "M08",
+  "user": "maya",
+  "role": "Maya, support lead",
+  "sim_start": "2026-11-06T09:06:00",
+  "designed": {
+   "domain": "support",
+   "task_type": "lookup",
+   "skill": null,
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "How many open tickets do we have right now?",
+    "checks": [
+     [
+      "num",
+      8
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "M09",
+  "user": "maya",
+  "role": "Maya, support lead",
+  "sim_start": "2026-11-09T10:13:00",
+  "designed": {
+   "domain": "support",
+   "task_type": "decide",
+   "skill": "refund-eligibility",
+   "servers": [
+    "shop"
+   ],
+   "corrections": 1,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Is order 5008 refundable? They want to return the kettle only.",
+    "checks": [
+     [
+      "has",
+      [
+       "APPROVE"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "correction",
+    "text": "You're mixing it up with another order. 5008 is the gooseneck kettle plus a dripper, delivered 5 days ago. Check again.",
+    "checks": [
+     [
+      "any",
+      [
+       "APPROVE",
+       "refundable",
+       "eligible"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Good. Draft the reply.",
+    "checks": [
+     [
+      "has",
+      [
+       "Kettle & Crumb Support"
+      ]
+     ],
+     [
+      "not",
+      [
+       "unfortunately"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "M10",
+  "user": "maya",
+  "role": "Maya, support lead",
+  "sim_start": "2026-11-10T11:20:00",
+  "designed": {
+   "domain": "support",
+   "task_type": "lookup",
+   "skill": "customer-reply",
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Ticket 9008 asks for an address change on order 5007. Can we still do that?",
+    "checks": [
+     [
+      "has",
+      [
+       "processing"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Set the ticket to P3, shipping, and add the new address as a note.",
+    "checks": [
+     [
+      "ticket",
+      9008,
+      {
+       "priority": "P3",
+       "category": "shipping"
+      }
+     ],
+     [
+      "note",
+      9008
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Reply to the customer confirming the change.",
+    "checks": [
+     [
+      "has",
+      [
+       "Kettle & Crumb Support"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "M11",
+  "user": "maya",
+  "role": "Maya, support lead",
+  "sim_start": "2026-11-10T16:27:00",
+  "designed": {
+   "domain": "writing",
+   "task_type": "draft",
+   "skill": null,
+   "servers": [],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 1,
+   "questions": 1,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "I keep writing the same 'where is my order' reply. Give me 3 template variants I can reuse.",
+    "checks": []
+   },
+   {
+    "act": "refinement",
+    "text": "Make the second one less formal.",
+    "checks": []
+   },
+   {
+    "act": "question",
+    "text": "Which one would you pick for a customer who has already written twice?",
+    "checks": []
+   }
+  ]
+ },
+ {
+  "session_id": "M12",
+  "user": "maya",
+  "role": "Maya, support lead",
+  "sim_start": "2026-11-11T09:34:00",
+  "designed": {
+   "domain": "support",
+   "task_type": "lookup",
+   "skill": null,
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Find the ticket about the hot kettle handle and give me the customer's email.",
+    "checks": [
+     [
+      "has",
+      [
+       "dara.holt31@example.com"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Mark it P1, product.",
+    "checks": [
+     [
+      "ticket",
+      9003,
+      {
+       "priority": "P1",
+       "category": "product"
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "M13",
+  "user": "maya",
+  "role": "Maya, support lead",
+  "sim_start": "2026-11-12T14:41:00",
+  "designed": {
+   "domain": "support",
+   "task_type": "triage",
+   "skill": "ticket-triage",
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 1,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Triage ticket 9007.",
+    "checks": [
+     [
+      "ticket",
+      9007,
+      {
+       "priority": "P3",
+       "category": "billing"
+      }
+     ]
+    ]
+   },
+   {
+    "act": "feedback_relay",
+    "text": "The customer wrote back: 'the dripper box is unopened, why can't I return it?' Check whether order 5002 is eligible.",
+    "checks": [
+     [
+      "has",
+      [
+       "DENY"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Draft the reply.",
+    "checks": [
+     [
+      "has",
+      [
+       "Kettle & Crumb Support"
+      ]
+     ],
+     [
+      "not",
+      [
+       "unfortunately"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "A01",
+  "user": "arjun",
+  "role": "Arjun, operations",
+  "sim_start": "2026-11-09T08:07:00",
+  "designed": {
+   "domain": "operations",
+   "task_type": "report",
+   "skill": "weekly-sales-report",
+   "servers": [
+    "shop",
+    "filesystem"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 1,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Weekly sales report for last week please.",
+    "checks": [
+     [
+      "num",
+      2653.0
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Save it.",
+    "checks": [
+     [
+      "file",
+      "out/sales-2026-11-02.md"
+     ]
+    ]
+   },
+   {
+    "act": "question",
+    "text": "How does that compare with the week before?",
+    "checks": [
+     [
+      "num",
+      3698.0
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "A02",
+  "user": "arjun",
+  "role": "Arjun, operations",
+  "sim_start": "2026-11-02T08:14:00",
+  "designed": {
+   "domain": "operations",
+   "task_type": "report",
+   "skill": "weekly-sales-report",
+   "servers": [
+    "shop",
+    "filesystem"
+   ],
+   "corrections": 1,
+   "feedback_relays": 0,
+   "refinements": 1,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "What was revenue the week of 26 October?",
+    "checks": [
+     [
+      "num",
+      3698.0
+     ]
+    ]
+   },
+   {
+    "act": "correction",
+    "text": "That doesn't look like our net figure. Cancelled and refunded orders must be excluded. Redo it.",
+    "checks": [
+     [
+      "num",
+      3698.0
+     ]
+    ]
+   },
+   {
+    "act": "refinement",
+    "text": "Add AOV and the top 3 products.",
+    "checks": [
+     [
+      "num",
+      88.05
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "File it in out/.",
+    "checks": [
+     [
+      "file",
+      "out/sales-2026-10-26.md"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "A03",
+  "user": "arjun",
+  "role": "Arjun, operations",
+  "sim_start": "2026-11-03T15:21:00",
+  "designed": {
+   "domain": "operations",
+   "task_type": "analysis",
+   "skill": "inventory-reorder",
+   "servers": [
+    "shop",
+    "filesystem"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 1,
+   "questions": 1,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "What do we need to reorder this week?",
+    "checks": [
+     [
+      "has",
+      [
+       "DRP-V60",
+       "GRD-HAND",
+       "KET-GOOSE",
+       "SCL-BREW"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "question",
+    "text": "Why is DRP-V60 on the list when we have 14 in stock?",
+    "checks": []
+   },
+   {
+    "act": "refinement",
+    "text": "Group them by supplier. The supplier list is in docs/suppliers.md.",
+    "checks": [
+     [
+      "any",
+      [
+       "Fellow",
+       "Hario",
+       "Timemore"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Draft the order email to Fellow Wholesale.",
+    "checks": []
+   }
+  ]
+ },
+ {
+  "session_id": "A04",
+  "user": "arjun",
+  "role": "Arjun, operations",
+  "sim_start": "2026-11-04T16:28:00",
+  "designed": {
+   "domain": "operations",
+   "task_type": "analysis",
+   "skill": null,
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 1,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "How many orders were cancelled in October?",
+    "checks": [
+     [
+      "num",
+      8
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "And refunded?",
+    "checks": [
+     [
+      "num",
+      9
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "What share of October orders is that together?",
+    "checks": [
+     [
+      "num",
+      9.3
+     ]
+    ]
+   },
+   {
+    "act": "feedback_relay",
+    "text": "Lena says the refund count looks high to her. Show me the refunded October orders by product so we can check.",
+    "checks": []
+   }
+  ]
+ },
+ {
+  "session_id": "A05",
+  "user": "arjun",
+  "role": "Arjun, operations",
+  "sim_start": "2026-11-05T17:35:00",
+  "designed": {
+   "domain": "operations",
+   "task_type": "analysis",
+   "skill": null,
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 2,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Give me a SQL query I can paste into our BI tool for daily net revenue for the last 14 days.",
+    "checks": [
+     [
+      "any",
+      [
+       "SELECT",
+       "select"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "feedback_relay",
+    "text": "It fails with: 'no such column: order_total'. Fix it.",
+    "checks": [
+     [
+      "any",
+      [
+       "SELECT",
+       "select"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "feedback_relay",
+    "text": "Now it runs, but the BI tool says 'ambiguous column name: id'.",
+    "checks": []
+   },
+   {
+    "act": "request",
+    "text": "Thanks. Run it here and tell me the best day.",
+    "checks": []
+   }
+  ]
+ },
+ {
+  "session_id": "A06",
+  "user": "arjun",
+  "role": "Arjun, operations",
+  "sim_start": "2026-11-06T15:42:00",
+  "designed": {
+   "domain": "operations",
+   "task_type": "analysis",
+   "skill": null,
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Which city has the most customers?",
+    "checks": [
+     [
+      "has",
+      [
+       "Leeds"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "And by revenue?",
+    "checks": [
+     [
+      "has",
+      [
+       "Derby"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Top 5 customers by lifetime spend, with emails.",
+    "checks": [
+     [
+      "has",
+      [
+       "dara.iyer13@example.com"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "A07",
+  "user": "arjun",
+  "role": "Arjun, operations",
+  "sim_start": "2026-11-10T15:49:00",
+  "designed": {
+   "domain": "operations",
+   "task_type": "analysis",
+   "skill": "inventory-reorder",
+   "servers": [
+    "memory",
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 1,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Remember this: Timemore told us today that the GRD-ELEC lead time is now 42 days, not 35.",
+    "checks": []
+   },
+   {
+    "act": "request",
+    "text": "What do we have stored about suppliers?",
+    "checks": [
+     [
+      "has",
+      [
+       "42"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "question",
+    "text": "Does that change the reorder point for GRD-ELEC?",
+    "checks": []
+   }
+  ]
+ },
+ {
+  "session_id": "A08",
+  "user": "arjun",
+  "role": "Arjun, operations",
+  "sim_start": "2026-11-11T16:06:00",
+  "designed": {
+   "domain": "operations",
+   "task_type": "report",
+   "skill": "weekly-sales-report",
+   "servers": [
+    "shop",
+    "filesystem"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 2,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Sales summary for October: net revenue, orders and AOV.",
+    "checks": [
+     [
+      "num",
+      14169.0
+     ]
+    ]
+   },
+   {
+    "act": "refinement",
+    "text": "Break it down by week.",
+    "checks": []
+   },
+   {
+    "act": "refinement",
+    "text": "Only Monday-to-Sunday weeks that fall fully inside October.",
+    "checks": [
+     [
+      "num",
+      2919.0
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Save that as out/october.md",
+    "checks": [
+     [
+      "file",
+      "out/october.md"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "A09",
+  "user": "arjun",
+  "role": "Arjun, operations",
+  "sim_start": "2026-11-12T15:13:00",
+  "designed": {
+   "domain": "operations",
+   "task_type": "lookup",
+   "skill": null,
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "What's the current stock of GRD-HAND and SCL-BREW?",
+    "checks": [
+     [
+      "num",
+      6
+     ],
+     [
+      "num",
+      8
+     ],
+     [
+      "has",
+      [
+       "GRD-HAND",
+       "SCL-BREW"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "A10",
+  "user": "arjun",
+  "role": "Arjun, operations",
+  "sim_start": "2026-11-12T17:20:00",
+  "designed": {
+   "domain": "operations",
+   "task_type": "analysis",
+   "skill": "inventory-reorder",
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": [
+    2
+   ]
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Reorder check for grinders only.",
+    "checks": [
+     [
+      "has",
+      [
+       "GRD-HAND"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "reexplain",
+    "text": "Again: we use 7 days of safety stock on top of lead time, and the 28-day average. Please use our formula, not a generic one.",
+    "checks": []
+   },
+   {
+    "act": "request",
+    "text": "What quantity for GRD-HAND then?",
+    "checks": [
+     [
+      "num",
+      30
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "A11",
+  "user": "arjun",
+  "role": "Arjun, operations",
+  "sim_start": "2026-11-13T08:27:00",
+  "designed": {
+   "domain": "operations",
+   "task_type": "report",
+   "skill": "weekly-sales-report",
+   "servers": [
+    "shop",
+    "filesystem"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Weekly sales report for the week of 19 October.",
+    "checks": [
+     [
+      "num",
+      2919.0
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Save it.",
+    "checks": [
+     [
+      "file",
+      "out/sales-2026-10-19.md"
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Same for the week of 12 October.",
+    "checks": [
+     [
+      "num",
+      2778.0
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "L01",
+  "user": "lena",
+  "role": "Lena, founder",
+  "sim_start": "2026-11-03T21:07:00",
+  "designed": {
+   "domain": "strategy",
+   "task_type": "advise",
+   "skill": "price-change-memo",
+   "servers": [
+    "shop",
+    "filesystem"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 1,
+   "questions": 1,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "question",
+    "text": "I'm thinking of raising the hand grinder from 89 to 95. What should I look at first?",
+    "checks": []
+   },
+   {
+    "act": "request",
+    "text": "Pull the last 28 days of units and revenue for it.",
+    "checks": [
+     [
+      "num",
+      [
+       30,
+       32
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Write the price change memo.",
+    "checks": [
+     [
+      "file",
+      "out/price-memo-GRD-HAND.md"
+     ]
+    ]
+   },
+   {
+    "act": "refinement",
+    "text": "Tighten the risk section to two sentences.",
+    "checks": []
+   }
+  ]
+ },
+ {
+  "session_id": "L02",
+  "user": "lena",
+  "role": "Lena, founder",
+  "sim_start": "2026-11-05T22:14:00",
+  "designed": {
+   "domain": "strategy",
+   "task_type": "advise",
+   "skill": null,
+   "servers": [],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 3,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "question",
+    "text": "Should we offer free shipping to Ireland? Talk me through how to think about it.",
+    "checks": []
+   },
+   {
+    "act": "question",
+    "text": "What would you want to know before deciding?",
+    "checks": []
+   },
+   {
+    "act": "request",
+    "text": "How many orders did we send to Ireland last month?",
+    "checks": [
+     [
+      "any",
+      [
+       "no country",
+       "not record",
+       "doesn't",
+       "does not",
+       "cannot",
+       "can't",
+       "no way",
+       "not stored",
+       "not available",
+       "unable",
+       "zero",
+       "none",
+       "no orders"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "question",
+    "text": "OK, so what's the cheapest experiment to find out?",
+    "checks": []
+   }
+  ]
+ },
+ {
+  "session_id": "L03",
+  "user": "lena",
+  "role": "Lena, founder",
+  "sim_start": "2026-11-08T20:21:00",
+  "designed": {
+   "domain": "operations",
+   "task_type": "lookup",
+   "skill": "weekly-sales-report",
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "What did we make last week?",
+    "checks": [
+     [
+      "num",
+      2653.0
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "L04",
+  "user": "lena",
+  "role": "Lena, founder",
+  "sim_start": "2026-11-08T21:28:00",
+  "designed": {
+   "domain": "writing",
+   "task_type": "draft",
+   "skill": null,
+   "servers": [
+    "filesystem"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 2,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Rewrite the product description for the Gooseneck Kettle 0.9L. Two sentences, in our brand voice (docs/brand-voice.md).",
+    "checks": [
+     [
+      "not",
+      [
+       "!"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "refinement",
+    "text": "Less salesy.",
+    "checks": [
+     [
+      "not",
+      [
+       "!"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "refinement",
+    "text": "British spelling, and drop the exclamation mark if there is one.",
+    "checks": [
+     [
+      "not",
+      [
+       "!"
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "L05",
+  "user": "lena",
+  "role": "Lena, founder",
+  "sim_start": "2026-11-09T21:35:00",
+  "designed": {
+   "domain": "strategy",
+   "task_type": "report",
+   "skill": "weekly-sales-report",
+   "servers": [
+    "shop"
+   ],
+   "corrections": 1,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 1,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "I need three numbers for the investor update: October net revenue, number of orders, and refund rate.",
+    "checks": [
+     [
+      "num",
+      14169.0
+     ]
+    ]
+   },
+   {
+    "act": "question",
+    "text": "How are you defining refund rate?",
+    "checks": []
+   },
+   {
+    "act": "correction",
+    "text": "No. Refund rate should be refunded orders divided by all non-cancelled orders, not by all orders.",
+    "checks": [
+     [
+      "num",
+      5.2
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Write it as one paragraph.",
+    "checks": [
+     [
+      "num",
+      14169.0
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "session_id": "L06",
+  "user": "lena",
+  "role": "Lena, founder",
+  "sim_start": "2026-11-11T20:42:00",
+  "designed": {
+   "domain": "strategy",
+   "task_type": "analysis",
+   "skill": null,
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 1,
+   "questions": 1,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "What are our best sellers?",
+    "checks": [
+     [
+      "has",
+      [
+       "FLT-V60"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "refinement",
+    "text": "By revenue, not units.",
+    "checks": [
+     [
+      "any",
+      [
+       "GRD-HAND",
+       "Hand Grinder Steel Burr"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "question",
+    "text": "Anything surprising in there?",
+    "checks": []
+   }
+  ]
+ },
+ {
+  "session_id": "L07",
+  "user": "lena",
+  "role": "Lena, founder",
+  "sim_start": "2026-11-12T22:49:00",
+  "designed": {
+   "domain": "strategy",
+   "task_type": "advise",
+   "skill": null,
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 1,
+   "questions": 1,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "question",
+    "text": "We're three people. What should I automate first: triage, the weekly report or reordering?",
+    "checks": []
+   },
+   {
+    "act": "request",
+    "text": "How many tickets did we get in the last week?",
+    "checks": [
+     [
+      "num",
+      8
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Fine. Draft a one-week plan for trying the triage automation.",
+    "checks": []
+   },
+   {
+    "act": "refinement",
+    "text": "Make it a checklist.",
+    "checks": []
+   }
+  ]
+ },
+ {
+  "session_id": "L08",
+  "user": "lena",
+  "role": "Lena, founder",
+  "sim_start": "2026-11-13T20:06:00",
+  "designed": {
+   "domain": "writing",
+   "task_type": "draft",
+   "skill": "customer-reply",
+   "servers": [
+    "shop"
+   ],
+   "corrections": 0,
+   "feedback_relays": 0,
+   "refinements": 0,
+   "questions": 0,
+   "reexplained_turns": []
+  },
+  "turns": [
+   {
+    "act": "request",
+    "text": "Who are our top 3 customers by spend?",
+    "checks": [
+     [
+      "has",
+      [
+       "Dara Iyer"
+      ]
+     ]
+    ]
+   },
+   {
+    "act": "request",
+    "text": "Draft a thank-you note to the first one.",
+    "checks": [
+     [
+      "has",
+      [
+       "Kettle & Crumb Support"
+      ]
+     ]
+    ]
+   }
+  ]
+ }
+]

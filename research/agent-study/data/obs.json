@@ -1,0 +1,13 @@
+{
+ "models": 11,
+ "schema_share": 0.6830860478716136,
+ "turns": 100,
+ "chats": 327,
+ "tool_calls": 237,
+ "tokens_in": 1523393,
+ "tokens_out": 100665,
+ "shadow_usd": 0.2211451,
+ "actual_usd": 0,
+ "pass": 66,
+ "checked": 75
+}

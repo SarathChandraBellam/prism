@@ -1,0 +1,98 @@
+{
+ "atlas": {
+  "recording": {
+   "sessions": 29,
+   "turns": 85,
+   "requests": 258,
+   "failed_requests": 11,
+   "tool_calls": 187,
+   "tool_errors": 17,
+   "tokens_in": 1202908,
+   "tokens_out": 74331
+  },
+  "export": {
+   "sessions": 29,
+   "turns": 85,
+   "requests": 258,
+   "failed_requests": 11,
+   "tool_calls": 187,
+   "tool_errors": 17,
+   "tokens_in": 1202908,
+   "tokens_out": 74331
+  },
+  "lake": {
+   "sessions": 29,
+   "turns": 85,
+   "requests": 258,
+   "failed_requests": 11,
+   "tool_calls": 187,
+   "tool_errors": 17,
+   "tokens_in": 1202908,
+   "tokens_out": 74331
+  }
+ },
+ "beacon": {
+  "recording": {
+   "sessions": 20,
+   "turns": 38,
+   "requests": 133,
+   "failed_requests": 0,
+   "tool_calls": 152,
+   "tool_errors": 9,
+   "tokens_in": 646631,
+   "tokens_out": 29274
+  },
+  "export": {
+   "sessions": 20,
+   "turns": 38,
+   "requests": 133,
+   "failed_requests": 0,
+   "tool_calls": 152,
+   "tool_errors": 9,
+   "tokens_in": 646631,
+   "tokens_out": 29274
+  },
+  "lake": {
+   "sessions": 20,
+   "turns": 38,
+   "requests": 133,
+   "failed_requests": 0,
+   "tool_calls": 152,
+   "tool_errors": 9,
+   "tokens_in": 646631,
+   "tokens_out": 29274
+  }
+ },
+ "chatly": {
+  "recording": {
+   "sessions": 15,
+   "turns": 21,
+   "requests": 21,
+   "failed_requests": 0,
+   "tool_calls": 0,
+   "tool_errors": 0,
+   "tokens_in": 6447,
+   "tokens_out": 7725
+  },
+  "export": {
+   "sessions": 15,
+   "turns": 21,
+   "requests": 21,
+   "failed_requests": 0,
+   "tool_calls": 0,
+   "tool_errors": 0,
+   "tokens_in": 6447,
+   "tokens_out": 7725
+  },
+  "lake": {
+   "sessions": 15,
+   "turns": 21,
+   "requests": 21,
+   "failed_requests": 0,
+   "tool_calls": 0,
+   "tool_errors": 0,
+   "tokens_in": 6447,
+   "tokens_out": 7725
+  }
+ }
+}
