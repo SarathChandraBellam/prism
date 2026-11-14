@@ -1,0 +1,1966 @@
+{
+ "session": {
+  "A01": {
+   "a": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "report",
+     "topics": [
+      "weekly sales report",
+      "week-over-week comparison",
+      "saving report output"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "User requested a weekly sales report, asked for it to be saved, then asked how it compared with the previous week."
+    },
+    "model": "inclusionai/ling-3.2-flash:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "report",
+     "topics": [
+      "weekly sales report",
+      "week-over-week comparison",
+      "sales metrics"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "Weekly sales report was generated and saved, then compared with the prior week's revenue, orders, average order value, and top products."
+    },
+    "model": "particle-ai/particle-1:free"
+   }
+  },
+  "A02": {
+   "a": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "report",
+     "topics": [
+      "weekly sales report",
+      "net revenue",
+      "AOV and top products"
+     ],
+     "outcome": "completed",
+     "n_corrections": 1,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "Weekly net revenue was verified, refined with AOV and top products, and saved to a file."
+    },
+    "model": "particle-ai/particle-1:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "report",
+     "topics": [
+      "weekly sales report",
+      "net revenue",
+      "AOV and top products"
+     ],
+     "outcome": "completed",
+     "n_corrections": 1,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "A weekly sales report was produced, verified for net revenue, and saved to a file."
+    },
+    "model": "particle-ai/particle-1:free"
+   }
+  },
+  "A03": {
+   "a": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "draft",
+     "topics": [
+      "reorder list",
+      "supplier grouping",
+      "order email"
+     ],
+     "outcome": "failed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 1,
+     "reexplained_turns": [],
+     "summary": "The assistant failed to draft the order email after grouping reorder items by supplier."
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "report",
+     "topics": [
+      "weekly reorder list",
+      "supplier grouping",
+      "order email draft"
+     ],
+     "outcome": "partial",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 1,
+     "reexplained_turns": [],
+     "summary": "The assistant built a weekly reorder list with reorder points and order quantities, explained why one item was flagged despite having stock, regrouped the list by supplier, and then returned no answer when asked to draft the supplier order email."
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   }
+  },
+  "A04": {
+   "a": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "analysis",
+     "topics": [
+      "order cancellations",
+      "refunds",
+      "product analysis"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant provided a breakdown of refunded October orders by product to investigate the high refund count."
+    },
+    "model": "cohere/north-mini-code:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "analysis",
+     "topics": [
+      "order cancellations",
+      "refunds",
+      "product-level refund breakdown"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 1,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "User analyzed October order cancellations and refunds, then requested a product-level breakdown of refunded orders after a colleague flagged the refund count as high."
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   }
+  },
+  "A05": {
+   "a": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "report",
+     "topics": [
+      "daily net revenue",
+      "SQL query",
+      "BI tool"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 2,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant delivered a corrected SQL query for daily net revenue, ran it, and highlighted the peak revenue day."
+    },
+    "model": "cohere/north-mini-code:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "analysis",
+     "topics": [
+      "SQL query",
+      "daily net revenue",
+      "sales peak"
+     ],
+     "outcome": "completed",
+     "n_corrections": 2,
+     "n_feedback_relays": 2,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "User requested a SQL query for daily net revenue, iterated through column and ambiguity errors, then ran it and identified the peak sales day."
+    },
+    "model": "particle-ai/particle-1:free"
+   }
+  },
+  "A06": {
+   "a": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "analysis",
+     "topics": [
+      "customer distribution by city",
+      "revenue by city",
+      "top customers by lifetime spend"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "User requested three ad-hoc data analyses: customer count by city, revenue by city, and top five customers by lifetime spend with emails."
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "analysis",
+     "topics": [
+      "customer analytics",
+      "revenue",
+      "lifetime value"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The session involved analyzing customer data to determine the city with the most customers and revenue, and listing the top five customers by lifetime spend."
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   }
+  },
+  "A07": {
+   "a": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "analysis",
+     "topics": [
+      "supplier lead times",
+      "reorder point",
+      "inventory planning"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 1,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "Updated a supplier lead time in memory and analyzed its effect on an item's reorder point."
+    },
+    "model": "particle-ai/particle-1:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "analysis",
+     "topics": [
+      "supplier lead times",
+      "reorder points",
+      "inventory planning"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "Assistant calculated that the increased lead time for GRD-ELEC raises its reorder point."
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   }
+  },
+  "A08": {
+   "a": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "report",
+     "topics": [
+      "October sales summary",
+      "weekly net revenue",
+      "orders and AOV"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant generated a weekly sales report for October, saved as out/october.md, showing net revenue, orders, and AOV for three full weeks and a total."
+    },
+    "model": "cohere/north-mini-code:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "lookup",
+     "topics": [
+      "sales summary",
+      "weekly breakdown",
+      "file export"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "Assistant generated a weekly sales summary for October and saved it to out/october.md."
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   }
+  },
+  "A09": {
+   "a": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "lookup",
+     "topics": [
+      "stock levels",
+      "product inventory"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant looked up and reported the current stock levels for two products."
+    },
+    "model": "nvidia/nemotron-3.5-super-vl:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "lookup",
+     "topics": [
+      "stock levels",
+      "GRD-HAND",
+      "SCL-BREW"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "Assistant retrieved current stock levels for GRD-HAND and SCL-BREW."
+    },
+    "model": "cohere/north-mini-code:free"
+   }
+  },
+  "A10": {
+   "a": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "decide",
+     "topics": [
+      "inventory reorder",
+      "safety stock formula",
+      "grinder SKUs"
+     ],
+     "outcome": "completed",
+     "n_corrections": 1,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "Computed reorder points and order quantity for grinder inventory using the shop's safety-stock formula."
+    },
+    "model": "particle-ai/particle-1:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "decide",
+     "topics": [
+      "inventory reorder",
+      "safety stock formula",
+      "grinders"
+     ],
+     "outcome": "completed",
+     "n_corrections": 1,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The session checked grinder inventory against the shop's reorder formula and determined which item needs reordering and in what quantity."
+    },
+    "model": "particle-ai/particle-1:free"
+   }
+  },
+  "A11": {
+   "a": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "report",
+     "topics": [
+      "weekly sales report",
+      "revenue and order metrics",
+      "saving reports to files"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "User requested weekly sales reports for two weeks in October; both were generated with revenue, orders, AOV and top products, and saved to files."
+    },
+    "model": "inclusionai/ling-3.2-flash:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "report",
+     "topics": [
+      "weekly sales report",
+      "sales metrics",
+      "saving reports to files"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant generated and saved weekly sales reports for the weeks of 19 October and 12 October, including net revenue, order counts, AOV, and top products."
+    },
+    "model": "inclusionai/ling-3.2-flash:free"
+   }
+  },
+  "L01": {
+   "a": {
+    "labels": {
+     "domain": "strategy",
+     "task_type": "advise",
+     "topics": [
+      "price change",
+      "hand grinder",
+      "pricing strategy"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 1,
+     "reexplained_turns": [],
+     "summary": "User sought advice on raising the hand grinder price, received sales data and a price-change memo, then refined the memo's risk section."
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "strategy",
+     "task_type": "advise",
+     "topics": [
+      "price increase",
+      "hand grinder",
+      "sales data analysis"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The user sought advice on raising the hand grinder price, received sales data and a price-change memo, then refined the risk section."
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   }
+  },
+  "L02": {
+   "a": {
+    "labels": null,
+    "model": null
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "decide",
+     "topics": [
+      "shipping policy",
+      "customer demand",
+      "cost analysis"
+     ],
+     "outcome": "partial",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 4,
+     "reexplained_turns": [],
+     "summary": "The user evaluated offering free shipping to Ireland by reviewing Irish customer data, found no orders, and asked for the cheapest way to test demand."
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   }
+  },
+  "L03": {
+   "a": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "report",
+     "topics": [
+      "weekly sales report",
+      "revenue",
+      "top products"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "User requested last week's sales figures and received a weekly report with revenue, order count, average order value, and top-selling products."
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "lookup",
+     "topics": [
+      "weekly sales report",
+      "revenue",
+      "top products"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "User requested last week's sales figures, and the assistant provided a concise report with net revenue, order count, and top-selling products."
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   }
+  },
+  "L04": {
+   "a": {
+    "labels": {
+     "domain": "writing",
+     "task_type": "draft",
+     "topics": [
+      "product description",
+      "brand voice"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 2,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "Rewrote a product description for a gooseneck kettle, refining it twice for tone and spelling."
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "writing",
+     "task_type": "draft",
+     "topics": [
+      "product description rewrite",
+      "brand voice",
+      "British spelling"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 2,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant rewrote a product description in the brand voice, then adjusted it to be less salesy and use British spelling."
+    },
+    "model": "particle-ai/particle-1:free"
+   }
+  },
+  "L05": {
+   "a": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "lookup",
+     "topics": [
+      "October sales metrics",
+      "refund rate definition",
+      "investor update"
+     ],
+     "outcome": "completed",
+     "n_corrections": 1,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 1,
+     "reexplained_turns": [],
+     "summary": "The assistant retrieved October revenue, order count, and refund rate, clarified the refund-rate basis, and condensed the figures into one paragraph."
+    },
+    "model": "particle-ai/particle-1:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "lookup",
+     "topics": [
+      "investor update metrics",
+      "net revenue and orders",
+      "refund rate definition"
+     ],
+     "outcome": "completed",
+     "n_corrections": 1,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 1,
+     "reexplained_turns": [],
+     "summary": "The assistant retrieved and formatted key October sales metrics for an investor update, clarifying the refund-rate basis."
+    },
+    "model": "particle-ai/particle-1:free"
+   }
+  },
+  "L06": {
+   "a": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "analysis",
+     "topics": [
+      "best sellers",
+      "revenue ranking",
+      "sales insights"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 1,
+     "reexplained_turns": [],
+     "summary": "The user asked which products sell best, had the ranking redone by revenue instead of units, and then asked what stood out, receiving a ranked table plus commentary on premium items and consumables."
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "operations",
+     "task_type": "analysis",
+     "topics": [
+      "best sellers",
+      "revenue",
+      "product performance"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 1,
+     "reexplained_turns": [],
+     "summary": "The session provided a revenue-based ranking of top products and highlighted unexpected sales patterns."
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   }
+  },
+  "L07": {
+   "a": {
+    "labels": {
+     "domain": "strategy",
+     "task_type": "advise",
+     "topics": [
+      "automation prioritization",
+      "ticket triage",
+      "weekly plan"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 1,
+     "reexplained_turns": [],
+     "summary": "The user sought advice on automation priorities, received ticket volume data, and obtained a one-week triage automation plan converted into a checklist."
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "strategy",
+     "task_type": "draft",
+     "topics": [
+      "automation prioritization",
+      "ticket triage workflow",
+      "one-week rollout plan"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "A small-shop owner asked which workflow to automate first, checked recent ticket volume, and got a one-week triage automation plan later reformatted as a checklist."
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   }
+  },
+  "L08": {
+   "a": {
+    "labels": {
+     "domain": "support",
+     "task_type": "draft",
+     "topics": [
+      "top customers by spend",
+      "customer thank-you note"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "Assistant identified top customers by spend and drafted a thank-you note to the highest-spending customer."
+    },
+    "model": "particle-ai/particle-1:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "draft",
+     "topics": [
+      "top customers by spend",
+      "thank-you note",
+      "customer communication"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "User asked for the top three customers by spend and requested a thank\u2011you note to the highest\u2011spending customer."
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   }
+  },
+  "M01": {
+   "a": {
+    "labels": {
+     "domain": "support",
+     "task_type": "decide",
+     "topics": [
+      "refund eligibility",
+      "return approval",
+      "customer reply drafting"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant confirmed a delivered hand grinder met the return and refund rules, then drafted and shortened the customer reply."
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "decide",
+     "topics": [
+      "refund eligibility",
+      "customer reply",
+      "return instructions"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant checked refund eligibility for a delivered order, approved the return, drafted a customer reply, and shortened it on request."
+    },
+    "model": "particle-ai/particle-1:free"
+   }
+  },
+  "M02": {
+   "a": {
+    "labels": {
+     "domain": "support",
+     "task_type": "decide",
+     "topics": [
+      "refund eligibility",
+      "refund policy",
+      "customer reply"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 1,
+     "reexplained_turns": [],
+     "summary": "Assistant checked refund eligibility for two orders, explained the refund window, and drafted a kind customer reply."
+    },
+    "model": "particle-ai/particle-1:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "decide",
+     "topics": [
+      "refund eligibility",
+      "refund policy",
+      "customer communication"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 1,
+     "reexplained_turns": [],
+     "summary": "The assistant checked refund eligibility for two orders, denied both due to being outside the refund window and a final-sale item, and drafted a customer reply explaining the denial."
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   }
+  },
+  "M03": {
+   "a": {
+    "labels": {
+     "domain": "support",
+     "task_type": "decide",
+     "topics": [
+      "refund eligibility",
+      "order escalation"
+     ],
+     "outcome": "completed",
+     "n_corrections": 1,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant checked the refund eligibility for order 5004, was corrected to simply explain the escalation rule, and then added an escalation note to ticket 9005."
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "decide",
+     "topics": [
+      "refund request",
+      "order 5004",
+      "escalation policy"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant checked order 5004's refund eligibility, explained the escalation rule for orders over \u00a3150, and added an escalation note to ticket 9005."
+    },
+    "model": "cohere/north-mini-code:free"
+   }
+  },
+  "M04": {
+   "a": {
+    "labels": {
+     "domain": "support",
+     "task_type": "triage",
+     "topics": [
+      "ticket triage",
+      "priority classification",
+      "customer reply"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 1,
+     "reexplained_turns": [],
+     "summary": "The assistant triaged support tickets, identified urgent issues, formatted a summary, and drafted a customer refund reply."
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "triage",
+     "topics": [
+      "ticket triage",
+      "P1 priority explanation",
+      "customer reply draft"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 1,
+     "reexplained_turns": [],
+     "summary": "Assistant triaged open tickets by priority, explained the two P1 tickets, reformatted them as a paste-ready list, and drafted a refund reply for the double-charge ticket."
+    },
+    "model": "inclusionai/ling-3.2-flash:free"
+   }
+  },
+  "M05": {
+   "a": {
+    "labels": {
+     "domain": "support",
+     "task_type": "draft",
+     "topics": [
+      "order 5006",
+      "shipping rules",
+      "customer reply"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant looked up order 5006, checked shipping rules, determined it is late, and drafted a reply to the customer on ticket 9001."
+    },
+    "model": "cohere/north-mini-code:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "draft",
+     "topics": [
+      "order 5006 status",
+      "shipping policy check",
+      "customer reply draft"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "Assistant retrieved order details, verified shipping policy lateness, and drafted a customer reply."
+    },
+    "model": "cohere/north-mini-code:free"
+   }
+  },
+  "M06": {
+   "a": {
+    "labels": {
+     "domain": "support",
+     "task_type": "draft",
+     "topics": [
+      "refund",
+      "customer communication",
+      "support ticket"
+     ],
+     "outcome": "completed",
+     "n_corrections": 1,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [
+      3
+     ],
+     "summary": "The assistant drafted a customer reply explaining the refund status and next steps while a support ticket is being created."
+    },
+    "model": "cohere/north-mini-code:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "draft",
+     "topics": [
+      "refund status",
+      "customer reply",
+      "missing refund"
+     ],
+     "outcome": "completed",
+     "n_corrections": 1,
+     "n_feedback_relays": 1,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [
+      3
+     ],
+     "summary": "A refund status was checked and a customer reply was drafted for a refund that has not reached the customer."
+    },
+    "model": "particle-ai/particle-1:free"
+   }
+  },
+  "M07": {
+   "a": {
+    "labels": {
+     "domain": "support",
+     "task_type": "draft",
+     "topics": [
+      "shipping to Ireland",
+      "ticket reply",
+      "ticket closure"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "User asked about shipping to Ireland, then had the assistant reply to and close ticket 9006."
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "draft",
+     "topics": [
+      "Ireland shipping",
+      "shipping cost",
+      "customer ticket reply"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant looked up Ireland shipping details, drafted a customer reply for a support ticket, and then closed the ticket."
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   }
+  },
+  "M08": {
+   "a": {
+    "labels": {
+     "domain": "support",
+     "task_type": "lookup",
+     "topics": [
+      "open tickets",
+      "ticket triage"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "User asked for the number of open tickets, assistant listed 8 tickets and offered to triage them."
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "lookup",
+     "topics": [
+      "open tickets",
+      "ticket triage"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "Assistant listed the 8 open tickets and offered to triage them."
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   }
+  },
+  "M09": {
+   "a": {
+    "labels": {
+     "domain": "support",
+     "task_type": "decide",
+     "topics": [
+      "refund eligibility",
+      "partial return of single item",
+      "customer reply draft"
+     ],
+     "outcome": "completed",
+     "n_corrections": 1,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant applied the return policy to approve a partial refund for a single item, held its answer when the user claimed a mix-up, and then drafted the customer email."
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "decide",
+     "topics": [
+      "refund eligibility",
+      "partial return",
+      "customer reply"
+     ],
+     "outcome": "completed",
+     "n_corrections": 1,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant confirmed a partial refund was eligible and drafted a customer reply for returning one item."
+    },
+    "model": "particle-ai/particle-1:free"
+   }
+  },
+  "M10": {
+   "a": {
+    "labels": {
+     "domain": "support",
+     "task_type": "decide",
+     "topics": [
+      "address change",
+      "order status",
+      "customer reply"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant confirmed an address change was possible, updated the ticket, and drafted a customer confirmation."
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "decide",
+     "topics": [
+      "address change",
+      "ticket update",
+      "customer reply"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "Assistant confirmed an address change was possible, updated the ticket with priority, category, and a note, then drafted a customer confirmation."
+    },
+    "model": "particle-ai/particle-1:free"
+   }
+  },
+  "M11": {
+   "a": {
+    "labels": {
+     "domain": "writing",
+     "task_type": "draft",
+     "topics": [
+      "order status reply templates",
+      "tone adjustment",
+      "template recommendation"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The user asked for reusable 'where is my order' reply templates, requested one be made less formal, and sought a recommendation for a repeat customer, all of which were delivered."
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "writing",
+     "task_type": "draft",
+     "topics": [
+      "order status templates",
+      "customer communication",
+      "template variants"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 1,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "Provided three reusable order status templates, refined the second for a casual tone, and suggested the third for customers with prior follow\u2011ups."
+    },
+    "model": "cohere/north-mini-code:free"
+   }
+  },
+  "M12": {
+   "a": {
+    "labels": {
+     "domain": "support",
+     "task_type": "triage",
+     "topics": [
+      "ticket triage",
+      "customer support"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant located a support ticket regarding a hot kettle handle, retrieved the customer's email, and updated the ticket's priority to P1 and category to product."
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "triage",
+     "topics": [
+      "hot kettle handle",
+      "ticket ID 9003",
+      "P1 priority"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant located ticket 9003 about a hot kettle handle, gave the customer's email, and marked the ticket as P1 product."
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   }
+  },
+  "M13": {
+   "a": {
+    "labels": {
+     "domain": "support",
+     "task_type": "draft",
+     "topics": [
+      "ticket triage",
+      "refund eligibility",
+      "customer reply"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 0,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "The assistant triaged the ticket, checked refund eligibility, and drafted a customer reply denying the return."
+    },
+    "model": "cohere/north-mini-code:free"
+   },
+   "b": {
+    "labels": {
+     "domain": "support",
+     "task_type": "decide",
+     "topics": [
+      "refund eligibility",
+      "ticket triage",
+      "customer reply"
+     ],
+     "outcome": "completed",
+     "n_corrections": 0,
+     "n_feedback_relays": 1,
+     "n_refinements": 0,
+     "n_understanding_questions": 0,
+     "reexplained_turns": [],
+     "summary": "A support ticket was triaged, refund eligibility was checked and denied due to exceeding the 30-day window, and a customer reply was drafted."
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   }
+  }
+ },
+ "turn": {
+  "A01": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "recursive/flint-v1.0:free"
+   },
+   "2": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   },
+   "3": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "cohere/north-mini-code:free"
+   }
+  },
+  "A02": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3.5-super-vl:free"
+   },
+   "2": {
+    "labels": {
+     "act": "correction"
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   },
+   "3": {
+    "labels": {
+     "act": "refinement"
+    },
+    "model": "nvidia/nemotron-3.5-lightning:free"
+   },
+   "4": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   }
+  },
+  "A03": {
+   "1": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   },
+   "2": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "3": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "recursive/flint-v1.0:free"
+   },
+   "4": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   }
+  },
+  "A04": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   },
+   "2": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "3": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   },
+   "4": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   }
+  },
+  "A05": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   },
+   "2": {
+    "labels": {
+     "act": "feedback_relay"
+    },
+    "model": "inclusionai/ling-3.2-flash:free"
+   },
+   "3": {
+    "labels": {
+     "act": "feedback_relay"
+    },
+    "model": "cohere/north-mini-code:free"
+   },
+   "4": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "particle-ai/particle-1:free"
+   }
+  },
+  "A06": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   },
+   "2": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   },
+   "3": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   }
+  },
+  "A07": {
+   "1": {
+    "labels": {
+     "act": "feedback_relay"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "2": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "3": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "nvidia/nemotron-3.5-super-vl:free"
+   }
+  },
+  "A08": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3.5-lightning:free"
+   },
+   "2": {
+    "labels": {
+     "act": "refinement"
+    },
+    "model": "recursive/flint-v1.0:free"
+   },
+   "3": {
+    "labels": {
+     "act": "refinement"
+    },
+    "model": "nvidia/nemotron-3.5-super-vl:free"
+   },
+   "4": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "inclusionai/ling-3.2-flash:free"
+   }
+  },
+  "A09": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "cohere/north-mini-code:free"
+   }
+  },
+  "A10": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "2": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   },
+   "3": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "inclusionai/ling-3.2-flash:free"
+   }
+  },
+  "A11": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "recursive/flint-v1.0:free"
+   },
+   "2": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   },
+   "3": {
+    "labels": {
+     "act": "refinement"
+    },
+    "model": "recursive/flint-v1.0:free"
+   }
+  },
+  "L01": {
+   "1": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "nvidia/nemotron-3.5-lightning:free"
+   },
+   "2": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "cohere/north-mini-code:free"
+   },
+   "3": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "inclusionai/ling-3.2-flash:free"
+   },
+   "4": {
+    "labels": {
+     "act": "refinement"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   }
+  },
+  "L02": {
+   "1": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "inclusionai/ling-3.2-flash:free"
+   },
+   "2": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "nvidia/nemotron-3.5-lightning:free"
+   },
+   "3": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   },
+   "4": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   }
+  },
+  "L03": {
+   "1": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   }
+  },
+  "L04": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "particle-ai/particle-1:free"
+   },
+   "2": {
+    "labels": {
+     "act": "refinement"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "3": {
+    "labels": {
+     "act": "refinement"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   }
+  },
+  "L05": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "recursive/flint-v1.0:free"
+   },
+   "2": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "nvidia/nemotron-3.5-lightning:free"
+   },
+   "3": {
+    "labels": {
+     "act": "correction"
+    },
+    "model": "cohere/north-mini-code:free"
+   },
+   "4": {
+    "labels": {
+     "act": "refinement"
+    },
+    "model": "inclusionai/ling-3.2-flash:free"
+   }
+  },
+  "L06": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "2": {
+    "labels": {
+     "act": "refinement"
+    },
+    "model": "particle-ai/particle-1:free"
+   },
+   "3": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "cohere/north-mini-code:free"
+   }
+  },
+  "L07": {
+   "1": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   },
+   "2": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "cohere/north-mini-code:free"
+   },
+   "3": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3.5-super-vl:free"
+   },
+   "4": {
+    "labels": {
+     "act": "refinement"
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   }
+  },
+  "L08": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   },
+   "2": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   }
+  },
+  "M01": {
+   "1": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "particle-ai/particle-1:free"
+   },
+   "2": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "3": {
+    "labels": {
+     "act": "refinement"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   }
+  },
+  "M02": {
+   "1": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   },
+   "2": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "particle-ai/particle-1:free"
+   },
+   "3": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3.5-super-vl:free"
+   },
+   "4": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   }
+  },
+  "M03": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3.5-lightning:free"
+   },
+   "2": {
+    "labels": {
+     "act": "correction"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "3": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   }
+  },
+  "M04": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   },
+   "2": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "particle-ai/particle-1:free"
+   },
+   "3": {
+    "labels": {
+     "act": "refinement"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "4": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   }
+  },
+  "M05": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   },
+   "2": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   },
+   "3": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "cohere/north-mini-code:free"
+   },
+   "4": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   }
+  },
+  "M06": {
+   "1": {
+    "labels": {
+     "act": "feedback_relay"
+    },
+    "model": "recursive/flint-v1.0:free"
+   },
+   "2": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   },
+   "3": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "cohere/north-mini-code:free"
+   }
+  },
+  "M07": {
+   "1": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   },
+   "2": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "3": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+   }
+  },
+  "M08": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "particle-ai/particle-1:free"
+   }
+  },
+  "M09": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   },
+   "2": {
+    "labels": {
+     "act": "correction"
+    },
+    "model": "nvidia/nemotron-3.5-super-vl:free"
+   },
+   "3": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "baidu/ernie-5.5-flash-preview:free"
+   }
+  },
+  "M10": {
+   "1": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "nvidia/nemotron-3.5-lightning:free"
+   },
+   "2": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   },
+   "3": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   }
+  },
+  "M11": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "liquid/lfm-3-1.7b:free"
+   },
+   "2": {
+    "labels": {
+     "act": "refinement"
+    },
+    "model": "nvidia/nemotron-3.5-super-vl:free"
+   },
+   "3": {
+    "labels": {
+     "act": "question"
+    },
+    "model": "cohere/north-mini-code:free"
+   }
+  },
+  "M12": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3.5-lightning:free"
+   },
+   "2": {
+    "labels": {
+     "act": "refinement"
+    },
+    "model": "particle-ai/particle-1:free"
+   }
+  },
+  "M13": {
+   "1": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "inclusionai/ling-3.2-flash:free"
+   },
+   "2": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "dots-studio/dots-3-note-preview:free"
+   },
+   "3": {
+    "labels": {
+     "act": "request"
+    },
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+   }
+  }
+ },
+ "view_chars": {
+  "A01": 1031,
+  "A02": 1332,
+  "A03": 1668,
+  "A04": 924,
+  "A05": 2228,
+  "A06": 696,
+  "A07": 1442,
+  "A08": 1264,
+  "A09": 237,
+  "A10": 959,
+  "A11": 755,
+  "L01": 1307,
+  "L02": 2170,
+  "L03": 343,
+  "L04": 870,
+  "L05": 1619,
+  "L06": 1433,
+  "L07": 1749,
+  "L08": 850,
+  "M01": 1101,
+  "M02": 1260,
+  "M03": 1039,
+  "M04": 1569,
+  "M05": 1465,
+  "M06": 1385,
+  "M07": 850,
+  "M08": 491,
+  "M09": 1278,
+  "M10": 1107,
+  "M11": 1141,
+  "M12": 536,
+  "M13": 1089
+ }
+}

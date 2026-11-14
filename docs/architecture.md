@@ -20,7 +20,7 @@ Prism works on plain assistant chats and on agent traces (runs with tool calls, 
 
 ## Hypotheses under test
 
-The pipeline shape (adapters, sessions and trace facts, labels, SQL aggregates, one narrator call) is the working assumption. The parts below are not settled. Results so far: [round 1](research/context-study-round1.md), [round 2](research/context-study-round2.md). Each is linked to the research question (RQ) in the [context study](research/context-study-proposal.md#3-research-questions) that tests it.
+The pipeline shape (adapters, sessions and trace facts, labels, SQL aggregates, one narrator call) is the working assumption. The parts below are not settled. Results so far: [round 1](research/context-study-round1.md), [round 2](research/context-study-round2.md), [round 3: agent trace study](research/agent-trace-study.md). Each is linked to the research question (RQ) in the [context study](research/context-study-proposal.md#3-research-questions) that tests it.
 
 | Component | Hypothesis | Pilot evidence so far | Tested by |
 |-----------|-----------|-----------------------|-----------|

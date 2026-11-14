@@ -8,3 +8,12 @@ research/pilot/g_output.txt
 __pycache__/
 research/study/data/
 research/study/cache/
+
+# Agent study: working files (the datasets under data/ are synthetic and are committed)
+research/agent-study/node_modules/
+research/agent-study/run*/
+research/agent-study/cache/
+research/agent-study/data/traces/
+research/agent-study/data/traces-*/
+research/agent-study/data/prism.db
+research/agent-study/*.log

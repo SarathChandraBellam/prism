@@ -1,0 +1,9 @@
+{
+  "name": "prism-agent-study",
+  "private": true,
+  "description": "Reference MCP servers (no auth, local stdio) used by the agent study",
+  "dependencies": {
+    "@modelcontextprotocol/server-filesystem": "2026.8.31",
+    "@modelcontextprotocol/server-memory": "2026.8.31"
+  }
+}

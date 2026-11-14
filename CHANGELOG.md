@@ -7,3 +7,4 @@ All notable changes to this project are documented here. The format follows [Kee
 ### Added
 
 - Project intent, architecture draft, privacy model and contribution guidelines.
+- Round 3 of the context study: an agent with MCP servers and skills, a synthetic trace dataset, an observability report and a Prism evaluation on the same traces ([agent trace study](docs/research/agent-trace-study.md)).
