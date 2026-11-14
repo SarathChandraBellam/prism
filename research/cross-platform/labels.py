@@ -28,6 +28,7 @@ agent.post = counted
 
 
 def chatly_view(sid):
+    if not os.path.exists(os.path.join(RUN, "chatly", sid + ".json")): return None            # not recorded yet (run chatly.py first)
     r = json.load(open(os.path.join(RUN, "chatly", sid + ".json")))
     return {"turns": [({"attributes": {"prism.turn_index": t["turn_index"], "gen_ai.input.text": scenarios()[sid]["turns"][t["turn_index"] - 1]["text"],
                                         "gen_ai.output.text": t["reply"]}}, []) for t in r["turns"]]}
@@ -51,7 +52,7 @@ def main():
         if s["parent_span_id"] is None:
             nos.setdefault(A(s)["gen_ai.conversation.id"], {"turns": []})["turns"].append((s, sorted(kids[s["trace_id"]], key=lambda k: k["start_time"])))
     for v in nos.values(): v["turns"].sort(key=lambda t: A(t[0])["prism.turn_index"])
-    jobs = [(f"beacon:{sid}", prism.chat_view(nos[sid])) for sid in sorted(nos)] + [(f"chatly:{sid}", prism.chat_view(chatly_view(sid))) for sid in sorted(scenarios())]
+    jobs = [(f"beacon:{sid}", prism.chat_view(nos[sid])) for sid in sorted(nos)] + [(f"chatly:{sid}", prism.chat_view(chatly_view(sid))) for sid in sorted(scenarios()) if chatly_view(sid) and len(chatly_view(sid)["turns"]) == len(scenarios()[sid]["turns"])]
     try:
         for key, view in jobs:
             if key in out: continue
@@ -61,7 +62,7 @@ def main():
     except Quota as e:
         print("DAILY QUOTA REACHED:", str(e)[:200])
     json.dump(out, open(out_path, "w"), indent=1, sort_keys=True)
-    miss = [k for k, _ in jobs if k not in out]
+    miss = [k for k, _ in jobs if k not in out] + [f"chatly:{s}" for s in sorted(scenarios()) if f"chatly:{s}" not in {k for k, _ in jobs}]
     print("labels", len(out), "pending", len(miss), miss)
 
 

@@ -1,0 +1,6700 @@
+{
+ "seed": 20261113,
+ "scope": {
+  "scripts": [
+   "A01",
+   "A02",
+   "A03",
+   "A04",
+   "A05",
+   "A06",
+   "A07",
+   "A08",
+   "A09",
+   "A10",
+   "A11",
+   "L01",
+   "L02",
+   "L03",
+   "L04",
+   "L05",
+   "L06",
+   "L07",
+   "L08",
+   "M01",
+   "M02",
+   "M03",
+   "M04",
+   "M05",
+   "M06",
+   "M07"
+  ],
+  "scripts_pending": [
+   "M08",
+   "M09",
+   "M10",
+   "M11",
+   "M12",
+   "M13"
+  ],
+  "tasks_drawn": 64,
+  "tasks_in_scope": 52
+ },
+ "rules": {
+  "p_notice": 0.8,
+  "p_switch": 0.7,
+  "max_switches": 2,
+  "switch_gap_minutes": [
+   2,
+   12
+  ]
+ },
+ "tasks": [
+  {
+   "task_id": "T01",
+   "user": "ben",
+   "role": "management",
+   "script": "L01",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise"
+   },
+   "start": "2026-11-06T17:06:55.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_f02ab772a5",
+     "platform": "beacon",
+     "start": "2026-11-06T17:06:55.000+00:00",
+     "end": "2026-11-06T17:09:19.406+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 2,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [],
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      false,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.01602678,
+     "counts": {
+      "turns": 2,
+      "requests": 10,
+      "failed_requests": 0,
+      "tool_calls": 13,
+      "tool_errors": 3,
+      "tokens_in": 44974,
+      "tokens_out": 1595
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T02",
+   "user": "ben",
+   "role": "management",
+   "script": "L02",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise"
+   },
+   "start": "2026-11-06T17:24:19.406+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_aa1db19d16",
+     "platform": "beacon",
+     "start": "2026-11-06T17:24:19.406+00:00",
+     "end": "2026-11-06T17:29:34.629+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [],
+      [],
+      [
+       true
+      ],
+      []
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.04549095,
+     "counts": {
+      "turns": 4,
+      "requests": 13,
+      "failed_requests": 0,
+      "tool_calls": 19,
+      "tool_errors": 0,
+      "tokens_in": 99837,
+      "tokens_out": 3874
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T03",
+   "user": "ben",
+   "role": "management",
+   "script": "L04",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft"
+   },
+   "start": "2026-11-06T17:54:01.629+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_050554b6ff",
+     "platform": "beacon",
+     "start": "2026-11-06T17:54:01.629+00:00",
+     "end": "2026-11-06T17:55:59.987+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.00830714,
+     "counts": {
+      "turns": 3,
+      "requests": 6,
+      "failed_requests": 0,
+      "tool_calls": 4,
+      "tool_errors": 1,
+      "tokens_in": 25403,
+      "tokens_out": 735
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T04",
+   "user": "ben",
+   "role": "management",
+   "script": "L08",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft"
+   },
+   "start": "2026-11-06T18:02:13.987+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_57409f195b",
+     "platform": "beacon",
+     "start": "2026-11-06T18:02:13.987+00:00",
+     "end": "2026-11-06T18:04:35.674+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 2,
+     "turns_in_script": 2,
+     "noticed_failure": true,
+     "fate": "abandoned",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.009949389999999999,
+     "counts": {
+      "turns": 2,
+      "requests": 8,
+      "failed_requests": 0,
+      "tool_calls": 6,
+      "tool_errors": 1,
+      "tokens_in": 30162,
+      "tokens_out": 681
+     }
+    }
+   ],
+   "final_fate": "abandoned",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T05",
+   "user": "dmitri",
+   "role": "operations",
+   "script": "A04",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis"
+   },
+   "start": "2026-11-02T14:05:29.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-3d10672a4d",
+     "platform": "atlas",
+     "start": "2026-11-02T14:05:29.000+00:00",
+     "end": "2026-11-02T14:09:18.121+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true
+      ],
+      []
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.015518460000000001,
+     "counts": {
+      "turns": 4,
+      "requests": 9,
+      "failed_requests": 0,
+      "tool_calls": 5,
+      "tool_errors": 0,
+      "tokens_in": 35988,
+      "tokens_out": 1578
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T06",
+   "user": "dmitri",
+   "role": "operations",
+   "script": "A07",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis"
+   },
+   "start": "2026-11-04T13:40:58.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-2a764c0413",
+     "platform": "atlas",
+     "start": "2026-11-04T13:40:58.000+00:00",
+     "end": "2026-11-04T13:44:46.040+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [],
+      [
+       true
+      ],
+      []
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.022745460000000002,
+     "counts": {
+      "turns": 3,
+      "requests": 13,
+      "failed_requests": 0,
+      "tool_calls": 10,
+      "tool_errors": 1,
+      "tokens_in": 61826,
+      "tokens_out": 2785
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T07",
+   "user": "dmitri",
+   "role": "operations",
+   "script": "A08",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report"
+   },
+   "start": "2026-11-04T13:53:11.040+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-ea293a1e24",
+     "platform": "atlas",
+     "start": "2026-11-04T13:53:11.040+00:00",
+     "end": "2026-11-04T13:53:16.724+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 4,
+     "noticed_failure": true,
+     "fate": "switched",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.00386624,
+     "counts": {
+      "turns": 1,
+      "requests": 2,
+      "failed_requests": 0,
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "tokens_in": 6546,
+      "tokens_out": 493
+     }
+    },
+    {
+     "lake_session_id": "chatly:cvn_2bae04373fbf",
+     "platform": "chatly",
+     "start": "2026-11-04T14:01:35.724+00:00",
+     "end": "2026-11-04T14:02:29.745+00:00",
+     "is_switch": true,
+     "paraphrased": true,
+     "turns_played": 1,
+     "turns_in_script": 4,
+     "noticed_failure": true,
+     "fate": "abandoned",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.00078356,
+     "counts": {
+      "turns": 1,
+      "requests": 1,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 149,
+      "tokens_out": 359
+     }
+    }
+   ],
+   "final_fate": "abandoned",
+   "n_switches": 1
+  },
+  {
+   "task_id": "T08",
+   "user": "dmitri",
+   "role": "operations",
+   "script": "A09",
+   "designed": {
+    "domain": "operations",
+    "task_type": "lookup"
+   },
+   "start": "2026-11-09T14:32:54.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-ff71e95004",
+     "platform": "atlas",
+     "start": "2026-11-09T14:32:54.000+00:00",
+     "end": "2026-11-09T14:33:09.793+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 1,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true,
+       true,
+       true
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": false,
+     "cost": 0.00443463,
+     "counts": {
+      "turns": 1,
+      "requests": 4,
+      "failed_requests": 0,
+      "tool_calls": 3,
+      "tool_errors": 1,
+      "tokens_in": 16126,
+      "tokens_out": 230
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T09",
+   "user": "dmitri",
+   "role": "operations",
+   "script": "A10",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis"
+   },
+   "start": "2026-11-04T14:39:38.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-7d59249112",
+     "platform": "atlas",
+     "start": "2026-11-04T14:39:38.000+00:00",
+     "end": "2026-11-04T14:40:14.464+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": true,
+     "fate": "switched",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      false
+     ],
+     "truncated": true,
+     "cost": 0.01473249,
+     "counts": {
+      "turns": 1,
+      "requests": 8,
+      "failed_requests": 0,
+      "tool_calls": 8,
+      "tool_errors": 0,
+      "tokens_in": 33372,
+      "tokens_out": 2262
+     }
+    },
+    {
+     "lake_session_id": "chatly:cvn_390a96eaacfb",
+     "platform": "chatly",
+     "start": "2026-11-04T14:47:20.464+00:00",
+     "end": "2026-11-04T14:47:23.101+00:00",
+     "is_switch": true,
+     "paraphrased": true,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": true,
+     "fate": "abandoned",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.00031232,
+     "counts": {
+      "turns": 1,
+      "requests": 1,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 128,
+      "tokens_out": 128
+     }
+    }
+   ],
+   "final_fate": "abandoned",
+   "n_switches": 1
+  },
+  {
+   "task_id": "T10",
+   "user": "dmitri",
+   "role": "operations",
+   "script": "A11",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report"
+   },
+   "start": "2026-11-04T15:00:36.101+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-de8fed3c55",
+     "platform": "atlas",
+     "start": "2026-11-04T15:00:36.101+00:00",
+     "end": "2026-11-04T15:04:39.623+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.0209317,
+     "counts": {
+      "turns": 3,
+      "requests": 14,
+      "failed_requests": 1,
+      "tool_calls": 10,
+      "tool_errors": 2,
+      "tokens_in": 63207,
+      "tokens_out": 5542
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T11",
+   "user": "freya",
+   "role": "management",
+   "script": "L01",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise"
+   },
+   "start": "2026-11-09T19:42:23.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-595e043368",
+     "platform": "atlas",
+     "start": "2026-11-09T19:42:23.000+00:00",
+     "end": "2026-11-09T19:46:12.341+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [],
+      [
+       true
+      ],
+      [
+       true
+      ],
+      []
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.03752753,
+     "counts": {
+      "turns": 4,
+      "requests": 13,
+      "failed_requests": 0,
+      "tool_calls": 10,
+      "tool_errors": 0,
+      "tokens_in": 81862,
+      "tokens_out": 3335
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T12",
+   "user": "freya",
+   "role": "management",
+   "script": "L05",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "report"
+   },
+   "start": "2026-11-09T19:52:10.341+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-19ce9e5a3d",
+     "platform": "atlas",
+     "start": "2026-11-09T19:52:10.341+00:00",
+     "end": "2026-11-09T19:55:37.457+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [],
+      [
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.0099947,
+     "counts": {
+      "turns": 4,
+      "requests": 9,
+      "failed_requests": 1,
+      "tool_calls": 4,
+      "tool_errors": 0,
+      "tokens_in": 33103,
+      "tokens_out": 2270
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T13",
+   "user": "freya",
+   "role": "management",
+   "script": "L07",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise"
+   },
+   "start": "2026-11-03T17:09:23.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-9efeba3146",
+     "platform": "atlas",
+     "start": "2026-11-03T17:09:23.000+00:00",
+     "end": "2026-11-03T17:13:32.194+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [],
+      [
+       true
+      ],
+      [],
+      []
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.02819062,
+     "counts": {
+      "turns": 4,
+      "requests": 10,
+      "failed_requests": 0,
+      "tool_calls": 8,
+      "tool_errors": 0,
+      "tokens_in": 55643,
+      "tokens_out": 5242
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T14",
+   "user": "hana",
+   "role": "support",
+   "script": "M02",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide"
+   },
+   "start": "2026-11-10T11:54:33.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-2e24bfcac8",
+     "platform": "atlas",
+     "start": "2026-11-10T11:54:33.000+00:00",
+     "end": "2026-11-10T11:59:03.038+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [],
+      [
+       true
+      ],
+      [
+       false,
+       false
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.01775848,
+     "counts": {
+      "turns": 4,
+      "requests": 8,
+      "failed_requests": 0,
+      "tool_calls": 4,
+      "tool_errors": 1,
+      "tokens_in": 35692,
+      "tokens_out": 1027
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T15",
+   "user": "hana",
+   "role": "support",
+   "script": "M03",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide"
+   },
+   "start": "2026-11-10T12:13:54.038+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-de15c4e041",
+     "platform": "atlas",
+     "start": "2026-11-10T12:13:54.038+00:00",
+     "end": "2026-11-10T12:16:11.506+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.00900629,
+     "counts": {
+      "turns": 3,
+      "requests": 6,
+      "failed_requests": 0,
+      "tool_calls": 3,
+      "tool_errors": 0,
+      "tokens_in": 26325,
+      "tokens_out": 1639
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T16",
+   "user": "hana",
+   "role": "support",
+   "script": "M06",
+   "designed": {
+    "domain": "support",
+    "task_type": "draft"
+   },
+   "start": "2026-11-03T10:04:16.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-ed7e4788f2",
+     "platform": "atlas",
+     "start": "2026-11-03T10:04:16.000+00:00",
+     "end": "2026-11-03T10:07:26.199+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [],
+      [
+       true,
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.01600479,
+     "counts": {
+      "turns": 3,
+      "requests": 8,
+      "failed_requests": 0,
+      "tool_calls": 5,
+      "tool_errors": 0,
+      "tokens_in": 35333,
+      "tokens_out": 1723
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T20",
+   "user": "ines",
+   "role": "operations",
+   "script": "A02",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report"
+   },
+   "start": "2026-11-03T13:30:45.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-e72783e5bb",
+     "platform": "atlas",
+     "start": "2026-11-03T13:30:45.000+00:00",
+     "end": "2026-11-03T13:36:05.068+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.033347350000000005,
+     "counts": {
+      "turns": 4,
+      "requests": 14,
+      "failed_requests": 2,
+      "tool_calls": 9,
+      "tool_errors": 1,
+      "tokens_in": 81400,
+      "tokens_out": 5018
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T21",
+   "user": "jonas",
+   "role": "support",
+   "script": "M01",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide"
+   },
+   "start": "2026-11-06T11:48:59.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_3a9e0d3116",
+     "platform": "beacon",
+     "start": "2026-11-06T11:48:59.000+00:00",
+     "end": "2026-11-06T11:49:36.505+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": true,
+     "fate": "switched",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.00690898,
+     "counts": {
+      "turns": 1,
+      "requests": 4,
+      "failed_requests": 0,
+      "tool_calls": 7,
+      "tool_errors": 2,
+      "tokens_in": 16798,
+      "tokens_out": 451
+     }
+    },
+    {
+     "lake_session_id": "chatly:cvn_94424245833a",
+     "platform": "chatly",
+     "start": "2026-11-06T11:56:41.505+00:00",
+     "end": "2026-11-06T11:56:42.715+00:00",
+     "is_switch": true,
+     "paraphrased": true,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": true,
+     "fate": "abandoned",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 8.109999999999999e-05,
+     "counts": {
+      "turns": 1,
+      "requests": 1,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 212,
+      "tokens_out": 141
+     }
+    }
+   ],
+   "final_fate": "abandoned",
+   "n_switches": 1
+  },
+  {
+   "task_id": "T22",
+   "user": "jonas",
+   "role": "support",
+   "script": "M03",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide"
+   },
+   "start": "2026-11-06T12:10:21.715+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_b5f4f6c1ff",
+     "platform": "beacon",
+     "start": "2026-11-06T12:10:21.715+00:00",
+     "end": "2026-11-06T12:12:33.980+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": true,
+     "fate": "switched",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.01728998,
+     "counts": {
+      "turns": 1,
+      "requests": 8,
+      "failed_requests": 0,
+      "tool_calls": 10,
+      "tool_errors": 1,
+      "tokens_in": 39141,
+      "tokens_out": 1333
+     }
+    },
+    {
+     "lake_session_id": "chatly:cvn_8c6d7f3a167c",
+     "platform": "chatly",
+     "start": "2026-11-06T12:19:00.980+00:00",
+     "end": "2026-11-06T12:20:09.152+00:00",
+     "is_switch": true,
+     "paraphrased": true,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": false,
+     "cost": 0.00013371,
+     "counts": {
+      "turns": 1,
+      "requests": 1,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 153,
+      "tokens_out": 615
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 1
+  },
+  {
+   "task_id": "T23",
+   "user": "jonas",
+   "role": "support",
+   "script": "M04",
+   "designed": {
+    "domain": "support",
+    "task_type": "triage"
+   },
+   "start": "2026-11-13T11:59:02.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "chatly:cvn_db3ebf0b0944",
+     "platform": "chatly",
+     "start": "2026-11-13T11:59:02.000+00:00",
+     "end": "2026-11-13T11:59:03.653+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 4,
+     "noticed_failure": true,
+     "fate": "switched",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.00032172,
+     "counts": {
+      "turns": 1,
+      "requests": 1,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 113,
+      "tokens_out": 136
+     }
+    },
+    {
+     "lake_session_id": "beacon:th_1b2c83fb8e",
+     "platform": "beacon",
+     "start": "2026-11-13T12:03:04.653+00:00",
+     "end": "2026-11-13T12:03:37.765+00:00",
+     "is_switch": true,
+     "paraphrased": true,
+     "turns_played": 1,
+     "turns_in_script": 4,
+     "noticed_failure": true,
+     "fate": "abandoned",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.0054693599999999995,
+     "counts": {
+      "turns": 1,
+      "requests": 3,
+      "failed_requests": 0,
+      "tool_calls": 9,
+      "tool_errors": 0,
+      "tokens_in": 12626,
+      "tokens_out": 1641
+     }
+    }
+   ],
+   "final_fate": "abandoned",
+   "n_switches": 1
+  },
+  {
+   "task_id": "T24",
+   "user": "jonas",
+   "role": "support",
+   "script": "M05",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup"
+   },
+   "start": "2026-11-09T09:42:04.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_81f7bbdff4",
+     "platform": "beacon",
+     "start": "2026-11-09T09:42:04.000+00:00",
+     "end": "2026-11-09T09:46:19.690+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true,
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true,
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.018988,
+     "counts": {
+      "turns": 4,
+      "requests": 8,
+      "failed_requests": 0,
+      "tool_calls": 5,
+      "tool_errors": 0,
+      "tokens_in": 32982,
+      "tokens_out": 1401
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T25",
+   "user": "jonas",
+   "role": "support",
+   "script": "M07",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup"
+   },
+   "start": "2026-11-12T11:28:05.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_6b1bce5de4",
+     "platform": "beacon",
+     "start": "2026-11-12T11:28:05.000+00:00",
+     "end": "2026-11-12T11:30:19.026+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 2,
+     "turns_in_script": 3,
+     "noticed_failure": true,
+     "fate": "switched",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true
+     ],
+     "truncated": true,
+     "cost": 0.01387025,
+     "counts": {
+      "turns": 2,
+      "requests": 9,
+      "failed_requests": 0,
+      "tool_calls": 7,
+      "tool_errors": 1,
+      "tokens_in": 37223,
+      "tokens_out": 861
+     }
+    },
+    {
+     "lake_session_id": "chatly:cvn_dc9b397477a8",
+     "platform": "chatly",
+     "start": "2026-11-12T11:37:38.026+00:00",
+     "end": "2026-11-12T11:37:43.501+00:00",
+     "is_switch": true,
+     "paraphrased": true,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": true,
+     "fate": "abandoned",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.0006660799999999999,
+     "counts": {
+      "turns": 1,
+      "requests": 1,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 132,
+      "tokens_out": 304
+     }
+    }
+   ],
+   "final_fate": "abandoned",
+   "n_switches": 1
+  },
+  {
+   "task_id": "T28",
+   "user": "kofi",
+   "role": "operations",
+   "script": "A01",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report"
+   },
+   "start": "2026-11-04T14:29:48.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_13d691ec8e",
+     "platform": "beacon",
+     "start": "2026-11-04T14:29:48.000+00:00",
+     "end": "2026-11-04T14:30:26.998+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": true,
+     "fate": "switched",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.00802779,
+     "counts": {
+      "turns": 1,
+      "requests": 5,
+      "failed_requests": 0,
+      "tool_calls": 5,
+      "tool_errors": 0,
+      "tokens_in": 20079,
+      "tokens_out": 1246
+     }
+    },
+    {
+     "lake_session_id": "atlas:atl-eea8759676",
+     "platform": "atlas",
+     "start": "2026-11-04T14:42:21.998+00:00",
+     "end": "2026-11-04T14:43:42.187+00:00",
+     "is_switch": true,
+     "paraphrased": true,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": true,
+     "fate": "abandoned",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      false
+     ],
+     "truncated": true,
+     "cost": 0.01706959,
+     "counts": {
+      "turns": 1,
+      "requests": 9,
+      "failed_requests": 1,
+      "tool_calls": 8,
+      "tool_errors": 4,
+      "tokens_in": 37739,
+      "tokens_out": 1982
+     }
+    }
+   ],
+   "final_fate": "abandoned",
+   "n_switches": 1
+  },
+  {
+   "task_id": "T29",
+   "user": "kofi",
+   "role": "operations",
+   "script": "A03",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis"
+   },
+   "start": "2026-11-03T15:17:35.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_ef7cc8aa5b",
+     "platform": "beacon",
+     "start": "2026-11-03T15:17:35.000+00:00",
+     "end": "2026-11-03T15:18:10.673+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": false,
+     "cost": 0.0036469799999999998,
+     "counts": {
+      "turns": 1,
+      "requests": 3,
+      "failed_requests": 0,
+      "tool_calls": 4,
+      "tool_errors": 0,
+      "tokens_in": 11750,
+      "tokens_out": 782
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T30",
+   "user": "kofi",
+   "role": "operations",
+   "script": "A04",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis"
+   },
+   "start": "2026-11-11T14:40:52.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-7353eed379",
+     "platform": "atlas",
+     "start": "2026-11-11T14:40:52.000+00:00",
+     "end": "2026-11-11T14:45:36.121+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true
+      ],
+      []
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.015518460000000001,
+     "counts": {
+      "turns": 4,
+      "requests": 9,
+      "failed_requests": 0,
+      "tool_calls": 5,
+      "tool_errors": 0,
+      "tokens_in": 35988,
+      "tokens_out": 1578
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T31",
+   "user": "kofi",
+   "role": "operations",
+   "script": "A05",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis"
+   },
+   "start": "2026-11-06T15:29:07.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-676acbb491",
+     "platform": "atlas",
+     "start": "2026-11-06T15:29:07.000+00:00",
+     "end": "2026-11-06T15:35:15.341+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [],
+      []
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.026499390000000005,
+     "counts": {
+      "turns": 4,
+      "requests": 12,
+      "failed_requests": 3,
+      "tool_calls": 12,
+      "tool_errors": 0,
+      "tokens_in": 58212,
+      "tokens_out": 8977
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T32",
+   "user": "kofi",
+   "role": "operations",
+   "script": "A06",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis"
+   },
+   "start": "2026-11-13T14:45:31.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_dbc45a742e",
+     "platform": "beacon",
+     "start": "2026-11-13T14:45:31.000+00:00",
+     "end": "2026-11-13T14:48:31.821+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.01310385,
+     "counts": {
+      "turns": 3,
+      "requests": 8,
+      "failed_requests": 0,
+      "tool_calls": 5,
+      "tool_errors": 0,
+      "tokens_in": 33348,
+      "tokens_out": 1038
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T33",
+   "user": "kofi",
+   "role": "operations",
+   "script": "A07",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis"
+   },
+   "start": "2026-11-02T14:52:37.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-2fa3e85d5e",
+     "platform": "atlas",
+     "start": "2026-11-02T14:52:37.000+00:00",
+     "end": "2026-11-02T14:56:34.040+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [],
+      [
+       true
+      ],
+      []
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.022745460000000002,
+     "counts": {
+      "turns": 3,
+      "requests": 13,
+      "failed_requests": 0,
+      "tool_calls": 10,
+      "tool_errors": 1,
+      "tokens_in": 61826,
+      "tokens_out": 2785
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T34",
+   "user": "kofi",
+   "role": "operations",
+   "script": "A08",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report"
+   },
+   "start": "2026-11-03T15:28:27.673+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_602d2c3663",
+     "platform": "beacon",
+     "start": "2026-11-03T15:28:27.673+00:00",
+     "end": "2026-11-03T15:28:40.229+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 4,
+     "noticed_failure": true,
+     "fate": "switched",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.00411119,
+     "counts": {
+      "turns": 1,
+      "requests": 3,
+      "failed_requests": 0,
+      "tool_calls": 2,
+      "tool_errors": 0,
+      "tokens_in": 11179,
+      "tokens_out": 268
+     }
+    },
+    {
+     "lake_session_id": "atlas:atl-942b4cb5c6",
+     "platform": "atlas",
+     "start": "2026-11-03T15:38:42.229+00:00",
+     "end": "2026-11-03T15:38:47.913+00:00",
+     "is_switch": true,
+     "paraphrased": true,
+     "turns_played": 1,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": false,
+     "cost": 0.00386624,
+     "counts": {
+      "turns": 1,
+      "requests": 2,
+      "failed_requests": 0,
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "tokens_in": 6546,
+      "tokens_out": 493
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 1
+  },
+  {
+   "task_id": "T35",
+   "user": "kofi",
+   "role": "operations",
+   "script": "A09",
+   "designed": {
+    "domain": "operations",
+    "task_type": "lookup"
+   },
+   "start": "2026-11-03T15:50:39.913+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-e02c30f9c7",
+     "platform": "atlas",
+     "start": "2026-11-03T15:50:39.913+00:00",
+     "end": "2026-11-03T15:50:55.706+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 1,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true,
+       true,
+       true
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": false,
+     "cost": 0.00443463,
+     "counts": {
+      "turns": 1,
+      "requests": 4,
+      "failed_requests": 0,
+      "tool_calls": 3,
+      "tool_errors": 1,
+      "tokens_in": 16126,
+      "tokens_out": 230
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T36",
+   "user": "kofi",
+   "role": "operations",
+   "script": "A11",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report"
+   },
+   "start": "2026-11-06T13:53:02.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_5f7f81058e",
+     "platform": "beacon",
+     "start": "2026-11-06T13:53:02.000+00:00",
+     "end": "2026-11-06T13:54:17.928+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": true,
+     "fate": "switched",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      false
+     ],
+     "truncated": true,
+     "cost": 0.01675807,
+     "counts": {
+      "turns": 1,
+      "requests": 8,
+      "failed_requests": 0,
+      "tool_calls": 18,
+      "tool_errors": 0,
+      "tokens_in": 46096,
+      "tokens_out": 2371
+     }
+    },
+    {
+     "lake_session_id": "atlas:atl-7166a323c2",
+     "platform": "atlas",
+     "start": "2026-11-06T14:01:13.928+00:00",
+     "end": "2026-11-06T14:04:58.450+00:00",
+     "is_switch": true,
+     "paraphrased": true,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.0209317,
+     "counts": {
+      "turns": 3,
+      "requests": 14,
+      "failed_requests": 1,
+      "tool_calls": 10,
+      "tool_errors": 2,
+      "tokens_in": 63207,
+      "tokens_out": 5542
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 1
+  },
+  {
+   "task_id": "T37",
+   "user": "lucia",
+   "role": "operations",
+   "script": "A01",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report"
+   },
+   "start": "2026-11-10T13:06:18.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_5913ae6436",
+     "platform": "beacon",
+     "start": "2026-11-10T13:06:18.000+00:00",
+     "end": "2026-11-10T13:06:56.998+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": true,
+     "fate": "abandoned",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.00802779,
+     "counts": {
+      "turns": 1,
+      "requests": 5,
+      "failed_requests": 0,
+      "tool_calls": 5,
+      "tool_errors": 0,
+      "tokens_in": 20079,
+      "tokens_out": 1246
+     }
+    }
+   ],
+   "final_fate": "abandoned",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T38",
+   "user": "lucia",
+   "role": "operations",
+   "script": "A02",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report"
+   },
+   "start": "2026-11-03T15:32:32.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_9f934dd9ee",
+     "platform": "beacon",
+     "start": "2026-11-03T15:32:32.000+00:00",
+     "end": "2026-11-03T15:33:10.028+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": false,
+     "cost": 0.00427692,
+     "counts": {
+      "turns": 1,
+      "requests": 3,
+      "failed_requests": 0,
+      "tool_calls": 2,
+      "tool_errors": 0,
+      "tokens_in": 13896,
+      "tokens_out": 1801
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T39",
+   "user": "lucia",
+   "role": "operations",
+   "script": "A03",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis"
+   },
+   "start": "2026-11-10T13:30:34.998+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_b02a06e649",
+     "platform": "beacon",
+     "start": "2026-11-10T13:30:34.998+00:00",
+     "end": "2026-11-10T13:31:10.671+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": false,
+     "cost": 0.0036469799999999998,
+     "counts": {
+      "turns": 1,
+      "requests": 3,
+      "failed_requests": 0,
+      "tool_calls": 4,
+      "tool_errors": 0,
+      "tokens_in": 11750,
+      "tokens_out": 782
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T40",
+   "user": "lucia",
+   "role": "operations",
+   "script": "A05",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis"
+   },
+   "start": "2026-11-10T13:18:31.998+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_18f79bd3bd",
+     "platform": "beacon",
+     "start": "2026-11-10T13:18:31.998+00:00",
+     "end": "2026-11-10T13:23:16.678+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [],
+      []
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.01985573,
+     "counts": {
+      "turns": 4,
+      "requests": 10,
+      "failed_requests": 0,
+      "tool_calls": 7,
+      "tool_errors": 0,
+      "tokens_in": 54830,
+      "tokens_out": 3943
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T41",
+   "user": "lucia",
+   "role": "operations",
+   "script": "A06",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis"
+   },
+   "start": "2026-11-10T13:38:37.678+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_36511dc8b1",
+     "platform": "beacon",
+     "start": "2026-11-10T13:38:37.678+00:00",
+     "end": "2026-11-10T13:41:55.499+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.01310385,
+     "counts": {
+      "turns": 3,
+      "requests": 8,
+      "failed_requests": 0,
+      "tool_calls": 5,
+      "tool_errors": 0,
+      "tokens_in": 33348,
+      "tokens_out": 1038
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T42",
+   "user": "lucia",
+   "role": "operations",
+   "script": "A10",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis"
+   },
+   "start": "2026-11-10T14:01:38.499+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_677ae52607",
+     "platform": "beacon",
+     "start": "2026-11-10T14:01:38.499+00:00",
+     "end": "2026-11-10T14:03:10.446+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      false
+     ],
+     "truncated": false,
+     "cost": 0.01724024,
+     "counts": {
+      "turns": 1,
+      "requests": 8,
+      "failed_requests": 0,
+      "tool_calls": 15,
+      "tool_errors": 0,
+      "tokens_in": 51130,
+      "tokens_out": 2187
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T43",
+   "user": "omar",
+   "role": "management",
+   "script": "L02",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise"
+   },
+   "start": "2026-11-02T18:31:31.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "chatly:cvn_349cf50f9799",
+     "platform": "chatly",
+     "start": "2026-11-02T18:31:31.000+00:00",
+     "end": "2026-11-02T18:35:12.748+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [],
+      [],
+      [
+       true
+      ],
+      []
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.0036431399999999996,
+     "counts": {
+      "turns": 4,
+      "requests": 4,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 3522,
+      "tokens_out": 2429
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T44",
+   "user": "omar",
+   "role": "management",
+   "script": "L03",
+   "designed": {
+    "domain": "operations",
+    "task_type": "lookup"
+   },
+   "start": "2026-11-02T18:56:02.748+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "chatly:cvn_7cafffae60ea",
+     "platform": "chatly",
+     "start": "2026-11-02T18:56:02.748+00:00",
+     "end": "2026-11-02T18:56:04.953+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 1,
+     "noticed_failure": true,
+     "fate": "abandoned",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": false,
+     "cost": 6.84e-05,
+     "counts": {
+      "turns": 1,
+      "requests": 1,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 198,
+      "tokens_out": 117
+     }
+    }
+   ],
+   "final_fate": "abandoned",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T45",
+   "user": "omar",
+   "role": "management",
+   "script": "L04",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft"
+   },
+   "start": "2026-11-11T18:39:06.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "chatly:cvn_90ef1e1475a0",
+     "platform": "chatly",
+     "start": "2026-11-11T18:39:06.000+00:00",
+     "end": "2026-11-11T18:40:55.634+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.00139854,
+     "counts": {
+      "turns": 3,
+      "requests": 3,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 692,
+      "tokens_out": 1490
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T46",
+   "user": "omar",
+   "role": "management",
+   "script": "L06",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "analysis"
+   },
+   "start": "2026-11-12T19:57:29.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "chatly:cvn_92fab40761b8",
+     "platform": "chatly",
+     "start": "2026-11-12T19:57:29.000+00:00",
+     "end": "2026-11-12T19:57:34.174+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": false,
+     "cost": 0.00043099999999999996,
+     "counts": {
+      "turns": 1,
+      "requests": 1,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 125,
+      "tokens_out": 188
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T47",
+   "user": "omar",
+   "role": "management",
+   "script": "L07",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise"
+   },
+   "start": "2026-11-11T17:00:16.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "chatly:cvn_fe3888624218",
+     "platform": "chatly",
+     "start": "2026-11-11T17:00:16.000+00:00",
+     "end": "2026-11-11T17:01:52.337+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 2,
+     "turns_in_script": 4,
+     "noticed_failure": true,
+     "fate": "abandoned",
+     "turn_checks": [
+      [],
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true
+     ],
+     "truncated": true,
+     "cost": 0.00023311,
+     "counts": {
+      "turns": 2,
+      "requests": 2,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 479,
+      "tokens_out": 939
+     }
+    }
+   ],
+   "final_fate": "abandoned",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T48",
+   "user": "omar",
+   "role": "management",
+   "script": "L08",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft"
+   },
+   "start": "2026-11-13T18:04:08.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "chatly:cvn_b842c25307cc",
+     "platform": "chatly",
+     "start": "2026-11-13T18:04:08.000+00:00",
+     "end": "2026-11-13T18:04:11.839+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 2,
+     "noticed_failure": true,
+     "fate": "abandoned",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.00047475999999999996,
+     "counts": {
+      "turns": 1,
+      "requests": 1,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 129,
+      "tokens_out": 209
+     }
+    }
+   ],
+   "final_fate": "abandoned",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T49",
+   "user": "priya",
+   "role": "support",
+   "script": "M02",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide"
+   },
+   "start": "2026-11-10T10:08:41.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-23d21bbdd8",
+     "platform": "atlas",
+     "start": "2026-11-10T10:08:41.000+00:00",
+     "end": "2026-11-10T10:13:07.038+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": true,
+     "fate": "switched",
+     "turn_checks": [
+      [
+       true
+      ],
+      [],
+      [
+       true
+      ],
+      [
+       false,
+       false
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.01775848,
+     "counts": {
+      "turns": 4,
+      "requests": 8,
+      "failed_requests": 0,
+      "tool_calls": 4,
+      "tool_errors": 1,
+      "tokens_in": 35692,
+      "tokens_out": 1027
+     }
+    },
+    {
+     "lake_session_id": "chatly:cvn_3b7425c7b479",
+     "platform": "chatly",
+     "start": "2026-11-10T10:16:53.038+00:00",
+     "end": "2026-11-10T10:16:55.458+00:00",
+     "is_switch": true,
+     "paraphrased": true,
+     "turns_played": 1,
+     "turns_in_script": 4,
+     "noticed_failure": true,
+     "fate": "abandoned",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.0005246399999999999,
+     "counts": {
+      "turns": 1,
+      "requests": 1,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 156,
+      "tokens_out": 228
+     }
+    }
+   ],
+   "final_fate": "abandoned",
+   "n_switches": 1
+  },
+  {
+   "task_id": "T50",
+   "user": "priya",
+   "role": "support",
+   "script": "M05",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup"
+   },
+   "start": "2026-11-11T10:30:57.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-40c3230261",
+     "platform": "atlas",
+     "start": "2026-11-11T10:30:57.000+00:00",
+     "end": "2026-11-11T10:36:49.087+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true,
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true,
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.02450762,
+     "counts": {
+      "turns": 4,
+      "requests": 13,
+      "failed_requests": 0,
+      "tool_calls": 10,
+      "tool_errors": 2,
+      "tokens_in": 61385,
+      "tokens_out": 3279
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T51",
+   "user": "priya",
+   "role": "support",
+   "script": "M07",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup"
+   },
+   "start": "2026-11-11T10:11:26.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "chatly:cvn_76d1493781bc",
+     "platform": "chatly",
+     "start": "2026-11-11T10:11:26.000+00:00",
+     "end": "2026-11-11T10:11:31.475+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": true,
+     "fate": "switched",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.0006660799999999999,
+     "counts": {
+      "turns": 1,
+      "requests": 1,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 132,
+      "tokens_out": 304
+     }
+    },
+    {
+     "lake_session_id": "atlas:atl-32d8a2bbed",
+     "platform": "atlas",
+     "start": "2026-11-11T10:15:11.475+00:00",
+     "end": "2026-11-11T10:18:37.076+00:00",
+     "is_switch": true,
+     "paraphrased": true,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.021259319999999998,
+     "counts": {
+      "turns": 3,
+      "requests": 10,
+      "failed_requests": 0,
+      "tool_calls": 9,
+      "tool_errors": 0,
+      "tokens_in": 43215,
+      "tokens_out": 1442
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 1
+  },
+  {
+   "task_id": "T53",
+   "user": "rosa",
+   "role": "management",
+   "script": "L03",
+   "designed": {
+    "domain": "operations",
+    "task_type": "lookup"
+   },
+   "start": "2026-11-05T17:14:03.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-ed6678b3cf",
+     "platform": "atlas",
+     "start": "2026-11-05T17:14:03.000+00:00",
+     "end": "2026-11-05T17:14:57.062+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 1,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": false,
+     "cost": 0.015420050000000001,
+     "counts": {
+      "turns": 1,
+      "requests": 7,
+      "failed_requests": 0,
+      "tool_calls": 7,
+      "tool_errors": 0,
+      "tokens_in": 37000,
+      "tokens_out": 1683
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T54",
+   "user": "rosa",
+   "role": "management",
+   "script": "L05",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "report"
+   },
+   "start": "2026-11-05T17:20:58.062+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "chatly:cvn_49c153d4f52f",
+     "platform": "chatly",
+     "start": "2026-11-05T17:20:58.062+00:00",
+     "end": "2026-11-05T17:21:00.662+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 4,
+     "noticed_failure": true,
+     "fate": "switched",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.00033188,
+     "counts": {
+      "turns": 1,
+      "requests": 1,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 127,
+      "tokens_out": 138
+     }
+    },
+    {
+     "lake_session_id": "atlas:atl-dd6258591f",
+     "platform": "atlas",
+     "start": "2026-11-05T17:30:04.662+00:00",
+     "end": "2026-11-05T17:32:43.778+00:00",
+     "is_switch": true,
+     "paraphrased": true,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [],
+      [
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.0099947,
+     "counts": {
+      "turns": 4,
+      "requests": 9,
+      "failed_requests": 1,
+      "tool_calls": 4,
+      "tool_errors": 0,
+      "tokens_in": 33103,
+      "tokens_out": 2270
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 1
+  },
+  {
+   "task_id": "T55",
+   "user": "rosa",
+   "role": "management",
+   "script": "L06",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "analysis"
+   },
+   "start": "2026-11-05T17:45:52.778+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-f7cfcbc295",
+     "platform": "atlas",
+     "start": "2026-11-05T17:45:52.778+00:00",
+     "end": "2026-11-05T17:49:21.908+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      []
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.01699846,
+     "counts": {
+      "turns": 3,
+      "requests": 8,
+      "failed_requests": 1,
+      "tool_calls": 4,
+      "tool_errors": 0,
+      "tokens_in": 40145,
+      "tokens_out": 3653
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T56",
+   "user": "tomas",
+   "role": "support",
+   "script": "M01",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide"
+   },
+   "start": "2026-11-04T09:50:08.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-a542639441",
+     "platform": "atlas",
+     "start": "2026-11-04T09:50:08.000+00:00",
+     "end": "2026-11-04T09:51:41.808+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true,
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.00463689,
+     "counts": {
+      "turns": 3,
+      "requests": 5,
+      "failed_requests": 0,
+      "tool_calls": 3,
+      "tool_errors": 0,
+      "tokens_in": 22153,
+      "tokens_out": 1269
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T57",
+   "user": "tomas",
+   "role": "support",
+   "script": "M04",
+   "designed": {
+    "domain": "support",
+    "task_type": "triage"
+   },
+   "start": "2026-11-04T10:00:19.808+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-c0cc4fafb6",
+     "platform": "atlas",
+     "start": "2026-11-04T10:00:19.808+00:00",
+     "end": "2026-11-04T10:05:34.333+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 4,
+     "turns_in_script": 4,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [],
+      [
+       true,
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.0239348,
+     "counts": {
+      "turns": 4,
+      "requests": 9,
+      "failed_requests": 0,
+      "tool_calls": 12,
+      "tool_errors": 0,
+      "tokens_in": 48815,
+      "tokens_out": 3254
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T58",
+   "user": "tomas",
+   "role": "support",
+   "script": "M06",
+   "designed": {
+    "domain": "support",
+    "task_type": "draft"
+   },
+   "start": "2026-11-04T10:16:00.333+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-5910b9fcc7",
+     "platform": "atlas",
+     "start": "2026-11-04T10:16:00.333+00:00",
+     "end": "2026-11-04T10:19:11.532+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [],
+      [
+       true,
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.01600479,
+     "counts": {
+      "turns": 3,
+      "requests": 8,
+      "failed_requests": 0,
+      "tool_calls": 5,
+      "tool_errors": 0,
+      "tokens_in": 35333,
+      "tokens_out": 1723
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  }
+ ],
+ "seats": [
+  {
+   "handle": "priya",
+   "platform": "atlas",
+   "start_weight": 0.8,
+   "designed_idle": false
+  },
+  {
+   "handle": "priya",
+   "platform": "chatly",
+   "start_weight": 0.2,
+   "designed_idle": false
+  },
+  {
+   "handle": "tomas",
+   "platform": "atlas",
+   "start_weight": 1.0,
+   "designed_idle": false
+  },
+  {
+   "handle": "hana",
+   "platform": "atlas",
+   "start_weight": 0.6,
+   "designed_idle": false
+  },
+  {
+   "handle": "hana",
+   "platform": "beacon",
+   "start_weight": 0.4,
+   "designed_idle": false
+  },
+  {
+   "handle": "hana",
+   "platform": "chatly",
+   "start_weight": 0.0,
+   "designed_idle": true
+  },
+  {
+   "handle": "jonas",
+   "platform": "beacon",
+   "start_weight": 0.7,
+   "designed_idle": false
+  },
+  {
+   "handle": "jonas",
+   "platform": "chatly",
+   "start_weight": 0.3,
+   "designed_idle": false
+  },
+  {
+   "handle": "kofi",
+   "platform": "atlas",
+   "start_weight": 0.5,
+   "designed_idle": false
+  },
+  {
+   "handle": "kofi",
+   "platform": "beacon",
+   "start_weight": 0.5,
+   "designed_idle": false
+  },
+  {
+   "handle": "lucia",
+   "platform": "beacon",
+   "start_weight": 1.0,
+   "designed_idle": false
+  },
+  {
+   "handle": "dmitri",
+   "platform": "atlas",
+   "start_weight": 0.97,
+   "designed_idle": false
+  },
+  {
+   "handle": "dmitri",
+   "platform": "chatly",
+   "start_weight": 0.03,
+   "designed_idle": true
+  },
+  {
+   "handle": "ines",
+   "platform": "atlas",
+   "start_weight": 0.7,
+   "designed_idle": false
+  },
+  {
+   "handle": "ines",
+   "platform": "beacon",
+   "start_weight": 0.3,
+   "designed_idle": false
+  },
+  {
+   "handle": "ines",
+   "platform": "chatly",
+   "start_weight": 0.0,
+   "designed_idle": true
+  },
+  {
+   "handle": "rosa",
+   "platform": "chatly",
+   "start_weight": 0.8,
+   "designed_idle": false
+  },
+  {
+   "handle": "rosa",
+   "platform": "atlas",
+   "start_weight": 0.2,
+   "designed_idle": false
+  },
+  {
+   "handle": "omar",
+   "platform": "chatly",
+   "start_weight": 1.0,
+   "designed_idle": false
+  },
+  {
+   "handle": "freya",
+   "platform": "atlas",
+   "start_weight": 0.4,
+   "designed_idle": false
+  },
+  {
+   "handle": "freya",
+   "platform": "beacon",
+   "start_weight": 0.3,
+   "designed_idle": false
+  },
+  {
+   "handle": "freya",
+   "platform": "chatly",
+   "start_weight": 0.3,
+   "designed_idle": false
+  },
+  {
+   "handle": "ben",
+   "platform": "beacon",
+   "start_weight": 1.0,
+   "designed_idle": false
+  },
+  {
+   "handle": "ben",
+   "platform": "atlas",
+   "start_weight": 0.0,
+   "designed_idle": true
+  }
+ ],
+ "recordings": {
+  "atlas:A01": {
+   "platform": "atlas",
+   "script": "A01",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    false,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.01706959,
+    0.00536624,
+    0.00658796
+   ],
+   "tokens_in": 73436,
+   "tokens_out": 3882,
+   "requests": 16,
+   "tool_calls": 13
+  },
+  "atlas:A02": {
+   "platform": "atlas",
+   "script": "A02",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 1,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 4,
+   "passed_turns": 4,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00775235,
+    0.01751926,
+    0.00071534,
+    0.0073604
+   ],
+   "tokens_in": 81400,
+   "tokens_out": 5018,
+   "requests": 14,
+   "tool_calls": 9
+  },
+  "atlas:A03": {
+   "platform": "atlas",
+   "script": "A03",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": "inventory-reorder",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [],
+    [
+     true
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    false
+   ],
+   "turn_cost": [
+    0.02659416,
+    0.00333584,
+    0.00583131,
+    0.01726427
+   ],
+   "tokens_in": 108009,
+   "tokens_out": 12831,
+   "requests": 23,
+   "tool_calls": 11
+  },
+  "atlas:A04": {
+   "platform": "atlas",
+   "script": "A04",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 1,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00244362,
+    0.0050112,
+    0.003516,
+    0.00454764
+   ],
+   "tokens_in": 35988,
+   "tokens_out": 1578,
+   "requests": 9,
+   "tool_calls": 5
+  },
+  "atlas:A05": {
+   "platform": "atlas",
+   "script": "A05",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 2,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 2,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.0045303,
+    0.00059704,
+    0.01445094,
+    0.00692111
+   ],
+   "tokens_in": 58212,
+   "tokens_out": 8977,
+   "requests": 12,
+   "tool_calls": 12
+  },
+  "atlas:A06": {
+   "platform": "atlas",
+   "script": "A06",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00477048,
+    0.00120913,
+    0.00380948
+   ],
+   "tokens_in": 28816,
+   "tokens_out": 1005,
+   "requests": 7,
+   "tool_calls": 4
+  },
+  "atlas:A07": {
+   "platform": "atlas",
+   "script": "A07",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": "inventory-reorder",
+    "servers": [
+     "memory",
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 1,
+   "turn_checks": [
+    [],
+    [
+     true
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00397312,
+    0.00819243,
+    0.01057991
+   ],
+   "tokens_in": 61826,
+   "tokens_out": 2785,
+   "requests": 13,
+   "tool_calls": 10
+  },
+  "atlas:A08": {
+   "platform": "atlas",
+   "script": "A08",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 2,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [],
+    [
+     false
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    false,
+    false,
+    true
+   ],
+   "turn_cost": [
+    0.00386624,
+    0.00589826,
+    0.0,
+    0.00191715
+   ],
+   "tokens_in": 45794,
+   "tokens_out": 3987,
+   "requests": 25,
+   "tool_calls": 10
+  },
+  "atlas:A09": {
+   "platform": "atlas",
+   "script": "A09",
+   "designed": {
+    "domain": "operations",
+    "task_type": "lookup",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     true,
+     true,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true
+   ],
+   "turn_cost": [
+    0.00443463
+   ],
+   "tokens_in": 16126,
+   "tokens_out": 230,
+   "requests": 4,
+   "tool_calls": 3
+  },
+  "atlas:A10": {
+   "platform": "atlas",
+   "script": "A10",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": "inventory-reorder",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": [
+     2
+    ]
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    false,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.01473249,
+    0.00575216,
+    0.00309692
+   ],
+   "tokens_in": 50729,
+   "tokens_out": 2868,
+   "requests": 11,
+   "tool_calls": 9
+  },
+  "atlas:A11": {
+   "platform": "atlas",
+   "script": "A11",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.01125838,
+    0.00517036,
+    0.00450296
+   ],
+   "tokens_in": 63207,
+   "tokens_out": 5542,
+   "requests": 14,
+   "tool_calls": 10
+  },
+  "atlas:L01": {
+   "platform": "atlas",
+   "script": "L01",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise",
+    "skill": "price-change-memo",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 2,
+   "turn_checks": [
+    [],
+    [
+     true
+    ],
+    [
+     true
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.01371269,
+    0.00459845,
+    0.00424111,
+    0.01497528
+   ],
+   "tokens_in": 81862,
+   "tokens_out": 3335,
+   "requests": 13,
+   "tool_calls": 10
+  },
+  "atlas:L02": {
+   "platform": "atlas",
+   "script": "L02",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise",
+    "skill": null,
+    "servers": [],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 3,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 1,
+   "turn_checks": [
+    [],
+    [],
+    [
+     true
+    ],
+    []
+   ],
+   "turn_answered": [
+    false,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.01298236,
+    0.01217573,
+    0.01107266,
+    0.00783674
+   ],
+   "tokens_in": 148134,
+   "tokens_out": 10096,
+   "requests": 22,
+   "tool_calls": 29
+  },
+  "atlas:L03": {
+   "platform": "atlas",
+   "script": "L03",
+   "designed": {
+    "domain": "operations",
+    "task_type": "lookup",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true
+   ],
+   "turn_cost": [
+    0.01542005
+   ],
+   "tokens_in": 37000,
+   "tokens_out": 1683,
+   "requests": 7,
+   "tool_calls": 7
+  },
+  "atlas:L04": {
+   "platform": "atlas",
+   "script": "L04",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft",
+    "skill": null,
+    "servers": [
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 2,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00135213,
+    0.00218084,
+    0.00185148
+   ],
+   "tokens_in": 19460,
+   "tokens_out": 998,
+   "requests": 5,
+   "tool_calls": 3
+  },
+  "atlas:L05": {
+   "platform": "atlas",
+   "script": "L05",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 1,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [],
+    [
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00552092,
+    0.00194332,
+    0.00225276,
+    0.0002777
+   ],
+   "tokens_in": 33103,
+   "tokens_out": 2270,
+   "requests": 9,
+   "tool_calls": 4
+  },
+  "atlas:L06": {
+   "platform": "atlas",
+   "script": "L06",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "analysis",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 2,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00913351,
+    0.00350887,
+    0.00435608
+   ],
+   "tokens_in": 40145,
+   "tokens_out": 3653,
+   "requests": 8,
+   "tool_calls": 4
+  },
+  "atlas:L07": {
+   "platform": "atlas",
+   "script": "L07",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 1,
+   "turn_checks": [
+    [],
+    [
+     true
+    ],
+    [],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00562532,
+    0.0136197,
+    0.00517668,
+    0.00376892
+   ],
+   "tokens_in": 55643,
+   "tokens_out": 5242,
+   "requests": 10,
+   "tool_calls": 8
+  },
+  "atlas:L08": {
+   "platform": "atlas",
+   "script": "L08",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft",
+    "skill": "customer-reply",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 2,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00240213,
+    0.0060516
+   ],
+   "tokens_in": 21781,
+   "tokens_out": 1250,
+   "requests": 5,
+   "tool_calls": 3
+  },
+  "atlas:M01": {
+   "platform": "atlas",
+   "script": "M01",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide",
+    "skill": "refund-eligibility",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true,
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00312316,
+    0.00123513,
+    0.0002786
+   ],
+   "tokens_in": 22153,
+   "tokens_out": 1269,
+   "requests": 5,
+   "tool_calls": 3
+  },
+  "atlas:M02": {
+   "platform": "atlas",
+   "script": "M02",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide",
+    "skill": "refund-eligibility",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 2,
+   "turn_checks": [
+    [
+     true
+    ],
+    [],
+    [
+     true
+    ],
+    [
+     false,
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00844112,
+    0.00223712,
+    0.00413084,
+    0.0029494
+   ],
+   "tokens_in": 35692,
+   "tokens_out": 1027,
+   "requests": 8,
+   "tool_calls": 4
+  },
+  "atlas:M03": {
+   "platform": "atlas",
+   "script": "M03",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide",
+    "skill": "refund-eligibility",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 1,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00258056,
+    0.00097805,
+    0.00544768
+   ],
+   "tokens_in": 26325,
+   "tokens_out": 1639,
+   "requests": 6,
+   "tool_calls": 3
+  },
+  "atlas:M04": {
+   "platform": "atlas",
+   "script": "M04",
+   "designed": {
+    "domain": "support",
+    "task_type": "triage",
+    "skill": "ticket-triage",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [],
+    [
+     true,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00800888,
+    0.00320412,
+    0.00259416,
+    0.01012764
+   ],
+   "tokens_in": 48815,
+   "tokens_out": 3254,
+   "requests": 9,
+   "tool_calls": 12
+  },
+  "atlas:M05": {
+   "platform": "atlas",
+   "script": "M05",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": null,
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 4,
+   "passed_turns": 4,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true,
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00244316,
+    0.0030378,
+    0.01757788,
+    0.00144878
+   ],
+   "tokens_in": 61385,
+   "tokens_out": 3279,
+   "requests": 13,
+   "tool_calls": 10
+  },
+  "atlas:M06": {
+   "platform": "atlas",
+   "script": "M06",
+   "designed": {
+    "domain": "support",
+    "task_type": "draft",
+    "skill": "customer-reply",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 1,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": [
+     3
+    ]
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 2,
+   "turn_checks": [
+    [
+     true
+    ],
+    [],
+    [
+     true,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00640656,
+    0.00607479,
+    0.00352344
+   ],
+   "tokens_in": 35333,
+   "tokens_out": 1723,
+   "requests": 8,
+   "tool_calls": 5
+  },
+  "atlas:M07": {
+   "platform": "atlas",
+   "script": "M07",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": "customer-reply",
+    "servers": [
+     "filesystem",
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00446588,
+    0.0105524,
+    0.00624104
+   ],
+   "tokens_in": 43215,
+   "tokens_out": 1442,
+   "requests": 10,
+   "tool_calls": 9
+  },
+  "beacon:A01": {
+   "platform": "beacon",
+   "script": "A01",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00802779,
+    0.00715993,
+    0.00536896
+   ],
+   "tokens_in": 44225,
+   "tokens_out": 3041,
+   "requests": 10,
+   "tool_calls": 9
+  },
+  "beacon:A02": {
+   "platform": "beacon",
+   "script": "A02",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 1,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 4,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00427692,
+    0.01639104,
+    0.00718692,
+    0.00368403
+   ],
+   "tokens_in": 65372,
+   "tokens_out": 5546,
+   "requests": 11,
+   "tool_calls": 8
+  },
+  "beacon:A03": {
+   "platform": "beacon",
+   "script": "A03",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": "inventory-reorder",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [],
+    [
+     true
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00364698,
+    0.01429951,
+    0.00286144,
+    0.0007848
+   ],
+   "tokens_in": 51141,
+   "tokens_out": 3993,
+   "requests": 10,
+   "tool_calls": 12
+  },
+  "beacon:A04": {
+   "platform": "beacon",
+   "script": "A04",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 1,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00421972,
+    0.0044694,
+    0.00368256,
+    0.0027942
+   ],
+   "tokens_in": 40850,
+   "tokens_out": 1126,
+   "requests": 10,
+   "tool_calls": 7
+  },
+  "beacon:A05": {
+   "platform": "beacon",
+   "script": "A05",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 2,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 2,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00700399,
+    0.00334956,
+    0.005151,
+    0.00435118
+   ],
+   "tokens_in": 54830,
+   "tokens_out": 3943,
+   "requests": 10,
+   "tool_calls": 7
+  },
+  "beacon:A06": {
+   "platform": "beacon",
+   "script": "A06",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00370983,
+    0.00537908,
+    0.00401494
+   ],
+   "tokens_in": 33348,
+   "tokens_out": 1038,
+   "requests": 8,
+   "tool_calls": 5
+  },
+  "beacon:A07": {
+   "platform": "beacon",
+   "script": "A07",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": "inventory-reorder",
+    "servers": [
+     "memory",
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 1,
+   "turn_checks": [
+    [],
+    [
+     true
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00528903,
+    0.00504484,
+    0.01104652
+   ],
+   "tokens_in": 65473,
+   "tokens_out": 3272,
+   "requests": 14,
+   "tool_calls": 18
+  },
+  "beacon:A08": {
+   "platform": "beacon",
+   "script": "A08",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 2,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [],
+    [
+     false
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00411119,
+    0.00825614,
+    0.00530295,
+    0.00092106
+   ],
+   "tokens_in": 55365,
+   "tokens_out": 3250,
+   "requests": 12,
+   "tool_calls": 8
+  },
+  "beacon:A09": {
+   "platform": "beacon",
+   "script": "A09",
+   "designed": {
+    "domain": "operations",
+    "task_type": "lookup",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     true,
+     true,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true
+   ],
+   "turn_cost": [
+    0.00255721
+   ],
+   "tokens_in": 11009,
+   "tokens_out": 275,
+   "requests": 3,
+   "tool_calls": 2
+  },
+  "beacon:A10": {
+   "platform": "beacon",
+   "script": "A10",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": "inventory-reorder",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": [
+     2
+    ]
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    false,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.01724024,
+    0.01435912,
+    0.0059766
+   ],
+   "tokens_in": 92543,
+   "tokens_out": 3244,
+   "requests": 12,
+   "tool_calls": 18
+  },
+  "beacon:A11": {
+   "platform": "beacon",
+   "script": "A11",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    false,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.01675807,
+    0.00707504,
+    0.02695777
+   ],
+   "tokens_in": 114787,
+   "tokens_out": 6037,
+   "requests": 16,
+   "tool_calls": 25
+  },
+  "beacon:L01": {
+   "platform": "beacon",
+   "script": "L01",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise",
+    "skill": "price-change-memo",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 0,
+   "turn_checks": [
+    [],
+    [
+     false
+    ],
+    [
+     false
+    ],
+    []
+   ],
+   "turn_answered": [
+    false,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.0118673,
+    0.00415948,
+    0.00998909,
+    0.00849057
+   ],
+   "tokens_in": 90088,
+   "tokens_out": 2828,
+   "requests": 17,
+   "tool_calls": 20
+  },
+  "beacon:L02": {
+   "platform": "beacon",
+   "script": "L02",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise",
+    "skill": null,
+    "servers": [],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 3,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 1,
+   "turn_checks": [
+    [],
+    [],
+    [
+     true
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.0172991,
+    0.0067866,
+    0.0204168,
+    0.00098845
+   ],
+   "tokens_in": 99837,
+   "tokens_out": 3874,
+   "requests": 13,
+   "tool_calls": 19
+  },
+  "beacon:L03": {
+   "platform": "beacon",
+   "script": "L03",
+   "designed": {
+    "domain": "operations",
+    "task_type": "lookup",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true
+   ],
+   "turn_cost": [
+    0.00866494
+   ],
+   "tokens_in": 18952,
+   "tokens_out": 1027,
+   "requests": 4,
+   "tool_calls": 5
+  },
+  "beacon:L04": {
+   "platform": "beacon",
+   "script": "L04",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft",
+    "skill": null,
+    "servers": [
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 2,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00531588,
+    0.00220816,
+    0.0007831
+   ],
+   "tokens_in": 25403,
+   "tokens_out": 735,
+   "requests": 6,
+   "tool_calls": 4
+  },
+  "beacon:L05": {
+   "platform": "beacon",
+   "script": "L05",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 1,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [],
+    [
+     true
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00913856,
+    0.01024781,
+    0.00176405,
+    0.00485852
+   ],
+   "tokens_in": 68843,
+   "tokens_out": 2003,
+   "requests": 16,
+   "tool_calls": 12
+  },
+  "beacon:L06": {
+   "platform": "beacon",
+   "script": "L06",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "analysis",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     true
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00488721,
+    0.0033625,
+    0.00108585
+   ],
+   "tokens_in": 27759,
+   "tokens_out": 1586,
+   "requests": 6,
+   "tool_calls": 3
+  },
+  "beacon:L07": {
+   "platform": "beacon",
+   "script": "L07",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 1,
+   "turn_checks": [
+    [],
+    [
+     true
+    ],
+    [],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.01312061,
+    0.00722472,
+    0.0088217,
+    0.00992136
+   ],
+   "tokens_in": 104982,
+   "tokens_out": 4866,
+   "requests": 15,
+   "tool_calls": 16
+  },
+  "beacon:L08": {
+   "platform": "beacon",
+   "script": "L08",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft",
+    "skill": "customer-reply",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00271082,
+    0.00723857
+   ],
+   "tokens_in": 30162,
+   "tokens_out": 681,
+   "requests": 8,
+   "tool_calls": 6
+  },
+  "beacon:M01": {
+   "platform": "beacon",
+   "script": "M01",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide",
+    "skill": "refund-eligibility",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false,
+     true
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00690898,
+    0.00352425,
+    0.00046504
+   ],
+   "tokens_in": 30602,
+   "tokens_out": 1767,
+   "requests": 7,
+   "tool_calls": 8
+  },
+  "beacon:M02": {
+   "platform": "beacon",
+   "script": "M02",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide",
+    "skill": "refund-eligibility",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [],
+    [
+     false
+    ],
+    [
+     false,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.0145298,
+    0.00594844,
+    0.00306839,
+    0.00650864
+   ],
+   "tokens_in": 64280,
+   "tokens_out": 2193,
+   "requests": 14,
+   "tool_calls": 12
+  },
+  "beacon:M03": {
+   "platform": "beacon",
+   "script": "M03",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide",
+    "skill": "refund-eligibility",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 1,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.01728998,
+    0.00339664,
+    0.00860172
+   ],
+   "tokens_in": 64049,
+   "tokens_out": 3361,
+   "requests": 12,
+   "tool_calls": 12
+  },
+  "beacon:M04": {
+   "platform": "beacon",
+   "script": "M04",
+   "designed": {
+    "domain": "support",
+    "task_type": "triage",
+    "skill": "ticket-triage",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     true
+    ],
+    [],
+    [
+     false,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00546936,
+    0.004419,
+    0.00258224,
+    0.0032852
+   ],
+   "tokens_in": 30135,
+   "tokens_out": 2380,
+   "requests": 6,
+   "tool_calls": 9
+  },
+  "beacon:M05": {
+   "platform": "beacon",
+   "script": "M05",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": null,
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 4,
+   "passed_turns": 4,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true,
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.0040776,
+    0.00173932,
+    0.00952068,
+    0.0036504
+   ],
+   "tokens_in": 32982,
+   "tokens_out": 1401,
+   "requests": 8,
+   "tool_calls": 5
+  },
+  "beacon:M06": {
+   "platform": "beacon",
+   "script": "M06",
+   "designed": {
+    "domain": "support",
+    "task_type": "draft",
+    "skill": "customer-reply",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 1,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": [
+     3
+    ]
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     true
+    ],
+    [],
+    [
+     false,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00788332,
+    0.00857676,
+    0.00057639
+   ],
+   "tokens_in": 49862,
+   "tokens_out": 3681,
+   "requests": 10,
+   "tool_calls": 16
+  },
+  "beacon:M07": {
+   "platform": "beacon",
+   "script": "M07",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": "customer-reply",
+    "servers": [
+     "filesystem",
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 2,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     false
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00979097,
+    0.00407928,
+    0.00227208
+   ],
+   "tokens_in": 46118,
+   "tokens_out": 954,
+   "requests": 11,
+   "tool_calls": 8
+  },
+  "chatly:A01": {
+   "platform": "chatly",
+   "script": "A01",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00040824,
+    0.00035324,
+    7.528e-05
+   ],
+   "tokens_in": 623,
+   "tokens_out": 574,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "chatly:A02": {
+   "platform": "chatly",
+   "script": "A02",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 1,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 4,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00034164,
+    8.515e-05,
+    0.0005308,
+    0.000486
+   ],
+   "tokens_in": 1178,
+   "tokens_out": 572,
+   "requests": 4,
+   "tool_calls": 0
+  },
+  "chatly:A03": {
+   "platform": "chatly",
+   "script": "A03",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": "inventory-reorder",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [],
+    [
+     false
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00040624,
+    0.00047592,
+    7.992e-05,
+    0.00012914
+   ],
+   "tokens_in": 1150,
+   "tokens_out": 1114,
+   "requests": 4,
+   "tool_calls": 0
+  },
+  "chatly:A04": {
+   "platform": "chatly",
+   "script": "A04",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 1,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     false
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00052032,
+    0.00058988,
+    0.00069908,
+    0.0007116
+   ],
+   "tokens_in": 1118,
+   "tokens_out": 940,
+   "requests": 4,
+   "tool_calls": 0
+  },
+  "chatly:A05": {
+   "platform": "chatly",
+   "script": "A05",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 2,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 2,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00031433,
+    0.00109512,
+    0.00013502,
+    0.00066616
+   ],
+   "tokens_in": 2344,
+   "tokens_out": 1599,
+   "requests": 4,
+   "tool_calls": 0
+  },
+  "chatly:A06": {
+   "platform": "chatly",
+   "script": "A06",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00041192,
+    0.0003534,
+    0.0004722
+   ],
+   "tokens_in": 602,
+   "tokens_out": 403,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "chatly:A07": {
+   "platform": "chatly",
+   "script": "A07",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": "inventory-reorder",
+    "servers": [
+     "memory",
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 0,
+   "turn_checks": [
+    [],
+    [
+     false
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.0003972,
+    0.000273,
+    0.00050756
+   ],
+   "tokens_in": 636,
+   "tokens_out": 411,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "chatly:A08": {
+   "platform": "chatly",
+   "script": "A08",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 2,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [],
+    [
+     false
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00078356,
+    0.00063364,
+    0.00049504,
+    0.001035
+   ],
+   "tokens_in": 1549,
+   "tokens_out": 1027,
+   "requests": 4,
+   "tool_calls": 0
+  },
+  "chatly:A09": {
+   "platform": "chatly",
+   "script": "A09",
+   "designed": {
+    "domain": "operations",
+    "task_type": "lookup",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false,
+     false,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true
+   ],
+   "turn_cost": [
+    0.00011003
+   ],
+   "tokens_in": 149,
+   "tokens_out": 498,
+   "requests": 1,
+   "tool_calls": 0
+  },
+  "chatly:A10": {
+   "platform": "chatly",
+   "script": "A10",
+   "designed": {
+    "domain": "operations",
+    "task_type": "analysis",
+    "skill": "inventory-reorder",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": [
+     2
+    ]
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00031232,
+    0.00029767,
+    0.00105952
+   ],
+   "tokens_in": 694,
+   "tokens_out": 1141,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "chatly:A11": {
+   "platform": "chatly",
+   "script": "A11",
+   "designed": {
+    "domain": "operations",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00046156,
+    0.00056476,
+    4.1e-05
+   ],
+   "tokens_in": 608,
+   "tokens_out": 534,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "chatly:L01": {
+   "platform": "chatly",
+   "script": "L01",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise",
+    "skill": "price-change-memo",
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 0,
+   "turn_checks": [
+    [],
+    [
+     false
+    ],
+    [
+     false
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00076388,
+    9.425e-05,
+    0.00101676,
+    0.00195548
+   ],
+   "tokens_in": 1928,
+   "tokens_out": 1687,
+   "requests": 4,
+   "tool_calls": 0
+  },
+  "chatly:L02": {
+   "platform": "chatly",
+   "script": "L02",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise",
+    "skill": null,
+    "servers": [],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 3,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 1,
+   "turn_checks": [
+    [],
+    [],
+    [
+     true
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00162812,
+    0.0012904,
+    0.00017132,
+    0.0005533
+   ],
+   "tokens_in": 3522,
+   "tokens_out": 2429,
+   "requests": 4,
+   "tool_calls": 0
+  },
+  "chatly:L03": {
+   "platform": "chatly",
+   "script": "L03",
+   "designed": {
+    "domain": "operations",
+    "task_type": "lookup",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true
+   ],
+   "turn_cost": [
+    6.84e-05
+   ],
+   "tokens_in": 198,
+   "tokens_out": 117,
+   "requests": 1,
+   "tool_calls": 0
+  },
+  "chatly:L04": {
+   "platform": "chatly",
+   "script": "L04",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft",
+    "skill": null,
+    "servers": [
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 2,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.0005146,
+    0.00021654,
+    0.0006674
+   ],
+   "tokens_in": 692,
+   "tokens_out": 1490,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "chatly:L05": {
+   "platform": "chatly",
+   "script": "L05",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "report",
+    "skill": "weekly-sales-report",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 1,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [],
+    [
+     false
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00033188,
+    0.0005154,
+    0.00013147,
+    0.000423
+   ],
+   "tokens_in": 1163,
+   "tokens_out": 524,
+   "requests": 4,
+   "tool_calls": 0
+  },
+  "chatly:L06": {
+   "platform": "chatly",
+   "script": "L06",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "analysis",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.000431,
+    9.586e-05,
+    0.00068844
+   ],
+   "tokens_in": 664,
+   "tokens_out": 594,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "chatly:L07": {
+   "platform": "chatly",
+   "script": "L07",
+   "designed": {
+    "domain": "strategy",
+    "task_type": "advise",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 0,
+   "turn_checks": [
+    [],
+    [
+     false
+    ],
+    [],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00018631,
+    4.68e-05,
+    0.00032209,
+    0.0012
+   ],
+   "tokens_in": 1522,
+   "tokens_out": 1839,
+   "requests": 4,
+   "tool_calls": 0
+  },
+  "chatly:L08": {
+   "platform": "chatly",
+   "script": "L08",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft",
+    "skill": "customer-reply",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00047476,
+    0.00012907
+   ],
+   "tokens_in": 390,
+   "tokens_out": 763,
+   "requests": 2,
+   "tool_calls": 0
+  },
+  "chatly:M01": {
+   "platform": "chatly",
+   "script": "M01",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide",
+    "skill": "refund-eligibility",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false,
+     true
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    8.11e-05,
+    0.00070432,
+    0.00015621
+   ],
+   "tokens_in": 823,
+   "tokens_out": 1090,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "chatly:M02": {
+   "platform": "chatly",
+   "script": "M02",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide",
+    "skill": "refund-eligibility",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [],
+    [
+     false
+    ],
+    [
+     true,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00052464,
+    0.00012266,
+    0.00047908,
+    0.0001362
+   ],
+   "tokens_in": 1156,
+   "tokens_out": 1430,
+   "requests": 4,
+   "tool_calls": 0
+  },
+  "chatly:M03": {
+   "platform": "chatly",
+   "script": "M03",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide",
+    "skill": "refund-eligibility",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 1,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00013371,
+    0.000588,
+    0.00013367
+   ],
+   "tokens_in": 782,
+   "tokens_out": 1335,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "chatly:M04": {
+   "platform": "chatly",
+   "script": "M04",
+   "designed": {
+    "domain": "support",
+    "task_type": "triage",
+    "skill": "ticket-triage",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [],
+    [
+     true,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00032172,
+    0.00079784,
+    0.00048932,
+    0.00318392
+   ],
+   "tokens_in": 1070,
+   "tokens_out": 2161,
+   "requests": 4,
+   "tool_calls": 0
+  },
+  "chatly:M05": {
+   "platform": "chatly",
+   "script": "M05",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": null,
+    "servers": [
+     "shop",
+     "filesystem"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 4,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false,
+     false
+    ],
+    [
+     true
+    ],
+    [
+     false,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.0003336,
+    0.00027484,
+    6.016e-05,
+    0.00011214
+   ],
+   "tokens_in": 959,
+   "tokens_out": 824,
+   "requests": 4,
+   "tool_calls": 0
+  },
+  "chatly:M06": {
+   "platform": "chatly",
+   "script": "M06",
+   "designed": {
+    "domain": "support",
+    "task_type": "draft",
+    "skill": "customer-reply",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 1,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": [
+     3
+    ]
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [],
+    [
+     true,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00077844,
+    0.0002256,
+    0.0007956
+   ],
+   "tokens_in": 868,
+   "tokens_out": 972,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "chatly:M07": {
+   "platform": "chatly",
+   "script": "M07",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": "customer-reply",
+    "servers": [
+     "filesystem",
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00066608,
+    0.00091584,
+    0.00070372
+   ],
+   "tokens_in": 981,
+   "tokens_out": 927,
+   "requests": 3,
+   "tool_calls": 0
+  }
+ }
+}

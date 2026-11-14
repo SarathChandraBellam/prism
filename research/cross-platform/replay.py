@@ -57,14 +57,15 @@ def load_recordings():
     for f in sorted(os.listdir(os.path.join(RUN, "chatly"))):
         r = json.load(open(os.path.join(RUN, "chatly", f)))
         sc = scenarios()[r["session_id"]]
-        if len(r["turns"]) < len(sc["turns"]): raise SystemExit(f"Chatly recording incomplete: {r['session_id']}")
+        if len(r["turns"]) < len(sc["turns"]): continue                          # unfinished (quota): the script is out of scope until it is recorded
         rec["chatly"][r["session_id"]] = [{
             "idx": t["turn_index"], "dur_ms": sum(a["duration_ms"] for a in t["attempts"]), "checks": t["checks"], "answered": t["answered"],
             "attempts": t["attempts"], "reply": t["reply"],
             "cost": sum(price(a["model"], a["tokens_in"], a["tokens_out"]) for a in t["attempts"]),
             "tokens_in": sum(a["tokens_in"] or 0 for a in t["attempts"]), "tokens_out": sum(a["tokens_out"] or 0 for a in t["attempts"])}
             for t in r["turns"]]
-    for p in PLATFORMS: assert len(rec[p]) == 32, (p, len(rec[p]))
+    scope = set(rec["chatly"])                                                   # scripts recorded on all three platforms
+    for p in PLATFORMS: rec[p] = {k: v for k, v in rec[p].items() if k in scope}
     return rec
 
 
@@ -230,7 +231,9 @@ def counts(ses):
 def main():
     scs, rec = scenarios(), load_recordings()
     para = json.load(open(os.path.join(D, "paraphrases.json")))
-    tasks = make_tasks(scs)
+    tasks = make_tasks(scs)                                                      # all 64 are drawn, so the draw does not depend on the scope
+    scope = set(rec["chatly"]); all_tasks = len(tasks)
+    tasks = [t for t in tasks if t["script"] in scope]
     users = {u[0]: u for u in world.USERS}
     for t in tasks:
         t["sessions"] = play(t, rec, users[t["user"]][3], random.Random(f"{SEED}-{t['task_id']}"))
@@ -238,7 +241,7 @@ def main():
     directory = {u["handle"]: u for u in json.load(open(os.path.join(D, "directory.json")))["users"]}
     ids = Ids()
     exports = {p: [] for p in PLATFORMS}
-    truth = {"seed": SEED, "rules": {"p_notice": P_NOTICE, "p_switch": P_SWITCH, "max_switches": MAX_SWITCH, "switch_gap_minutes": [2, 12]},
+    truth = {"seed": SEED, "scope": {"scripts": sorted(scope), "scripts_pending": sorted(set(scs) - scope), "tasks_drawn": all_tasks, "tasks_in_scope": len(tasks)}, "rules": {"p_notice": P_NOTICE, "p_switch": P_SWITCH, "max_switches": MAX_SWITCH, "switch_gap_minutes": [2, 12]},
              "tasks": [], "seats": [], "recordings": {}}
     for t in sorted(tasks, key=lambda x: x["start_ts"]):
         sc, ch = scs[t["script"]], []
