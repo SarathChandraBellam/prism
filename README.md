@@ -6,6 +6,8 @@ An open-source, vendor-neutral framework for Reflect-style reports, inspired by 
 
 Prism turns AI assistant chats and agent traces into periodic, privacy-preserving reflection reports. It breaks your work with the assistant down into topics, task types, time patterns and how much of it is delegated, then writes a short narrative with reflective questions and concrete suggestions for working better.
 
+For an organisation with several AI tools, Prism turns the same traces into a small set of **insight cards**. Each card answers a decision that has an owner: which seats to pay for, which tool to use for which job, what to build next. Each card says how far it can be trusted.
+
 > **Status: design phase.** There is no code yet. This repository currently holds the project's intent, architecture and privacy model. Feedback on the design is the most valuable contribution right now. See [Contributing](#contributing).
 
 ## Why
@@ -35,6 +37,21 @@ Prism is meant to be the open, vendor-neutral, self-hostable layer for this.
 
 See [docs/architecture.md](docs/architecture.md) for details.
 
+## Decisions for the organisation
+
+Prism serves six decisions. They are listed in the [insight catalogue](docs/insights.md) with their owners, the trace attributes they read and the evidence they need.
+
+| Decision | Owner |
+|----------|-------|
+| Which seats do we pay for? | finance |
+| What work goes to AI? | leadership |
+| Which tool for which job? | platform owner |
+| What do we build next: skills, connectors, context? | enablement |
+| Where does sensitive work go? | security |
+| How do I work with AI? | the individual |
+
+An insight card states a finding, its evidence, an action and an owner. It also states what kind of evidence it rests on (counted, linked, labelled or checked), the measured error of that evidence, and whether to act, check first or watch ([ADR 0006](docs/adr/0006-insight-card-contract.md)). The [decision study](docs/research/decision-study.md) tested all six on simulated data.
+
 ## Principles
 
 - **Privacy is applied at extraction.** Excluded chats (incognito, opted out, policy-restricted) produce no record. Sensitive chats count towards totals but keep only a generic summary. Raw transcripts never reach the reporting layer. See [docs/privacy.md](docs/privacy.md).
@@ -47,7 +64,7 @@ See [docs/architecture.md](docs/architecture.md) for details.
 
 - Monitoring or ranking individual employees.
 - Storing or re-serving raw chat transcripts.
-- Being an LLM observability or tracing tool (cost, latency, evals). Prism reads traces to understand *how people work*, not to report how models or agents perform.
+- Being a live monitoring, debugging or evaluation tool. Prism does not alert, does not debug a single request and does not run evaluations. It reads cost, errors and the results of evaluations from traces when a decision needs them ([ADR 0004](docs/adr/0004-scope-organisation-decisions.md)).
 - Being tied to any single AI vendor.
 
 ## Roadmap
@@ -57,7 +74,7 @@ See [docs/architecture.md](docs/architecture.md) for details.
 | **0. Design** *(now)* | Intent, architecture, privacy model, extraction schema, aggregate definitions |
 | **1. Personal reports** | Core pipeline, record schema, a reference chat adapter and an OpenTelemetry GenAI trace adapter, CLI to generate a report |
 | **2. Embeddable** | Library and API for platforms to offer Prism reports to their own users |
-| **3. Organization insights** | Aggregated, anonymized team and org views with minimum-group thresholds, RBAC and audit log |
+| **3. Organization insights** | Insight cards for the six decisions, built on tasks and a small sample of checked answers, with minimum-group thresholds, RBAC and audit log |
 | **Later** | Topic graph showing how interests connect and evolve over time |
 
 Open design questions are tracked in [docs/architecture.md](docs/architecture.md#open-questions) and as GitHub issues.

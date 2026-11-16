@@ -837,7 +837,7 @@
       "where": "resource"
      }
     ],
-    "verdict": "partial"
+    "verdict": "ready"
    },
    "beacon": {
     "missing": [
@@ -3072,7 +3072,8 @@
  "rule": [
   "`ready`: every non-optional need is on at least 99% of its spans and every external input is available.",
   "`blocked`: a non-optional need is absent (below 1% of its spans, or the platform has no spans of that type), or a required external input is not available.",
-  "`partial`: anything else, i.e. a non-optional need is on 1% to 99% of its spans, or only optional needs fall short.",
+  "`partial`: anything else, i.e. a non-optional need is on 1% to 99% of its spans, or an optional need is absent.",
+  "An optional need that is on some spans does not lower the verdict: it belongs only where it applies (an error type only on a failed call).",
   "An optional need on a platform with no spans of its type is not applicable and does not count.",
   "A need marked `when: ok` is measured only on spans that did not fail: a failed model call has no tokens and a failed turn has no reply."
  ],

@@ -1,0 +1,196 @@
+{
+ "cards": [
+  {
+   "action": "Manage the number of seats before the token spend. Review token cost only for seats with heavy use.",
+   "basis": "counted",
+   "caveat": "The simulated staff are light users. Heavy agent use changes the ratio.",
+   "decision": "D1",
+   "error": "none for the counts; the token cost is list price, not a bill",
+   "evidence": [
+    "Licences in the window: 271.43; token cost at list prices: 0.89",
+    "Per task started: 4.24 of licence against 0.014 of tokens",
+    "Tokens equal the seat price at about 1,702 tasks per seat per month; staff did 2.7 tasks per person per week"
+   ],
+   "finding": "Seats cost 304 times the token cost of the work done on them.",
+   "owner": "finance",
+   "rank": 1,
+   "readiness": "act",
+   "readiness_rule": "counted evidence",
+   "scope": "2 weeks, 12 people, 64 tasks, 77 sessions, 3 platforms",
+   "title": "The cost is in the seats, not in the tokens",
+   "weight": 1.0
+  },
+  {
+   "action": "Make Atlas the default for work that needs company data.",
+   "basis": "checked",
+   "caveat": "Every script was run once on every platform. In a company that is a planned test set, not what the traces give for free.",
+   "decision": "D3",
+   "error": "sampling interval, 75 checked turns per platform from 32 scripts",
+   "evidence": [
+    "Checked turns correct: Atlas 66/75, Beacon 37/75, Chatly 11/75",
+    "Atlas against Beacon: +39 points, 95% interval +24 to +53 with the script as the unit",
+    "31 of 64 tasks started on another platform than Atlas"
+   ],
+   "finding": "Atlas is right on 88% of checked turns, Beacon on 49% and Chatly on 15%.",
+   "owner": "platform owner",
+   "rank": 2,
+   "readiness": "act",
+   "readiness_rule": "D3 bar: the interval of the difference excludes zero with the script as the unit",
+   "scope": "2 weeks, 12 people, 64 tasks, 77 sessions, 3 platforms",
+   "title": "Atlas gets the most answers right",
+   "weight": 0.484
+  },
+  {
+   "action": "Do not cancel on this evidence. Ask the holders, or wait until the evidence rule fires.",
+   "basis": "linked",
+   "caveat": "A holder with one seat is never flagged. A seat used rarely but for something that matters looks the same as an unused one.",
+   "decision": "D1",
+   "error": "task links: precision 13/13, recall 13/13",
+   "evidence": [
+    "Quiet seats: hana on Chatly (0 of 6 starts), dmitri on Chatly (0 of 6 starts), ines on Beacon (0 of 1 starts), ines on Chatly (0 of 1 starts), freya on Beacon (0 of 3 starts), freya on Chatly (0 of 3 starts), ben on Atlas (0 of 4 starts)",
+    "A seat with no start is evidence only after its holder has made 29 task starts. The busiest holder made 9; at the observed rates that takes 4 to 56 more weeks",
+    "In a simulation of this company, the 10% share rule flags a seat that is in use in 97% of 2-week windows",
+    "Used only as a fallback after a failure elsewhere: dmitri on Chatly"
+   ],
+   "finding": "7 of 24 seats had almost no task starts, worth 150 of 570 per month, and 0 of them can be called unused on this evidence.",
+   "owner": "finance",
+   "rank": 3,
+   "readiness": "watch",
+   "readiness_rule": "D1 bar: the chance of this few starts at a true share of 10% is under 5%",
+   "scope": "2 weeks, 12 people, 64 tasks, 77 sessions, 3 platforms",
+   "title": "Quiet seats, not yet unused seats",
+   "weight": 0.263
+  },
+  {
+   "action": "Add the MCP server `shop` to Chatly, or send that work to a platform that has it.",
+   "basis": "linked",
+   "caveat": "The next platform may have used the capability only because it was there. A capability the first platform has but did not use in the window counts as missing.",
+   "decision": "D4",
+   "error": "task links: precision 13/13, recall 13/13; inability phrase scored above",
+   "evidence": [
+    "3 of 3 tasks that left Chatly used the MCP server shop on the next platform",
+    "Tasks started on Chatly that were re-done elsewhere or ended on trouble: 78% (7/9)",
+    "8 more tasks ended on Chatly with a reply that says it cannot reach the data; 50% (11/22) of its turns carry such a phrase (the phrase marks a wrong answer in 9 of 10 checked turns)"
+   ],
+   "finding": "11 tasks failed on Chatly, which does not have the MCP server `shop`.",
+   "owner": "enablement",
+   "rank": 4,
+   "readiness": "act",
+   "readiness_rule": "D4 bar: the same gap in 5 tasks or more is `act`, in 3 or 4 `check first` (here 11)",
+   "scope": "2 weeks, 12 people, 64 tasks, 77 sessions, 3 platforms",
+   "title": "Chatly lacks the MCP server shop",
+   "weight": 0.172
+  },
+  {
+   "action": "Do not rank platforms by error rates. Fund about 30 checked answers per period, and check flagged turns first.",
+   "basis": "checked",
+   "caveat": "Failure rates from flagged turns only are biased upwards. Use a random sample for the rate.",
+   "decision": "D3",
+   "error": "sampling interval, 134 checked turns",
+   "evidence": [
+    "Silent failures: 51% (19/37), 95% interval 36% to 67%",
+    "A failed tool call marks a wrong answer in 4 of 18 turns; an inability phrase in 11 of 13",
+    "10 checked turns per platform pick the best platform in 96% of simulated samples: 30 checks for the period"
+   ],
+   "finding": "19 of 37 turns that failed a check show no error, no empty reply and no \"I can't\" in the trace.",
+   "owner": "platform owner",
+   "rank": 5,
+   "readiness": "act",
+   "readiness_rule": "counted against checks; the interval is far from zero",
+   "scope": "2 weeks, 12 people, 64 tasks, 77 sessions, 3 platforms",
+   "title": "Half of the wrong answers leave no sign in the trace",
+   "weight": 0.142
+  },
+  {
+   "action": "Start with Beacon: find what its re-done tasks needed (see the capability cards).",
+   "basis": "linked",
+   "caveat": "People time is the length of a session, not effort. Tasks dropped with no sign in the trace are not counted.",
+   "decision": "D4",
+   "error": "task links: precision 13/13, recall 13/13; the trouble flag is right for 9 of 19 sessions, so the upper bound is loose",
+   "evidence": [
+    "Re-done sessions: 13 of 77",
+    "Upper bound with sessions that ended on trouble: 34% of cost, 28% of time",
+    "Highest on Beacon: 28% of its token cost was re-done elsewhere"
+   ],
+   "finding": "13% of the token cost and 8% of people's time went to sessions that the person then re-did on another platform.",
+   "owner": "enablement",
+   "rank": 6,
+   "readiness": "check first",
+   "readiness_rule": "linked evidence with a loose upper bound",
+   "scope": "2 weeks, 12 people, 64 tasks, 77 sessions, 3 platforms",
+   "title": "Work that is done twice",
+   "weight": 0.131
+  },
+  {
+   "action": "Add the skill `weekly-sales-report` to Beacon, or send that work to a platform that has it.",
+   "basis": "linked",
+   "caveat": "The next platform may have used the capability only because it was there. A capability the first platform has but did not use in the window counts as missing.",
+   "decision": "D4",
+   "error": "task links: precision 13/13, recall 13/13",
+   "evidence": [
+    "3 of 7 tasks that left Beacon used the skill weekly-sales-report on the next platform",
+    "Tasks started on Beacon that were re-done elsewhere or ended on trouble: 41% (9/22)"
+   ],
+   "finding": "3 tasks failed on Beacon, which does not have the skill `weekly-sales-report`.",
+   "owner": "enablement",
+   "rank": 7,
+   "readiness": "check first",
+   "readiness_rule": "D4 bar: the same gap in 5 tasks or more is `act`, in 3 or 4 `check first` (here 3)",
+   "scope": "2 weeks, 12 people, 64 tasks, 77 sessions, 3 platforms",
+   "title": "Beacon lacks the skill weekly-sales-report",
+   "weight": 0.047
+  },
+  {
+   "action": "Do not route by task type yet. Plan a test set of 10 checked tasks per platform and task type.",
+   "basis": "checked",
+   "caveat": "The simulation takes each cell's observed rate as the true rate. Smaller real gaps need more checks.",
+   "decision": "D3",
+   "error": "sampling interval; cells hold 4 to 16 checked turns",
+   "evidence": [
+    "Comparisons significant at 0.05: 9 of 21; after correction for many tests: 7",
+    "Task types where another platform has the highest rate: none",
+    "10 checks per platform and task type pick the right platform 9 times in 10 on average: 210 checks. The window produced 134 checkable turns and 16 of 21 cells are short of 10"
+   ],
+   "finding": "7 of 21 platform comparisons inside a task type hold up, and no task type has a clear best platform other than Atlas.",
+   "owner": "platform owner",
+   "rank": 8,
+   "readiness": "watch",
+   "readiness_rule": "D3 bar not met inside task types",
+   "scope": "2 weeks, 12 people, 64 tasks, 77 sessions, 3 platforms",
+   "title": "Not enough checks to route by task type",
+   "weight": 0
+  },
+  {
+   "action": "Show the work map by domain only, and only for platforms whose labels agree. Fix the task type label before it is used across platforms.",
+   "basis": "labelled",
+   "caveat": "The chat platform's transcripts have no tool lines, so the same work reads differently. Labels come from many small free models.",
+   "decision": "D2",
+   "error": "agreement as above",
+   "evidence": [
+    "Agreement between platforms (kappa): domain 0.44 to 0.85, task type 0.31 to 0.59",
+    "Label equals the designed label: Atlas domain 88% (28/32), task type 66% (21/32), Beacon domain 78% (25/32), task type 59% (19/32), Chatly domain 69% (22/32), task type 50% (16/32)",
+    "The smallest role has 4 people; the minimum group size is 5"
+   ],
+   "finding": "The same task gets the same task type on all three platforms in 34% (11/32) of scripts.",
+   "owner": "leadership",
+   "rank": 9,
+   "readiness": "watch",
+   "readiness_rule": "D2 bar: kappa 0.6 or more, and groups at or above the minimum size",
+   "scope": "2 weeks, 12 people, 64 tasks, 77 sessions, 3 platforms",
+   "title": "The work map cannot be compared across platforms yet",
+   "weight": 0
+  }
+ ],
+ "not_available": [
+  {
+   "decision": "D5",
+   "note": "No sensitivity label or policy exists, so no card can be made. A first count: 26 of 77 sessions name an order, ticket or SKU id in a prompt (Atlas 45% (17/38), Beacon 22% (5/23), Chatly 25% (4/16)). An id is not sensitivity.",
+   "question": "Where does sensitive work go?"
+  },
+  {
+   "decision": "D6",
+   "note": "Not an organisation card. The personal report goes to the person (round 3).",
+   "question": "How do I work with AI?"
+  }
+ ]
+}

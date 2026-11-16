@@ -16,7 +16,8 @@ READY, ABSENT = 0.99, 0.01            # a need is met at >= 99% of spans, absent
 RULE = [f"`ready`: every non-optional need is on at least {READY:.0%} of its spans and every external input is available.",
         f"`blocked`: a non-optional need is absent (below {ABSENT:.0%} of its spans, or the platform has no spans of that type), "
         "or a required external input is not available.",
-        "`partial`: anything else, i.e. a non-optional need is on 1% to 99% of its spans, or only optional needs fall short.",
+        "`partial`: anything else, i.e. a non-optional need is on 1% to 99% of its spans, or an optional need is absent.",
+        "An optional need that is on some spans does not lower the verdict: it belongs only where it applies (an error type only on a failed call).",
         "An optional need on a platform with no spans of its type is not applicable and does not count.",
         "A need marked `when: ok` is measured only on spans that did not fail: a failed model call has no tokens and a failed turn has no reply."]
 CONTENT = {"gen_ai.input.messages", "gen_ai.output.messages", "gen_ai.tool.call.arguments", "gen_ai.tool.call.result",
@@ -54,7 +55,7 @@ def verdict(needs, checks, external):
     req = [c for nd, c in zip(needs, checks) if not nd.get("optional")]
     opt = [c for nd, c in zip(needs, checks) if nd.get("optional")]
     if any(c["status"] in ("absent", "no such spans") for c in req) or not all(e["available"] for e in external): return "blocked"
-    if any(c["status"] == "partial" for c in req) or any(c["status"] in ("partial", "absent") for c in opt): return "partial"
+    if any(c["status"] == "partial" for c in req) or any(c["status"] == "absent" for c in opt): return "partial"
     return "ready"
 
 
@@ -191,7 +192,7 @@ def markdown(cov, off, cat, gp, spans):
           "- `error.type` is set on " + ", ".join(f"{sum(carries(x, 'execute_tool', 'error.type') for x in ts if base.failed(x))} of {sum(map(base.failed, ts))} failed tool spans on {base.NAME[p]}"
                                                   for p in P for ts in [spans_of(spans, p, "execute_tool")] if ts)
           + ". It belongs only on failures, so its low share over all tool spans is not a gap; the same holds for `gen_ai.skill.name`, "
-          "which belongs only on load_skill calls. Both are optional, but they still make D4 partial under the rule.",
+          "which belongs only on load_skill calls. A platform with no skill call at all (Beacon has no skills) has the need absent, and D4 is partial there.",
           "- `gen_ai.evaluation.result` is on 0 spans: the spans carry no events at all, so no checked outcome reaches the traces.",
           f"- Chatly has {len(spans_of(spans, 'chatly', 'execute_tool'))} tool spans, so tool and skill needs do not apply there; they are a capability it lacks.", ""]
 

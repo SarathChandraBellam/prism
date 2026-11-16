@@ -109,44 +109,44 @@ Per platform: turns whose reply has an inability phrase; tasks started there tha
 
 ## Label coverage and match accuracy
 
-Labels file: 42 of 96 recordings labelled at run time. A session gets the label of the script it most resembles on its own platform. This matching step uses the script texts (not available to a real company) and stands in for labelling every session directly. 43 of 64 tasks have a label for their first session; the tables below use only those.
+Labels file: 96 of 96 recordings labelled at run time. A session gets the label of the script it most resembles on its own platform. This matching step uses the script texts (not available to a real company) and stands in for labelling every session directly. 64 of 64 tasks have a label for their first session; the tables below use only those.
 
 | Platform | Sessions with a label | Recordings in labels file | Session -> script match correct | Domain correct (recordings) | Task type correct (recordings) | Domain correct (sessions) | Task type correct (sessions) |
 |---|---|---|---|---|---|---|---|
 | Atlas | 38/38 (100%) | 32 | 38/38 (100%) | 28/32 (88%) | 21/32 (66%) | 35/38 (92%) | 26/38 (68%) |
-| Beacon | 10/23 (43%) | 10 | 23/23 (100%) | 8/10 (80%) | 7/10 (70%) | 8/10 (80%) | 7/10 (70%) |
-| Chatly | 0/16 (0%) | 0 | 15/16 (94%) | 0/0 small n | 0/0 small n | 0/0 small n | 0/0 small n |
+| Beacon | 23/23 (100%) | 32 | 23/23 (100%) | 25/32 (78%) | 19/32 (59%) | 19/23 (83%) | 14/23 (61%) |
+| Chatly | 16/16 (100%) | 32 | 15/16 (94%) | 22/32 (69%) | 16/32 (50%) | 11/16 (69%) | 9/16 (56%) |
 
 - The matching step picks the right script for 76/77 (99%) sessions.
-- Label coverage is 48/77 (62%) of sessions. If this is below 100%, rerun when the labels file is complete.
+- Label coverage is 77/77 (100%) of sessions. If this is below 100%, rerun when the labels file is complete.
 - Recording-level accuracy scores the label against the designed domain and task type. Session-level accuracy also includes match errors.
 
 ## Tasks by role and domain
 
-Labelled tasks only (n = 43 of 64). Domain is the label of the task's first session.
+Labelled tasks only (n = 64 of 64). Domain is the label of the task's first session.
 
 | Role | operations | strategy | support | writing | Total |
 |---|---|---|---|---|---|
-| management | 3 | 2 | 0 | 0 | 5 |
-| operations | 19 | 0 | 0 | 2 | 21 |
-| support | 0 | 0 | 16 | 1 | 17 |
+| management | 7 | 5 | 2 | 2 | 16 |
+| operations | 20 | 0 | 0 | 2 | 22 |
+| support | 0 | 0 | 24 | 2 | 26 |
 
-- The largest cell is operations / operations with 19 tasks.
+- The largest cell is support / support with 24 tasks.
 - Roles have 4 staff each, so one person can shape a whole row. Cells under 5 tasks are small n.
 
 ## Tasks by task type and start platform
 
-Labelled tasks only (n = 43).
+Labelled tasks only (n = 64).
 
 | Task type | Atlas | Beacon | Chatly | Total |
 |---|---|---|---|---|
-| advise | 2 | 0 | 0 | 2 |
-| analysis | 5 | 2 | 0 | 7 |
-| decide | 9 | 1 | 0 | 10 |
-| draft | 5 | 2 | 0 | 7 |
-| lookup | 4 | 0 | 0 | 4 |
+| advise | 2 | 0 | 2 | 4 |
+| analysis | 5 | 3 | 2 | 10 |
+| decide | 9 | 3 | 0 | 12 |
+| draft | 5 | 8 | 1 | 14 |
+| lookup | 4 | 3 | 3 | 10 |
 | report | 5 | 5 | 0 | 10 |
-| triage | 3 | 0 | 0 | 3 |
+| triage | 3 | 0 | 1 | 4 |
 
 - Task type is a label from a small model reading a compact view of the recording, not a measured fact.
 - If people choose a platform by task type, this table shows it. If they choose by habit, it will look flat. The sample is too small to tell the two apart.
@@ -157,15 +157,15 @@ Share of labelled tasks of each type that were re-done on another platform or en
 
 | Task type | Tasks | Re-done elsewhere | Ended on trouble | Either |
 |---|---|---|---|---|
-| advise | 2 | 0/2 (0%) small n | 0/2 (0%) small n | 0/2 (0%) small n |
-| analysis | 7 | 0/7 (0%) | 2/7 (29%) | 2/7 (29%) |
-| decide | 10 | 2/10 (20%) | 3/10 (30%) | 4/10 (40%) |
-| draft | 7 | 0/7 (0%) | 1/7 (14%) | 1/7 (14%) |
-| lookup | 4 | 0/4 (0%) small n | 2/4 (50%) small n | 2/4 (50%) small n |
+| advise | 4 | 0/4 (0%) small n | 1/4 (25%) small n | 1/4 (25%) small n |
+| analysis | 10 | 0/10 (0%) | 4/10 (40%) | 4/10 (40%) |
+| decide | 12 | 3/12 (25%) | 4/12 (33%) | 5/12 (42%) |
+| draft | 14 | 1/14 (7%) | 2/14 (14%) | 3/14 (21%) |
+| lookup | 10 | 4/10 (40%) | 4/10 (40%) | 7/10 (70%) |
 | report | 10 | 4/10 (40%) | 4/10 (40%) | 5/10 (50%) |
-| triage | 3 | 0/3 (0%) small n | 0/3 (0%) small n | 0/3 (0%) small n |
+| triage | 4 | 1/4 (25%) small n | 0/4 (0%) small n | 1/4 (25%) small n |
 
-- Highest failure share: lookup, 2/4 (50%) small n.
+- Highest failure share: lookup, 7/10 (70%).
 - Re-done and trouble overlap, so 'Either' is not the sum of the two. Types with fewer than 5 tasks are small n.
 
 ## Are labels comparable across platforms?
@@ -174,26 +174,26 @@ The same script was recorded on all three platforms. This uses the script identi
 
 | Field | Platforms | Agree | Cohen's kappa |
 |---|---|---|---|
-| domain | atlas-beacon | 8/10 (80%) | 0.0 |
-| domain | atlas-chatly | 0/0 small n | n/a |
-| domain | beacon-chatly | 0/0 small n | n/a |
-| domain | all three agree | 0/0 small n |  |
-| task_type | atlas-beacon | 9/10 (90%) | 0.865 |
-| task_type | atlas-chatly | 0/0 small n | n/a |
-| task_type | beacon-chatly | 0/0 small n | n/a |
-| task_type | all three agree | 0/0 small n |  |
+| domain | atlas-beacon | 29/32 (91%) | 0.846 |
+| domain | atlas-chatly | 23/32 (72%) | 0.547 |
+| domain | beacon-chatly | 21/32 (66%) | 0.441 |
+| domain | all three agree | 21/32 (66%) |  |
+| task_type | atlas-beacon | 21/32 (66%) | 0.586 |
+| task_type | atlas-chatly | 13/32 (41%) | 0.308 |
+| task_type | beacon-chatly | 16/32 (50%) | 0.396 |
+| task_type | all three agree | 11/32 (34%) |  |
 
 | Field | Platform | Label equals designed label |
 |---|---|---|
 | domain | Atlas | 28/32 (88%) |
-| domain | Beacon | 8/10 (80%) |
-| domain | Chatly | 0/0 small n |
+| domain | Beacon | 25/32 (78%) |
+| domain | Chatly | 22/32 (69%) |
 | task_type | Atlas | 21/32 (66%) |
-| task_type | Beacon | 7/10 (70%) |
-| task_type | Chatly | 0/0 small n |
+| task_type | Beacon | 19/32 (59%) |
+| task_type | Chatly | 16/32 (50%) |
 
-- Atlas-Beacon domain: 8/10 (80%) agree.
-- All three agree on domain for 0/0 small n scripts and on task type for 0/0 small n.
+- Atlas-Beacon domain: 29/32 (91%) agree.
+- All three agree on domain for 21/32 (66%) scripts and on task type for 11/32 (34%).
 - Kappa corrects for chance. With a few common labels and few scripts it is unstable; read it with n beside it.
 
 ## Identifiers typed into each tool

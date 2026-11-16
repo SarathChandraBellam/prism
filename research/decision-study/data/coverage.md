@@ -6,7 +6,8 @@ Verdict rule:
 
 - `ready`: every non-optional need is on at least 99% of its spans and every external input is available.
 - `blocked`: a non-optional need is absent (below 1% of its spans, or the platform has no spans of that type), or a required external input is not available.
-- `partial`: anything else, i.e. a non-optional need is on 1% to 99% of its spans, or only optional needs fall short.
+- `partial`: anything else, i.e. a non-optional need is on 1% to 99% of its spans, or an optional need is absent.
+- An optional need that is on some spans does not lower the verdict: it belongs only where it applies (an error type only on a failed call).
 - An optional need on a platform with no spans of its type is not applicable and does not count.
 - A need marked `when: ok` is measured only on spans that did not fail: a failed model call has no tokens and a failed turn has no reply.
 
@@ -17,7 +18,7 @@ Verdict rule:
 | D1 Which seats do we pay for? | task | linked | ready | ready | ready | nothing |
 | D2 What work goes to AI? | task | labelled | ready | ready | ready | nothing |
 | D3 Which tool for which job? | task | checked | blocked | blocked | blocked | external: sampled checks of answers (people or evaluators) not available<br>Atlas: event `gen_ai.evaluation.result`: absent 0% (0/660)<br>Beacon: event `gen_ai.evaluation.result`: absent 0% (0/358)<br>Chatly: event `gen_ai.evaluation.result`: absent 0% (0/44) |
-| D4 What do we build next: skills, connectors, context? | task | linked | partial | partial | blocked | Atlas: execute_tool `error.type` (optional): partial 8.2% (19/232)<br>Atlas: execute_tool `gen_ai.skill.name` (optional): partial 16.8% (39/232)<br>Beacon: execute_tool `error.type` (optional): partial 5.4% (9/167)<br>Beacon: execute_tool `gen_ai.skill.name` (optional): absent 0% (0/167)<br>Chatly: execute_tool `gen_ai.tool.name`: no execute_tool spans on this platform |
+| D4 What do we build next: skills, connectors, context? | task | linked | ready | partial | blocked | Atlas: execute_tool `error.type` (optional): partial 8.2% (19/232)<br>Atlas: execute_tool `gen_ai.skill.name` (optional): partial 16.8% (39/232)<br>Beacon: execute_tool `error.type` (optional): partial 5.4% (9/167)<br>Beacon: execute_tool `gen_ai.skill.name` (optional): absent 0% (0/167)<br>Chatly: execute_tool `gen_ai.tool.name`: no execute_tool spans on this platform |
 | D5 Where does sensitive work go? | session | labelled | blocked | blocked | blocked | external: sensitivity policy and label not available |
 | D6 How do I work with AI? | session | labelled | ready | ready | ready | nothing |
 
@@ -25,17 +26,17 @@ What the evidence must show before a card may say "act" (the bar):
 
 - D1: The chance of seeing this few task starts on the seat, if the holder really used it for 10% of their tasks, is under 5%
 - D2: The label agrees with a reference set (kappa 0.6 or more), and every group shown is at or above the minimum group size
-- D3: The interval of the difference in correct answers between two platforms excludes zero, with the task (not the turn) as the unit
-- D4: The same missing capability shows in at least 5 tasks that were re-done or ended on trouble
+- D3: The interval of the difference in correct answers between two platforms excludes zero, with the task or test script (not the turn) as the unit
+- D4: The same missing capability shows in at least 5 tasks that were re-done or ended on trouble (3 or 4: check first)
 - D5: A sensitivity label with measured agreement exists, and every group shown is at or above the minimum group size
 - D6: None: the report goes to the person, who judges it
 
-- 9 of 18 decision-platform cells are ready, 2 partial and 7 blocked.
-- Ready: D1 on Atlas, D1 on Beacon, D1 on Chatly, D2 on Atlas, D2 on Beacon, D2 on Chatly, D6 on Atlas, D6 on Beacon, D6 on Chatly.
+- 10 of 18 decision-platform cells are ready, 1 partial and 7 blocked.
+- Ready: D1 on Atlas, D1 on Beacon, D1 on Chatly, D2 on Atlas, D2 on Beacon, D2 on Chatly, D4 on Atlas, D6 on Atlas, D6 on Beacon, D6 on Chatly.
 - 2 decisions (D3, D5) are blocked on every platform by an input that is not in any trace: D3 needs sampled checks of answers (people or evaluators); D5 needs sensitivity policy and label.
 - D4 on Chatly: blocked because the platform has no spans of a needed type. This is a missing capability (no tools), not lost data.
 - Non-optional needs below 99%: none.
-- D4 on Atlas, D4 on Beacon: partial only because an optional need falls short.
+- D4 on Beacon: partial only because an optional need falls short.
 
 ## Share of spans that carry each need
 
@@ -59,7 +60,7 @@ For needs measured on spans that did not fail, the share over all spans is in br
 
 - 10 of 13 needs are on 100% of their spans wherever the span type exists.
 - 5 turns have no reply, and 5 of them are failed turns. 4 of the 4 chat spans without tokens are failed requests. A failed request may still be billed, so cost from tokens can be a little low.
-- `error.type` is set on 19 of 19 failed tool spans on Atlas, 9 of 9 failed tool spans on Beacon. It belongs only on failures, so its low share over all tool spans is not a gap; the same holds for `gen_ai.skill.name`, which belongs only on load_skill calls. Both are optional, but they still make D4 partial under the rule.
+- `error.type` is set on 19 of 19 failed tool spans on Atlas, 9 of 9 failed tool spans on Beacon. It belongs only on failures, so its low share over all tool spans is not a gap; the same holds for `gen_ai.skill.name`, which belongs only on load_skill calls. A platform with no skill call at all (Beacon has no skills) has the need absent, and D4 is partial there.
 - `gen_ai.evaluation.result` is on 0 spans: the spans carry no events at all, so no checked outcome reaches the traces.
 - Chatly has 0 tool spans, so tool and skill needs do not apply there; they are a capability it lacks.
 
@@ -72,11 +73,11 @@ The same rule, as if the opt-in content attributes (`gen_ai.input.messages`, `ge
 | D1 Which seats do we pay for? | ready → partial | ready → partial | ready → partial | link a re-ask to its first session, so a fallback is not counted as a task start (optional) |
 | D2 What work goes to AI? | ready → blocked | ready → blocked | ready → blocked | what the person asked; the visible reply, for the compact view |
 | D3 Which tool for which job? | blocked → blocked | blocked → blocked | blocked → blocked | task type, through the label |
-| D4 What do we build next: skills, connectors, context? | partial → blocked | partial → blocked | blocked → blocked | link a re-ask to its first session; no answer, or an inability phrase |
+| D4 What do we build next: skills, connectors, context? | ready → blocked | partial → blocked | blocked → blocked | link a re-ask to its first session; no answer, or an inability phrase |
 | D5 Where does sensitive work go? | blocked → blocked | blocked → blocked | blocked → blocked | what was typed into the tool; what the agent sent to tools (optional) |
 | D6 How do I work with AI? | ready → blocked | ready → blocked | ready → blocked | what the person asked; the visible reply |
 
-- Without content, 0 of 18 cells are ready, 3 partial and 15 blocked (with content: 9, 2, 7).
+- Without content, 0 of 18 cells are ready, 3 partial and 15 blocked (with content: 10, 1, 7).
 - Still ready somewhere without content: none. Blocked everywhere only because content is off: D2, D4, D6.
 - D1 needs content only to link a re-ask to its first session. Without it, task starts fall back to session starts, which counts a fallback as new use.
 - A company that will not record content can still count use per seat, but not say what the work was or why it failed.

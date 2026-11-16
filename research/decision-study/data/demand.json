@@ -60,33 +60,33 @@
      "n": 32
     },
     "beacon": {
-     "correct": 8,
-     "n": 10
+     "correct": 25,
+     "n": 32
     },
     "chatly": {
-     "correct": 0,
-     "n": 0
+     "correct": 22,
+     "n": 32
     }
    },
    "all_three": {
-    "agree": 0,
-    "n": 0
+    "agree": 21,
+    "n": 32
    },
    "pairs": {
     "atlas-beacon": {
-     "agree": 8,
-     "kappa": 0.0,
-     "n": 10
+     "agree": 29,
+     "kappa": 0.846,
+     "n": 32
     },
     "atlas-chatly": {
-     "agree": 0,
-     "kappa": null,
-     "n": 0
+     "agree": 23,
+     "kappa": 0.547,
+     "n": 32
     },
     "beacon-chatly": {
-     "agree": 0,
-     "kappa": null,
-     "n": 0
+     "agree": 21,
+     "kappa": 0.441,
+     "n": 32
     }
    }
   },
@@ -97,33 +97,33 @@
      "n": 32
     },
     "beacon": {
-     "correct": 7,
-     "n": 10
+     "correct": 19,
+     "n": 32
     },
     "chatly": {
-     "correct": 0,
-     "n": 0
+     "correct": 16,
+     "n": 32
     }
    },
    "all_three": {
-    "agree": 0,
-    "n": 0
+    "agree": 11,
+    "n": 32
    },
    "pairs": {
     "atlas-beacon": {
-     "agree": 9,
-     "kappa": 0.865,
-     "n": 10
+     "agree": 21,
+     "kappa": 0.586,
+     "n": 32
     },
     "atlas-chatly": {
-     "agree": 0,
-     "kappa": null,
-     "n": 0
+     "agree": 13,
+     "kappa": 0.308,
+     "n": 32
     },
     "beacon-chatly": {
-     "agree": 0,
-     "kappa": null,
-     "n": 0
+     "agree": 16,
+     "kappa": 0.396,
+     "n": 32
     }
    }
   }
@@ -131,11 +131,11 @@
  "labels": {
   "by_platform_in_file": {
    "atlas": 32,
-   "beacon": 10,
-   "chatly": 0
+   "beacon": 32,
+   "chatly": 32
   },
   "expected_recordings": 96,
-  "file_entries": 42,
+  "file_entries": 96,
   "score_labels": {
    "atlas": {
     "domain": {
@@ -162,44 +162,44 @@
    "beacon": {
     "domain": {
      "recordings": [
-      8,
-      10
+      25,
+      32
      ],
      "sessions": [
-      8,
-      10
+      19,
+      23
      ]
     },
     "task_type": {
      "recordings": [
-      7,
-      10
+      19,
+      32
      ],
      "sessions": [
-      7,
-      10
+      14,
+      23
      ]
     }
    },
    "chatly": {
     "domain": {
      "recordings": [
-      0,
-      0
+      22,
+      32
      ],
      "sessions": [
-      0,
-      0
+      11,
+      16
      ]
     },
     "task_type": {
      "recordings": [
-      0,
-      0
+      16,
+      32
      ],
      "sessions": [
-      0,
-      0
+      9,
+      16
      ]
     }
    }
@@ -224,16 +224,16 @@
     38
    ],
    "beacon": [
-    10,
+    23,
     23
    ],
    "chatly": [
-    0,
+    16,
     16
    ]
   },
   "tasks_labelled": [
-   43,
+   64,
    64
   ]
  },
@@ -459,13 +459,13 @@
  "work_map": {
   "role_x_domain": {
    "management": {
-    "operations": 3,
-    "strategy": 2,
-    "support": 0,
-    "writing": 0
+    "operations": 7,
+    "strategy": 5,
+    "support": 2,
+    "writing": 2
    },
    "operations": {
-    "operations": 19,
+    "operations": 20,
     "strategy": 0,
     "support": 0,
     "writing": 2
@@ -473,40 +473,40 @@
    "support": {
     "operations": 0,
     "strategy": 0,
-    "support": 16,
-    "writing": 1
+    "support": 24,
+    "writing": 2
    }
   },
   "type_fail": {
    "advise": {
-    "either": 0,
-    "redone": 0,
-    "tasks": 2,
-    "trouble": 0
-   },
-   "analysis": {
-    "either": 2,
-    "redone": 0,
-    "tasks": 7,
-    "trouble": 2
-   },
-   "decide": {
-    "either": 4,
-    "redone": 2,
-    "tasks": 10,
-    "trouble": 3
-   },
-   "draft": {
     "either": 1,
     "redone": 0,
-    "tasks": 7,
+    "tasks": 4,
     "trouble": 1
    },
-   "lookup": {
-    "either": 2,
+   "analysis": {
+    "either": 4,
     "redone": 0,
-    "tasks": 4,
+    "tasks": 10,
+    "trouble": 4
+   },
+   "decide": {
+    "either": 5,
+    "redone": 3,
+    "tasks": 12,
+    "trouble": 4
+   },
+   "draft": {
+    "either": 3,
+    "redone": 1,
+    "tasks": 14,
     "trouble": 2
+   },
+   "lookup": {
+    "either": 7,
+    "redone": 4,
+    "tasks": 10,
+    "trouble": 4
    },
    "report": {
     "either": 5,
@@ -515,9 +515,9 @@
     "trouble": 4
    },
    "triage": {
-    "either": 0,
-    "redone": 0,
-    "tasks": 3,
+    "either": 1,
+    "redone": 1,
+    "tasks": 4,
     "trouble": 0
    }
   },
@@ -525,27 +525,27 @@
    "advise": {
     "atlas": 2,
     "beacon": 0,
-    "chatly": 0
+    "chatly": 2
    },
    "analysis": {
     "atlas": 5,
-    "beacon": 2,
-    "chatly": 0
+    "beacon": 3,
+    "chatly": 2
    },
    "decide": {
     "atlas": 9,
-    "beacon": 1,
+    "beacon": 3,
     "chatly": 0
    },
    "draft": {
     "atlas": 5,
-    "beacon": 2,
-    "chatly": 0
+    "beacon": 8,
+    "chatly": 1
    },
    "lookup": {
     "atlas": 4,
-    "beacon": 0,
-    "chatly": 0
+    "beacon": 3,
+    "chatly": 3
    },
    "report": {
     "atlas": 5,
@@ -555,7 +555,7 @@
    "triage": {
     "atlas": 3,
     "beacon": 0,
-    "chatly": 0
+    "chatly": 1
    }
   }
  }

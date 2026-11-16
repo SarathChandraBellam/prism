@@ -20,7 +20,7 @@ Prism works on plain assistant chats and on agent traces (runs with tool calls, 
 
 ## Hypotheses under test
 
-The pipeline shape (adapters, sessions and trace facts, labels, SQL aggregates, one narrator call) is the working assumption. The parts below are not settled. Results so far: [round 1](research/context-study-round1.md), [round 2](research/context-study-round2.md), [round 3: agent trace study](research/agent-trace-study.md), [round 4: cross-platform study](research/cross-platform-study.md). Each is linked to the research question (RQ) in the [context study](research/context-study-proposal.md#3-research-questions) that tests it.
+The pipeline shape (adapters, sessions and trace facts, labels, SQL aggregates, one narrator call) is the working assumption. The parts below are not settled. Results so far: [round 1](research/context-study-round1.md), [round 2](research/context-study-round2.md), [round 3: agent trace study](research/agent-trace-study.md), [round 4: cross-platform study](research/cross-platform-study.md), [round 5: decision study](research/decision-study.md). Each is linked to the research question (RQ) in the [context study](research/context-study-proposal.md#3-research-questions) that tests it.
 
 | Component | Hypothesis | Pilot evidence so far | Tested by |
 |-----------|-----------|-----------------------|-----------|
@@ -33,6 +33,9 @@ The pipeline shape (adapters, sessions and trace facts, labels, SQL aggregates, 
 | Record fields | `collaboration_mode` with four modes is the right label | **Weakened**: single collaboration categories are not reliably measurable (κ about 0.35 between strong models, unchanged after redefinition). Counts of observable behaviour (corrections, feedback relays, questions) are reliable (ρ 0.62–0.77) and match external labels. | RQ7 |
 | Cost model | Shrinking the input keeps cost low | Supported in round 1: a compact view costs $0.00006–0.00033 per session with cheap models, once reasoning is correctly switched off | RQ5 |
 | Generality | The design works beyond one person's coding sessions | Unknown: the pilot used one user's Claude Code logs | RQ6 |
+| Unit above the session | The session is the top unit of work | **Weakened**: with several platforms, session counts misread use, cost and waste. Round 5 proposes the task ([ADR 0005](adr/0005-task-as-unit-of-work.md)) | Round 5 |
+| Outcome | Trace signals can stand in for outcome | **Rejected**: half of the wrong answers leave no sign in the trace. Round 5 proposes a small sample of checked answers ([ADR 0007](adr/0007-outcome-signal.md)) | Rounds 4 and 5 |
+| Labels across platforms | A label means the same on every platform | **Weakened** for task type (the same script gets the same label on three platforms in 11 of 32 cases); holds for domain between similar platforms | Round 5 |
 
 ## Data model
 
@@ -42,7 +45,8 @@ The pipeline shape (adapters, sessions and trace facts, labels, SQL aggregates, 
 | **Trace** | One agent run triggered by a turn: model calls, tool calls, subagents, retries | OpenTelemetry span tree (`invoke_agent` root) |
 | **Session** | All turns and traces in one conversation or thread | `gen_ai.conversation.id`, or the platform's thread id |
 | **Segment** | A part of a session with one coherent topic and its own time range | created by the extractor |
-| **Period** | All segments for a person in a reporting window | report filter |
+| **Task** | A chain of segments by one person that pursue the same piece of work, across sessions and platforms (proposed, [ADR 0005](adr/0005-task-as-unit-of-work.md)) | linked by rule after the sessionizer |
+| **Period** | All segments and tasks for a person in a reporting window | report filter |
 
 A plain chat is a session whose traces have no tool calls. **Meaning is analysed per session.** A single trace is often not meaningful alone ("now fix the test"), and treating each trace or model call as a separate task inflates task counts and skews delegation figures. **Behaviour is counted per trace**, from structure alone.
 
@@ -131,6 +135,10 @@ It holds deterministic SQL definitions over normalized records and trace facts:
 
 A reporting window is a filter on segment and trace timestamps, not on session start, so a session that spans a period boundary is split correctly. Reports already delivered are snapshots and are not rewritten when late traces arrive. Aggregates are the only data the narrator sees, apart from a few sampled summaries.
 
+### Insight cards
+
+The organisation view is a set of cards, one per finding, for the six decisions in the [insight catalogue](insights.md). A card is filled by fixed rules over the aggregates: a finding, its evidence, the kind of evidence (counted, linked, labelled or checked), its measured error, a readiness (act, check first, watch), an action and an owner. The contract is in [ADR 0006](adr/0006-insight-card-contract.md) (proposed). Cards about quality need checked answers, which Prism reads from the traces and does not create ([ADR 0007](adr/0007-outcome-signal.md), proposed).
+
 ### Narrator
 
 A single LLM call receives the aggregates, a handful of example summaries and optional user context. It returns:
@@ -183,7 +191,9 @@ Still open:
 - **Collaboration taxonomy:** keep Prism's four modes, map them to the Economic Index taxonomy, or adopt that taxonomy?
 - **Taxonomy:** fixed, clustered, or hybrid?
 - **Sessions without ids:** what inactivity gap defines a session?
-- **Org thresholds:** what is the minimum group size for organization views, and how is small-cell suppression handled?
+- **Org thresholds:** what is the minimum group size for organization views, and how is small-cell suppression handled? The [privacy model](privacy.md) proposes five people.
+- **Task linking:** does the rule hold for a retry on the same platform, a task resumed days later, and two similar tasks in a row? ([ADR 0005](adr/0005-task-as-unit-of-work.md))
+- **Check sample:** how many checked answers per platform and period, and who checks them? ([ADR 0007](adr/0007-outcome-signal.md))
 - **Implementation language** and storage backend.
 
 Each will be resolved through an [ADR](adr/).

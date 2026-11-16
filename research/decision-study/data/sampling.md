@@ -11,7 +11,7 @@ Data: the decision-study lake (spans only) for the signals; ground truth only to
 | Chatly | 18 | 14 | 36% (5/14, 16–61%) | 1 | 90% (9/10, 60–98%) | 64% (9/14, 39–84%) | 0.289 |
 | All | 134 | 37 | 51% (19/37, 36–67%) | 16 | 53% (18/34, 37–68%) | 49% (18/37, 33–64%) | 0.33 |
 
-- 19 of 37 failed turns (51% (19/37, 36–67%)) show no trouble in the trace. The trace misses most failures.
+- 19 of 37 failed turns (51% (19/37, 36–67%)) show no trouble in the trace. The trace misses about half of the failures.
 - Silent failures are highest on Beacon: 67% (10/15, 42–85%). On that platform a failed turn usually looks normal in the trace. The cells are small.
 - 16 turns with trouble passed their checks. Precision of trouble is 53% (18/34, 37–68%); recall is 49% (18/37, 33–64%).
 - Agreement beyond chance is low: kappa 0.33 over 134 turns. Per-platform cells are small.

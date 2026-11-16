@@ -103,7 +103,7 @@
    "metric": "Share of checked turns that are correct, per task type and platform, with its interval; cost per correct task",
    "unit": "task",
    "basis": "checked",
-   "bar": "The interval of the difference in correct answers between two platforms excludes zero, with the task (not the turn) as the unit",
+   "bar": "The interval of the difference in correct answers between two platforms excludes zero, with the task or test script (not the turn) as the unit",
    "needs": [
     {
      "where": "event",
@@ -171,7 +171,7 @@
    "metric": "Tasks re-done on another platform or ended on trouble, by the capability that was missing",
    "unit": "task",
    "basis": "linked",
-   "bar": "The same missing capability shows in at least 5 tasks that were re-done or ended on trouble",
+   "bar": "The same missing capability shows in at least 5 tasks that were re-done or ended on trouble (3 or 4: check first)",
    "needs": [
     {
      "where": "invoke_agent",

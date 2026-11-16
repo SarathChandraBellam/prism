@@ -373,5 +373,5 @@ The test run failed (`process.exit.code` 1), but the tool call itself worked, so
 As [ADR 0003](adr/0003-otel-trace-as-base.md) says, these are decided later, one at a time:
 
 - **Edge cases** the conventions do not describe directly.
-- **Transformers** that convert other formats into this one. The trace files in `research/` predate this document and use some non-standard attribute names. A transformer will convert them.
+- **Transformers** that convert other formats into this one. The trace files in `research/` predate this document and use some non-standard attribute names. The first transformer, [`conform.py`](../research/decision-study/conform.py), converts the round 4 data and reports what the conventions could not carry ([round 5](research/decision-study.md)).
 - **Prism-specific attributes.** There are none.
