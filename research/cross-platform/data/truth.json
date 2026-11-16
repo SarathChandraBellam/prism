@@ -27,9 +27,7 @@
    "M04",
    "M05",
    "M06",
-   "M07"
-  ],
-  "scripts_pending": [
+   "M07",
    "M08",
    "M09",
    "M10",
@@ -37,8 +35,9 @@
    "M12",
    "M13"
   ],
+  "scripts_pending": [],
   "tasks_drawn": 64,
-  "tasks_in_scope": 52
+  "tasks_in_scope": 64
  },
  "rules": {
   "p_notice": 0.8,
@@ -62,7 +61,7 @@
    "start": "2026-11-06T17:06:55.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_f02ab772a5",
+     "lake_session_id": "beacon:th_8de2d09787",
      "platform": "beacon",
      "start": "2026-11-06T17:06:55.000+00:00",
      "end": "2026-11-06T17:09:19.406+00:00",
@@ -110,7 +109,7 @@
    "start": "2026-11-06T17:24:19.406+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_aa1db19d16",
+     "lake_session_id": "beacon:th_b48996697d",
      "platform": "beacon",
      "start": "2026-11-06T17:24:19.406+00:00",
      "end": "2026-11-06T17:29:34.629+00:00",
@@ -162,7 +161,7 @@
    "start": "2026-11-06T17:54:01.629+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_050554b6ff",
+     "lake_session_id": "beacon:th_c244b5b1a4",
      "platform": "beacon",
      "start": "2026-11-06T17:54:01.629+00:00",
      "end": "2026-11-06T17:55:59.987+00:00",
@@ -216,7 +215,7 @@
    "start": "2026-11-06T18:02:13.987+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_57409f195b",
+     "lake_session_id": "beacon:th_190bd53419",
      "platform": "beacon",
      "start": "2026-11-06T18:02:13.987+00:00",
      "end": "2026-11-06T18:04:35.674+00:00",
@@ -266,7 +265,7 @@
    "start": "2026-11-02T14:05:29.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-3d10672a4d",
+     "lake_session_id": "atlas:atl-d25b73f675",
      "platform": "atlas",
      "start": "2026-11-02T14:05:29.000+00:00",
      "end": "2026-11-02T14:09:18.121+00:00",
@@ -322,7 +321,7 @@
    "start": "2026-11-04T13:40:58.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-2a764c0413",
+     "lake_session_id": "atlas:atl-e024ef8438",
      "platform": "atlas",
      "start": "2026-11-04T13:40:58.000+00:00",
      "end": "2026-11-04T13:44:46.040+00:00",
@@ -372,7 +371,7 @@
    "start": "2026-11-04T13:53:11.040+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-ea293a1e24",
+     "lake_session_id": "atlas:atl-4e61d29643",
      "platform": "atlas",
      "start": "2026-11-04T13:53:11.040+00:00",
      "end": "2026-11-04T13:53:16.724+00:00",
@@ -403,7 +402,7 @@
      }
     },
     {
-     "lake_session_id": "chatly:cvn_2bae04373fbf",
+     "lake_session_id": "chatly:cvn_979ccb184cdf",
      "platform": "chatly",
      "start": "2026-11-04T14:01:35.724+00:00",
      "end": "2026-11-04T14:02:29.745+00:00",
@@ -449,7 +448,7 @@
    "start": "2026-11-09T14:32:54.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-ff71e95004",
+     "lake_session_id": "atlas:atl-bb7aca4d71",
      "platform": "atlas",
      "start": "2026-11-09T14:32:54.000+00:00",
      "end": "2026-11-09T14:33:09.793+00:00",
@@ -497,7 +496,7 @@
    "start": "2026-11-04T14:39:38.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-7d59249112",
+     "lake_session_id": "atlas:atl-2b33590115",
      "platform": "atlas",
      "start": "2026-11-04T14:39:38.000+00:00",
      "end": "2026-11-04T14:40:14.464+00:00",
@@ -528,7 +527,7 @@
      }
     },
     {
-     "lake_session_id": "chatly:cvn_390a96eaacfb",
+     "lake_session_id": "chatly:cvn_f2bddf511bb7",
      "platform": "chatly",
      "start": "2026-11-04T14:47:20.464+00:00",
      "end": "2026-11-04T14:47:23.101+00:00",
@@ -574,7 +573,7 @@
    "start": "2026-11-04T15:00:36.101+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-de8fed3c55",
+     "lake_session_id": "atlas:atl-63f9a7c3e8",
      "platform": "atlas",
      "start": "2026-11-04T15:00:36.101+00:00",
      "end": "2026-11-04T15:04:39.623+00:00",
@@ -628,7 +627,7 @@
    "start": "2026-11-09T19:42:23.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-595e043368",
+     "lake_session_id": "atlas:atl-06a08cfdab",
      "platform": "atlas",
      "start": "2026-11-09T19:42:23.000+00:00",
      "end": "2026-11-09T19:46:12.341+00:00",
@@ -682,7 +681,7 @@
    "start": "2026-11-09T19:52:10.341+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-19ce9e5a3d",
+     "lake_session_id": "atlas:atl-75d2e604e9",
      "platform": "atlas",
      "start": "2026-11-09T19:52:10.341+00:00",
      "end": "2026-11-09T19:55:37.457+00:00",
@@ -738,7 +737,7 @@
    "start": "2026-11-03T17:09:23.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-9efeba3146",
+     "lake_session_id": "atlas:atl-b0061a7d7a",
      "platform": "atlas",
      "start": "2026-11-03T17:09:23.000+00:00",
      "end": "2026-11-03T17:13:32.194+00:00",
@@ -790,7 +789,7 @@
    "start": "2026-11-10T11:54:33.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-2e24bfcac8",
+     "lake_session_id": "atlas:atl-4ab99f8f12",
      "platform": "atlas",
      "start": "2026-11-10T11:54:33.000+00:00",
      "end": "2026-11-10T11:59:03.038+00:00",
@@ -847,7 +846,7 @@
    "start": "2026-11-10T12:13:54.038+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-de15c4e041",
+     "lake_session_id": "atlas:atl-c2cc7d6b5e",
      "platform": "atlas",
      "start": "2026-11-10T12:13:54.038+00:00",
      "end": "2026-11-10T12:16:11.506+00:00",
@@ -901,7 +900,7 @@
    "start": "2026-11-03T10:04:16.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-ed7e4788f2",
+     "lake_session_id": "atlas:atl-3c41ef8ad1",
      "platform": "atlas",
      "start": "2026-11-03T10:04:16.000+00:00",
      "end": "2026-11-03T10:07:26.199+00:00",
@@ -943,6 +942,152 @@
    "n_switches": 0
   },
   {
+   "task_id": "T17",
+   "user": "hana",
+   "role": "support",
+   "script": "M08",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup"
+   },
+   "start": "2026-11-03T10:24:29.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_e385a375f6",
+     "platform": "beacon",
+     "start": "2026-11-03T10:24:29.000+00:00",
+     "end": "2026-11-03T10:24:39.105+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 1,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": false,
+     "cost": 0.00235614,
+     "counts": {
+      "turns": 1,
+      "requests": 2,
+      "failed_requests": 0,
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "tokens_in": 8205,
+      "tokens_out": 173
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T18",
+   "user": "hana",
+   "role": "support",
+   "script": "M09",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide"
+   },
+   "start": "2026-11-06T11:46:45.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-4535c1861b",
+     "platform": "atlas",
+     "start": "2026-11-06T11:46:45.000+00:00",
+     "end": "2026-11-06T11:48:29.400+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 2,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.006551990000000001,
+     "counts": {
+      "turns": 2,
+      "requests": 6,
+      "failed_requests": 1,
+      "tool_calls": 3,
+      "tool_errors": 1,
+      "tokens_in": 27202,
+      "tokens_out": 2588
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T19",
+   "user": "hana",
+   "role": "support",
+   "script": "M12",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup"
+   },
+   "start": "2026-11-04T11:37:56.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-136f48fdaf",
+     "platform": "atlas",
+     "start": "2026-11-04T11:37:56.000+00:00",
+     "end": "2026-11-04T11:39:45.669+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 2,
+     "turns_in_script": 2,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.0108125,
+     "counts": {
+      "turns": 2,
+      "requests": 9,
+      "failed_requests": 0,
+      "tool_calls": 8,
+      "tool_errors": 0,
+      "tokens_in": 37147,
+      "tokens_out": 1054
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
    "task_id": "T20",
    "user": "ines",
    "role": "operations",
@@ -951,13 +1096,13 @@
     "domain": "operations",
     "task_type": "report"
    },
-   "start": "2026-11-03T13:30:45.000+00:00",
+   "start": "2026-11-04T14:25:58.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-e72783e5bb",
+     "lake_session_id": "atlas:atl-35195d0ccb",
      "platform": "atlas",
-     "start": "2026-11-03T13:30:45.000+00:00",
-     "end": "2026-11-03T13:36:05.068+00:00",
+     "start": "2026-11-04T14:25:58.000+00:00",
+     "end": "2026-11-04T14:31:18.068+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 4,
@@ -1009,13 +1154,13 @@
     "domain": "support",
     "task_type": "decide"
    },
-   "start": "2026-11-06T11:48:59.000+00:00",
+   "start": "2026-11-04T11:52:01.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_3a9e0d3116",
+     "lake_session_id": "beacon:th_0b980900e0",
      "platform": "beacon",
-     "start": "2026-11-06T11:48:59.000+00:00",
-     "end": "2026-11-06T11:49:36.505+00:00",
+     "start": "2026-11-04T11:52:01.000+00:00",
+     "end": "2026-11-04T11:52:38.505+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -1043,10 +1188,10 @@
      }
     },
     {
-     "lake_session_id": "chatly:cvn_94424245833a",
+     "lake_session_id": "chatly:cvn_d9dc9b437deb",
      "platform": "chatly",
-     "start": "2026-11-06T11:56:41.505+00:00",
-     "end": "2026-11-06T11:56:42.715+00:00",
+     "start": "2026-11-04T11:59:43.505+00:00",
+     "end": "2026-11-04T11:59:44.715+00:00",
      "is_switch": true,
      "paraphrased": true,
      "turns_played": 1,
@@ -1086,13 +1231,13 @@
     "domain": "support",
     "task_type": "decide"
    },
-   "start": "2026-11-06T12:10:21.715+00:00",
+   "start": "2026-11-12T09:44:49.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_b5f4f6c1ff",
+     "lake_session_id": "beacon:th_ba1fd5d310",
      "platform": "beacon",
-     "start": "2026-11-06T12:10:21.715+00:00",
-     "end": "2026-11-06T12:12:33.980+00:00",
+     "start": "2026-11-12T09:44:49.000+00:00",
+     "end": "2026-11-12T09:47:01.265+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -1120,10 +1265,10 @@
      }
     },
     {
-     "lake_session_id": "chatly:cvn_8c6d7f3a167c",
+     "lake_session_id": "chatly:cvn_7ad4526a31e8",
      "platform": "chatly",
-     "start": "2026-11-06T12:19:00.980+00:00",
-     "end": "2026-11-06T12:20:09.152+00:00",
+     "start": "2026-11-12T09:53:28.265+00:00",
+     "end": "2026-11-12T09:54:36.437+00:00",
      "is_switch": true,
      "paraphrased": true,
      "turns_played": 1,
@@ -1163,13 +1308,13 @@
     "domain": "support",
     "task_type": "triage"
    },
-   "start": "2026-11-13T11:59:02.000+00:00",
+   "start": "2026-11-12T10:01:47.437+00:00",
    "sessions": [
     {
-     "lake_session_id": "chatly:cvn_db3ebf0b0944",
+     "lake_session_id": "chatly:cvn_22a31b515dd0",
      "platform": "chatly",
-     "start": "2026-11-13T11:59:02.000+00:00",
-     "end": "2026-11-13T11:59:03.653+00:00",
+     "start": "2026-11-12T10:01:47.437+00:00",
+     "end": "2026-11-12T10:01:49.090+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -1197,10 +1342,10 @@
      }
     },
     {
-     "lake_session_id": "beacon:th_1b2c83fb8e",
+     "lake_session_id": "beacon:th_d80f6c08fd",
      "platform": "beacon",
-     "start": "2026-11-13T12:03:04.653+00:00",
-     "end": "2026-11-13T12:03:37.765+00:00",
+     "start": "2026-11-12T10:05:50.090+00:00",
+     "end": "2026-11-12T10:06:23.202+00:00",
      "is_switch": true,
      "paraphrased": true,
      "turns_played": 1,
@@ -1240,13 +1385,13 @@
     "domain": "support",
     "task_type": "lookup"
    },
-   "start": "2026-11-09T09:42:04.000+00:00",
+   "start": "2026-11-11T10:40:52.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_81f7bbdff4",
+     "lake_session_id": "beacon:th_c08a97cf95",
      "platform": "beacon",
-     "start": "2026-11-09T09:42:04.000+00:00",
-     "end": "2026-11-09T09:46:19.690+00:00",
+     "start": "2026-11-11T10:40:52.000+00:00",
+     "end": "2026-11-11T10:45:07.690+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 4,
@@ -1300,13 +1445,13 @@
     "domain": "support",
     "task_type": "lookup"
    },
-   "start": "2026-11-12T11:28:05.000+00:00",
+   "start": "2026-11-06T11:29:07.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_6b1bce5de4",
+     "lake_session_id": "beacon:th_b2fb4df14a",
      "platform": "beacon",
-     "start": "2026-11-12T11:28:05.000+00:00",
-     "end": "2026-11-12T11:30:19.026+00:00",
+     "start": "2026-11-06T11:29:07.000+00:00",
+     "end": "2026-11-06T11:31:21.026+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 2,
@@ -1338,10 +1483,10 @@
      }
     },
     {
-     "lake_session_id": "chatly:cvn_dc9b397477a8",
+     "lake_session_id": "chatly:cvn_94c213021677",
      "platform": "chatly",
-     "start": "2026-11-12T11:37:38.026+00:00",
-     "end": "2026-11-12T11:37:43.501+00:00",
+     "start": "2026-11-06T11:38:40.026+00:00",
+     "end": "2026-11-06T11:38:45.501+00:00",
      "is_switch": true,
      "paraphrased": true,
      "turns_played": 1,
@@ -1373,6 +1518,131 @@
    "n_switches": 1
   },
   {
+   "task_id": "T26",
+   "user": "jonas",
+   "role": "support",
+   "script": "M11",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft"
+   },
+   "start": "2026-11-13T10:45:31.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_af45169e51",
+     "platform": "beacon",
+     "start": "2026-11-13T10:45:31.000+00:00",
+     "end": "2026-11-13T10:49:13.650+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [],
+      [],
+      []
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.00875253,
+     "counts": {
+      "turns": 3,
+      "requests": 7,
+      "failed_requests": 0,
+      "tool_calls": 7,
+      "tool_errors": 0,
+      "tokens_in": 26723,
+      "tokens_out": 2520
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T27",
+   "user": "jonas",
+   "role": "support",
+   "script": "M13",
+   "designed": {
+    "domain": "support",
+    "task_type": "triage"
+   },
+   "start": "2026-11-02T10:52:37.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "beacon:th_3d10672a4d",
+     "platform": "beacon",
+     "start": "2026-11-02T10:52:37.000+00:00",
+     "end": "2026-11-02T10:53:35.509+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": true,
+     "fate": "switched",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.01190271,
+     "counts": {
+      "turns": 1,
+      "requests": 6,
+      "failed_requests": 0,
+      "tool_calls": 7,
+      "tool_errors": 0,
+      "tokens_in": 25526,
+      "tokens_out": 1249
+     }
+    },
+    {
+     "lake_session_id": "chatly:cvn_e80af88566bc",
+     "platform": "chatly",
+     "start": "2026-11-02T11:00:29.509+00:00",
+     "end": "2026-11-02T11:00:45.884+00:00",
+     "is_switch": true,
+     "paraphrased": true,
+     "turns_played": 1,
+     "turns_in_script": 3,
+     "noticed_failure": true,
+     "fate": "abandoned",
+     "turn_checks": [
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": true,
+     "cost": 0.0004818,
+     "counts": {
+      "turns": 1,
+      "requests": 1,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 145,
+      "tokens_out": 209
+     }
+    }
+   ],
+   "final_fate": "abandoned",
+   "n_switches": 1
+  },
+  {
    "task_id": "T28",
    "user": "kofi",
    "role": "operations",
@@ -1381,13 +1651,13 @@
     "domain": "operations",
     "task_type": "report"
    },
-   "start": "2026-11-04T14:29:48.000+00:00",
+   "start": "2026-11-11T13:50:29.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_13d691ec8e",
+     "lake_session_id": "beacon:th_726180a25d",
      "platform": "beacon",
-     "start": "2026-11-04T14:29:48.000+00:00",
-     "end": "2026-11-04T14:30:26.998+00:00",
+     "start": "2026-11-11T13:50:29.000+00:00",
+     "end": "2026-11-11T13:51:07.998+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -1415,10 +1685,10 @@
      }
     },
     {
-     "lake_session_id": "atlas:atl-eea8759676",
+     "lake_session_id": "atlas:atl-ae6adbbc8f",
      "platform": "atlas",
-     "start": "2026-11-04T14:42:21.998+00:00",
-     "end": "2026-11-04T14:43:42.187+00:00",
+     "start": "2026-11-11T14:03:02.998+00:00",
+     "end": "2026-11-11T14:04:23.187+00:00",
      "is_switch": true,
      "paraphrased": true,
      "turns_played": 1,
@@ -1458,13 +1728,13 @@
     "domain": "operations",
     "task_type": "analysis"
    },
-   "start": "2026-11-03T15:17:35.000+00:00",
+   "start": "2026-11-11T14:26:34.187+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_ef7cc8aa5b",
+     "lake_session_id": "beacon:th_7539a0b05c",
      "platform": "beacon",
-     "start": "2026-11-03T15:17:35.000+00:00",
-     "end": "2026-11-03T15:18:10.673+00:00",
+     "start": "2026-11-11T14:26:34.187+00:00",
+     "end": "2026-11-11T14:27:09.860+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -1504,13 +1774,13 @@
     "domain": "operations",
     "task_type": "analysis"
    },
-   "start": "2026-11-11T14:40:52.000+00:00",
+   "start": "2026-11-06T16:27:58.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-7353eed379",
+     "lake_session_id": "atlas:atl-95f7a256be",
      "platform": "atlas",
-     "start": "2026-11-11T14:40:52.000+00:00",
-     "end": "2026-11-11T14:45:36.121+00:00",
+     "start": "2026-11-06T16:27:58.000+00:00",
+     "end": "2026-11-06T16:32:42.121+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 4,
@@ -1560,13 +1830,13 @@
     "domain": "operations",
     "task_type": "analysis"
    },
-   "start": "2026-11-06T15:29:07.000+00:00",
+   "start": "2026-11-06T13:53:02.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-676acbb491",
+     "lake_session_id": "atlas:atl-859f979660",
      "platform": "atlas",
-     "start": "2026-11-06T15:29:07.000+00:00",
-     "end": "2026-11-06T15:35:15.341+00:00",
+     "start": "2026-11-06T13:53:02.000+00:00",
+     "end": "2026-11-06T13:59:10.341+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 4,
@@ -1614,13 +1884,13 @@
     "domain": "operations",
     "task_type": "analysis"
    },
-   "start": "2026-11-13T14:45:31.000+00:00",
+   "start": "2026-11-02T16:15:13.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_dbc45a742e",
+     "lake_session_id": "beacon:th_d8c2d5080e",
      "platform": "beacon",
-     "start": "2026-11-13T14:45:31.000+00:00",
-     "end": "2026-11-13T14:48:31.821+00:00",
+     "start": "2026-11-02T16:15:13.000+00:00",
+     "end": "2026-11-02T16:18:13.821+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 3,
@@ -1668,13 +1938,13 @@
     "domain": "operations",
     "task_type": "analysis"
    },
-   "start": "2026-11-02T14:52:37.000+00:00",
+   "start": "2026-11-03T15:32:32.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-2fa3e85d5e",
+     "lake_session_id": "atlas:atl-dc6b84e7da",
      "platform": "atlas",
-     "start": "2026-11-02T14:52:37.000+00:00",
-     "end": "2026-11-02T14:56:34.040+00:00",
+     "start": "2026-11-03T15:32:32.000+00:00",
+     "end": "2026-11-03T15:36:29.040+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 3,
@@ -1718,13 +1988,13 @@
     "domain": "operations",
     "task_type": "report"
    },
-   "start": "2026-11-03T15:28:27.673+00:00",
+   "start": "2026-11-11T14:50:47.860+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_602d2c3663",
+     "lake_session_id": "beacon:th_dec16f3b3d",
      "platform": "beacon",
-     "start": "2026-11-03T15:28:27.673+00:00",
-     "end": "2026-11-03T15:28:40.229+00:00",
+     "start": "2026-11-11T14:50:47.860+00:00",
+     "end": "2026-11-11T14:51:00.416+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -1752,10 +2022,10 @@
      }
     },
     {
-     "lake_session_id": "atlas:atl-942b4cb5c6",
+     "lake_session_id": "atlas:atl-eefc29f8a6",
      "platform": "atlas",
-     "start": "2026-11-03T15:38:42.229+00:00",
-     "end": "2026-11-03T15:38:47.913+00:00",
+     "start": "2026-11-11T15:01:02.416+00:00",
+     "end": "2026-11-11T15:01:08.100+00:00",
      "is_switch": true,
      "paraphrased": true,
      "turns_played": 1,
@@ -1795,13 +2065,13 @@
     "domain": "operations",
     "task_type": "lookup"
    },
-   "start": "2026-11-03T15:50:39.913+00:00",
+   "start": "2026-11-11T14:15:58.187+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-e02c30f9c7",
+     "lake_session_id": "atlas:atl-423e5d8980",
      "platform": "atlas",
-     "start": "2026-11-03T15:50:39.913+00:00",
-     "end": "2026-11-03T15:50:55.706+00:00",
+     "start": "2026-11-11T14:15:58.187+00:00",
+     "end": "2026-11-11T14:16:13.980+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -1843,13 +2113,13 @@
     "domain": "operations",
     "task_type": "report"
    },
-   "start": "2026-11-06T13:53:02.000+00:00",
+   "start": "2026-11-03T15:15:19.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_5f7f81058e",
+     "lake_session_id": "beacon:th_f9341fd4c8",
      "platform": "beacon",
-     "start": "2026-11-06T13:53:02.000+00:00",
-     "end": "2026-11-06T13:54:17.928+00:00",
+     "start": "2026-11-03T15:15:19.000+00:00",
+     "end": "2026-11-03T15:16:34.928+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -1877,10 +2147,10 @@
      }
     },
     {
-     "lake_session_id": "atlas:atl-7166a323c2",
+     "lake_session_id": "atlas:atl-4e3fd672c2",
      "platform": "atlas",
-     "start": "2026-11-06T14:01:13.928+00:00",
-     "end": "2026-11-06T14:04:58.450+00:00",
+     "start": "2026-11-03T15:23:30.928+00:00",
+     "end": "2026-11-03T15:27:15.450+00:00",
      "is_switch": true,
      "paraphrased": true,
      "turns_played": 3,
@@ -1928,13 +2198,13 @@
     "domain": "operations",
     "task_type": "report"
    },
-   "start": "2026-11-10T13:06:18.000+00:00",
+   "start": "2026-11-09T15:56:29.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_5913ae6436",
+     "lake_session_id": "beacon:th_5e9f21c937",
      "platform": "beacon",
-     "start": "2026-11-10T13:06:18.000+00:00",
-     "end": "2026-11-10T13:06:56.998+00:00",
+     "start": "2026-11-09T15:56:29.000+00:00",
+     "end": "2026-11-09T15:57:07.998+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -1974,13 +2244,13 @@
     "domain": "operations",
     "task_type": "report"
    },
-   "start": "2026-11-03T15:32:32.000+00:00",
+   "start": "2026-11-09T16:17:07.998+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_9f934dd9ee",
+     "lake_session_id": "beacon:th_733eb5d0e7",
      "platform": "beacon",
-     "start": "2026-11-03T15:32:32.000+00:00",
-     "end": "2026-11-03T15:33:10.028+00:00",
+     "start": "2026-11-09T16:17:07.998+00:00",
+     "end": "2026-11-09T16:17:46.026+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -2020,13 +2290,13 @@
     "domain": "operations",
     "task_type": "analysis"
    },
-   "start": "2026-11-10T13:30:34.998+00:00",
+   "start": "2026-11-09T16:23:47.026+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_b02a06e649",
+     "lake_session_id": "beacon:th_06cab20886",
      "platform": "beacon",
-     "start": "2026-11-10T13:30:34.998+00:00",
-     "end": "2026-11-10T13:31:10.671+00:00",
+     "start": "2026-11-09T16:23:47.026+00:00",
+     "end": "2026-11-09T16:24:22.699+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -2066,13 +2336,13 @@
     "domain": "operations",
     "task_type": "analysis"
    },
-   "start": "2026-11-10T13:18:31.998+00:00",
+   "start": "2026-11-09T16:30:55.026+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_18f79bd3bd",
+     "lake_session_id": "beacon:th_88f6e4fdd2",
      "platform": "beacon",
-     "start": "2026-11-10T13:18:31.998+00:00",
-     "end": "2026-11-10T13:23:16.678+00:00",
+     "start": "2026-11-09T16:30:55.026+00:00",
+     "end": "2026-11-09T16:35:39.706+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 4,
@@ -2120,13 +2390,13 @@
     "domain": "operations",
     "task_type": "analysis"
    },
-   "start": "2026-11-10T13:38:37.678+00:00",
+   "start": "2026-11-04T14:19:31.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_36511dc8b1",
+     "lake_session_id": "beacon:th_bba49b705d",
      "platform": "beacon",
-     "start": "2026-11-10T13:38:37.678+00:00",
-     "end": "2026-11-10T13:41:55.499+00:00",
+     "start": "2026-11-04T14:19:31.000+00:00",
+     "end": "2026-11-04T14:22:48.821+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 3,
@@ -2174,13 +2444,13 @@
     "domain": "operations",
     "task_type": "analysis"
    },
-   "start": "2026-11-10T14:01:38.499+00:00",
+   "start": "2026-11-02T15:28:09.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "beacon:th_677ae52607",
+     "lake_session_id": "beacon:th_9b5a7cbec2",
      "platform": "beacon",
-     "start": "2026-11-10T14:01:38.499+00:00",
-     "end": "2026-11-10T14:03:10.446+00:00",
+     "start": "2026-11-02T15:28:09.000+00:00",
+     "end": "2026-11-02T15:29:40.947+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -2220,13 +2490,13 @@
     "domain": "strategy",
     "task_type": "advise"
    },
-   "start": "2026-11-02T18:31:31.000+00:00",
+   "start": "2026-11-11T18:54:00.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "chatly:cvn_349cf50f9799",
+     "lake_session_id": "chatly:cvn_a50265391efc",
      "platform": "chatly",
-     "start": "2026-11-02T18:31:31.000+00:00",
-     "end": "2026-11-02T18:35:12.748+00:00",
+     "start": "2026-11-11T18:54:00.000+00:00",
+     "end": "2026-11-11T18:57:41.748+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 4,
@@ -2272,13 +2542,13 @@
     "domain": "operations",
     "task_type": "lookup"
    },
-   "start": "2026-11-02T18:56:02.748+00:00",
+   "start": "2026-11-13T17:42:27.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "chatly:cvn_7cafffae60ea",
+     "lake_session_id": "chatly:cvn_4fa96e750087",
      "platform": "chatly",
-     "start": "2026-11-02T18:56:02.748+00:00",
-     "end": "2026-11-02T18:56:04.953+00:00",
+     "start": "2026-11-13T17:42:27.000+00:00",
+     "end": "2026-11-13T17:42:29.205+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -2318,13 +2588,13 @@
     "domain": "writing",
     "task_type": "draft"
    },
-   "start": "2026-11-11T18:39:06.000+00:00",
+   "start": "2026-11-12T17:44:08.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "chatly:cvn_90ef1e1475a0",
+     "lake_session_id": "chatly:cvn_918fac7501c7",
      "platform": "chatly",
-     "start": "2026-11-11T18:39:06.000+00:00",
-     "end": "2026-11-11T18:40:55.634+00:00",
+     "start": "2026-11-12T17:44:08.000+00:00",
+     "end": "2026-11-12T17:45:57.634+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 3,
@@ -2372,13 +2642,13 @@
     "domain": "strategy",
     "task_type": "analysis"
    },
-   "start": "2026-11-12T19:57:29.000+00:00",
+   "start": "2026-11-11T19:36:22.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "chatly:cvn_92fab40761b8",
+     "lake_session_id": "chatly:cvn_ac9f41ac08c3",
      "platform": "chatly",
-     "start": "2026-11-12T19:57:29.000+00:00",
-     "end": "2026-11-12T19:57:34.174+00:00",
+     "start": "2026-11-11T19:36:22.000+00:00",
+     "end": "2026-11-11T19:36:27.174+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -2418,13 +2688,13 @@
     "domain": "strategy",
     "task_type": "advise"
    },
-   "start": "2026-11-11T17:00:16.000+00:00",
+   "start": "2026-11-02T17:15:44.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "chatly:cvn_fe3888624218",
+     "lake_session_id": "chatly:cvn_98aa2ef7e547",
      "platform": "chatly",
-     "start": "2026-11-11T17:00:16.000+00:00",
-     "end": "2026-11-11T17:01:52.337+00:00",
+     "start": "2026-11-02T17:15:44.000+00:00",
+     "end": "2026-11-02T17:17:20.337+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 2,
@@ -2466,13 +2736,13 @@
     "domain": "writing",
     "task_type": "draft"
    },
-   "start": "2026-11-13T18:04:08.000+00:00",
+   "start": "2026-11-09T19:50:35.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "chatly:cvn_b842c25307cc",
+     "lake_session_id": "chatly:cvn_e914b2f60d74",
      "platform": "chatly",
-     "start": "2026-11-13T18:04:08.000+00:00",
-     "end": "2026-11-13T18:04:11.839+00:00",
+     "start": "2026-11-09T19:50:35.000+00:00",
+     "end": "2026-11-09T19:50:38.839+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -2512,13 +2782,13 @@
     "domain": "support",
     "task_type": "decide"
    },
-   "start": "2026-11-10T10:08:41.000+00:00",
+   "start": "2026-11-05T09:41:58.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-23d21bbdd8",
+     "lake_session_id": "atlas:atl-65f39ec9c2",
      "platform": "atlas",
-     "start": "2026-11-10T10:08:41.000+00:00",
-     "end": "2026-11-10T10:13:07.038+00:00",
+     "start": "2026-11-05T09:41:58.000+00:00",
+     "end": "2026-11-05T09:46:24.038+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 4,
@@ -2557,10 +2827,10 @@
      }
     },
     {
-     "lake_session_id": "chatly:cvn_3b7425c7b479",
+     "lake_session_id": "chatly:cvn_7f75c28a3a71",
      "platform": "chatly",
-     "start": "2026-11-10T10:16:53.038+00:00",
-     "end": "2026-11-10T10:16:55.458+00:00",
+     "start": "2026-11-05T09:50:10.038+00:00",
+     "end": "2026-11-05T09:50:12.458+00:00",
      "is_switch": true,
      "paraphrased": true,
      "turns_played": 1,
@@ -2600,13 +2870,13 @@
     "domain": "support",
     "task_type": "lookup"
    },
-   "start": "2026-11-11T10:30:57.000+00:00",
+   "start": "2026-11-05T10:03:39.458+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-40c3230261",
+     "lake_session_id": "atlas:atl-676acbb491",
      "platform": "atlas",
-     "start": "2026-11-11T10:30:57.000+00:00",
-     "end": "2026-11-11T10:36:49.087+00:00",
+     "start": "2026-11-05T10:03:39.458+00:00",
+     "end": "2026-11-05T10:09:31.545+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 4,
@@ -2660,13 +2930,13 @@
     "domain": "support",
     "task_type": "lookup"
    },
-   "start": "2026-11-11T10:11:26.000+00:00",
+   "start": "2026-11-05T10:14:39.545+00:00",
    "sessions": [
     {
-     "lake_session_id": "chatly:cvn_76d1493781bc",
+     "lake_session_id": "chatly:cvn_029ce73b12bd",
      "platform": "chatly",
-     "start": "2026-11-11T10:11:26.000+00:00",
-     "end": "2026-11-11T10:11:31.475+00:00",
+     "start": "2026-11-05T10:14:39.545+00:00",
+     "end": "2026-11-05T10:14:45.020+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -2694,10 +2964,10 @@
      }
     },
     {
-     "lake_session_id": "atlas:atl-32d8a2bbed",
+     "lake_session_id": "atlas:atl-f02ab772a5",
      "platform": "atlas",
-     "start": "2026-11-11T10:15:11.475+00:00",
-     "end": "2026-11-11T10:18:37.076+00:00",
+     "start": "2026-11-05T10:18:25.020+00:00",
+     "end": "2026-11-05T10:21:50.621+00:00",
      "is_switch": true,
      "paraphrased": true,
      "turns_played": 3,
@@ -2737,6 +3007,61 @@
    "n_switches": 1
   },
   {
+   "task_id": "T52",
+   "user": "priya",
+   "role": "support",
+   "script": "M10",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup"
+   },
+   "start": "2026-11-05T10:27:01.621+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-83b701f250",
+     "platform": "atlas",
+     "start": "2026-11-05T10:27:01.621+00:00",
+     "end": "2026-11-05T10:29:53.536+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true,
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.02227187,
+     "counts": {
+      "turns": 3,
+      "requests": 10,
+      "failed_requests": 0,
+      "tool_calls": 8,
+      "tool_errors": 0,
+      "tokens_in": 47246,
+      "tokens_out": 2262
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
    "task_id": "T53",
    "user": "rosa",
    "role": "management",
@@ -2745,13 +3070,13 @@
     "domain": "operations",
     "task_type": "lookup"
    },
-   "start": "2026-11-05T17:14:03.000+00:00",
+   "start": "2026-11-12T18:17:17.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-ed6678b3cf",
+     "lake_session_id": "atlas:atl-5de794f2b1",
      "platform": "atlas",
-     "start": "2026-11-05T17:14:03.000+00:00",
-     "end": "2026-11-05T17:14:57.062+00:00",
+     "start": "2026-11-12T18:17:17.000+00:00",
+     "end": "2026-11-12T18:18:11.062+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -2791,13 +3116,13 @@
     "domain": "strategy",
     "task_type": "report"
    },
-   "start": "2026-11-05T17:20:58.062+00:00",
+   "start": "2026-11-12T18:24:01.062+00:00",
    "sessions": [
     {
-     "lake_session_id": "chatly:cvn_49c153d4f52f",
+     "lake_session_id": "chatly:cvn_d5ad9dab887a",
      "platform": "chatly",
-     "start": "2026-11-05T17:20:58.062+00:00",
-     "end": "2026-11-05T17:21:00.662+00:00",
+     "start": "2026-11-12T18:24:01.062+00:00",
+     "end": "2026-11-12T18:24:03.662+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 1,
@@ -2825,10 +3150,10 @@
      }
     },
     {
-     "lake_session_id": "atlas:atl-dd6258591f",
+     "lake_session_id": "atlas:atl-8fd58b0781",
      "platform": "atlas",
-     "start": "2026-11-05T17:30:04.662+00:00",
-     "end": "2026-11-05T17:32:43.778+00:00",
+     "start": "2026-11-12T18:33:07.662+00:00",
+     "end": "2026-11-12T18:35:46.778+00:00",
      "is_switch": true,
      "paraphrased": true,
      "turns_played": 4,
@@ -2878,13 +3203,13 @@
     "domain": "strategy",
     "task_type": "analysis"
    },
-   "start": "2026-11-05T17:45:52.778+00:00",
+   "start": "2026-11-09T17:13:17.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-f7cfcbc295",
+     "lake_session_id": "atlas:atl-97e43f77df",
      "platform": "atlas",
-     "start": "2026-11-05T17:45:52.778+00:00",
-     "end": "2026-11-05T17:49:21.908+00:00",
+     "start": "2026-11-09T17:13:17.000+00:00",
+     "end": "2026-11-09T17:16:46.130+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 3,
@@ -2930,13 +3255,13 @@
     "domain": "support",
     "task_type": "decide"
    },
-   "start": "2026-11-04T09:50:08.000+00:00",
+   "start": "2026-11-04T09:55:29.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-a542639441",
+     "lake_session_id": "atlas:atl-d5e1e6bc32",
      "platform": "atlas",
-     "start": "2026-11-04T09:50:08.000+00:00",
-     "end": "2026-11-04T09:51:41.808+00:00",
+     "start": "2026-11-04T09:55:29.000+00:00",
+     "end": "2026-11-04T09:57:02.808+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 3,
@@ -2985,13 +3310,13 @@
     "domain": "support",
     "task_type": "triage"
    },
-   "start": "2026-11-04T10:00:19.808+00:00",
+   "start": "2026-11-04T10:15:47.808+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-c0cc4fafb6",
+     "lake_session_id": "atlas:atl-6aaf75f351",
      "platform": "atlas",
-     "start": "2026-11-04T10:00:19.808+00:00",
-     "end": "2026-11-04T10:05:34.333+00:00",
+     "start": "2026-11-04T10:15:47.808+00:00",
+     "end": "2026-11-04T10:21:02.333+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 4,
@@ -3042,13 +3367,13 @@
     "domain": "support",
     "task_type": "draft"
    },
-   "start": "2026-11-04T10:16:00.333+00:00",
+   "start": "2026-11-05T11:48:55.000+00:00",
    "sessions": [
     {
-     "lake_session_id": "atlas:atl-5910b9fcc7",
+     "lake_session_id": "atlas:atl-1a95ff9469",
      "platform": "atlas",
-     "start": "2026-11-04T10:16:00.333+00:00",
-     "end": "2026-11-04T10:19:11.532+00:00",
+     "start": "2026-11-05T11:48:55.000+00:00",
+     "end": "2026-11-05T11:52:06.199+00:00",
      "is_switch": false,
      "paraphrased": false,
      "turns_played": 3,
@@ -3080,6 +3405,310 @@
       "tool_errors": 0,
       "tokens_in": 35333,
       "tokens_out": 1723
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T59",
+   "user": "tomas",
+   "role": "support",
+   "script": "M08",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup"
+   },
+   "start": "2026-11-04T10:03:24.808+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-c84eec46a3",
+     "platform": "atlas",
+     "start": "2026-11-04T10:03:24.808+00:00",
+     "end": "2026-11-04T10:03:39.613+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 1,
+     "turns_in_script": 1,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true
+     ],
+     "truncated": false,
+     "cost": 0.0034534699999999997,
+     "counts": {
+      "turns": 1,
+      "requests": 2,
+      "failed_requests": 0,
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "tokens_in": 9473,
+      "tokens_out": 315
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T60",
+   "user": "tomas",
+   "role": "support",
+   "script": "M09",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide"
+   },
+   "start": "2026-11-10T10:49:41.000+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-06b4cab4d0",
+     "platform": "atlas",
+     "start": "2026-11-10T10:49:41.000+00:00",
+     "end": "2026-11-10T10:52:05.400+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 2,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       false
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.006551990000000001,
+     "counts": {
+      "turns": 2,
+      "requests": 6,
+      "failed_requests": 1,
+      "tool_calls": 3,
+      "tool_errors": 1,
+      "tokens_in": 27202,
+      "tokens_out": 2588
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T61",
+   "user": "tomas",
+   "role": "support",
+   "script": "M10",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup"
+   },
+   "start": "2026-11-05T12:11:54.199+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-32cc68a8ba",
+     "platform": "atlas",
+     "start": "2026-11-05T12:11:54.199+00:00",
+     "end": "2026-11-05T12:15:10.114+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true,
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.02227187,
+     "counts": {
+      "turns": 3,
+      "requests": 10,
+      "failed_requests": 0,
+      "tool_calls": 8,
+      "tool_errors": 0,
+      "tokens_in": 47246,
+      "tokens_out": 2262
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T62",
+   "user": "tomas",
+   "role": "support",
+   "script": "M11",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft"
+   },
+   "start": "2026-11-05T12:29:13.114+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-bacd37809f",
+     "platform": "atlas",
+     "start": "2026-11-05T12:29:13.114+00:00",
+     "end": "2026-11-05T12:31:46.114+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [],
+      [],
+      []
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.006138879999999999,
+     "counts": {
+      "turns": 3,
+      "requests": 3,
+      "failed_requests": 0,
+      "tool_calls": 0,
+      "tool_errors": 0,
+      "tokens_in": 13039,
+      "tokens_out": 955
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T63",
+   "user": "tomas",
+   "role": "support",
+   "script": "M12",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup"
+   },
+   "start": "2026-11-05T12:42:57.114+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-1500fc2e7b",
+     "platform": "atlas",
+     "start": "2026-11-05T12:42:57.114+00:00",
+     "end": "2026-11-05T12:45:24.783+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 2,
+     "turns_in_script": 2,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.0108125,
+     "counts": {
+      "turns": 2,
+      "requests": 9,
+      "failed_requests": 0,
+      "tool_calls": 8,
+      "tool_errors": 0,
+      "tokens_in": 37147,
+      "tokens_out": 1054
+     }
+    }
+   ],
+   "final_fate": "completed",
+   "n_switches": 0
+  },
+  {
+   "task_id": "T64",
+   "user": "tomas",
+   "role": "support",
+   "script": "M13",
+   "designed": {
+    "domain": "support",
+    "task_type": "triage"
+   },
+   "start": "2026-11-04T10:34:03.333+00:00",
+   "sessions": [
+    {
+     "lake_session_id": "atlas:atl-7d4c2da3ac",
+     "platform": "atlas",
+     "start": "2026-11-04T10:34:03.333+00:00",
+     "end": "2026-11-04T10:37:36.362+00:00",
+     "is_switch": false,
+     "paraphrased": false,
+     "turns_played": 3,
+     "turns_in_script": 3,
+     "noticed_failure": false,
+     "fate": "completed",
+     "turn_checks": [
+      [
+       true
+      ],
+      [
+       true
+      ],
+      [
+       true,
+       true
+      ]
+     ],
+     "turn_answered": [
+      true,
+      true,
+      true
+     ],
+     "truncated": false,
+     "cost": 0.02093115,
+     "counts": {
+      "turns": 3,
+      "requests": 9,
+      "failed_requests": 0,
+      "tool_calls": 6,
+      "tool_errors": 0,
+      "tokens_in": 46666,
+      "tokens_out": 1576
      }
     }
    ],
@@ -4388,6 +5017,250 @@
    "requests": 10,
    "tool_calls": 9
   },
+  "atlas:M08": {
+   "platform": "atlas",
+   "script": "M08",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true
+   ],
+   "turn_cost": [
+    0.00345347
+   ],
+   "tokens_in": 9473,
+   "tokens_out": 315,
+   "requests": 2,
+   "tool_calls": 1
+  },
+  "atlas:M09": {
+   "platform": "atlas",
+   "script": "M09",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide",
+    "skill": "refund-eligibility",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 1,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 2,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     false
+    ],
+    [
+     true,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00171615,
+    0.00483584,
+    0.00419862
+   ],
+   "tokens_in": 36233,
+   "tokens_out": 3640,
+   "requests": 8,
+   "tool_calls": 4
+  },
+  "atlas:M10": {
+   "platform": "atlas",
+   "script": "M10",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": "customer-reply",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true,
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.01167899,
+    0.00427252,
+    0.00632036
+   ],
+   "tokens_in": 47246,
+   "tokens_out": 2262,
+   "requests": 10,
+   "tool_calls": 8
+  },
+  "atlas:M11": {
+   "platform": "atlas",
+   "script": "M11",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft",
+    "skill": null,
+    "servers": [],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 0,
+   "passed_turns": 0,
+   "turn_checks": [
+    [],
+    [],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00275356,
+    0.0007464,
+    0.00263892
+   ],
+   "tokens_in": 13039,
+   "tokens_out": 955,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "atlas:M12": {
+   "platform": "atlas",
+   "script": "M12",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 2,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.0077226,
+    0.0030899
+   ],
+   "tokens_in": 37147,
+   "tokens_out": 1054,
+   "requests": 9,
+   "tool_calls": 8
+  },
+  "atlas:M13": {
+   "platform": "atlas",
+   "script": "M13",
+   "designed": {
+    "domain": "support",
+    "task_type": "triage",
+    "skill": "ticket-triage",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 1,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ],
+    [
+     true,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00516107,
+    0.01011264,
+    0.00565744
+   ],
+   "tokens_in": 46666,
+   "tokens_out": 1576,
+   "requests": 9,
+   "tool_calls": 6
+  },
   "beacon:A01": {
    "platform": "beacon",
    "script": "A01",
@@ -5542,6 +6415,250 @@
    "requests": 11,
    "tool_calls": 8
   },
+  "beacon:M08": {
+   "platform": "beacon",
+   "script": "M08",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true
+   ],
+   "turn_cost": [
+    0.00235614
+   ],
+   "tokens_in": 8205,
+   "tokens_out": 173,
+   "requests": 2,
+   "tool_calls": 1
+  },
+  "beacon:M09": {
+   "platform": "beacon",
+   "script": "M09",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide",
+    "skill": "refund-eligibility",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 1,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     true,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00578964,
+    0.00050911,
+    0.00424192
+   ],
+   "tokens_in": 30209,
+   "tokens_out": 1476,
+   "requests": 7,
+   "tool_calls": 4
+  },
+  "beacon:M10": {
+   "platform": "beacon",
+   "script": "M10",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": "customer-reply",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 3,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true,
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.01317624,
+    0.00571952,
+    0.00092883
+   ],
+   "tokens_in": 49879,
+   "tokens_out": 1263,
+   "requests": 11,
+   "tool_calls": 14
+  },
+  "beacon:M11": {
+   "platform": "beacon",
+   "script": "M11",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft",
+    "skill": null,
+    "servers": [],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 0,
+   "passed_turns": 0,
+   "turn_checks": [
+    [],
+    [],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.00310169,
+    0.00048504,
+    0.0051658
+   ],
+   "tokens_in": 26723,
+   "tokens_out": 2520,
+   "requests": 7,
+   "tool_calls": 7
+  },
+  "beacon:M12": {
+   "platform": "beacon",
+   "script": "M12",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 2,
+   "turn_checks": [
+    [
+     true
+    ],
+    [
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.0048965,
+    0.00395128
+   ],
+   "tokens_in": 29018,
+   "tokens_out": 457,
+   "requests": 7,
+   "tool_calls": 5
+  },
+  "beacon:M13": {
+   "platform": "beacon",
+   "script": "M13",
+   "designed": {
+    "domain": "support",
+    "task_type": "triage",
+    "skill": "ticket-triage",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 1,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     false,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.01190271,
+    0.00818336,
+    0.00426
+   ],
+   "tokens_in": 44666,
+   "tokens_out": 2131,
+   "requests": 9,
+   "tool_calls": 8
+  },
   "chatly:A01": {
    "platform": "chatly",
    "script": "A01",
@@ -6693,6 +7810,250 @@
    ],
    "tokens_in": 981,
    "tokens_out": 927,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "chatly:M08": {
+   "platform": "chatly",
+   "script": "M08",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 1,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true
+   ],
+   "turn_cost": [
+    0.00026912
+   ],
+   "tokens_in": 148,
+   "tokens_out": 102,
+   "requests": 1,
+   "tool_calls": 0
+  },
+  "chatly:M09": {
+   "platform": "chatly",
+   "script": "M09",
+   "designed": {
+    "domain": "support",
+    "task_type": "decide",
+    "skill": "refund-eligibility",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 1,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     false,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.0006354,
+    0.000197,
+    0.00015755
+   ],
+   "tokens_in": 984,
+   "tokens_out": 803,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "chatly:M10": {
+   "platform": "chatly",
+   "script": "M10",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": "customer-reply",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false,
+     false
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    9.739e-05,
+    0.00011359,
+    0.00040992
+   ],
+   "tokens_in": 712,
+   "tokens_out": 1052,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "chatly:M11": {
+   "platform": "chatly",
+   "script": "M11",
+   "designed": {
+    "domain": "writing",
+    "task_type": "draft",
+    "skill": null,
+    "servers": [],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 1,
+    "questions": 1,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 0,
+   "passed_turns": 0,
+   "turn_checks": [
+    [],
+    [],
+    []
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.0009212,
+    0.00015927,
+    0.00163984
+   ],
+   "tokens_in": 1242,
+   "tokens_out": 1294,
+   "requests": 3,
+   "tool_calls": 0
+  },
+  "chatly:M12": {
+   "platform": "chatly",
+   "script": "M12",
+   "designed": {
+    "domain": "support",
+    "task_type": "lookup",
+    "skill": null,
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 0,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 2,
+   "passed_turns": 0,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true
+   ],
+   "turn_cost": [
+    4.04e-05,
+    5.56e-05
+   ],
+   "tokens_in": 470,
+   "tokens_out": 145,
+   "requests": 2,
+   "tool_calls": 0
+  },
+  "chatly:M13": {
+   "platform": "chatly",
+   "script": "M13",
+   "designed": {
+    "domain": "support",
+    "task_type": "triage",
+    "skill": "ticket-triage",
+    "servers": [
+     "shop"
+    ],
+    "corrections": 0,
+    "feedback_relays": 1,
+    "refinements": 0,
+    "questions": 0,
+    "reexplained_turns": []
+   },
+   "verifiable_turns": 3,
+   "passed_turns": 1,
+   "turn_checks": [
+    [
+     false
+    ],
+    [
+     false
+    ],
+    [
+     true,
+     true
+    ]
+   ],
+   "turn_answered": [
+    true,
+    true,
+    true
+   ],
+   "turn_cost": [
+    0.0004818,
+    0.00017565,
+    0.0009124
+   ],
+   "tokens_in": 833,
+   "tokens_out": 860,
    "requests": 3,
    "tool_calls": 0
   }

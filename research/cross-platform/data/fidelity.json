@@ -1,98 +1,98 @@
 {
  "atlas": {
   "recording": {
-   "sessions": 29,
-   "turns": 85,
-   "requests": 258,
-   "failed_requests": 11,
-   "tool_calls": 187,
-   "tool_errors": 17,
-   "tokens_in": 1202908,
-   "tokens_out": 74331
+   "sessions": 38,
+   "turns": 106,
+   "requests": 322,
+   "failed_requests": 13,
+   "tool_calls": 232,
+   "tool_errors": 19,
+   "tokens_in": 1495276,
+   "tokens_out": 88985
   },
   "export": {
-   "sessions": 29,
-   "turns": 85,
-   "requests": 258,
-   "failed_requests": 11,
-   "tool_calls": 187,
-   "tool_errors": 17,
-   "tokens_in": 1202908,
-   "tokens_out": 74331
+   "sessions": 38,
+   "turns": 106,
+   "requests": 322,
+   "failed_requests": 13,
+   "tool_calls": 232,
+   "tool_errors": 19,
+   "tokens_in": 1495276,
+   "tokens_out": 88985
   },
   "lake": {
-   "sessions": 29,
-   "turns": 85,
-   "requests": 258,
-   "failed_requests": 11,
-   "tool_calls": 187,
-   "tool_errors": 17,
-   "tokens_in": 1202908,
-   "tokens_out": 74331
+   "sessions": 38,
+   "turns": 106,
+   "requests": 322,
+   "failed_requests": 13,
+   "tool_calls": 232,
+   "tool_errors": 19,
+   "tokens_in": 1495276,
+   "tokens_out": 88985
   }
  },
  "beacon": {
   "recording": {
-   "sessions": 20,
-   "turns": 38,
-   "requests": 133,
+   "sessions": 23,
+   "turns": 43,
+   "requests": 148,
    "failed_requests": 0,
-   "tool_calls": 152,
+   "tool_calls": 167,
    "tool_errors": 9,
-   "tokens_in": 646631,
-   "tokens_out": 29274
+   "tokens_in": 707085,
+   "tokens_out": 33216
   },
   "export": {
-   "sessions": 20,
-   "turns": 38,
-   "requests": 133,
+   "sessions": 23,
+   "turns": 43,
+   "requests": 148,
    "failed_requests": 0,
-   "tool_calls": 152,
+   "tool_calls": 167,
    "tool_errors": 9,
-   "tokens_in": 646631,
-   "tokens_out": 29274
+   "tokens_in": 707085,
+   "tokens_out": 33216
   },
   "lake": {
-   "sessions": 20,
-   "turns": 38,
-   "requests": 133,
+   "sessions": 23,
+   "turns": 43,
+   "requests": 148,
    "failed_requests": 0,
-   "tool_calls": 152,
+   "tool_calls": 167,
    "tool_errors": 9,
-   "tokens_in": 646631,
-   "tokens_out": 29274
+   "tokens_in": 707085,
+   "tokens_out": 33216
   }
  },
  "chatly": {
   "recording": {
-   "sessions": 15,
-   "turns": 21,
-   "requests": 21,
+   "sessions": 16,
+   "turns": 22,
+   "requests": 22,
    "failed_requests": 0,
    "tool_calls": 0,
    "tool_errors": 0,
-   "tokens_in": 6447,
-   "tokens_out": 7725
+   "tokens_in": 6592,
+   "tokens_out": 7934
   },
   "export": {
-   "sessions": 15,
-   "turns": 21,
-   "requests": 21,
+   "sessions": 16,
+   "turns": 22,
+   "requests": 22,
    "failed_requests": 0,
    "tool_calls": 0,
    "tool_errors": 0,
-   "tokens_in": 6447,
-   "tokens_out": 7725
+   "tokens_in": 6592,
+   "tokens_out": 7934
   },
   "lake": {
-   "sessions": 15,
-   "turns": 21,
-   "requests": 21,
+   "sessions": 16,
+   "turns": 22,
+   "requests": 22,
    "failed_requests": 0,
    "tool_calls": 0,
    "tool_errors": 0,
-   "tokens_in": 6447,
-   "tokens_out": 7725
+   "tokens_in": 6592,
+   "tokens_out": 7934
   }
  }
 }

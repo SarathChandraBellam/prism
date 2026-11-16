@@ -31,7 +31,7 @@ keys = ["sessions", "turns", "requests", "failed_requests", "tool_calls", "tool_
 table(["Platform", "Source"] + keys, [[N[p], src] + [f"{F[p][src].get(k, 0):,}" for k in keys] for p in PLATFORMS for src in ("recording", "export", "lake")])
 ok = all(F[p]["recording"][k] == F[p]["export"][k] == F[p]["lake"][k] for p in PLATFORMS for k in keys)
 P(f"All three columns equal for every platform and field: {ok}\n")
-ch = [t for r in [json.load(open(os.path.join(RUN, 'chatly', f))) for f in sorted(os.listdir(os.path.join(RUN, 'chatly')))] for t in r['turns']]
+ch = [t for r in [json.load(open(os.path.join(D, 'chatly_recording', f))) for f in sorted(os.listdir(os.path.join(D, 'chatly_recording')))] for t in r['turns']]
 P(f"Chatly recording: {len(ch)} turns, {sum(len(t['attempts']) for t in ch)} attempts, {sum(bool(a['error']) for t in ch for a in t['attempts'])} failed attempts, {sum(not t['answered'] for t in ch)} turns without a reply, {len({a['model'] for t in ch for a in t['attempts']})} different models\n")
 
 P("## Q2. Switch detection\n")

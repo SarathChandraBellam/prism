@@ -7,8 +7,8 @@ Ranked by the share of tasks, turns or spend each finding touches. Findings abou
 **Finding.** On 4 task types Beacon, which has the same tools but no skills, gets at least 30 points fewer verifiable turns right than Atlas.
 
 **Evidence.**
-- decide: Atlas 89%, Beacon 11% (n=9 turns each)
-- triage: Atlas 100%, Beacon 33% (n=3 turns each)
+- triage: Atlas 100%, Beacon 17% (n=6 turns each)
+- decide: Atlas 83%, Beacon 17% (n=12 turns each)
 - advise: Atlas 100%, Beacon 50% (n=4 turns each)
 - report: Atlas 69%, Beacon 19% (n=16 turns each)
 
@@ -18,52 +18,52 @@ Ranked by the share of tasks, turns or spend each finding touches. Findings abou
 
 ## 2. Outcome proxies do not rank platforms on their own
 
-**Finding.** The proxy composite picked the same best platform as the checks in 1 of 4 task groups.
+**Finding.** The proxy composite picked the same best platform as the checks in 2 of 5 task groups.
 
 **Evidence.**
-- Spearman between composite and share of correct turns across 8 platform-by-task cells: 0.07
-- Per proxy (higher means it agrees with the checks): abandonment -0.47, failed request -0.49, no answer 0.12, switch away 0.77, tool error -0.88
+- Spearman between composite and share of correct turns across 11 platform-by-task cells: 0.28
+- Per proxy (higher means it agrees with the checks): abandonment -0.01, failed request -0.22, no answer 0.24, switch away 0.34, tool error -0.39
 - Tool errors run against quality because a platform without tools cannot make them
 
 **Action.** Use switch-away as the quality signal and compare platforms only within one capability class. Keep a sample of checked turns.
 
 **Owner.** platform owner
 
-## 3. Seats nobody uses
+## 3. Send each task type to the platform that gets it right
 
-**Finding.** 7 of 24 seats had no or almost no use in the two weeks, worth 150 per month.
-
-**Evidence.**
-- Flagged (under 10% of the holder's sessions): hana on Beacon (0 sessions), hana on Chatly (0 sessions), ines on Beacon (0 sessions), ines on Chatly (0 sessions), freya on Beacon (0 sessions), freya on Chatly (0 sessions), ben on Atlas (0 sessions)
-- Licence spend is 570 per month; the flagged seats are 26% of it
-- Against the designed list: precision 0.43, recall 0.75. Two weeks is short: a seat can be quiet by chance
-
-**Action.** Check each flagged seat with its holder, then cancel or reassign those that stay unused for a month.
-
-**Owner.** finance
-
-## 4. Send each task type to the platform that gets it right
-
-**Finding.** Routing every task type to its best platform would lift the share of correct verifiable turns from 61% to 87%, and that platform is Atlas for all 7 task types.
+**Finding.** Routing every task type to its best platform would lift the share of correct verifiable turns from 63% to 88%, and that platform is Atlas for all 7 task types.
 
 **Evidence.**
-- What the simulated staff got: 61% (77/126); if they had stayed on the platform they started with, no switching: 64%
-- Routed: 87%; the same routing chosen without each task's own script gives 87%
-- Shadow cost per task: actual 0.0146, routed 0.0205 (USD, list prices of the paid twin models)
+- What the simulated staff got: 63% (94/150); if they had stayed on the platform they started with, no switching: 66%
+- Routed: 88%; the same routing chosen without each task's own script gives 88%
+- Shadow cost per task: actual 0.0140, routed 0.0190 (USD, list prices of the paid twin models)
 - Best platform by task type: advise Atlas, analysis Atlas, decide Atlas, draft Atlas, lookup Atlas, report Atlas, triage Atlas
 
 **Action.** Make the best platform the default for these task types, and keep Chatly for drafting where its answers hold up.
 
 **Owner.** team lead
 
-## 5. Switching is visible in the traces
+## 4. Seats nobody uses
 
-**Finding.** 11 of 51 tasks (22%) were re-done on another platform as far as the detector can tell, and a time window plus word overlap finds 12 of 12 of the true re-asks.
+**Finding.** 6 of 24 seats had no or almost no use in the two weeks, worth 130 per month.
 
 **Evidence.**
-- Time window alone (30 minutes): precision 0.60, recall 1.00
-- Best combination: precision 0.92, recall 1.00, F1 0.96 (signals jac, ent, threshold 0.1)
-- All 12 re-asks were re-worded; the median word overlap of true pairs is 0.31, so a threshold above 0.3 would lose 42% of them
+- Flagged (under 10% of the holder's sessions): hana on Chatly (0 sessions), ines on Beacon (0 sessions), ines on Chatly (0 sessions), freya on Beacon (0 sessions), freya on Chatly (0 sessions), ben on Atlas (0 sessions)
+- Licence spend is 570 per month; the flagged seats are 23% of it
+- Against the designed list: precision 0.50, recall 0.75. Two weeks is short: a seat can be quiet by chance
+
+**Action.** Check each flagged seat with its holder, then cancel or reassign those that stay unused for a month.
+
+**Owner.** finance
+
+## 5. Switching is visible in the traces
+
+**Finding.** 13 of 64 tasks (20%) were re-done on another platform as far as the detector can tell, and a time window plus word overlap finds 13 of 13 of the true re-asks.
+
+**Evidence.**
+- Time window alone (30 minutes): precision 0.43, recall 1.00
+- Best combination: precision 1.00, recall 1.00, F1 1.00 (signals jac, ent, threshold 0.1)
+- All 13 re-asks were re-worded; the median word overlap of true pairs is 0.31, so a threshold above 0.3 would lose 38% of them
 - Re-pasted original prompts would have been found with recall 1.00
 
 **Action.** Log a shared task reference across platforms, or run the detector on every pair of sessions by one user within 30 minutes.
@@ -75,11 +75,11 @@ Ranked by the share of tasks, turns or spend each finding touches. Findings abou
 **Finding.** In the operations group 45% of tasks ended on trouble (an error, no answer or an inability phrase) with no follow-up on another platform.
 
 **Evidence.**
-- support: 2 of 13 tasks ended on trouble with no follow-up, 5 re-done on another platform (detected)
+- support: 4 of 26 tasks ended on trouble with no follow-up, 7 re-done on another platform (detected)
 - operations: 10 of 22 tasks ended on trouble with no follow-up, 5 re-done on another platform (detected)
 - management: 5 of 16 tasks ended on trouble with no follow-up, 1 re-done on another platform (detected)
 - Tasks started on Chatly in the operations group: 0 of 22
-- Scored against the replay, the trouble-without-follow-up flag has precision 0.47 and recall 0.67: it over-counts, so treat the rate as an upper bound
+- Scored against the replay, the trouble-without-follow-up flag has precision 0.47 and recall 0.69: it over-counts, so treat the rate as an upper bound
 
 **Action.** Review the platform defaults and seats of the operations group first.
 
@@ -90,8 +90,8 @@ Ranked by the share of tasks, turns or spend each finding touches. Findings abou
 **Finding.** 78% of the tasks that staff started on Chatly were re-done on another platform or ended on trouble.
 
 **Evidence.**
-- 9 of 51 tasks started on Chatly: 3 re-done elsewhere (detected), 4 ended on trouble without a follow-up
-- From sampled checks: verifiable turns correct on Chatly: 24% (n=17), Atlas 91% (n=64), Beacon 56% (n=32)
+- 9 of 64 tasks started on Chatly: 3 re-done elsewhere (detected), 4 ended on trouble without a follow-up
+- From sampled checks: verifiable turns correct on Chatly: 22% (n=18), Atlas 90% (n=82), Beacon 56% (n=34)
 - Chatly has no tools, so every check on database state fails by construction
 
 **Action.** Tell Chatly users which requests need company data. Move those to Atlas, or connect Chatly to the same tools.

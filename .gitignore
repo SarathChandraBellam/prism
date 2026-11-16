@@ -21,3 +21,6 @@ research/agent-study/*.log
 # Cross-platform study: working files (the datasets under data/ are synthetic and are committed)
 research/cross-platform/cache/
 research/cross-platform/run/
+
+# Decision study: the converted lake is rebuilt by conform.py from the round 4 lake
+research/decision-study/data/lake_otel.jsonl

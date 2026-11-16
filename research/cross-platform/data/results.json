@@ -1,28 +1,28 @@
 {
  "detected_pairs": 13,
  "label_lookup": {
-  "script_match_correct": 63,
-  "sessions": 64,
+  "script_match_correct": 76,
+  "sessions": 77,
   "sessions_with_label": 0
  },
  "lake": {
-  "sessions": 64,
-  "turns": 144
+  "sessions": 77,
+  "turns": 171
  },
  "lake_outcomes": {
   "all": {
-   "abandoned": 17,
-   "start_atlas": 24,
-   "start_atlas_abandoned": 8,
+   "abandoned": 19,
+   "start_atlas": 33,
+   "start_atlas_abandoned": 9,
    "start_atlas_switched": 3,
-   "start_beacon": 18,
-   "start_beacon_abandoned": 5,
-   "start_beacon_switched": 5,
+   "start_beacon": 22,
+   "start_beacon_abandoned": 6,
+   "start_beacon_switched": 7,
    "start_chatly": 9,
    "start_chatly_abandoned": 4,
    "start_chatly_switched": 3,
-   "switched": 11,
-   "tasks": 51
+   "switched": 13,
+   "tasks": 64
   },
   "management": {
    "abandoned": 5,
@@ -50,35 +50,35 @@
    "tasks": 22
   },
   "support": {
-   "abandoned": 2,
-   "start_atlas": 8,
-   "start_atlas_abandoned": 1,
+   "abandoned": 4,
+   "start_atlas": 17,
+   "start_atlas_abandoned": 2,
    "start_atlas_switched": 1,
-   "start_beacon": 3,
-   "start_beacon_abandoned": 1,
-   "start_beacon_switched": 2,
+   "start_beacon": 7,
+   "start_beacon_abandoned": 2,
+   "start_beacon_switched": 4,
    "start_chatly": 2,
    "start_chatly_abandoned": 0,
    "start_chatly_switched": 2,
-   "switched": 5,
-   "tasks": 13
+   "switched": 7,
+   "tasks": 26
   }
  },
  "outcomes": {
   "all": {
-   "abandoned": 12,
-   "sessions": 64,
-   "start_atlas": 24,
+   "abandoned": 13,
+   "sessions": 77,
+   "start_atlas": 33,
    "start_atlas_abandoned": 3,
    "start_atlas_switched": 3,
-   "start_beacon": 19,
-   "start_beacon_abandoned": 5,
-   "start_beacon_switched": 6,
+   "start_beacon": 22,
+   "start_beacon_abandoned": 6,
+   "start_beacon_switched": 7,
    "start_chatly": 9,
    "start_chatly_abandoned": 4,
    "start_chatly_switched": 3,
-   "switched": 12,
-   "tasks": 52
+   "switched": 13,
+   "tasks": 64
   },
   "management": {
    "abandoned": 4,
@@ -108,66 +108,66 @@
    "tasks": 22
   },
   "support": {
-   "abandoned": 4,
-   "sessions": 20,
-   "start_atlas": 8,
+   "abandoned": 5,
+   "sessions": 33,
+   "start_atlas": 17,
    "start_atlas_abandoned": 1,
    "start_atlas_switched": 1,
-   "start_beacon": 4,
-   "start_beacon_abandoned": 2,
-   "start_beacon_switched": 3,
+   "start_beacon": 7,
+   "start_beacon_abandoned": 3,
+   "start_beacon_switched": 4,
    "start_chatly": 2,
    "start_chatly_abandoned": 1,
    "start_chatly_switched": 2,
-   "switched": 6,
-   "tasks": 14
+   "switched": 7,
+   "tasks": 26
   }
  },
  "proxies": {
   "abandonment_flag_vs_truth": {
-   "f1": 0.552,
+   "f1": 0.562,
    "fn": 4,
-   "fp": 9,
-   "precision": 0.471,
-   "recall": 0.667,
-   "tp": 8
+   "fp": 10,
+   "precision": 0.474,
+   "recall": 0.692,
+   "tp": 9
   },
   "by_platform": {
    "atlas": {
-    "abandonment": 0.276,
-    "composite": 0.12,
-    "failed_request": 0.043,
-    "no_answer": 0.024,
-    "sessions": 29,
-    "switch_away": 0.103,
-    "tool_error": 0.153,
-    "truth_pass": 0.906,
-    "turns": 85,
-    "verifiable_turns": 64
+    "abandonment": 0.237,
+    "composite": 0.103,
+    "failed_request": 0.04,
+    "no_answer": 0.019,
+    "sessions": 38,
+    "switch_away": 0.079,
+    "tool_error": 0.142,
+    "truth_pass": 0.902,
+    "turns": 106,
+    "verifiable_turns": 82
    },
    "beacon": {
-    "abandonment": 0.1,
-    "composite": 0.127,
+    "abandonment": 0.087,
+    "composite": 0.12,
     "failed_request": 0.0,
-    "no_answer": 0.079,
-    "sessions": 20,
-    "switch_away": 0.3,
-    "tool_error": 0.158,
-    "truth_pass": 0.562,
-    "turns": 38,
-    "verifiable_turns": 32
+    "no_answer": 0.07,
+    "sessions": 23,
+    "switch_away": 0.304,
+    "tool_error": 0.14,
+    "truth_pass": 0.559,
+    "turns": 43,
+    "verifiable_turns": 34
    },
    "chatly": {
-    "abandonment": 0.467,
-    "composite": 0.147,
+    "abandonment": 0.5,
+    "composite": 0.138,
     "failed_request": 0.0,
     "no_answer": 0.0,
-    "sessions": 15,
-    "switch_away": 0.267,
+    "sessions": 16,
+    "switch_away": 0.188,
     "tool_error": 0.0,
-    "truth_pass": 0.235,
-    "turns": 21,
-    "verifiable_turns": 17
+    "truth_pass": 0.222,
+    "turns": 22,
+    "verifiable_turns": 18
    }
   },
   "definitions": {
@@ -209,46 +209,88 @@
      "verifiable_turns": 11
     },
     {
-     "abandonment": 0.25,
-     "composite": 0.129,
-     "failed_request": 0.0,
+     "abandonment": 0.167,
+     "composite": 0.121,
+     "failed_request": 0.051,
      "group": "decide",
      "no_answer": 0.0,
      "platform": "atlas",
-     "sessions": 4,
-     "switch_away": 0.25,
-     "tool_error": 0.143,
-     "truth_pass": 0.833,
-     "turns": 14,
-     "verifiable_turns": 12
+     "sessions": 6,
+     "switch_away": 0.167,
+     "tool_error": 0.222,
+     "truth_pass": 0.75,
+     "turns": 18,
+     "verifiable_turns": 16
     },
     {
      "abandonment": 0.0,
-     "composite": 0.067,
+     "composite": 0.0,
      "failed_request": 0.0,
      "group": "decide",
      "no_answer": 0.0,
      "platform": "chatly",
      "sessions": 3,
-     "switch_away": 0.333,
+     "switch_away": 0.0,
      "tool_error": 0.0,
      "truth_pass": 0.0,
      "turns": 3,
      "verifiable_turns": 3
     },
     {
-     "abandonment": 0.4,
-     "composite": 0.14,
+     "abandonment": 0.0,
+     "composite": 0.0,
+     "failed_request": 0.0,
+     "group": "draft",
+     "no_answer": 0.0,
+     "platform": "atlas",
+     "sessions": 3,
+     "switch_away": 0.0,
+     "tool_error": 0.0,
+     "truth_pass": 1.0,
+     "turns": 9,
+     "verifiable_turns": 4
+    },
+    {
+     "abandonment": 0.333,
+     "composite": 0.117,
+     "failed_request": 0.0,
+     "group": "draft",
+     "no_answer": 0.0,
+     "platform": "beacon",
+     "sessions": 3,
+     "switch_away": 0.0,
+     "tool_error": 0.25,
+     "truth_pass": 0.8,
+     "turns": 8,
+     "verifiable_turns": 5
+    },
+    {
+     "abandonment": 0.2,
+     "composite": 0.069,
      "failed_request": 0.0,
      "group": "lookup",
      "no_answer": 0.0,
      "platform": "atlas",
-     "sessions": 5,
+     "sessions": 10,
      "switch_away": 0.0,
-     "tool_error": 0.3,
+     "tool_error": 0.143,
      "truth_pass": 1.0,
-     "turns": 10,
-     "verifiable_turns": 10
+     "turns": 21,
+     "verifiable_turns": 21
+    },
+    {
+     "abandonment": 0.0,
+     "composite": 0.095,
+     "failed_request": 0.0,
+     "group": "lookup",
+     "no_answer": 0.0,
+     "platform": "beacon",
+     "sessions": 3,
+     "switch_away": 0.333,
+     "tool_error": 0.143,
+     "truth_pass": 0.857,
+     "turns": 7,
+     "verifiable_turns": 7
     },
     {
      "abandonment": 0.667,
@@ -313,9 +355,17 @@
     {
      "best_by_proxy": "atlas",
      "best_by_truth": "atlas",
-     "group": "lookup",
+     "group": "draft",
      "match": true,
      "platforms": 2,
+     "proxy_tie": false
+    },
+    {
+     "best_by_proxy": "atlas",
+     "best_by_truth": "atlas",
+     "group": "lookup",
+     "match": true,
+     "platforms": 3,
      "proxy_tie": false
     },
     {
@@ -327,29 +377,29 @@
      "proxy_tie": false
     }
    ],
-   "groups_compared": 4,
-   "groups_matching": 1,
+   "groups_compared": 5,
+   "groups_matching": 2,
    "groups_with_proxy_tie": 0,
-   "n_cells": 8,
-   "pairs_compared": 4,
-   "pairs_concordant": 1,
-   "spearman_composite_vs_truth": 0.073,
+   "n_cells": 11,
+   "pairs_compared": 7,
+   "pairs_concordant": 4,
+   "spearman_composite_vs_truth": 0.279,
    "spearman_single_proxies": {
-    "abandonment": -0.466,
-    "failed_request": -0.495,
-    "no_answer": 0.117,
-    "switch_away": 0.765,
-    "tool_error": -0.884
+    "abandonment": -0.012,
+    "failed_request": -0.216,
+    "no_answer": 0.245,
+    "switch_away": 0.338,
+    "tool_error": -0.389
    }
   },
   "labelled_domain": null,
   "switch_away_flag_vs_truth": {
-   "f1": 0.96,
+   "f1": 1.0,
    "fn": 0,
-   "fp": 1,
-   "precision": 0.923,
+   "fp": 0,
+   "precision": 1.0,
    "recall": 1.0,
-   "tp": 12
+   "tp": 13
   }
  },
  "routing": {
@@ -430,103 +480,103 @@
     "verifiable_turns": 15
    },
    {
-    "cost": 0.03140166,
-    "cost_per_1000_turns": 3.14,
-    "pass_rate": 0.889,
-    "passed": 8,
+    "cost": 0.04215227,
+    "cost_per_1000_turns": 3.24,
+    "pass_rate": 0.833,
+    "passed": 10,
     "platform": "atlas",
-    "scripts": 3,
+    "scripts": 4,
     "task_type": "decide",
-    "turns": 10,
-    "verifiable_turns": 9
+    "turns": 13,
+    "verifiable_turns": 12
    },
    {
-    "cost": 0.07024188,
-    "cost_per_1000_turns": 7.02,
-    "pass_rate": 0.111,
-    "passed": 1,
+    "cost": 0.08078255000000001,
+    "cost_per_1000_turns": 6.21,
+    "pass_rate": 0.167,
+    "passed": 2,
     "platform": "beacon",
-    "scripts": 3,
+    "scripts": 4,
     "task_type": "decide",
-    "turns": 10,
-    "verifiable_turns": 9
+    "turns": 13,
+    "verifiable_turns": 12
    },
    {
-    "cost": 0.00305959,
+    "cost": 0.00404954,
     "cost_per_1000_turns": 0.31,
-    "pass_rate": 0.111,
+    "pass_rate": 0.083,
     "passed": 1,
     "platform": "chatly",
-    "scripts": 3,
+    "scripts": 4,
     "task_type": "decide",
-    "turns": 10,
-    "verifiable_turns": 9
+    "turns": 13,
+    "verifiable_turns": 12
    },
    {
-    "cost": 0.02984297,
-    "cost_per_1000_turns": 3.73,
+    "cost": 0.03598185,
+    "cost_per_1000_turns": 3.27,
     "pass_rate": 1.0,
     "passed": 7,
     "platform": "atlas",
-    "scripts": 3,
+    "scripts": 4,
     "task_type": "draft",
-    "turns": 8,
+    "turns": 11,
     "verifiable_turns": 7
    },
    {
-    "cost": 0.035293,
-    "cost_per_1000_turns": 4.41,
+    "cost": 0.04404553,
+    "cost_per_1000_turns": 4.0,
     "pass_rate": 0.714,
     "passed": 5,
     "platform": "beacon",
-    "scripts": 3,
+    "scripts": 4,
     "task_type": "draft",
-    "turns": 8,
+    "turns": 11,
     "verifiable_turns": 7
    },
    {
-    "cost": 0.00380201,
-    "cost_per_1000_turns": 0.48,
+    "cost": 0.00652232,
+    "cost_per_1000_turns": 0.59,
     "pass_rate": 0.571,
     "passed": 4,
     "platform": "chatly",
-    "scripts": 3,
+    "scripts": 4,
     "task_type": "draft",
-    "turns": 8,
+    "turns": 11,
     "verifiable_turns": 7
    },
    {
-    "cost": 0.06562161999999999,
-    "cost_per_1000_turns": 7.29,
+    "cost": 0.10215946,
+    "cost_per_1000_turns": 6.81,
     "pass_rate": 1.0,
-    "passed": 9,
+    "passed": 15,
     "platform": "atlas",
-    "scripts": 4,
+    "scripts": 7,
     "task_type": "lookup",
-    "turns": 9,
-    "verifiable_turns": 9
+    "turns": 15,
+    "verifiable_turns": 15
    },
    {
-    "cost": 0.046352479999999995,
-    "cost_per_1000_turns": 5.15,
-    "pass_rate": 0.778,
-    "passed": 7,
+    "cost": 0.07738099,
+    "cost_per_1000_turns": 5.16,
+    "pass_rate": 0.867,
+    "passed": 13,
     "platform": "beacon",
-    "scripts": 4,
+    "scripts": 7,
     "task_type": "lookup",
-    "turns": 9,
-    "verifiable_turns": 9
+    "turns": 15,
+    "verifiable_turns": 15
    },
    {
-    "cost": 0.0032448100000000003,
-    "cost_per_1000_turns": 0.36,
-    "pass_rate": 0.111,
+    "cost": 0.0042308300000000005,
+    "cost_per_1000_turns": 0.28,
+    "pass_rate": 0.067,
     "passed": 1,
     "platform": "chatly",
-    "scripts": 4,
+    "scripts": 7,
     "task_type": "lookup",
-    "turns": 9,
-    "verifiable_turns": 9
+    "turns": 15,
+    "verifiable_turns": 15
    },
    {
     "cost": 0.10497919,
@@ -562,48 +612,48 @@
     "verifiable_turns": 16
    },
    {
-    "cost": 0.0239348,
-    "cost_per_1000_turns": 5.98,
+    "cost": 0.04486595,
+    "cost_per_1000_turns": 6.41,
     "pass_rate": 1.0,
-    "passed": 3,
+    "passed": 6,
     "platform": "atlas",
-    "scripts": 1,
+    "scripts": 2,
     "task_type": "triage",
-    "turns": 4,
-    "verifiable_turns": 3
+    "turns": 7,
+    "verifiable_turns": 6
    },
    {
-    "cost": 0.0157558,
-    "cost_per_1000_turns": 3.94,
-    "pass_rate": 0.333,
+    "cost": 0.04010187,
+    "cost_per_1000_turns": 5.73,
+    "pass_rate": 0.167,
     "passed": 1,
     "platform": "beacon",
-    "scripts": 1,
+    "scripts": 2,
     "task_type": "triage",
-    "turns": 4,
-    "verifiable_turns": 3
+    "turns": 7,
+    "verifiable_turns": 6
    },
    {
-    "cost": 0.0047928,
-    "cost_per_1000_turns": 1.2,
+    "cost": 0.00636265,
+    "cost_per_1000_turns": 0.91,
     "pass_rate": 0.333,
-    "passed": 1,
+    "passed": 2,
     "platform": "chatly",
-    "scripts": 1,
+    "scripts": 2,
     "task_type": "triage",
-    "turns": 4,
-    "verifiable_turns": 3
+    "turns": 7,
+    "verifiable_turns": 6
    }
   ],
   "policies": {
    "actual": {
     "all": {
-     "cost_per_task": 0.01461,
-     "pass_rate": 0.611,
-     "passed": 77,
-     "shadow_cost": 0.7598,
-     "tasks": 52,
-     "verifiable_turns": 126
+     "cost_per_task": 0.01395,
+     "pass_rate": 0.627,
+     "passed": 94,
+     "shadow_cost": 0.8931,
+     "tasks": 64,
+     "verifiable_turns": 150
     },
     "management": {
      "cost_per_task": 0.01278,
@@ -622,22 +672,22 @@
      "verifiable_turns": 54
     },
     "support": {
-     "cost_per_task": 0.01541,
-     "pass_rate": 0.619,
-     "passed": 26,
-     "shadow_cost": 0.2158,
-     "tasks": 14,
-     "verifiable_turns": 42
+     "cost_per_task": 0.01343,
+     "pass_rate": 0.652,
+     "passed": 43,
+     "shadow_cost": 0.3491,
+     "tasks": 26,
+     "verifiable_turns": 66
     }
    },
    "routed": {
     "all": {
-     "cost_per_task": 0.02053,
-     "pass_rate": 0.873,
-     "passed": 110,
-     "shadow_cost": 1.0674,
-     "tasks": 52,
-     "verifiable_turns": 126
+     "cost_per_task": 0.019,
+     "pass_rate": 0.88,
+     "passed": 132,
+     "shadow_cost": 1.2162,
+     "tasks": 64,
+     "verifiable_turns": 150
     },
     "management": {
      "cost_per_task": 0.02075,
@@ -656,22 +706,22 @@
      "verifiable_turns": 54
     },
     "support": {
-     "cost_per_task": 0.01673,
-     "pass_rate": 0.952,
-     "passed": 40,
-     "shadow_cost": 0.2342,
-     "tasks": 14,
-     "verifiable_turns": 42
+     "cost_per_task": 0.01473,
+     "pass_rate": 0.939,
+     "passed": 62,
+     "shadow_cost": 0.3829,
+     "tasks": 26,
+     "verifiable_turns": 66
     }
    },
    "routed_loo": {
     "all": {
-     "cost_per_task": 0.02053,
-     "pass_rate": 0.873,
-     "passed": 110,
-     "shadow_cost": 1.0674,
-     "tasks": 52,
-     "verifiable_turns": 126
+     "cost_per_task": 0.019,
+     "pass_rate": 0.88,
+     "passed": 132,
+     "shadow_cost": 1.2162,
+     "tasks": 64,
+     "verifiable_turns": 150
     },
     "management": {
      "cost_per_task": 0.02075,
@@ -690,22 +740,22 @@
      "verifiable_turns": 54
     },
     "support": {
-     "cost_per_task": 0.01673,
-     "pass_rate": 0.952,
-     "passed": 40,
-     "shadow_cost": 0.2342,
-     "tasks": 14,
-     "verifiable_turns": 42
+     "cost_per_task": 0.01473,
+     "pass_rate": 0.939,
+     "passed": 62,
+     "shadow_cost": 0.3829,
+     "tasks": 26,
+     "verifiable_turns": 66
     }
    },
    "start_only": {
     "all": {
-     "cost_per_task": 0.01728,
-     "pass_rate": 0.635,
-     "passed": 80,
-     "shadow_cost": 0.8988,
-     "tasks": 52,
-     "verifiable_turns": 126
+     "cost_per_task": 0.01644,
+     "pass_rate": 0.66,
+     "passed": 99,
+     "shadow_cost": 1.0524,
+     "tasks": 64,
+     "verifiable_turns": 150
     },
     "management": {
      "cost_per_task": 0.01353,
@@ -724,23 +774,23 @@
      "verifiable_turns": 54
     },
     "support": {
-     "cost_per_task": 0.01514,
-     "pass_rate": 0.69,
-     "passed": 29,
-     "shadow_cost": 0.212,
-     "tasks": 14,
-     "verifiable_turns": 42
+     "cost_per_task": 0.01406,
+     "pass_rate": 0.727,
+     "passed": 48,
+     "shadow_cost": 0.3657,
+     "tasks": 26,
+     "verifiable_turns": 66
     }
    }
   },
   "task_counts": {
    "advise": 6,
    "analysis": 14,
-   "decide": 6,
-   "draft": 6,
-   "lookup": 8,
+   "decide": 8,
+   "draft": 8,
+   "lookup": 14,
    "report": 10,
-   "triage": 2
+   "triage": 4
   },
   "task_types": [
    "advise",
@@ -756,24 +806,24 @@
   "by_sessions": {
    "designed_idle": 4,
    "designed_saving": 90,
-   "f1": 0.545,
-   "flagged": 7,
+   "f1": 0.6,
+   "flagged": 6,
    "fn": 1,
-   "fp": 4,
-   "monthly_saving": 150,
-   "precision": 0.429,
+   "fp": 3,
+   "monthly_saving": 130,
+   "precision": 0.5,
    "recall": 0.75,
    "tp": 3
   },
   "by_task_starts": {
    "designed_idle": 4,
    "designed_saving": 90,
-   "f1": 0.667,
-   "flagged": 8,
+   "f1": 0.727,
+   "flagged": 7,
    "fn": 0,
-   "fp": 4,
-   "monthly_saving": 170,
-   "precision": 0.5,
+   "fp": 3,
+   "monthly_saving": 150,
+   "precision": 0.571,
    "recall": 1.0,
    "tp": 4
   },
@@ -784,25 +834,25 @@
     "flag": false,
     "flag_starts": false,
     "handle": "priya",
-    "last_use": "2026-11-11",
+    "last_use": "2026-11-05",
     "platform": "atlas",
     "price": 30,
-    "sessions": 3,
-    "share": 0.6,
-    "start_share": 0.667,
-    "task_starts": 2
+    "sessions": 4,
+    "share": 0.667,
+    "start_share": 0.75,
+    "task_starts": 3
    },
    {
     "designed_idle": false,
     "flag": false,
     "flag_starts": false,
     "handle": "priya",
-    "last_use": "2026-11-11",
+    "last_use": "2026-11-05",
     "platform": "chatly",
     "price": 20,
     "sessions": 2,
-    "share": 0.4,
-    "start_share": 0.333,
+    "share": 0.333,
+    "start_share": 0.25,
     "task_starts": 1
    },
    {
@@ -810,13 +860,13 @@
     "flag": false,
     "flag_starts": false,
     "handle": "tomas",
-    "last_use": "2026-11-04",
+    "last_use": "2026-11-10",
     "platform": "atlas",
     "price": 30,
-    "sessions": 3,
+    "sessions": 9,
     "share": 1.0,
     "start_share": 1.0,
-    "task_starts": 3
+    "task_starts": 9
    },
    {
     "designed_idle": false,
@@ -826,23 +876,23 @@
     "last_use": "2026-11-10",
     "platform": "atlas",
     "price": 30,
-    "sessions": 3,
-    "share": 1.0,
-    "start_share": 1.0,
-    "task_starts": 3
+    "sessions": 5,
+    "share": 0.833,
+    "start_share": 0.833,
+    "task_starts": 5
    },
    {
     "designed_idle": false,
-    "flag": true,
-    "flag_starts": true,
+    "flag": false,
+    "flag_starts": false,
     "handle": "hana",
-    "last_use": null,
+    "last_use": "2026-11-03",
     "platform": "beacon",
     "price": 20,
-    "sessions": 0,
-    "share": 0.0,
-    "start_share": 0.0,
-    "task_starts": 0
+    "sessions": 1,
+    "share": 0.167,
+    "start_share": 0.167,
+    "task_starts": 1
    },
    {
     "designed_idle": true,
@@ -865,22 +915,22 @@
     "last_use": "2026-11-13",
     "platform": "beacon",
     "price": 20,
-    "sessions": 5,
-    "share": 0.556,
-    "start_share": 0.75,
-    "task_starts": 3
+    "sessions": 7,
+    "share": 0.583,
+    "start_share": 0.857,
+    "task_starts": 6
    },
    {
     "designed_idle": false,
     "flag": false,
     "flag_starts": false,
     "handle": "jonas",
-    "last_use": "2026-11-13",
+    "last_use": "2026-11-12",
     "platform": "chatly",
     "price": 20,
-    "sessions": 4,
-    "share": 0.444,
-    "start_share": 0.25,
+    "sessions": 5,
+    "share": 0.417,
+    "start_share": 0.143,
     "task_starts": 1
    },
    {
@@ -901,7 +951,7 @@
     "flag": false,
     "flag_starts": false,
     "handle": "kofi",
-    "last_use": "2026-11-13",
+    "last_use": "2026-11-11",
     "platform": "beacon",
     "price": 20,
     "sessions": 5,
@@ -914,7 +964,7 @@
     "flag": false,
     "flag_starts": false,
     "handle": "lucia",
-    "last_use": "2026-11-10",
+    "last_use": "2026-11-09",
     "platform": "beacon",
     "price": 20,
     "sessions": 6,
@@ -953,7 +1003,7 @@
     "flag": false,
     "flag_starts": false,
     "handle": "ines",
-    "last_use": "2026-11-03",
+    "last_use": "2026-11-04",
     "platform": "atlas",
     "price": 30,
     "sessions": 1,
@@ -992,7 +1042,7 @@
     "flag": false,
     "flag_starts": false,
     "handle": "rosa",
-    "last_use": "2026-11-05",
+    "last_use": "2026-11-12",
     "platform": "chatly",
     "price": 20,
     "sessions": 1,
@@ -1005,7 +1055,7 @@
     "flag": false,
     "flag_starts": false,
     "handle": "rosa",
-    "last_use": "2026-11-05",
+    "last_use": "2026-11-12",
     "platform": "atlas",
     "price": 30,
     "sessions": 3,
@@ -1101,191 +1151,191 @@
    "outside_window": 0
   },
   "counterfactual_unparaphrased": {
-   "f1": 0.96,
+   "f1": 0.929,
    "fn": 0,
-   "fp": 1,
-   "precision": 0.923,
+   "fp": 2,
+   "precision": 0.867,
    "recall": 1.0,
    "threshold": 0.1,
-   "tp": 12
+   "tp": 13
   },
   "jaccard_sweep": {
    "0.00": {
-    "f1": 0.75,
+    "f1": 0.605,
     "fn": 0,
-    "fp": 8,
-    "precision": 0.6,
+    "fp": 17,
+    "precision": 0.433,
     "recall": 1.0,
-    "tp": 12
+    "tp": 13
    },
    "0.05": {
-    "f1": 0.96,
+    "f1": 0.897,
     "fn": 0,
-    "fp": 1,
-    "precision": 0.923,
+    "fp": 3,
+    "precision": 0.812,
     "recall": 1.0,
-    "tp": 12
+    "tp": 13
    },
    "0.10": {
-    "f1": 0.96,
+    "f1": 1.0,
     "fn": 0,
-    "fp": 1,
-    "precision": 0.923,
+    "fp": 0,
+    "precision": 1.0,
     "recall": 1.0,
-    "tp": 12
+    "tp": 13
    },
    "0.15": {
-    "f1": 0.818,
-    "fn": 3,
-    "fp": 1,
-    "precision": 0.9,
-    "recall": 0.75,
-    "tp": 9
-   },
-   "0.20": {
-    "f1": 0.857,
+    "f1": 0.87,
     "fn": 3,
     "fp": 0,
     "precision": 1.0,
-    "recall": 0.75,
-    "tp": 9
+    "recall": 0.769,
+    "tp": 10
+   },
+   "0.20": {
+    "f1": 0.87,
+    "fn": 3,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 0.769,
+    "tp": 10
    },
    "0.25": {
-    "f1": 0.8,
+    "f1": 0.818,
     "fn": 4,
     "fp": 0,
     "precision": 1.0,
-    "recall": 0.667,
-    "tp": 8
+    "recall": 0.692,
+    "tp": 9
    },
    "0.30": {
-    "f1": 0.737,
+    "f1": 0.762,
     "fn": 5,
     "fp": 0,
     "precision": 1.0,
-    "recall": 0.583,
-    "tp": 7
+    "recall": 0.615,
+    "tp": 8
    },
    "0.35": {
-    "f1": 0.588,
-    "fn": 7,
+    "f1": 0.556,
+    "fn": 8,
     "fp": 0,
     "precision": 1.0,
-    "recall": 0.417,
+    "recall": 0.385,
     "tp": 5
    },
    "0.40": {
-    "f1": 0.588,
-    "fn": 7,
+    "f1": 0.556,
+    "fn": 8,
     "fp": 0,
     "precision": 1.0,
-    "recall": 0.417,
+    "recall": 0.385,
     "tp": 5
    },
    "0.45": {
-    "f1": 0.5,
-    "fn": 8,
+    "f1": 0.471,
+    "fn": 9,
     "fp": 0,
     "precision": 1.0,
-    "recall": 0.333,
+    "recall": 0.308,
     "tp": 4
    },
    "0.50": {
-    "f1": 0.5,
-    "fn": 8,
+    "f1": 0.471,
+    "fn": 9,
     "fp": 0,
     "precision": 1.0,
-    "recall": 0.333,
+    "recall": 0.308,
     "tp": 4
    },
    "0.55": {
-    "f1": 0.154,
-    "fn": 11,
+    "f1": 0.143,
+    "fn": 12,
     "fp": 0,
     "precision": 1.0,
-    "recall": 0.083,
+    "recall": 0.077,
     "tp": 1
    },
    "0.60": {
-    "f1": 0.154,
-    "fn": 11,
+    "f1": 0.143,
+    "fn": 12,
     "fp": 0,
     "precision": 1.0,
-    "recall": 0.083,
+    "recall": 0.077,
     "tp": 1
    }
   },
   "methods": {
    "a_window": {
-    "f1": 0.75,
+    "f1": 0.605,
     "fn": 0,
-    "fp": 8,
-    "precision": 0.6,
+    "fp": 17,
+    "precision": 0.433,
     "recall": 1.0,
-    "tp": 12
+    "tp": 13
    },
    "b2_jaccard_whole_session": {
-    "f1": 0.923,
-    "fn": 0,
-    "fp": 2,
-    "precision": 0.857,
-    "recall": 1.0,
-    "threshold": 0.05,
-    "tp": 12
+    "f1": 0.917,
+    "fn": 2,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 0.846,
+    "threshold": 0.1,
+    "tp": 11
    },
    "b_jaccard": {
-    "f1": 0.96,
+    "f1": 1.0,
     "fn": 0,
-    "fp": 1,
-    "precision": 0.923,
+    "fp": 0,
+    "precision": 1.0,
     "recall": 1.0,
     "threshold": 0.1,
-    "tp": 12
+    "tp": 13
    },
    "c_entities": {
-    "f1": 0.4,
+    "f1": 0.471,
     "fn": 9,
     "fp": 0,
     "precision": 1.0,
-    "recall": 0.25,
-    "tp": 3
+    "recall": 0.308,
+    "tp": 4
    },
    "c_entities_or_jaccard": {
-    "f1": 0.96,
+    "f1": 1.0,
     "fn": 0,
-    "fp": 1,
-    "precision": 0.923,
+    "fp": 0,
+    "precision": 1.0,
     "recall": 1.0,
-    "tp": 12
+    "tp": 13
    },
    "e_best_combination": {
-    "f1": 0.96,
+    "f1": 1.0,
     "fn": 0,
-    "fp": 1,
+    "fp": 0,
     "k": 1,
     "nearest_only": false,
-    "precision": 0.923,
+    "precision": 1.0,
     "recall": 1.0,
     "signals": [
      "jac",
      "ent"
     ],
     "tau": 0.1,
-    "tp": 12
+    "tp": 13
    }
   },
-  "n_adjacent_pairs": 12,
-  "n_candidates": 20,
-  "n_true_pairs": 12,
+  "n_adjacent_pairs": 13,
+  "n_candidates": 30,
+  "n_true_pairs": 13,
   "paraphrase": {
-   "adjacent_pairs_in_candidates": 12,
-   "adjacent_pairs_with_jaccard_ge_best": 12,
+   "adjacent_pairs_in_candidates": 13,
+   "adjacent_pairs_with_jaccard_ge_best": 13,
    "median_jaccard_first_prompt_false_pairs": 0.0,
    "median_jaccard_first_prompt_true_pairs": 0.308,
-   "of_which_paraphrased": 12,
-   "switch_sessions": 12,
-   "true_pairs_in_candidates": 12,
-   "true_pairs_with_entity": 3
+   "of_which_paraphrased": 13,
+   "switch_sessions": 13,
+   "true_pairs_in_candidates": 13,
+   "true_pairs_with_entity": 4
   },
   "window_minutes": 30
  }
