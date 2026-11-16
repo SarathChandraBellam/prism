@@ -9,7 +9,7 @@ It uses the complete round 4 data: a simulated company with 12 staff, three plat
 ## TL;DR
 
 1. **The trace schema carries the data.** The first transformer converts the round 4 lake into spans that follow the schema, with no non-standard name left. Four source attributes have no standard name (cost, turn index, MCP server name, HTTP status). Each has a workaround. One Required attribute, `gen_ai.provider.name`, is missing on 174 of 492 model calls, because two of the three sources never recorded it.
-2. **Three of six decisions can be answered from traces today.** Seats, the work map and the personal report are ready on all three platforms. "What to build next" is ready where a platform has tools. "Which tool for which job" and "where does sensitive work go" are blocked on every platform by an input that is in no trace. With content switched off, nothing is ready.
+2. **Three of six decisions can be answered from traces today.** Seats, the work map and the personal report are ready on all three platforms. "What to build next" is ready on the platform with tools and skills, partial on the one without skills and blocked on the one without tools. "Which tool for which job" and "where does sensitive work go" are blocked on every platform by an input that is in no trace. With content switched off, nothing is ready.
 3. **The session is the wrong unit.** The chat platform had 21% of the sessions and 11% of the finished tasks. 13% of the token cost went to sessions that the person then re-did elsewhere. A verified-correct task cost 2.0 times the cost of a session.
 4. **The cost is in the seats.** Licences cost 304 times the token cost of the work done on them. A seat decision matters far more than a token decision at this level of use.
 5. **Half of the wrong answers leave no sign in the trace.** 19 of 37 turns that failed a check show no error, no empty reply and no "I can't". A failed tool call marked a wrong answer in only 4 of 18 turns.
@@ -173,7 +173,7 @@ When a person re-does a task on another platform, the second session shows what 
 | Atlas | Chatly | 3 | nothing |
 
 - **6 of 13 switches point at a missing capability.** For Chatly it is company data. For Beacon it is one skill.
-- **The chat platform tells you itself.** 11 of 22 Chatly turns carry an inability phrase, and 8 more tasks ended there on one. With the 3 switches, 11 tasks failed for want of company data.
+- **The chat platform tells you itself.** 11 of 22 Chatly turns carry an inability phrase, and 8 more tasks ended there on one. With the 3 switches, that is 11 tasks that left Chatly for a platform with the shop server or ended there on such a phrase.
 - **The other 7 switches went to a platform with fewer tools.** The trace cannot say why. In 3 of them the first session shows no sign of trouble at all.
 - **Skills are again the lever.** Round 3 found 88% correct with skills and 49% without. Here the trace shows which skill people went looking for.
 
@@ -209,7 +209,7 @@ Every script was recorded on all three platforms, so each has three labels. If t
 | 8 | Not enough checks to route by task type | D3 | checked | watch |
 | 9 | The work map cannot be compared across platforms yet | D2 | labelled | watch |
 
-- **Round 4's seat card said "7 seats nobody uses, worth 150 per month".** The same data now says: 7 quiet seats, none proven unused, ask or wait.
+- **Round 4's seat card said "6 of 24 seats had no or almost no use, worth 130 per month".** The same data now says: 7 quiet seats by task starts, none proven unused, ask or wait.
 - **Round 4's routing card said "send each task type to the platform that gets it right".** Now the platform-level choice says `act` and the task-type choice says `watch`, with the number of checks it needs.
 - **Three cards say `watch`.** That is a result. It tells the owner what the data cannot support yet and what would change that.
 - **Two decisions have no card.** D5 has no label. D6 is the personal report and is not for the organisation.

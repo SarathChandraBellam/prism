@@ -72,7 +72,7 @@
     "Tasks started on Chatly that were re-done elsewhere or ended on trouble: 78% (7/9)",
     "8 more tasks ended on Chatly with a reply that says it cannot reach the data; 50% (11/22) of its turns carry such a phrase (the phrase marks a wrong answer in 9 of 10 checked turns)"
    ],
-   "finding": "11 tasks failed on Chatly, which does not have the MCP server `shop`.",
+   "finding": "11 tasks left Chatly for a platform with the MCP server `shop` or ended there on a reply that says it cannot reach the data.",
    "owner": "enablement",
    "rank": 4,
    "readiness": "act",

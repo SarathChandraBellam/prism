@@ -38,4 +38,4 @@ A company with several AI tools does not ask for a dashboard of either kind. It 
 - The catalogue becomes the backlog. Work that serves no row in it is out of scope.
 - The session is no longer the top unit. Decisions about spend and quality need the task ([ADR 0005](0005-task-as-unit-of-work.md)).
 - Prism needs an outcome signal that traces do not carry today ([ADR 0007](0007-outcome-signal.md)).
-- The roadmap's phase 3 (organisation insights) depends on these three ADRs.
+- The roadmap's phase 3 (organisation insights) depends on this ADR and on ADRs 0005 to 0007.

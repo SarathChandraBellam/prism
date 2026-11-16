@@ -1,6 +1,6 @@
 # Insight catalogue
 
-> **Status: draft.** Follows [ADR 0004](adr/0004-scope-organisation-decisions.md). This is the list of decisions that Prism serves and what each one reads from traces. The same list is kept as data in [`catalogue.json`](../research/decision-study/catalogue.json), and [round 5](research/decision-study.md) tested every row. Work that serves no row here is out of scope.
+> **Status: draft.** Follows [ADR 0004](adr/0004-scope-organisation-decisions.md). This is the list of decisions that Prism serves and what each one reads from traces. The same list is kept as data in [`catalogue.json`](../research/decision-study/catalogue.json), and [round 5](research/decision-study.md) tested each row against the traces. It studied D1 to D4 in depth; D5 is blocked and D6 was studied in earlier rounds. Work that serves no row here is out of scope.
 
 ## How to read a row
 
@@ -20,7 +20,7 @@ Each decision has:
 | D1 | Which seats do we pay for? | finance | Task starts per seat, and the chance that a seat this quiet is quiet by luck | task | linked | Ready. Two weeks of data are not enough to cancel a seat |
 | D2 | What work goes to AI? | leadership | Share of tasks by domain and task type, per role and platform | task | labelled | Ready by domain on similar platforms. Task type does not compare across platforms |
 | D3 | Which tool for which job? | platform owner | Share of checked answers that are correct, per platform and task type; cost per correct task | task | checked | Blocked until answers are checked. About 30 checks per period settle the platform |
-| D4 | What do we build next: skills, connectors, context? | enablement | Tasks re-done on another platform or ended on trouble, by the capability that was missing | task | linked | Ready where the platform has tools |
+| D4 | What do we build next: skills, connectors, context? | enablement | Tasks re-done on another platform or ended on trouble, by the capability that was missing | task | linked | Ready on a platform with tools and skills, partial without skills, blocked without tools |
 | D5 | Where does sensitive work go? | security | Share of sessions with sensitive content, per platform | session | labelled | Blocked. No sensitivity label or policy exists |
 | D6 | How do I work with AI? | the individual | Personal report: topics, task types, time patterns, corrections and refinements | session | labelled | Ready. Studied in rounds 1 to 3 |
 
@@ -38,7 +38,7 @@ All decisions read `gen_ai.conversation.id` to group traces into sessions and `s
 | D6 | `user.id`; the user's message and the visible reply | Tool names | Session and prompt labels from a small model | Blocked |
 
 - **Content is opt-in in the conventions, and five of six decisions need it.** Prism needs the user's message and the visible reply of each turn. It needs no tool results, no system prompts and no retrieved documents ([privacy model](privacy.md)).
-- **Four things are not in the conventions and are derived:** cost (tokens times a price table), turn order (start time), the MCP server of a tool (the prefix of the tool name) and the platform (the resource's `service.name`).
+- **Three things are not in the conventions and are derived:** cost (tokens times a price table), turn order (start time) and the MCP server of a tool (the prefix of the tool name). The platform is carried by the resource's `service.name`.
 - **One thing is in the conventions and in no trace:** the outcome of a checked answer ([ADR 0007](adr/0007-outcome-signal.md)).
 
 ## The bar for action

@@ -93,7 +93,8 @@ def main():
         ready = "act" if n_tasks >= 5 else "check first" if n_tasks >= 3 else "watch"
         what = f"{kind(top)} `{top.split(': ')[1]}`"
         card(n_tasks / tasks, "D4", cat["D4"]["owner"], f"{NAME[p]} lacks the {kind(top)} {top.split(': ')[1]}",
-             f"{n_tasks} tasks failed on {NAME[p]}, which does not have the {what}.", ev, "linked",
+             (f"{n_tasks} tasks left {NAME[p]} for a platform with the {what} or ended there on a reply that says it cannot reach the data." if chat_only
+              else f"{n_tasks} tasks failed on {NAME[p]}, which does not have the {what}."), ev, "linked",
              link_err + ("; inability phrase scored above" if chat_only else ""), ready,
              f"D4 bar: the same gap in 5 tasks or more is `act`, in 3 or 4 `check first` (here {n_tasks})",
              f"Add the {what} to {NAME[p]}, or send that work to a platform that has it.",

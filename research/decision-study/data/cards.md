@@ -76,7 +76,7 @@ Each card follows [ADR 0006](../../../docs/adr/0006-insight-card-contract.md). R
 
 **Decision.** D4: What do we build next: skills, connectors, context? **Owner.** enablement
 
-**Finding.** 11 tasks failed on Chatly, which does not have the MCP server `shop`.
+**Finding.** 11 tasks left Chatly for a platform with the MCP server `shop` or ended there on a reply that says it cannot reach the data.
 
 **Evidence.**
 - 3 of 3 tasks that left Chatly used the MCP server shop on the next platform

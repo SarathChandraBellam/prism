@@ -50,7 +50,7 @@ Prism serves six decisions. They are listed in the [insight catalogue](docs/insi
 | Where does sensitive work go? | security |
 | How do I work with AI? | the individual |
 
-An insight card states a finding, its evidence, an action and an owner. It also states what kind of evidence it rests on (counted, linked, labelled or checked), the measured error of that evidence, and whether to act, check first or watch ([ADR 0006](docs/adr/0006-insight-card-contract.md)). The [decision study](docs/research/decision-study.md) tested all six on simulated data.
+An insight card states a finding, its evidence, an action and an owner. It also states what kind of evidence it rests on (counted, linked, labelled or checked), the measured error of that evidence, and whether to act, check first or watch ([ADR 0006](docs/adr/0006-insight-card-contract.md)). The [decision study](docs/research/decision-study.md) tested them on simulated data: four in depth, while "sensitive work" is blocked for want of a label and the personal report was studied in earlier rounds.
 
 ## Principles
 
