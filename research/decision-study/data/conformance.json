@@ -1,0 +1,49 @@
+{
+ "dropped": {
+  "gen_ai.usage.cost": 318,
+  "http.status_code": 322,
+  "mcp.server.name": 395,
+  "session.turn_index": 171
+ },
+ "inferred": {
+  "finish_reason of the output message": 336,
+  "gen_ai.skill.name from the load_skill arguments": 39,
+  "mcp.method.name from the tool-name prefix": 356
+ },
+ "moved_to_resource": {
+  "platform -> resource service.name": 1062
+ },
+ "non_standard_after_conversion": {},
+ "renamed": {
+  "finish reason tool_calls -> tool_call": 205,
+  "gen_ai.usage.cached_tokens -> gen_ai.usage.cache_read.input_tokens": 168,
+  "gen_ai.usage.reasoning_tokens -> gen_ai.usage.reasoning.output_tokens": 274
+ },
+ "required_missing": {
+  "atlas chat": {
+   "gen_ai.provider.name": 4
+  },
+  "beacon chat": {
+   "gen_ai.provider.name": 148
+  },
+  "chatly chat": {
+   "gen_ai.provider.name": 22
+  }
+ },
+ "restructured": {
+  "gen_ai.input.text -> gen_ai.input.messages": 171,
+  "gen_ai.output.text (+ tool_calls) -> gen_ai.output.messages": 645
+ },
+ "spans": 1062,
+ "spans_by_platform_and_type": {
+  "atlas chat": 322,
+  "atlas execute_tool": 232,
+  "atlas invoke_agent": 106,
+  "beacon chat": 148,
+  "beacon execute_tool": 167,
+  "beacon invoke_agent": 43,
+  "chatly chat": 22,
+  "chatly invoke_agent": 22
+ },
+ "standard_names_in_schema_doc": 106
+}

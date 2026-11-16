@@ -1,0 +1,119 @@
+{
+ "note": "The insight catalogue as data. One entry per decision. 'needs' lists what the decision reads from spans in the docs/trace-schema.md shape: 'where' is a span type (invoke_agent, chat, execute_tool), 'resource' or 'event'. 'external' lists inputs that are not traces. The human version is docs/insights.md.",
+ "decisions": [
+  {
+   "id": "D1",
+   "decision": "Which seats do we pay for?",
+   "owner": "finance",
+   "metric": "Task starts per seat in the window, with the chance that a seat this quiet is quiet by luck",
+   "unit": "task",
+   "tier": "structural",
+   "needs": [
+    {"where": "invoke_agent", "name": "user.id", "for": "who used the seat"},
+    {"where": "invoke_agent", "name": "gen_ai.conversation.id", "for": "group traces into sessions"},
+    {"where": "resource", "name": "service.name", "for": "which platform"},
+    {"where": "invoke_agent", "name": "gen_ai.input.messages", "for": "link a re-ask to its first session, so a fallback is not counted as a task start", "optional": true}
+   ],
+   "external": [
+    {"name": "seat list (holder, platform, price)", "available": true},
+    {"name": "directory (one identity per person across platforms)", "available": true}
+   ]
+  },
+  {
+   "id": "D2",
+   "decision": "What work goes to AI?",
+   "owner": "leadership",
+   "metric": "Share of tasks by domain and task type, per role and per platform",
+   "unit": "task",
+   "tier": "label",
+   "needs": [
+    {"where": "invoke_agent", "name": "gen_ai.input.messages", "for": "what the person asked (content is opt-in in the conventions)"},
+    {"where": "invoke_agent", "name": "gen_ai.output.messages", "for": "the visible reply, for the compact view"},
+    {"where": "invoke_agent", "name": "user.id", "for": "role, through the directory"},
+    {"where": "invoke_agent", "name": "gen_ai.conversation.id", "for": "group traces into sessions"},
+    {"where": "resource", "name": "service.name", "for": "which platform"},
+    {"where": "execute_tool", "name": "gen_ai.tool.name", "for": "one line per tool call in the compact view", "optional": true}
+   ],
+   "external": [
+    {"name": "directory (role per person)", "available": true},
+    {"name": "session labels from a small model (domain, task type)", "available": true}
+   ]
+  },
+  {
+   "id": "D3",
+   "decision": "Which tool for which job?",
+   "owner": "platform owner",
+   "metric": "Share of checked turns that are correct, per task type and platform, with its interval; cost per correct task",
+   "unit": "task",
+   "tier": "outcome",
+   "needs": [
+    {"where": "event", "name": "gen_ai.evaluation.result", "for": "the outcome of a checked turn"},
+    {"where": "invoke_agent", "name": "gen_ai.input.messages", "for": "task type, through the label"},
+    {"where": "chat", "name": "gen_ai.usage.input_tokens", "for": "cost"},
+    {"where": "chat", "name": "gen_ai.usage.output_tokens", "for": "cost"},
+    {"where": "chat", "name": "gen_ai.response.model", "for": "the price of the model that answered"},
+    {"where": "resource", "name": "service.name", "for": "which platform"}
+   ],
+   "external": [
+    {"name": "sampled checks of answers (people or evaluators)", "available": false},
+    {"name": "price table per model", "available": true},
+    {"name": "session labels from a small model (task type)", "available": true}
+   ]
+  },
+  {
+   "id": "D4",
+   "decision": "What do we build next: skills, connectors, context?",
+   "owner": "enablement",
+   "metric": "Tasks re-done on another platform or ended on trouble, by the capability that was missing",
+   "unit": "task",
+   "tier": "structural",
+   "needs": [
+    {"where": "invoke_agent", "name": "user.id", "for": "link sessions of one person"},
+    {"where": "invoke_agent", "name": "gen_ai.conversation.id", "for": "group traces into sessions"},
+    {"where": "invoke_agent", "name": "gen_ai.input.messages", "for": "link a re-ask to its first session"},
+    {"where": "invoke_agent", "name": "gen_ai.output.messages", "for": "no answer, or an inability phrase"},
+    {"where": "execute_tool", "name": "gen_ai.tool.name", "for": "which tools the task needed"},
+    {"where": "execute_tool", "name": "gen_ai.skill.name", "for": "which skill the task needed", "optional": true},
+    {"where": "execute_tool", "name": "error.type", "for": "a failed tool call", "optional": true},
+    {"where": "resource", "name": "service.name", "for": "which platform"}
+   ],
+   "external": [
+    {"name": "directory (one identity per person across platforms)", "available": true}
+   ]
+  },
+  {
+   "id": "D5",
+   "decision": "Where does sensitive work go?",
+   "owner": "security",
+   "metric": "Share of sessions with sensitive content, per platform",
+   "unit": "session",
+   "tier": "label",
+   "needs": [
+    {"where": "invoke_agent", "name": "gen_ai.input.messages", "for": "what was typed into the tool"},
+    {"where": "execute_tool", "name": "gen_ai.tool.call.arguments", "for": "what the agent sent to tools", "optional": true},
+    {"where": "resource", "name": "service.name", "for": "which platform"}
+   ],
+   "external": [
+    {"name": "sensitivity policy and label", "available": false}
+   ]
+  },
+  {
+   "id": "D6",
+   "decision": "How do I work with AI?",
+   "owner": "the individual",
+   "metric": "Personal report: topics, task types, time patterns, counts of corrections and refinements",
+   "unit": "session",
+   "tier": "label",
+   "needs": [
+    {"where": "invoke_agent", "name": "gen_ai.input.messages", "for": "what the person asked"},
+    {"where": "invoke_agent", "name": "gen_ai.output.messages", "for": "the visible reply"},
+    {"where": "invoke_agent", "name": "user.id", "for": "whose report"},
+    {"where": "invoke_agent", "name": "gen_ai.conversation.id", "for": "group traces into sessions"},
+    {"where": "execute_tool", "name": "gen_ai.tool.name", "for": "tool and skill use", "optional": true}
+   ],
+   "external": [
+    {"name": "session and prompt labels from a small model", "available": true}
+   ]
+  }
+ ]
+}
