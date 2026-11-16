@@ -42,6 +42,7 @@ Candidates 30, true pairs 13 (adjacent 13), window 30 minutes
 | b. + word overlap of first prompts | 13 | 13 | 1.00 | 1.00 | 1.00 | threshold 0.1 |
 | c. + shared order, ticket or SKU ids | 4 | 4 | 1.00 | 0.31 | 0.47 |  |
 | c2. ids or word overlap | 13 | 13 | 1.00 | 1.00 | 1.00 |  |
+| d. + same labelled domain and task type | 10 | 8 | 0.80 | 0.61 | 0.70 |  |
 | e. Best combination | 13 | 13 | 1.00 | 1.00 | 1.00 | tau 0.1, signals jac+ent, k=1, nearest only=False |
 
 | Jaccard threshold | Precision | Recall | F1 |
@@ -57,7 +58,7 @@ Candidates 30, true pairs 13 (adjacent 13), window 30 minutes
 
 Paraphrase: 13 switch sessions, 13 paraphrased; median Jaccard of first prompts true pairs 0.308, false pairs 0.0; true pairs sharing an id 4 of 13
 Counterfactual with the original prompt re-pasted (threshold 0.1): precision 0.867, recall 1.0, F1 0.929
-Label lookup by text: script matched in 76 of 77 sessions; sessions with a label 0
+Label lookup by text: script matched in 76 of 77 sessions; sessions with a label 77
 
 ## Q3. Proxies
 
@@ -95,7 +96,24 @@ Session-level flags against the replay: abandonment precision 0.474, recall 0.69
 
 Cells 11, Spearman composite vs checks 0.279; groups matching 2 of 5; pairs concordant 4 of 7; single proxies {'abandonment': -0.012, 'failed_request': -0.216, 'no_answer': 0.245, 'switch_away': 0.338, 'tool_error': -0.389}
 
-Cut labelled_domain: pending (labels)
+### Cut: labelled_domain
+
+| Group | Platform | Sessions | Verifiable turns | Correct (checks) | Composite |
+|---|---|---|---|---|---|
+| operations | Atlas | 18 | 35 | 89% | 0.166 |
+| operations | Beacon | 9 | 14 | 57% | 0.114 |
+| operations | Chatly | 4 | 4 | 0% | 0.200 |
+| support | Atlas | 17 | 44 | 91% | 0.059 |
+| support | Beacon | 9 | 14 | 57% | 0.158 |
+| support | Chatly | 9 | 9 | 0% | 0.133 |
+| writing | Beacon | 4 | 5 | 60% | 0.025 |
+
+| Group | Best by checks | Best by proxy | Match |
+|---|---|---|---|
+| operations | Atlas | Beacon | no |
+| support | Atlas | Atlas | yes |
+
+Cells 7, Spearman composite vs checks 0.455; groups matching 1 of 2; pairs concordant 4 of 6; single proxies {'abandonment': 0.44, 'failed_request': -0.771, 'no_answer': -0.181, 'switch_away': 0.582, 'tool_error': -0.547}
 
 ## Q4. Seats
 

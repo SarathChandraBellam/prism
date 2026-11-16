@@ -3,7 +3,7 @@
  "label_lookup": {
   "script_match_correct": 76,
   "sessions": 77,
-  "sessions_with_label": 0
+  "sessions_with_label": 77
  },
  "lake": {
   "sessions": 77,
@@ -392,7 +392,140 @@
     "tool_error": -0.389
    }
   },
-  "labelled_domain": null,
+  "labelled_domain": {
+   "cells": [
+    {
+     "abandonment": 0.389,
+     "composite": 0.166,
+     "failed_request": 0.069,
+     "group": "operations",
+     "no_answer": 0.043,
+     "platform": "atlas",
+     "sessions": 18,
+     "switch_away": 0.111,
+     "tool_error": 0.217,
+     "truth_pass": 0.886,
+     "turns": 46,
+     "verifiable_turns": 35
+    },
+    {
+     "abandonment": 0.111,
+     "composite": 0.114,
+     "failed_request": 0.0,
+     "group": "operations",
+     "no_answer": 0.125,
+     "platform": "beacon",
+     "sessions": 9,
+     "switch_away": 0.333,
+     "tool_error": 0.0,
+     "truth_pass": 0.571,
+     "turns": 16,
+     "verifiable_turns": 14
+    },
+    {
+     "abandonment": 0.75,
+     "composite": 0.2,
+     "failed_request": 0.0,
+     "group": "operations",
+     "no_answer": 0.0,
+     "platform": "chatly",
+     "sessions": 4,
+     "switch_away": 0.25,
+     "tool_error": 0.0,
+     "truth_pass": 0.0,
+     "turns": 4,
+     "verifiable_turns": 4
+    },
+    {
+     "abandonment": 0.118,
+     "composite": 0.059,
+     "failed_request": 0.015,
+     "group": "support",
+     "no_answer": 0.0,
+     "platform": "atlas",
+     "sessions": 17,
+     "switch_away": 0.059,
+     "tool_error": 0.102,
+     "truth_pass": 0.909,
+     "turns": 49,
+     "verifiable_turns": 44
+    },
+    {
+     "abandonment": 0.111,
+     "composite": 0.158,
+     "failed_request": 0.0,
+     "group": "support",
+     "no_answer": 0.0,
+     "platform": "beacon",
+     "sessions": 9,
+     "switch_away": 0.444,
+     "tool_error": 0.235,
+     "truth_pass": 0.571,
+     "turns": 17,
+     "verifiable_turns": 14
+    },
+    {
+     "abandonment": 0.444,
+     "composite": 0.133,
+     "failed_request": 0.0,
+     "group": "support",
+     "no_answer": 0.0,
+     "platform": "chatly",
+     "sessions": 9,
+     "switch_away": 0.222,
+     "tool_error": 0.0,
+     "truth_pass": 0.0,
+     "turns": 9,
+     "verifiable_turns": 9
+    },
+    {
+     "abandonment": 0.0,
+     "composite": 0.025,
+     "failed_request": 0.0,
+     "group": "writing",
+     "no_answer": 0.0,
+     "platform": "beacon",
+     "sessions": 4,
+     "switch_away": 0.0,
+     "tool_error": 0.125,
+     "truth_pass": 0.6,
+     "turns": 8,
+     "verifiable_turns": 5
+    }
+   ],
+   "groups": [
+    {
+     "best_by_proxy": "beacon",
+     "best_by_truth": "atlas",
+     "group": "operations",
+     "match": false,
+     "platforms": 3,
+     "proxy_tie": false
+    },
+    {
+     "best_by_proxy": "atlas",
+     "best_by_truth": "atlas",
+     "group": "support",
+     "match": true,
+     "platforms": 3,
+     "proxy_tie": false
+    }
+   ],
+   "groups_compared": 2,
+   "groups_matching": 1,
+   "groups_with_proxy_tie": 0,
+   "n_cells": 7,
+   "pairs_compared": 6,
+   "pairs_concordant": 4,
+   "spearman_composite_vs_truth": 0.455,
+   "spearman_single_proxies": {
+    "abandonment": 0.44,
+    "failed_request": -0.771,
+    "no_answer": -0.181,
+    "switch_away": 0.582,
+    "tool_error": -0.547
+   }
+  },
   "switch_away_flag_vs_truth": {
    "f1": 1.0,
    "fn": 0,
@@ -1307,6 +1440,14 @@
     "precision": 1.0,
     "recall": 1.0,
     "tp": 13
+   },
+   "d_labels": {
+    "f1": 0.696,
+    "fn": 5,
+    "fp": 2,
+    "precision": 0.8,
+    "recall": 0.615,
+    "tp": 8
    },
    "e_best_combination": {
     "f1": 1.0,

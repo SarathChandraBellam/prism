@@ -611,6 +611,24 @@
    "Refund breakdown by product"
   ]
  },
+ "beacon:A05": {
+  "domain": "operations",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "n_corrections": 2,
+  "n_feedback_relays": 2,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user requested a SQL query for daily net revenue over the last 14 days, iteratively fixed column and ambiguity errors, and then asked the assistant to run the query and identify the highest-revenue day.",
+  "task_type": "analysis",
+  "topics": [
+   "daily net revenue",
+   "SQL query",
+   "BI tool"
+  ]
+ },
  "beacon:A06": {
   "domain": "operations",
   "model": "particle-ai/particle-1:free",
@@ -842,6 +860,832 @@
    "automation prioritization",
    "ticket triage",
    "weekly planning"
+  ]
+ },
+ "beacon:L08": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Assistant identified the top customer by spend and drafted a thank-you note saved to a file.",
+  "task_type": "draft",
+  "topics": [
+   "top customers",
+   "thank-you note",
+   "customer appreciation"
+  ]
+ },
+ "beacon:M01": {
+  "domain": "support",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Assistant confirmed a return qualified for refund, drafted a customer reply, and shortened it on request.",
+  "task_type": "draft",
+  "topics": [
+   "return eligibility",
+   "refund reply",
+   "reply shortening"
+  ]
+ },
+ "beacon:M02": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant explained the refund policy, determined the orders cannot be returned, and provided a polite reply to the customer.",
+  "task_type": "advise",
+  "topics": [
+   "refund policy",
+   "order eligibility",
+   "customer response"
+  ]
+ },
+ "beacon:M03": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "n_corrections": 1,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "User checked refund eligibility for a damaged item, confirmed escalation rule for high-value orders, and added an escalation note to the ticket.",
+  "task_type": "lookup",
+  "topics": [
+   "refund policy",
+   "order 5004",
+   "ticket escalation"
+  ]
+ },
+ "beacon:M04": {
+  "domain": "support",
+  "model": "cohere/north-mini-code:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Assistant triaged open tickets, identified P1 tickets, provided a short list, and drafted a reply for the double charge issue.",
+  "task_type": "triage",
+  "topics": [
+   "open tickets triage",
+   "P1 ticket identification",
+   "customer reply drafting"
+  ]
+ },
+ "beacon:M05": {
+  "domain": "support",
+  "model": "cohere/north-mini-code:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant provided a draft reply for ticket 9001 regarding the late delivery of order 5006.",
+  "task_type": "draft",
+  "topics": [
+   "order status",
+   "shipping policy",
+   "customer ticket reply"
+  ]
+ },
+ "beacon:M06": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "n_corrections": 1,
+  "n_feedback_relays": 1,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [
+   3
+  ],
+  "source": "round4",
+  "summary": "Assistant drafted a customer reply for a refund that shows as processed but hasn't reached the customer's bank.",
+  "task_type": "draft",
+  "topics": [
+   "refund discrepancy",
+   "customer communication",
+   "payment verification"
+  ]
+ },
+ "beacon:M07": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "User asked about shipping to Ireland, then had the assistant reply to and close a support ticket with that information.",
+  "task_type": "lookup",
+  "topics": [
+   "shipping to Ireland",
+   "ticket 9006",
+   "shipping cost"
+  ]
+ },
+ "beacon:M08": {
+  "domain": "support",
+  "model": "baidu/ernie-5.5-flash-preview:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant looked up and reported the current number of open tickets.",
+  "task_type": "lookup",
+  "topics": [
+   "open tickets",
+   "ticket count"
+  ]
+ },
+ "beacon:M09": {
+  "domain": "support",
+  "model": "baidu/ernie-5.5-flash-preview:free",
+  "n_corrections": 1,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Assistant checked return eligibility against policy, corrected the order details after being challenged, and drafted a customer reply.",
+  "task_type": "decide",
+  "topics": [
+   "refund eligibility",
+   "return policy",
+   "customer reply draft"
+  ]
+ },
+ "beacon:M10": {
+  "domain": "support",
+  "model": "cohere/north-mini-code:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant confirmed the address change, updated the ticket, and drafted a confirmation reply to the customer.",
+  "task_type": "draft",
+  "topics": [
+   "address change",
+   "ticket update",
+   "customer reply"
+  ]
+ },
+ "beacon:M11": {
+  "domain": "writing",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user asked for reusable order-status reply templates, requested a less formal variant, and got advice on which template to use for a follow-up customer.",
+  "task_type": "draft",
+  "topics": [
+   "order status reply templates",
+   "tone adjustment",
+   "template selection"
+  ]
+ },
+ "beacon:M12": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "User found a ticket regarding a kettle handle problem, obtained the customer's email, and marked the ticket as high priority for product team.",
+  "task_type": "triage",
+  "topics": [
+   "kettle handle",
+   "ticket prioritization",
+   "customer email"
+  ]
+ },
+ "beacon:M13": {
+  "domain": "support",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 1,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Handled a return eligibility question and drafted a customer reply explaining the policy.",
+  "task_type": "decide",
+  "topics": [
+   "return eligibility",
+   "refund policy",
+   "customer reply"
+  ]
+ },
+ "chatly:A01": {
+  "domain": "operations",
+  "model": "recursive/flint-v1.0:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Assistant could not access sales data or save files and did not deliver a weekly sales comparison report.",
+  "task_type": "report",
+  "topics": [
+   "weekly sales",
+   "sales comparison",
+   "revenue metrics"
+  ]
+ },
+ "chatly:A02": {
+  "domain": "operations",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "n_corrections": 1,
+  "n_feedback_relays": 1,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant cannot access sales data to provide revenue, AOV, or top product figures for the week of 26 October and cannot file the request.",
+  "task_type": "lookup",
+  "topics": [
+   "revenue",
+   "AOV",
+   "top products"
+  ]
+ },
+ "chatly:A03": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "partial",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user requests help reordering items, grouping them by supplier, and drafting an email, but the assistant cannot proceed without the needed data.",
+  "task_type": "decide",
+  "topics": [
+   "reorder priority",
+   "supplier grouping",
+   "email drafting"
+  ]
+ },
+ "chatly:A04": {
+  "domain": "operations",
+  "model": "baidu/ernie-5.5-flash-preview:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 1,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant repeatedly explained it had no access to order or refund data, so none of the requested October cancellation, refund, share, or per-product figures were produced.",
+  "task_type": "lookup",
+  "topics": [
+   "October cancellation counts",
+   "refund counts and share",
+   "refunds by product"
+  ]
+ },
+ "chatly:A05": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "n_corrections": 2,
+  "n_feedback_relays": 2,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "partial",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user requested a SQL query for daily net revenue, faced column name issues, and asked for the best revenue day, which the assistant could not provide.",
+  "task_type": "lookup",
+  "topics": [
+   "SQL query",
+   "daily net revenue",
+   "BI tool"
+  ]
+ },
+ "chatly:A06": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant repeatedly said it lacks access to the shop's customer and revenue data needed to answer the queries.",
+  "task_type": "lookup",
+  "topics": [
+   "customer data",
+   "revenue",
+   "top customers"
+  ]
+ },
+ "chatly:A07": {
+  "domain": "strategy",
+  "model": "google/gemma-4-31b-it:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user updated a supplier lead time and asked how it affects the reorder point for a specific product.",
+  "task_type": "advise",
+  "topics": [
+   "lead time update",
+   "reorder point calculation",
+   "inventory management"
+  ]
+ },
+ "chatly:A08": {
+  "domain": "support",
+  "model": "cohere/north-mini-code:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 2,
+  "outcome": "partial",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user requested an October 2026 sales summary broken down by full weeks, and the assistant provided a markdown template but cannot save the file, awaiting the daily figures to complete the report.",
+  "task_type": "report",
+  "topics": [
+   "October sales summary",
+   "weekly breakdown",
+   "net revenue, orders, AOV"
+  ]
+ },
+ "chatly:A09": {
+  "domain": "operations",
+  "model": "recursive/flint-v1.0:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant could not retrieve the current inventory levels.",
+  "task_type": "lookup",
+  "topics": [
+   "stock levels",
+   "inventory"
+  ]
+ },
+ "chatly:A10": {
+  "domain": "operations",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 0,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Assistant could not perform the reorder check because inventory, lead-time, and sales data were not available.",
+  "task_type": "lookup",
+  "topics": [
+   "reorder check",
+   "stock formula",
+   "missing inventory data"
+  ]
+ },
+ "chatly:A11": {
+  "domain": "operations",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user requested weekly sales reports for two weeks, but the assistant could not produce or save them because no sales data or system access was available.",
+  "task_type": "report",
+  "topics": [
+   "weekly sales report",
+   "missing sales data",
+   "report formatting"
+  ]
+ },
+ "chatly:L01": {
+  "domain": "writing",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user sought pricing guidance, requested sales data, and had a price-change memo drafted and tightened.",
+  "task_type": "draft",
+  "topics": [
+   "price change memo",
+   "hand grinder pricing",
+   "risk section"
+  ]
+ },
+ "chatly:L02": {
+  "domain": "strategy",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user explored whether to offer free shipping to Ireland, including decision factors and a low-cost test, while the assistant could not retrieve order data.",
+  "task_type": "advise",
+  "topics": [
+   "free shipping decision",
+   "Ireland market",
+   "experiment design"
+  ]
+ },
+ "chatly:L03": {
+  "domain": "operations",
+  "model": "cohere/north-mini-code:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant cannot retrieve last week's sales figures due to lack of system access.",
+  "task_type": "lookup",
+  "topics": [
+   "sales figures",
+   "last week revenue"
+  ]
+ },
+ "chatly:L04": {
+  "domain": "writing",
+  "model": "cohere/north-mini-code:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant rewrote the Gooseneck Kettle 0.9L product description in brand voice with British spelling and without exclamation.",
+  "task_type": "draft",
+  "topics": [
+   "product description",
+   "Gooseneck Kettle 0.9L",
+   "brand voice"
+  ]
+ },
+ "chatly:L05": {
+  "domain": "operations",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 1,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "partial",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "User sought investor-update metrics, clarified the refund-rate formula, and asked for a one-paragraph definition.",
+  "task_type": "lookup",
+  "topics": [
+   "investor update metrics",
+   "refund rate definition",
+   "business reporting"
+  ]
+ },
+ "chatly:L06": {
+  "domain": "operations",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "partial",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "User asked for best sellers by revenue, assistant lacks data access and suggests checking reports, then offers common surprising patterns to look for.",
+  "task_type": "analysis",
+  "topics": [
+   "best sellers",
+   "revenue analysis",
+   "sales data insights"
+  ]
+ },
+ "chatly:L07": {
+  "domain": "strategy",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Assistant advised on automation priorities, could not access ticket data, then drafted and converted a one-week triage pilot into a checklist.",
+  "task_type": "advise",
+  "topics": [
+   "automation prioritization",
+   "ticket triage pilot",
+   "checklist"
+  ]
+ },
+ "chatly:L08": {
+  "domain": "operations",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user asked for top customers by spend and a thank-you note, but the assistant could not access sales data and offered guidance or a template instead.",
+  "task_type": "analysis",
+  "topics": [
+   "top customers by spend",
+   "thank-you note",
+   "missing sales data"
+  ]
+ },
+ "chatly:M01": {
+  "domain": "support",
+  "model": "inclusionai/ling-3.2-flash:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Customer asked about refunding a returned hand grinder; assistant could not verify the order or policy, so it drafted and then shortened a support reply asking for order date and item condition.",
+  "task_type": "draft",
+  "topics": [
+   "return/refund request",
+   "customer reply email",
+   "returns policy conditions"
+  ]
+ },
+ "chatly:M02": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "User asked about refund eligibility for two orders, questioned the return window policy, and received a drafted customer reply for one order.",
+  "task_type": "draft",
+  "topics": [
+   "refund eligibility",
+   "return policy",
+   "draft reply"
+  ]
+ },
+ "chatly:M03": {
+  "domain": "support",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 1,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant could not access order, policy, or ticket systems, so the refund rule lookup and ticket escalation note were not completed.",
+  "task_type": "lookup",
+  "topics": [
+   "refund policy",
+   "damaged order",
+   "ticket escalation"
+  ]
+ },
+ "chatly:M04": {
+  "domain": "support",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "partial",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Assistant could not access open tickets, provided P1 triage criteria and a paste-ready list, then drafted a customer reply for a double-charge case.",
+  "task_type": "triage",
+  "topics": [
+   "ticket triage",
+   "P1 criteria",
+   "double-charge reply"
+  ]
+ },
+ "chatly:M05": {
+  "domain": "support",
+  "model": "baidu/ernie-5.5-flash-preview:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user asked for order details, a lateness check, and a customer reply, but the assistant could not access the needed systems or documents.",
+  "task_type": "lookup",
+  "topics": [
+   "order status",
+   "shipping rules",
+   "customer reply"
+  ]
+ },
+ "chatly:M06": {
+  "domain": "support",
+  "model": "cohere/north-mini-code:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant supplied a draft customer reply template for a refund issue.",
+  "task_type": "draft",
+  "topics": [
+   "refund wording",
+   "customer communication",
+   "order status"
+  ]
+ },
+ "chatly:M07": {
+  "domain": "support",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "User asked about shipping to Ireland and requested a ticket reply and closure, but the assistant lacked system access and could not complete the actions.",
+  "task_type": "lookup",
+  "topics": [
+   "shipping to Ireland",
+   "ticket reply",
+   "ticket closure"
+  ]
+ },
+ "chatly:M08": {
+  "domain": "support",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user asked for the current number of open tickets, but the assistant could not access ticketing data and did not provide the count.",
+  "task_type": "lookup",
+  "topics": [
+   "open ticket count",
+   "helpdesk access"
+  ]
+ },
+ "chatly:M09": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "n_corrections": 1,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Assistant drafted a customer reply asking about kettle condition for a partial return after user corrected order details.",
+  "task_type": "draft",
+  "topics": [
+   "refund eligibility",
+   "partial return",
+   "customer communication"
+  ]
+ },
+ "chatly:M10": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "partial",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant cannot access ticket or order data to confirm or perform an address change, but can draft a reply if details are provided.",
+  "task_type": "triage",
+  "topics": [
+   "address change",
+   "ticket priority",
+   "customer reply"
+  ]
+ },
+ "chatly:M11": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant supplied three reusable order status reply templates and suggested the casual delayed\u2011order template for a repeat customer.",
+  "task_type": "draft",
+  "topics": [
+   "order status templates",
+   "customer communication",
+   "order delay"
+  ]
+ },
+ "chatly:M12": {
+  "domain": "support",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user asked the assistant to find a customer ticket and set its priority and category, but the assistant could not access the ticket system and did not complete either request.",
+  "task_type": "lookup",
+  "topics": [
+   "ticket lookup",
+   "customer email",
+   "ticket priority/category"
+  ]
+ },
+ "chatly:M13": {
+  "domain": "support",
+  "model": "inclusionai/ling-3.2-flash:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 1,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "partial",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Unable to access tickets or order data, the assistant gathered needed details and drafted a reply about return eligibility for an unopened product box.",
+  "task_type": "draft",
+  "topics": [
+   "ticket triage",
+   "return eligibility",
+   "customer reply draft"
   ]
  }
 }

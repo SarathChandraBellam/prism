@@ -97,8 +97,3 @@ Ranked by the share of tasks, turns or spend each finding touches. Findings abou
 **Action.** Tell Chatly users which requests need company data. Move those to Atlas, or connect Chatly to the same tools.
 
 **Owner.** platform owner
-
-## Not yet available
-
-- Label-based switch detection (method d) and the labelled-domain cut of the proxy analysis: Beacon and Chatly session labels need 64 model requests.
-- Proxy comparison by labelled domain.
