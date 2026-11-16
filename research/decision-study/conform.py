@@ -5,7 +5,7 @@
 ADR 0003 says Prism reads only OpenTelemetry GenAI traces. The research lake predates the schema document and uses some
 names of its own. This is the first transformer. It renames what has a standard name, restructures content into
 messages, moves the platform to the resource, and drops what the conventions cannot express. Every change is counted,
-so the report says what the schema carries and what it does not. Standard library only. No model.
+per platform, so the report says what the schema carries and what it does not. Standard library only. No model.
 """
 import collections, json, os, re
 
@@ -39,9 +39,10 @@ def standard_names():
 def text_part(t): return {"type": "text", "content": t}
 
 
-def convert(s, log):
+def convert(s, counts):
     a = dict(s["attributes"]); op = a["gen_ai.operation.name"]
     out = {}
+    log = collections.defaultdict(collections.Counter)                     # kind -> item -> count, for this span
 
     def move(old, new=None, when=lambda v: True):
         if old not in a: return
@@ -95,6 +96,8 @@ def convert(s, log):
         elif "__" in tool:
             out["mcp.method.name"] = "tools/call"; log["inferred"]["mcp.method.name from the tool-name prefix"] += 1
     for k in a: log["unmapped"][k] += 1
+    for kind, items in log.items():
+        for item, n in items.items(): counts[kind][item][platform] += n
     return {"trace_id": s["trace_id"], "span_id": s["span_id"], "parent_span_id": s["parent_span_id"], "name": name, "kind": KIND[op],
             "start_time": s["start_time"], "end_time": s["end_time"], "status": {"code": "ERROR" if s["status"] == "error" else "OK"},
             "resource": {"service.name": platform}, "attributes": out}
@@ -103,11 +106,13 @@ def convert(s, log):
 def main():
     names, patterns = standard_names()
     ok = lambda k: k in names or any(p.match(k) for p in patterns)
-    log = collections.defaultdict(collections.Counter)
+    log = collections.defaultdict(lambda: collections.defaultdict(collections.Counter))     # kind -> item -> platform -> count
     spans = [convert(json.loads(l), log) for l in open(SRC)]
     spans.sort(key=lambda s: (s["start_time"], s["trace_id"], s["parent_span_id"] or "", s["span_id"]))
-    with open(os.path.join(D, "lake_otel.jsonl"), "w") as f:
+    tmp = os.path.join(D, "lake_otel.jsonl.tmp")
+    with open(tmp, "w") as f:
         for s in spans: f.write(json.dumps(s, sort_keys=True) + "\n")
+    os.replace(tmp, os.path.join(D, "lake_otel.jsonl"))
     non_standard, missing, n = collections.Counter(), collections.defaultdict(collections.Counter), collections.Counter()
     for s in spans:
         a, p = s["attributes"], s["resource"]["service.name"]; op = a["gen_ai.operation.name"]; n[(p, op)] += 1
@@ -116,7 +121,7 @@ def main():
         for k in REQUIRED[op]:
             if k not in a: missing[f"{p} {op}"][k] += 1
     rep = {"spans": len(spans), "spans_by_platform_and_type": {f"{p} {o}": v for (p, o), v in sorted(n.items())},
-           "standard_names_in_schema_doc": len(names), **{k: dict(sorted(v.items())) for k, v in sorted(log.items())},
+           "standard_names_in_schema_doc": len(names), **{kind: {item: dict(sorted(by.items())) for item, by in sorted(items.items())} for kind, items in sorted(log.items())},
            "non_standard_after_conversion": dict(non_standard), "required_missing": {k: dict(v) for k, v in sorted(missing.items())}}
     json.dump(rep, open(os.path.join(D, "conformance.json"), "w"), indent=1, sort_keys=True)
     print(json.dumps(rep, indent=1, sort_keys=True))

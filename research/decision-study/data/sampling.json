@@ -1,0 +1,1930 @@
+{
+ "budget": {
+  "by_type": {
+   "advise": {
+    "10": {
+     "best": 0.999,
+     "order": 0.836,
+     "regret": 0.0
+    },
+    "100": {
+     "best": 1.0,
+     "order": 1.0,
+     "regret": 0.0
+    },
+    "20": {
+     "best": 1.0,
+     "order": 0.935,
+     "regret": 0.0
+    },
+    "3": {
+     "best": 0.862,
+     "order": 0.478,
+     "regret": 0.035
+    },
+    "30": {
+     "best": 1.0,
+     "order": 0.969,
+     "regret": 0.0
+    },
+    "5": {
+     "best": 0.973,
+     "order": 0.67,
+     "regret": 0.007
+    },
+    "50": {
+     "best": 1.0,
+     "order": 0.994,
+     "regret": 0.0
+    }
+   },
+   "analysis": {
+    "10": {
+     "best": 0.69,
+     "order": 0.687,
+     "regret": 0.03
+    },
+    "100": {
+     "best": 0.988,
+     "order": 0.988,
+     "regret": 0.001
+    },
+    "20": {
+     "best": 0.804,
+     "order": 0.804,
+     "regret": 0.02
+    },
+    "3": {
+     "best": 0.458,
+     "order": 0.368,
+     "regret": 0.048
+    },
+    "30": {
+     "best": 0.879,
+     "order": 0.879,
+     "regret": 0.012
+    },
+    "5": {
+     "best": 0.556,
+     "order": 0.527,
+     "regret": 0.041
+    },
+    "50": {
+     "best": 0.939,
+     "order": 0.939,
+     "regret": 0.007
+    }
+   },
+   "decide": {
+    "10": {
+     "best": 0.999,
+     "order": 0.592,
+     "regret": 0.001
+    },
+    "100": {
+     "best": 1.0,
+     "order": 0.954,
+     "regret": 0.0
+    },
+    "20": {
+     "best": 1.0,
+     "order": 0.708,
+     "regret": 0.0
+    },
+    "3": {
+     "best": 0.92,
+     "order": 0.296,
+     "regret": 0.031
+    },
+    "30": {
+     "best": 1.0,
+     "order": 0.79,
+     "regret": 0.0
+    },
+    "5": {
+     "best": 0.981,
+     "order": 0.432,
+     "regret": 0.007
+    },
+    "50": {
+     "best": 1.0,
+     "order": 0.883,
+     "regret": 0.0
+    }
+   },
+   "draft": {
+    "10": {
+     "best": 0.964,
+     "order": 0.632,
+     "regret": 0.006
+    },
+    "100": {
+     "best": 1.0,
+     "order": 0.981,
+     "regret": 0.0
+    },
+    "20": {
+     "best": 0.999,
+     "order": 0.784,
+     "regret": 0.0
+    },
+    "3": {
+     "best": 0.527,
+     "order": 0.191,
+     "regret": 0.082
+    },
+    "30": {
+     "best": 1.0,
+     "order": 0.855,
+     "regret": 0.0
+    },
+    "5": {
+     "best": 0.763,
+     "order": 0.393,
+     "regret": 0.037
+    },
+    "50": {
+     "best": 1.0,
+     "order": 0.925,
+     "regret": 0.0
+    }
+   },
+   "lookup": {
+    "10": {
+     "best": 0.752,
+     "order": 0.752,
+     "regret": 0.016
+    },
+    "100": {
+     "best": 1.0,
+     "order": 1.0,
+     "regret": 0.0
+    },
+    "20": {
+     "best": 0.938,
+     "order": 0.938,
+     "regret": 0.004
+    },
+    "3": {
+     "best": 0.335,
+     "order": 0.318,
+     "regret": 0.044
+    },
+    "30": {
+     "best": 0.987,
+     "order": 0.987,
+     "regret": 0.001
+    },
+    "5": {
+     "best": 0.508,
+     "order": 0.504,
+     "regret": 0.033
+    },
+    "50": {
+     "best": 0.999,
+     "order": 0.999,
+     "regret": 0.0
+    }
+   },
+   "report": {
+    "10": {
+     "best": 0.987,
+     "order": 0.87,
+     "regret": 0.004
+    },
+    "100": {
+     "best": 1.0,
+     "order": 1.0,
+     "regret": 0.0
+    },
+    "20": {
+     "best": 1.0,
+     "order": 0.987,
+     "regret": 0.0
+    },
+    "3": {
+     "best": 0.823,
+     "order": 0.313,
+     "regret": 0.058
+    },
+    "30": {
+     "best": 1.0,
+     "order": 0.999,
+     "regret": 0.0
+    },
+    "5": {
+     "best": 0.927,
+     "order": 0.576,
+     "regret": 0.023
+    },
+    "50": {
+     "best": 1.0,
+     "order": 1.0,
+     "regret": 0.0
+    }
+   },
+   "triage": {
+    "10": {
+     "best": 1.0,
+     "order": 0.727,
+     "regret": 0.0
+    },
+    "100": {
+     "best": 1.0,
+     "order": 0.996,
+     "regret": 0.0
+    },
+    "20": {
+     "best": 1.0,
+     "order": 0.855,
+     "regret": 0.0
+    },
+    "3": {
+     "best": 0.957,
+     "order": 0.452,
+     "regret": 0.016
+    },
+    "30": {
+     "best": 1.0,
+     "order": 0.908,
+     "regret": 0.0
+    },
+    "5": {
+     "best": 0.998,
+     "order": 0.604,
+     "regret": 0.001
+    },
+    "50": {
+     "best": 1.0,
+     "order": 0.97,
+     "regret": 0.0
+    }
+   }
+  },
+  "draws": 5000,
+  "first_n_reaching_90": {
+   "advise": 5,
+   "analysis": 50,
+   "decide": 3,
+   "draft": 10,
+   "lookup": 20,
+   "mean": 10,
+   "report": 5,
+   "triage": 3
+  },
+  "lake_cells": {
+   "atlas/advise": 3,
+   "atlas/analysis": 13,
+   "atlas/decide": 16,
+   "atlas/draft": 4,
+   "atlas/lookup": 21,
+   "atlas/report": 19,
+   "atlas/triage": 6,
+   "beacon/advise": 2,
+   "beacon/analysis": 11,
+   "beacon/decide": 2,
+   "beacon/draft": 5,
+   "beacon/lookup": 7,
+   "beacon/report": 5,
+   "beacon/triage": 2,
+   "chatly/advise": 2,
+   "chatly/analysis": 2,
+   "chatly/decide": 3,
+   "chatly/draft": 4,
+   "chatly/lookup": 3,
+   "chatly/report": 2,
+   "chatly/triage": 2
+  },
+  "mean_over_types": {
+   "10": {
+    "best": 0.913,
+    "order": 0.728,
+    "regret": 0.008
+   },
+   "100": {
+    "best": 0.998,
+    "order": 0.988,
+    "regret": 0.0
+   },
+   "20": {
+    "best": 0.963,
+    "order": 0.858,
+    "regret": 0.003
+   },
+   "3": {
+    "best": 0.697,
+    "order": 0.345,
+    "regret": 0.045
+   },
+   "30": {
+    "best": 0.981,
+    "order": 0.912,
+    "regret": 0.002
+   },
+   "5": {
+    "best": 0.815,
+    "order": 0.529,
+    "regret": 0.021
+   },
+   "50": {
+    "best": 0.991,
+    "order": 0.958,
+    "regret": 0.001
+   }
+  },
+  "note": "Monte Carlo: each cell's pass rate in the full recordings matrix is taken as the true rate.",
+  "plan": [
+   {
+    "cells_short": 7,
+    "lake_verifiable": 134,
+    "n": 3,
+    "platform_checks": 9,
+    "platform_fraction": 0.067,
+    "short": [
+     "beacon/advise",
+     "beacon/decide",
+     "beacon/triage",
+     "chatly/advise",
+     "chatly/analysis",
+     "chatly/report",
+     "chatly/triage"
+    ],
+    "type_checks": 63,
+    "type_fraction": 0.47
+   },
+   {
+    "cells_short": 12,
+    "lake_verifiable": 134,
+    "n": 5,
+    "platform_checks": 15,
+    "platform_fraction": 0.112,
+    "short": [
+     "atlas/advise",
+     "atlas/draft",
+     "beacon/advise",
+     "beacon/decide",
+     "beacon/triage",
+     "chatly/advise",
+     "chatly/analysis",
+     "chatly/decide",
+     "chatly/draft",
+     "chatly/lookup",
+     "chatly/report",
+     "chatly/triage"
+    ],
+    "type_checks": 105,
+    "type_fraction": 0.784
+   },
+   {
+    "cells_short": 16,
+    "lake_verifiable": 134,
+    "n": 10,
+    "platform_checks": 30,
+    "platform_fraction": 0.224,
+    "short": [
+     "atlas/advise",
+     "atlas/draft",
+     "atlas/triage",
+     "beacon/advise",
+     "beacon/decide",
+     "beacon/draft",
+     "beacon/lookup",
+     "beacon/report",
+     "beacon/triage",
+     "chatly/advise",
+     "chatly/analysis",
+     "chatly/decide",
+     "chatly/draft",
+     "chatly/lookup",
+     "chatly/report",
+     "chatly/triage"
+    ],
+    "type_checks": 210,
+    "type_fraction": 1.567
+   },
+   {
+    "cells_short": 20,
+    "lake_verifiable": 134,
+    "n": 20,
+    "platform_checks": 60,
+    "platform_fraction": 0.448,
+    "short": [
+     "atlas/advise",
+     "atlas/analysis",
+     "atlas/decide",
+     "atlas/draft",
+     "atlas/report",
+     "atlas/triage",
+     "beacon/advise",
+     "beacon/analysis",
+     "beacon/decide",
+     "beacon/draft",
+     "beacon/lookup",
+     "beacon/report",
+     "beacon/triage",
+     "chatly/advise",
+     "chatly/analysis",
+     "chatly/decide",
+     "chatly/draft",
+     "chatly/lookup",
+     "chatly/report",
+     "chatly/triage"
+    ],
+    "type_checks": 420,
+    "type_fraction": 3.134
+   },
+   {
+    "cells_short": 21,
+    "lake_verifiable": 134,
+    "n": 30,
+    "platform_checks": 90,
+    "platform_fraction": 0.672,
+    "short": [
+     "atlas/advise",
+     "atlas/analysis",
+     "atlas/decide",
+     "atlas/draft",
+     "atlas/lookup",
+     "atlas/report",
+     "atlas/triage",
+     "beacon/advise",
+     "beacon/analysis",
+     "beacon/decide",
+     "beacon/draft",
+     "beacon/lookup",
+     "beacon/report",
+     "beacon/triage",
+     "chatly/advise",
+     "chatly/analysis",
+     "chatly/decide",
+     "chatly/draft",
+     "chatly/lookup",
+     "chatly/report",
+     "chatly/triage"
+    ],
+    "type_checks": 630,
+    "type_fraction": 4.701
+   },
+   {
+    "cells_short": 21,
+    "lake_verifiable": 134,
+    "n": 50,
+    "platform_checks": 150,
+    "platform_fraction": 1.119,
+    "short": [
+     "atlas/advise",
+     "atlas/analysis",
+     "atlas/decide",
+     "atlas/draft",
+     "atlas/lookup",
+     "atlas/report",
+     "atlas/triage",
+     "beacon/advise",
+     "beacon/analysis",
+     "beacon/decide",
+     "beacon/draft",
+     "beacon/lookup",
+     "beacon/report",
+     "beacon/triage",
+     "chatly/advise",
+     "chatly/analysis",
+     "chatly/decide",
+     "chatly/draft",
+     "chatly/lookup",
+     "chatly/report",
+     "chatly/triage"
+    ],
+    "type_checks": 1050,
+    "type_fraction": 7.836
+   },
+   {
+    "cells_short": 21,
+    "lake_verifiable": 134,
+    "n": 100,
+    "platform_checks": 300,
+    "platform_fraction": 2.239,
+    "short": [
+     "atlas/advise",
+     "atlas/analysis",
+     "atlas/decide",
+     "atlas/draft",
+     "atlas/lookup",
+     "atlas/report",
+     "atlas/triage",
+     "beacon/advise",
+     "beacon/analysis",
+     "beacon/decide",
+     "beacon/draft",
+     "beacon/lookup",
+     "beacon/report",
+     "beacon/triage",
+     "chatly/advise",
+     "chatly/analysis",
+     "chatly/decide",
+     "chatly/draft",
+     "chatly/lookup",
+     "chatly/report",
+     "chatly/triage"
+    ],
+    "type_checks": 2100,
+    "type_fraction": 15.672
+   }
+  ],
+  "platform": {
+   "10": {
+    "best": 0.959,
+    "order": 0.9,
+    "regret": 0.011
+   },
+   "100": {
+    "best": 1.0,
+    "order": 1.0,
+    "regret": 0.0
+   },
+   "20": {
+    "best": 0.996,
+    "order": 0.987,
+    "regret": 0.001
+   },
+   "3": {
+    "best": 0.739,
+    "order": 0.473,
+    "regret": 0.066
+   },
+   "30": {
+    "best": 0.999,
+    "order": 0.997,
+    "regret": 0.0
+   },
+   "5": {
+    "best": 0.851,
+    "order": 0.668,
+    "regret": 0.038
+   },
+   "50": {
+    "best": 1.0,
+    "order": 1.0,
+    "regret": 0.0
+   }
+  }
+ },
+ "definitions": {
+  "best_hit": "every platform tied at the top of the sample is a true best; a tie with a worse platform is a miss",
+  "bootstrap": "percentile 2.5/97.5 of 5000 resamples; the script bootstrap draws scripts with replacement, the same draw for both platforms",
+  "order_hit": "every pair with different true rates is strictly ordered the same way in the sample",
+  "regret": "true best rate minus the true rate of the platform picked, sample ties broken at random",
+  "session_failed": "a session with at least one failed check (only sessions with a verifiable turn are scored)",
+  "silent_failure": "a verifiable turn that failed a check and has no trouble signal (no answer, tool error or inability phrase)",
+  "switched_away": "the session is followed by another session in its rebuilt task (base.rebuild_tasks)",
+  "verifiable_turn": "a lake turn whose truth turn_checks list is non-empty; correct when all checks are true"
+ },
+ "matrix": {
+  "bootstrap": {
+   "atlas-beacon": {
+    "diff": 0.387,
+    "script_ci": [
+     0.241,
+     0.531
+    ],
+    "turn_ci": [
+     0.253,
+     0.52
+    ],
+    "width_ratio": 1.089
+   },
+   "atlas-chatly": {
+    "diff": 0.733,
+    "script_ci": [
+     0.597,
+     0.851
+    ],
+    "turn_ci": [
+     0.613,
+     0.84
+    ],
+    "width_ratio": 1.118
+   },
+   "beacon-chatly": {
+    "diff": 0.346,
+    "script_ci": [
+     0.195,
+     0.506
+    ],
+    "turn_ci": [
+     0.2,
+     0.48
+    ],
+    "width_ratio": 1.112
+   }
+  },
+  "rates": {
+   "atlas": {
+    "advise": {
+     "hi": 1.0,
+     "k": 4,
+     "lo": 0.51,
+     "n": 4,
+     "rate": 1.0
+    },
+    "all": {
+     "hi": 0.936,
+     "k": 66,
+     "lo": 0.787,
+     "n": 75,
+     "rate": 0.88
+    },
+    "analysis": {
+     "hi": 0.963,
+     "k": 13,
+     "lo": 0.621,
+     "n": 15,
+     "rate": 0.867
+    },
+    "decide": {
+     "hi": 0.953,
+     "k": 10,
+     "lo": 0.552,
+     "n": 12,
+     "rate": 0.833
+    },
+    "draft": {
+     "hi": 1.0,
+     "k": 7,
+     "lo": 0.646,
+     "n": 7,
+     "rate": 1.0
+    },
+    "lookup": {
+     "hi": 1.0,
+     "k": 15,
+     "lo": 0.796,
+     "n": 15,
+     "rate": 1.0
+    },
+    "report": {
+     "hi": 0.858,
+     "k": 11,
+     "lo": 0.444,
+     "n": 16,
+     "rate": 0.688
+    },
+    "triage": {
+     "hi": 1.0,
+     "k": 6,
+     "lo": 0.61,
+     "n": 6,
+     "rate": 1.0
+    }
+   },
+   "beacon": {
+    "advise": {
+     "hi": 0.85,
+     "k": 2,
+     "lo": 0.15,
+     "n": 4,
+     "rate": 0.5
+    },
+    "all": {
+     "hi": 0.604,
+     "k": 37,
+     "lo": 0.383,
+     "n": 75,
+     "rate": 0.493
+    },
+    "analysis": {
+     "hi": 0.891,
+     "k": 11,
+     "lo": 0.48,
+     "n": 15,
+     "rate": 0.733
+    },
+    "decide": {
+     "hi": 0.448,
+     "k": 2,
+     "lo": 0.047,
+     "n": 12,
+     "rate": 0.167
+    },
+    "draft": {
+     "hi": 0.918,
+     "k": 5,
+     "lo": 0.359,
+     "n": 7,
+     "rate": 0.714
+    },
+    "lookup": {
+     "hi": 0.963,
+     "k": 13,
+     "lo": 0.621,
+     "n": 15,
+     "rate": 0.867
+    },
+    "report": {
+     "hi": 0.43,
+     "k": 3,
+     "lo": 0.066,
+     "n": 16,
+     "rate": 0.188
+    },
+    "triage": {
+     "hi": 0.564,
+     "k": 1,
+     "lo": 0.03,
+     "n": 6,
+     "rate": 0.167
+    }
+   },
+   "chatly": {
+    "advise": {
+     "hi": 0.699,
+     "k": 1,
+     "lo": 0.046,
+     "n": 4,
+     "rate": 0.25
+    },
+    "all": {
+     "hi": 0.244,
+     "k": 11,
+     "lo": 0.084,
+     "n": 75,
+     "rate": 0.147
+    },
+    "analysis": {
+     "hi": 0.379,
+     "k": 2,
+     "lo": 0.037,
+     "n": 15,
+     "rate": 0.133
+    },
+    "decide": {
+     "hi": 0.354,
+     "k": 1,
+     "lo": 0.015,
+     "n": 12,
+     "rate": 0.083
+    },
+    "draft": {
+     "hi": 0.842,
+     "k": 4,
+     "lo": 0.25,
+     "n": 7,
+     "rate": 0.571
+    },
+    "lookup": {
+     "hi": 0.298,
+     "k": 1,
+     "lo": 0.012,
+     "n": 15,
+     "rate": 0.067
+    },
+    "report": {
+     "hi": 0.194,
+     "k": 0,
+     "lo": 0.0,
+     "n": 16,
+     "rate": 0.0
+    },
+    "triage": {
+     "hi": 0.7,
+     "k": 2,
+     "lo": 0.097,
+     "n": 6,
+     "rate": 0.333
+    }
+   }
+  },
+  "scripts_per_type": {
+   "advise": 3,
+   "analysis": 7,
+   "decide": 4,
+   "draft": 4,
+   "lookup": 7,
+   "report": 5,
+   "triage": 2
+  },
+  "tests": [
+   {
+    "a": "66/75",
+    "b": "37/75",
+    "diff": 0.387,
+    "group": "all",
+    "p": 4.432e-07,
+    "pair": "atlas-beacon"
+   },
+   {
+    "a": "66/75",
+    "b": "11/75",
+    "diff": 0.733,
+    "group": "all",
+    "p": 1.43e-20,
+    "pair": "atlas-chatly"
+   },
+   {
+    "a": "37/75",
+    "b": "11/75",
+    "diff": 0.346,
+    "group": "all",
+    "p": 8.441e-06,
+    "pair": "beacon-chatly"
+   },
+   {
+    "a": "4/4",
+    "b": "2/4",
+    "diff": 0.5,
+    "group": "advise",
+    "holm": false,
+    "p": 0.4286,
+    "pair": "atlas-beacon"
+   },
+   {
+    "a": "4/4",
+    "b": "1/4",
+    "diff": 0.75,
+    "group": "advise",
+    "holm": false,
+    "p": 0.1429,
+    "pair": "atlas-chatly"
+   },
+   {
+    "a": "2/4",
+    "b": "1/4",
+    "diff": 0.25,
+    "group": "advise",
+    "holm": false,
+    "p": 1.0,
+    "pair": "beacon-chatly"
+   },
+   {
+    "a": "13/15",
+    "b": "11/15",
+    "diff": 0.134,
+    "group": "analysis",
+    "holm": false,
+    "p": 0.6513,
+    "pair": "atlas-beacon"
+   },
+   {
+    "a": "13/15",
+    "b": "2/15",
+    "diff": 0.734,
+    "group": "analysis",
+    "holm": true,
+    "p": 0.0001451,
+    "pair": "atlas-chatly"
+   },
+   {
+    "a": "11/15",
+    "b": "2/15",
+    "diff": 0.6,
+    "group": "analysis",
+    "holm": true,
+    "p": 0.002509,
+    "pair": "beacon-chatly"
+   },
+   {
+    "a": "10/12",
+    "b": "2/12",
+    "diff": 0.666,
+    "group": "decide",
+    "holm": true,
+    "p": 0.003329,
+    "pair": "atlas-beacon"
+   },
+   {
+    "a": "10/12",
+    "b": "1/12",
+    "diff": 0.75,
+    "group": "decide",
+    "holm": true,
+    "p": 0.0006442,
+    "pair": "atlas-chatly"
+   },
+   {
+    "a": "2/12",
+    "b": "1/12",
+    "diff": 0.084,
+    "group": "decide",
+    "holm": false,
+    "p": 1.0,
+    "pair": "beacon-chatly"
+   },
+   {
+    "a": "7/7",
+    "b": "5/7",
+    "diff": 0.286,
+    "group": "draft",
+    "holm": false,
+    "p": 0.4615,
+    "pair": "atlas-beacon"
+   },
+   {
+    "a": "7/7",
+    "b": "4/7",
+    "diff": 0.429,
+    "group": "draft",
+    "holm": false,
+    "p": 0.1923,
+    "pair": "atlas-chatly"
+   },
+   {
+    "a": "5/7",
+    "b": "4/7",
+    "diff": 0.143,
+    "group": "draft",
+    "holm": false,
+    "p": 1.0,
+    "pair": "beacon-chatly"
+   },
+   {
+    "a": "15/15",
+    "b": "13/15",
+    "diff": 0.133,
+    "group": "lookup",
+    "holm": false,
+    "p": 0.4828,
+    "pair": "atlas-beacon"
+   },
+   {
+    "a": "15/15",
+    "b": "1/15",
+    "diff": 0.933,
+    "group": "lookup",
+    "holm": true,
+    "p": 2.063e-07,
+    "pair": "atlas-chatly"
+   },
+   {
+    "a": "13/15",
+    "b": "1/15",
+    "diff": 0.8,
+    "group": "lookup",
+    "holm": true,
+    "p": 2.187e-05,
+    "pair": "beacon-chatly"
+   },
+   {
+    "a": "11/16",
+    "b": "3/16",
+    "diff": 0.5,
+    "group": "report",
+    "holm": false,
+    "p": 0.01134,
+    "pair": "atlas-beacon"
+   },
+   {
+    "a": "11/16",
+    "b": "0/16",
+    "diff": 0.688,
+    "group": "report",
+    "holm": true,
+    "p": 6.771e-05,
+    "pair": "atlas-chatly"
+   },
+   {
+    "a": "3/16",
+    "b": "0/16",
+    "diff": 0.188,
+    "group": "report",
+    "holm": false,
+    "p": 0.2258,
+    "pair": "beacon-chatly"
+   },
+   {
+    "a": "6/6",
+    "b": "1/6",
+    "diff": 0.833,
+    "group": "triage",
+    "holm": false,
+    "p": 0.01515,
+    "pair": "atlas-beacon"
+   },
+   {
+    "a": "6/6",
+    "b": "2/6",
+    "diff": 0.667,
+    "group": "triage",
+    "holm": false,
+    "p": 0.06061,
+    "pair": "atlas-chatly"
+   },
+   {
+    "a": "1/6",
+    "b": "2/6",
+    "diff": -0.166,
+    "group": "triage",
+    "holm": false,
+    "p": 1.0,
+    "pair": "beacon-chatly"
+   }
+  ],
+  "types": [
+   "advise",
+   "analysis",
+   "decide",
+   "draft",
+   "lookup",
+   "report",
+   "triage"
+  ],
+  "within_significant": 9,
+  "within_significant_holm": 7,
+  "within_tests": 21
+ },
+ "no_tool_platforms": [
+  "chatly"
+ ],
+ "proxies": {
+  "any_trouble_turn": {
+   "flagged": 33,
+   "sessions": 77,
+   "vs_failed_check": {
+    "fn": 15,
+    "fp": 11,
+    "kappa": 0.306,
+    "n": 75,
+    "precision": {
+     "hi": 0.802,
+     "k": 22,
+     "lo": 0.496,
+     "n": 33,
+     "rate": 0.667
+    },
+    "recall": {
+     "hi": 0.737,
+     "k": 22,
+     "lo": 0.435,
+     "n": 37,
+     "rate": 0.595
+    },
+    "tn": 27,
+    "tp": 22
+   },
+   "vs_not_completed": {
+    "fn": 10,
+    "fp": 17,
+    "kappa": 0.265,
+    "n": 77,
+    "precision": {
+     "hi": 0.648,
+     "k": 16,
+     "lo": 0.325,
+     "n": 33,
+     "rate": 0.485
+    },
+    "recall": {
+     "hi": 0.776,
+     "k": 16,
+     "lo": 0.425,
+     "n": 26,
+     "rate": 0.615
+    },
+    "tn": 34,
+    "tp": 16
+   },
+   "vs_switched": {
+    "fn": 6,
+    "fp": 26,
+    "kappa": 0.082,
+    "n": 77,
+    "precision": {
+     "hi": 0.378,
+     "k": 7,
+     "lo": 0.107,
+     "n": 33,
+     "rate": 0.212
+    },
+    "recall": {
+     "hi": 0.768,
+     "k": 7,
+     "lo": 0.291,
+     "n": 13,
+     "rate": 0.538
+    },
+    "tn": 38,
+    "tp": 7
+   }
+  },
+  "ends_in_trouble": {
+   "flagged": 25,
+   "sessions": 77,
+   "vs_failed_check": {
+    "fn": 19,
+    "fp": 7,
+    "kappa": 0.304,
+    "n": 75,
+    "precision": {
+     "hi": 0.857,
+     "k": 18,
+     "lo": 0.524,
+     "n": 25,
+     "rate": 0.72
+    },
+    "recall": {
+     "hi": 0.641,
+     "k": 18,
+     "lo": 0.334,
+     "n": 37,
+     "rate": 0.486
+    },
+    "tn": 31,
+    "tp": 18
+   },
+   "vs_not_completed": {
+    "fn": 11,
+    "fp": 10,
+    "kappa": 0.384,
+    "n": 77,
+    "precision": {
+     "hi": 0.766,
+     "k": 15,
+     "lo": 0.407,
+     "n": 25,
+     "rate": 0.6
+    },
+    "recall": {
+     "hi": 0.745,
+     "k": 15,
+     "lo": 0.389,
+     "n": 26,
+     "rate": 0.577
+    },
+    "tn": 41,
+    "tp": 15
+   },
+   "vs_switched": {
+    "fn": 7,
+    "fp": 19,
+    "kappa": 0.12,
+    "n": 77,
+    "precision": {
+     "hi": 0.434,
+     "k": 6,
+     "lo": 0.115,
+     "n": 25,
+     "rate": 0.24
+    },
+    "recall": {
+     "hi": 0.709,
+     "k": 6,
+     "lo": 0.232,
+     "n": 13,
+     "rate": 0.462
+    },
+    "tn": 45,
+    "tp": 6
+   }
+  },
+  "switched_away": {
+   "flagged": 13,
+   "sessions": 77,
+   "vs_failed_check": {
+    "fn": 24,
+    "fp": 0,
+    "kappa": 0.354,
+    "n": 75,
+    "precision": {
+     "hi": 1.0,
+     "k": 13,
+     "lo": 0.772,
+     "n": 13,
+     "rate": 1.0
+    },
+    "recall": {
+     "hi": 0.512,
+     "k": 13,
+     "lo": 0.218,
+     "n": 37,
+     "rate": 0.351
+    },
+    "tn": 38,
+    "tp": 13
+   },
+   "vs_not_completed": {
+    "fn": 13,
+    "fp": 0,
+    "kappa": 0.57,
+    "n": 77,
+    "precision": {
+     "hi": 1.0,
+     "k": 13,
+     "lo": 0.772,
+     "n": 13,
+     "rate": 1.0
+    },
+    "recall": {
+     "hi": 0.679,
+     "k": 13,
+     "lo": 0.321,
+     "n": 26,
+     "rate": 0.5
+    },
+    "tn": 51,
+    "tp": 13
+   },
+   "vs_switched": {
+    "fn": 0,
+    "fp": 0,
+    "kappa": 1.0,
+    "n": 77,
+    "precision": {
+     "hi": 1.0,
+     "k": 13,
+     "lo": 0.772,
+     "n": 13,
+     "rate": 1.0
+    },
+    "recall": {
+     "hi": 1.0,
+     "k": 13,
+     "lo": 0.772,
+     "n": 13,
+     "rate": 1.0
+    },
+    "tn": 64,
+    "tp": 13
+   }
+  }
+ },
+ "silent": {
+  "enrichment": {
+   "all": {
+    "base_rate": {
+     "hi": 0.357,
+     "k": 37,
+     "lo": 0.207,
+     "n": 134,
+     "rate": 0.276
+    },
+    "given_no_trouble": {
+     "hi": 0.278,
+     "k": 19,
+     "lo": 0.125,
+     "n": 100,
+     "rate": 0.19
+    },
+    "given_trouble": {
+     "hi": 0.685,
+     "k": 18,
+     "lo": 0.367,
+     "n": 34,
+     "rate": 0.529
+    },
+    "lift": 1.916
+   },
+   "atlas": {
+    "base_rate": {
+     "hi": 0.181,
+     "k": 8,
+     "lo": 0.05,
+     "n": 82,
+     "rate": 0.098
+    },
+    "given_no_trouble": {
+     "hi": 0.148,
+     "k": 4,
+     "lo": 0.024,
+     "n": 65,
+     "rate": 0.062
+    },
+    "given_trouble": {
+     "hi": 0.473,
+     "k": 4,
+     "lo": 0.096,
+     "n": 17,
+     "rate": 0.235
+    },
+    "lift": 2.409
+   },
+   "beacon": {
+    "base_rate": {
+     "hi": 0.605,
+     "k": 15,
+     "lo": 0.289,
+     "n": 34,
+     "rate": 0.441
+    },
+    "given_no_trouble": {
+     "hi": 0.558,
+     "k": 10,
+     "lo": 0.215,
+     "n": 27,
+     "rate": 0.37
+    },
+    "given_trouble": {
+     "hi": 0.918,
+     "k": 5,
+     "lo": 0.359,
+     "n": 7,
+     "rate": 0.714
+    },
+    "lift": 1.618
+   },
+   "chatly": {
+    "base_rate": {
+     "hi": 0.91,
+     "k": 14,
+     "lo": 0.548,
+     "n": 18,
+     "rate": 0.778
+    },
+    "given_no_trouble": {
+     "hi": 0.863,
+     "k": 5,
+     "lo": 0.306,
+     "n": 8,
+     "rate": 0.625
+    },
+    "given_trouble": {
+     "hi": 0.982,
+     "k": 9,
+     "lo": 0.596,
+     "n": 10,
+     "rate": 0.9
+    },
+    "lift": 1.157
+   }
+  },
+  "parts": {
+   "all": {
+    "inability": {
+     "fn": 26,
+     "fp": 2,
+     "kappa": 0.346,
+     "n": 134,
+     "precision": {
+      "hi": 0.957,
+      "k": 11,
+      "lo": 0.578,
+      "n": 13,
+      "rate": 0.846
+     },
+     "recall": {
+      "hi": 0.458,
+      "k": 11,
+      "lo": 0.175,
+      "n": 37,
+      "rate": 0.297
+     },
+     "tn": 95,
+     "tp": 11
+    },
+    "no_answer": {
+     "fn": 33,
+     "fp": 0,
+     "kappa": 0.149,
+     "n": 134,
+     "precision": {
+      "hi": 1.0,
+      "k": 4,
+      "lo": 0.51,
+      "n": 4,
+      "rate": 1.0
+     },
+     "recall": {
+      "hi": 0.247,
+      "k": 4,
+      "lo": 0.043,
+      "n": 37,
+      "rate": 0.108
+     },
+     "tn": 97,
+     "tp": 4
+    },
+    "tool_error": {
+     "fn": 33,
+     "fp": 14,
+     "kappa": -0.043,
+     "n": 134,
+     "precision": {
+      "hi": 0.452,
+      "k": 4,
+      "lo": 0.09,
+      "n": 18,
+      "rate": 0.222
+     },
+     "recall": {
+      "hi": 0.247,
+      "k": 4,
+      "lo": 0.043,
+      "n": 37,
+      "rate": 0.108
+     },
+     "tn": 83,
+     "tp": 4
+    },
+    "trouble": {
+     "fn": 19,
+     "fp": 16,
+     "kappa": 0.33,
+     "n": 134,
+     "precision": {
+      "hi": 0.685,
+      "k": 18,
+      "lo": 0.367,
+      "n": 34,
+      "rate": 0.529
+     },
+     "recall": {
+      "hi": 0.641,
+      "k": 18,
+      "lo": 0.334,
+      "n": 37,
+      "rate": 0.486
+     },
+     "tn": 81,
+     "tp": 18
+    }
+   },
+   "atlas": {
+    "inability": {
+     "fn": 6,
+     "fp": 1,
+     "kappa": 0.328,
+     "n": 82,
+     "precision": {
+      "hi": 0.939,
+      "k": 2,
+      "lo": 0.208,
+      "n": 3,
+      "rate": 0.667
+     },
+     "recall": {
+      "hi": 0.591,
+      "k": 2,
+      "lo": 0.071,
+      "n": 8,
+      "rate": 0.25
+     },
+     "tn": 73,
+     "tp": 2
+    },
+    "no_answer": {
+     "fn": 6,
+     "fp": 0,
+     "kappa": 0.376,
+     "n": 82,
+     "precision": {
+      "hi": 1.0,
+      "k": 2,
+      "lo": 0.342,
+      "n": 2,
+      "rate": 1.0
+     },
+     "recall": {
+      "hi": 0.591,
+      "k": 2,
+      "lo": 0.071,
+      "n": 8,
+      "rate": 0.25
+     },
+     "tn": 74,
+     "tp": 2
+    },
+    "tool_error": {
+     "fn": 7,
+     "fp": 12,
+     "kappa": -0.029,
+     "n": 82,
+     "precision": {
+      "hi": 0.333,
+      "k": 1,
+      "lo": 0.014,
+      "n": 13,
+      "rate": 0.077
+     },
+     "recall": {
+      "hi": 0.471,
+      "k": 1,
+      "lo": 0.022,
+      "n": 8,
+      "rate": 0.125
+     },
+     "tn": 62,
+     "tp": 1
+    },
+    "trouble": {
+     "fn": 4,
+     "fp": 13,
+     "kappa": 0.216,
+     "n": 82,
+     "precision": {
+      "hi": 0.473,
+      "k": 4,
+      "lo": 0.096,
+      "n": 17,
+      "rate": 0.235
+     },
+     "recall": {
+      "hi": 0.785,
+      "k": 4,
+      "lo": 0.215,
+      "n": 8,
+      "rate": 0.5
+     },
+     "tn": 61,
+     "tp": 4
+    }
+   },
+   "beacon": {
+    "inability": {
+     "fn": 15,
+     "fp": 0,
+     "kappa": 0.0,
+     "n": 34,
+     "precision": {
+      "hi": 1.0,
+      "k": 0,
+      "lo": 0.0,
+      "n": 0,
+      "rate": null
+     },
+     "recall": {
+      "hi": 0.204,
+      "k": 0,
+      "lo": 0.0,
+      "n": 15,
+      "rate": 0.0
+     },
+     "tn": 19,
+     "tp": 0
+    },
+    "no_answer": {
+     "fn": 13,
+     "fp": 0,
+     "kappa": 0.147,
+     "n": 34,
+     "precision": {
+      "hi": 1.0,
+      "k": 2,
+      "lo": 0.342,
+      "n": 2,
+      "rate": 1.0
+     },
+     "recall": {
+      "hi": 0.379,
+      "k": 2,
+      "lo": 0.037,
+      "n": 15,
+      "rate": 0.133
+     },
+     "tn": 19,
+     "tp": 2
+    },
+    "tool_error": {
+     "fn": 12,
+     "fp": 2,
+     "kappa": 0.102,
+     "n": 34,
+     "precision": {
+      "hi": 0.882,
+      "k": 3,
+      "lo": 0.231,
+      "n": 5,
+      "rate": 0.6
+     },
+     "recall": {
+      "hi": 0.452,
+      "k": 3,
+      "lo": 0.07,
+      "n": 15,
+      "rate": 0.2
+     },
+     "tn": 17,
+     "tp": 3
+    },
+    "trouble": {
+     "fn": 10,
+     "fp": 2,
+     "kappa": 0.242,
+     "n": 34,
+     "precision": {
+      "hi": 0.918,
+      "k": 5,
+      "lo": 0.359,
+      "n": 7,
+      "rate": 0.714
+     },
+     "recall": {
+      "hi": 0.583,
+      "k": 5,
+      "lo": 0.152,
+      "n": 15,
+      "rate": 0.333
+     },
+     "tn": 17,
+     "tp": 5
+    }
+   },
+   "chatly": {
+    "inability": {
+     "fn": 5,
+     "fp": 1,
+     "kappa": 0.289,
+     "n": 18,
+     "precision": {
+      "hi": 0.982,
+      "k": 9,
+      "lo": 0.596,
+      "n": 10,
+      "rate": 0.9
+     },
+     "recall": {
+      "hi": 0.837,
+      "k": 9,
+      "lo": 0.388,
+      "n": 14,
+      "rate": 0.643
+     },
+     "tn": 3,
+     "tp": 9
+    },
+    "no_answer": {
+     "fn": 14,
+     "fp": 0,
+     "kappa": 0.0,
+     "n": 18,
+     "precision": {
+      "hi": 1.0,
+      "k": 0,
+      "lo": 0.0,
+      "n": 0,
+      "rate": null
+     },
+     "recall": {
+      "hi": 0.215,
+      "k": 0,
+      "lo": 0.0,
+      "n": 14,
+      "rate": 0.0
+     },
+     "tn": 4,
+     "tp": 0
+    },
+    "tool_error": {
+     "fn": 14,
+     "fp": 0,
+     "kappa": 0.0,
+     "n": 18,
+     "precision": {
+      "hi": 1.0,
+      "k": 0,
+      "lo": 0.0,
+      "n": 0,
+      "rate": null
+     },
+     "recall": {
+      "hi": 0.215,
+      "k": 0,
+      "lo": 0.0,
+      "n": 14,
+      "rate": 0.0
+     },
+     "tn": 4,
+     "tp": 0
+    },
+    "trouble": {
+     "fn": 5,
+     "fp": 1,
+     "kappa": 0.289,
+     "n": 18,
+     "precision": {
+      "hi": 0.982,
+      "k": 9,
+      "lo": 0.596,
+      "n": 10,
+      "rate": 0.9
+     },
+     "recall": {
+      "hi": 0.837,
+      "k": 9,
+      "lo": 0.388,
+      "n": 14,
+      "rate": 0.643
+     },
+     "tn": 3,
+     "tp": 9
+    }
+   }
+  },
+  "per_session": {
+   "all": {
+    "failed": 37,
+    "false_alarms": 11,
+    "kappa": 0.306,
+    "precision": {
+     "hi": 0.802,
+     "k": 22,
+     "lo": 0.496,
+     "n": 33,
+     "rate": 0.667
+    },
+    "recall": {
+     "hi": 0.737,
+     "k": 22,
+     "lo": 0.435,
+     "n": 37,
+     "rate": 0.595
+    },
+    "sessions_with_checks": 75,
+    "silent": {
+     "hi": 0.565,
+     "k": 15,
+     "lo": 0.263,
+     "n": 37,
+     "rate": 0.405
+    }
+   },
+   "atlas": {
+    "failed": 8,
+    "false_alarms": 9,
+    "kappa": 0.334,
+    "precision": {
+     "hi": 0.643,
+     "k": 6,
+     "lo": 0.198,
+     "n": 15,
+     "rate": 0.4
+    },
+    "recall": {
+     "hi": 0.929,
+     "k": 6,
+     "lo": 0.409,
+     "n": 8,
+     "rate": 0.75
+    },
+    "sessions_with_checks": 37,
+    "silent": {
+     "hi": 0.591,
+     "k": 2,
+     "lo": 0.071,
+     "n": 8,
+     "rate": 0.25
+    }
+   },
+   "beacon": {
+    "failed": 15,
+    "false_alarms": 1,
+    "kappa": 0.256,
+    "precision": {
+     "hi": 0.978,
+     "k": 7,
+     "lo": 0.529,
+     "n": 8,
+     "rate": 0.875
+    },
+    "recall": {
+     "hi": 0.699,
+     "k": 7,
+     "lo": 0.248,
+     "n": 15,
+     "rate": 0.467
+    },
+    "sessions_with_checks": 22,
+    "silent": {
+     "hi": 0.752,
+     "k": 8,
+     "lo": 0.301,
+     "n": 15,
+     "rate": 0.533
+    }
+   },
+   "chatly": {
+    "failed": 14,
+    "false_alarms": 1,
+    "kappa": 0.077,
+    "precision": {
+     "hi": 0.982,
+     "k": 9,
+     "lo": 0.596,
+     "n": 10,
+     "rate": 0.9
+    },
+    "recall": {
+     "hi": 0.837,
+     "k": 9,
+     "lo": 0.388,
+     "n": 14,
+     "rate": 0.643
+    },
+    "sessions_with_checks": 16,
+    "silent": {
+     "hi": 0.612,
+     "k": 5,
+     "lo": 0.163,
+     "n": 14,
+     "rate": 0.357
+    }
+   }
+  },
+  "per_turn": {
+   "all": {
+    "failed": 37,
+    "false_alarms": 16,
+    "kappa": 0.33,
+    "precision": {
+     "hi": 0.685,
+     "k": 18,
+     "lo": 0.367,
+     "n": 34,
+     "rate": 0.529
+    },
+    "recall": {
+     "hi": 0.641,
+     "k": 18,
+     "lo": 0.334,
+     "n": 37,
+     "rate": 0.486
+    },
+    "silent": {
+     "hi": 0.666,
+     "k": 19,
+     "lo": 0.359,
+     "n": 37,
+     "rate": 0.514
+    },
+    "verifiable": 134
+   },
+   "atlas": {
+    "failed": 8,
+    "false_alarms": 13,
+    "kappa": 0.216,
+    "precision": {
+     "hi": 0.473,
+     "k": 4,
+     "lo": 0.096,
+     "n": 17,
+     "rate": 0.235
+    },
+    "recall": {
+     "hi": 0.785,
+     "k": 4,
+     "lo": 0.215,
+     "n": 8,
+     "rate": 0.5
+    },
+    "silent": {
+     "hi": 0.785,
+     "k": 4,
+     "lo": 0.215,
+     "n": 8,
+     "rate": 0.5
+    },
+    "verifiable": 82
+   },
+   "beacon": {
+    "failed": 15,
+    "false_alarms": 2,
+    "kappa": 0.242,
+    "precision": {
+     "hi": 0.918,
+     "k": 5,
+     "lo": 0.359,
+     "n": 7,
+     "rate": 0.714
+    },
+    "recall": {
+     "hi": 0.583,
+     "k": 5,
+     "lo": 0.152,
+     "n": 15,
+     "rate": 0.333
+    },
+    "silent": {
+     "hi": 0.848,
+     "k": 10,
+     "lo": 0.417,
+     "n": 15,
+     "rate": 0.667
+    },
+    "verifiable": 34
+   },
+   "chatly": {
+    "failed": 14,
+    "false_alarms": 1,
+    "kappa": 0.289,
+    "precision": {
+     "hi": 0.982,
+     "k": 9,
+     "lo": 0.596,
+     "n": 10,
+     "rate": 0.9
+    },
+    "recall": {
+     "hi": 0.837,
+     "k": 9,
+     "lo": 0.388,
+     "n": 14,
+     "rate": 0.643
+    },
+    "silent": {
+     "hi": 0.612,
+     "k": 5,
+     "lo": 0.163,
+     "n": 14,
+     "rate": 0.357
+    },
+    "verifiable": 18
+   }
+  }
+ }
+}

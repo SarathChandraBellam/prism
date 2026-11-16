@@ -1,0 +1,562 @@
+{
+ "chat_only": {
+  "atlas": {
+   "inability_turns": 3,
+   "needing_company_data": 37,
+   "redone": 3,
+   "redone_or_trouble": 10,
+   "sessions": 38,
+   "tasks_started": 33,
+   "turns": 106
+  },
+  "beacon": {
+   "inability_turns": 0,
+   "needing_company_data": 23,
+   "redone": 7,
+   "redone_or_trouble": 9,
+   "sessions": 23,
+   "tasks_started": 22,
+   "turns": 43
+  },
+  "chatly": {
+   "inability_turns": 11,
+   "needing_company_data": 13,
+   "redone": 3,
+   "redone_or_trouble": 7,
+   "sessions": 16,
+   "tasks_started": 9,
+   "turns": 22
+  }
+ },
+ "identifiers": {
+  "atlas": {
+   "any": 17,
+   "email": 0,
+   "id": 17,
+   "name": 0,
+   "sessions": 38
+  },
+  "beacon": {
+   "any": 5,
+   "email": 0,
+   "id": 5,
+   "name": 0,
+   "sessions": 23
+  },
+  "chatly": {
+   "any": 4,
+   "email": 0,
+   "id": 4,
+   "name": 0,
+   "sessions": 16
+  },
+  "customer_names_found_in_tool_results": 8
+ },
+ "label_agreement": {
+  "domain": {
+   "accuracy": {
+    "atlas": {
+     "correct": 28,
+     "n": 32
+    },
+    "beacon": {
+     "correct": 8,
+     "n": 10
+    },
+    "chatly": {
+     "correct": 0,
+     "n": 0
+    }
+   },
+   "all_three": {
+    "agree": 0,
+    "n": 0
+   },
+   "pairs": {
+    "atlas-beacon": {
+     "agree": 8,
+     "kappa": 0.0,
+     "n": 10
+    },
+    "atlas-chatly": {
+     "agree": 0,
+     "kappa": null,
+     "n": 0
+    },
+    "beacon-chatly": {
+     "agree": 0,
+     "kappa": null,
+     "n": 0
+    }
+   }
+  },
+  "task_type": {
+   "accuracy": {
+    "atlas": {
+     "correct": 21,
+     "n": 32
+    },
+    "beacon": {
+     "correct": 7,
+     "n": 10
+    },
+    "chatly": {
+     "correct": 0,
+     "n": 0
+    }
+   },
+   "all_three": {
+    "agree": 0,
+    "n": 0
+   },
+   "pairs": {
+    "atlas-beacon": {
+     "agree": 9,
+     "kappa": 0.865,
+     "n": 10
+    },
+    "atlas-chatly": {
+     "agree": 0,
+     "kappa": null,
+     "n": 0
+    },
+    "beacon-chatly": {
+     "agree": 0,
+     "kappa": null,
+     "n": 0
+    }
+   }
+  }
+ },
+ "labels": {
+  "by_platform_in_file": {
+   "atlas": 32,
+   "beacon": 10,
+   "chatly": 0
+  },
+  "expected_recordings": 96,
+  "file_entries": 42,
+  "score_labels": {
+   "atlas": {
+    "domain": {
+     "recordings": [
+      28,
+      32
+     ],
+     "sessions": [
+      35,
+      38
+     ]
+    },
+    "task_type": {
+     "recordings": [
+      21,
+      32
+     ],
+     "sessions": [
+      26,
+      38
+     ]
+    }
+   },
+   "beacon": {
+    "domain": {
+     "recordings": [
+      8,
+      10
+     ],
+     "sessions": [
+      8,
+      10
+     ]
+    },
+    "task_type": {
+     "recordings": [
+      7,
+      10
+     ],
+     "sessions": [
+      7,
+      10
+     ]
+    }
+   },
+   "chatly": {
+    "domain": {
+     "recordings": [
+      0,
+      0
+     ],
+     "sessions": [
+      0,
+      0
+     ]
+    },
+    "task_type": {
+     "recordings": [
+      0,
+      0
+     ],
+     "sessions": [
+      0,
+      0
+     ]
+    }
+   }
+  },
+  "score_match": {
+   "atlas": [
+    38,
+    38
+   ],
+   "beacon": [
+    23,
+    23
+   ],
+   "chatly": [
+    15,
+    16
+   ]
+  },
+  "session_coverage": {
+   "atlas": [
+    38,
+    38
+   ],
+   "beacon": [
+    10,
+    23
+   ],
+   "chatly": [
+    0,
+    16
+   ]
+  },
+  "tasks_labelled": [
+   43,
+   64
+  ]
+ },
+ "switches": {
+  "all": {
+   "missing": {
+    "MCP server: filesystem": 1,
+    "MCP server: shop": 3,
+    "skill: customer-reply": 1,
+    "skill: weekly-sales-report": 4,
+    "tool: filesystem__read_file": 1,
+    "tool: filesystem__search_files": 1,
+    "tool: shop__list_tables": 2,
+    "tool: shop__run_sql": 2,
+    "tool: shop__search_tickets": 2,
+    "tool: shop__update_ticket": 2
+   },
+   "missing_by_kind": {
+    "MCP server": 3,
+    "skill": 5,
+    "tool": 3
+   },
+   "residual": {
+    "inability": 1,
+    "no answer": 1,
+    "nothing visible": 3,
+    "tool error": 2
+   },
+   "switches": 13,
+   "with_missing": 6
+  },
+  "by_origin": {
+   "atlas": {
+    "missing": {},
+    "missing_by_kind": {},
+    "residual": {
+     "inability": 1,
+     "no answer": 1,
+     "nothing visible": 1
+    },
+    "switches": 3,
+    "with_missing": 0
+   },
+   "beacon": {
+    "missing": {
+     "skill: weekly-sales-report": 3
+    },
+    "missing_by_kind": {
+     "skill": 3
+    },
+    "residual": {
+     "nothing visible": 2,
+     "tool error": 2
+    },
+    "switches": 7,
+    "with_missing": 3
+   },
+   "chatly": {
+    "missing": {
+     "MCP server: filesystem": 1,
+     "MCP server: shop": 3,
+     "skill: customer-reply": 1,
+     "skill: weekly-sales-report": 1,
+     "tool: filesystem__read_file": 1,
+     "tool: filesystem__search_files": 1,
+     "tool: shop__list_tables": 2,
+     "tool: shop__run_sql": 2,
+     "tool: shop__search_tickets": 2,
+     "tool: shop__update_ticket": 2
+    },
+    "missing_by_kind": {
+     "MCP server": 3,
+     "skill": 2,
+     "tool": 3
+    },
+    "residual": {},
+    "switches": 3,
+    "with_missing": 3
+   }
+  },
+  "by_pair": {
+   "atlas->chatly": {
+    "missing": {},
+    "missing_by_kind": {},
+    "residual": {
+     "inability": 1,
+     "no answer": 1,
+     "nothing visible": 1
+    },
+    "switches": 3,
+    "with_missing": 0
+   },
+   "beacon->atlas": {
+    "missing": {
+     "skill: weekly-sales-report": 3
+    },
+    "missing_by_kind": {
+     "skill": 3
+    },
+    "residual": {},
+    "switches": 3,
+    "with_missing": 3
+   },
+   "beacon->chatly": {
+    "missing": {},
+    "missing_by_kind": {},
+    "residual": {
+     "nothing visible": 2,
+     "tool error": 2
+    },
+    "switches": 4,
+    "with_missing": 0
+   },
+   "chatly->atlas": {
+    "missing": {
+     "MCP server: filesystem": 1,
+     "MCP server: shop": 2,
+     "skill: customer-reply": 1,
+     "skill: weekly-sales-report": 1,
+     "tool: filesystem__read_file": 1,
+     "tool: filesystem__search_files": 1,
+     "tool: shop__list_tables": 2,
+     "tool: shop__run_sql": 2,
+     "tool: shop__search_tickets": 1,
+     "tool: shop__update_ticket": 1
+    },
+    "missing_by_kind": {
+     "MCP server": 2,
+     "skill": 2,
+     "tool": 2
+    },
+    "residual": {},
+    "switches": 2,
+    "with_missing": 2
+   },
+   "chatly->beacon": {
+    "missing": {
+     "MCP server: shop": 1,
+     "tool: shop__search_tickets": 1,
+     "tool: shop__update_ticket": 1
+    },
+    "missing_by_kind": {
+     "MCP server": 1,
+     "tool": 1
+    },
+    "residual": {},
+    "switches": 1,
+    "with_missing": 1
+   }
+  },
+  "score": {
+   "adjacent_in_true_chain": 13,
+   "origin_fate_switched": 13,
+   "rebuilt": 13,
+   "true_adjacent_pairs": 13,
+   "true_switches_in_truth": 13
+  }
+ },
+ "trouble": {
+  "by_platform": {
+   "atlas": {
+    "ending_in_trouble": 9,
+    "inability": 2,
+    "no answer": 1,
+    "tasks": 35,
+    "tool error": 7
+   },
+   "beacon": {
+    "ending_in_trouble": 2,
+    "inability": 0,
+    "no answer": 1,
+    "tasks": 16,
+    "tool error": 1
+   },
+   "chatly": {
+    "ending_in_trouble": 8,
+    "inability": 8,
+    "no answer": 0,
+    "tasks": 13,
+    "tool error": 0
+   }
+  },
+  "by_role": {
+   "management": {
+    "ending_in_trouble": 5,
+    "inability": 4,
+    "no answer": 0,
+    "tasks": 16,
+    "tool error": 1
+   },
+   "operations": {
+    "ending_in_trouble": 10,
+    "inability": 2,
+    "no answer": 2,
+    "tasks": 22,
+    "tool error": 7
+   },
+   "support": {
+    "ending_in_trouble": 4,
+    "inability": 4,
+    "no answer": 0,
+    "tasks": 26,
+    "tool error": 0
+   }
+  },
+  "ending_in_trouble": 19,
+  "score_abandoned": {
+   "estimated": 19,
+   "hit": 9,
+   "precision": 0.4737,
+   "recall": 0.6923,
+   "true_abandoned": 13
+  },
+  "tasks": 64,
+  "topics": {
+   "order / refund": 3,
+   "other": 1,
+   "sales / report": 2,
+   "shipping / policy": 1,
+   "ticket / customer reply": 5
+  }
+ },
+ "work_map": {
+  "role_x_domain": {
+   "management": {
+    "operations": 3,
+    "strategy": 2,
+    "support": 0,
+    "writing": 0
+   },
+   "operations": {
+    "operations": 19,
+    "strategy": 0,
+    "support": 0,
+    "writing": 2
+   },
+   "support": {
+    "operations": 0,
+    "strategy": 0,
+    "support": 16,
+    "writing": 1
+   }
+  },
+  "type_fail": {
+   "advise": {
+    "either": 0,
+    "redone": 0,
+    "tasks": 2,
+    "trouble": 0
+   },
+   "analysis": {
+    "either": 2,
+    "redone": 0,
+    "tasks": 7,
+    "trouble": 2
+   },
+   "decide": {
+    "either": 4,
+    "redone": 2,
+    "tasks": 10,
+    "trouble": 3
+   },
+   "draft": {
+    "either": 1,
+    "redone": 0,
+    "tasks": 7,
+    "trouble": 1
+   },
+   "lookup": {
+    "either": 2,
+    "redone": 0,
+    "tasks": 4,
+    "trouble": 2
+   },
+   "report": {
+    "either": 5,
+    "redone": 4,
+    "tasks": 10,
+    "trouble": 4
+   },
+   "triage": {
+    "either": 0,
+    "redone": 0,
+    "tasks": 3,
+    "trouble": 0
+   }
+  },
+  "type_x_platform": {
+   "advise": {
+    "atlas": 2,
+    "beacon": 0,
+    "chatly": 0
+   },
+   "analysis": {
+    "atlas": 5,
+    "beacon": 2,
+    "chatly": 0
+   },
+   "decide": {
+    "atlas": 9,
+    "beacon": 1,
+    "chatly": 0
+   },
+   "draft": {
+    "atlas": 5,
+    "beacon": 2,
+    "chatly": 0
+   },
+   "lookup": {
+    "atlas": 4,
+    "beacon": 0,
+    "chatly": 0
+   },
+   "report": {
+    "atlas": 5,
+    "beacon": 5,
+    "chatly": 0
+   },
+   "triage": {
+    "atlas": 3,
+    "beacon": 0,
+    "chatly": 0
+   }
+  }
+ }
+}

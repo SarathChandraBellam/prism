@@ -1,0 +1,327 @@
+{
+ "cost_per_task": {
+  "atlas": {
+   "cost": 0.533935,
+   "cost_per_correct_task": 0.0203,
+   "cost_per_session": 0.014832,
+   "cost_per_task": 0.01618,
+   "cost_per_task_first_session_only": 0.016131,
+   "ratio_correct_to_session": 1.37,
+   "sessions": 36,
+   "tasks": 33,
+   "tasks_checked": 32,
+   "tasks_correct": 26,
+   "tasks_unchecked": 1
+  },
+  "beacon": {
+   "cost": 0.314872,
+   "cost_per_correct_task": 0.038265,
+   "cost_per_session": 0.010858,
+   "cost_per_task": 0.014312,
+   "cost_per_task_first_session_only": 0.012347,
+   "ratio_correct_to_session": 3.52,
+   "sessions": 29,
+   "tasks": 22,
+   "tasks_checked": 21,
+   "tasks_correct": 8,
+   "tasks_unchecked": 1
+  },
+  "chatly": {
+   "cost": 0.044292,
+   "cost_per_correct_task": 0.011073,
+   "cost_per_session": 0.003691,
+   "cost_per_task": 0.004921,
+   "cost_per_task_first_session_only": 0.000841,
+   "ratio_correct_to_session": 3.0,
+   "sessions": 12,
+   "tasks": 9,
+   "tasks_checked": 9,
+   "tasks_correct": 4,
+   "tasks_unchecked": 0
+  },
+  "total": {
+   "cost": 0.893099,
+   "cost_per_correct_task": 0.023111,
+   "cost_per_session": 0.011599,
+   "cost_per_task": 0.013955,
+   "cost_per_task_first_session_only": 0.01268,
+   "ratio_correct_to_session": 1.99,
+   "sessions": 77,
+   "tasks": 64,
+   "tasks_checked": 62,
+   "tasks_correct": 38,
+   "tasks_unchecked": 2
+  }
+ },
+ "licence": {
+  "atlas": {
+   "breakeven_tasks_per_seat_month": 1854.0,
+   "licence_per_correct_task": 4.945,
+   "licence_per_task_started": 3.896,
+   "licence_to_token": 212.4,
+   "licence_window": 128.57,
+   "monthly": 270,
+   "seats": 9,
+   "shadow_token_cost_window": 0.6054
+  },
+  "beacon": {
+   "breakeven_tasks_per_seat_month": 1397.0,
+   "licence_per_correct_task": 8.333,
+   "licence_per_task_started": 3.03,
+   "licence_to_token": 240.6,
+   "licence_window": 66.67,
+   "monthly": 140,
+   "seats": 7,
+   "shadow_token_cost_window": 0.2771
+  },
+  "chatly": {
+   "breakeven_tasks_per_seat_month": 4064.0,
+   "licence_per_correct_task": 19.048,
+   "licence_per_task_started": 8.466,
+   "licence_to_token": 7220.6,
+   "licence_window": 76.19,
+   "monthly": 160,
+   "seats": 8,
+   "shadow_token_cost_window": 0.0106
+  },
+  "total": {
+   "breakeven_tasks_per_seat_month": 1702.0,
+   "licence_per_correct_task": 7.143,
+   "licence_per_task_started": 4.241,
+   "licence_to_token": 303.9,
+   "licence_window": 271.43,
+   "monthly": 570,
+   "seats": 24,
+   "shadow_token_cost_window": 0.8931
+  }
+ },
+ "rebuild": {
+  "exact_chains": 64,
+  "links": {
+   "fn": 0,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "tp": 13
+  },
+  "rebuilt_tasks": 64,
+  "true_tasks": 64
+ },
+ "rework": {
+  "atlas all": {
+   "cost": 0.605436,
+   "cost_share_at_risk": 0.3111,
+   "cost_share_redone": 0.0601,
+   "minutes": 111.301767,
+   "minutes_share_at_risk": 0.275,
+   "minutes_share_redone": 0.0461,
+   "requests": 322,
+   "sessions": 38,
+   "tokens": 1584261,
+   "turns": 106
+  },
+  "atlas clean": {
+   "cost": 0.417096,
+   "minutes": 80.699233,
+   "requests": 216,
+   "sessions": 26,
+   "tokens": 1080755,
+   "turns": 78
+  },
+  "atlas ended_in_trouble": {
+   "cost": 0.151983,
+   "minutes": 25.4661,
+   "requests": 88,
+   "sessions": 9,
+   "tokens": 424114,
+   "turns": 22
+  },
+  "atlas redone": {
+   "cost": 0.036357,
+   "minutes": 5.136433,
+   "requests": 18,
+   "sessions": 3,
+   "tokens": 79392,
+   "turns": 6
+  },
+  "beacon all": {
+   "cost": 0.277112,
+   "cost_share_at_risk": 0.3827,
+   "cost_share_redone": 0.2846,
+   "minutes": 43.91095,
+   "minutes_share_at_risk": 0.2746,
+   "minutes_share_redone": 0.1859,
+   "requests": 148,
+   "sessions": 23,
+   "tokens": 740301,
+   "turns": 43
+  },
+  "beacon clean": {
+   "cost": 0.171053,
+   "minutes": 31.853933,
+   "requests": 89,
+   "sessions": 14,
+   "tokens": 452320,
+   "turns": 32
+  },
+  "beacon ended_in_trouble": {
+   "cost": 0.02719,
+   "minutes": 3.8939,
+   "requests": 16,
+   "sessions": 2,
+   "tokens": 84160,
+   "turns": 3
+  },
+  "beacon redone": {
+   "cost": 0.078869,
+   "minutes": 8.163117,
+   "requests": 43,
+   "sessions": 7,
+   "tokens": 203821,
+   "turns": 8
+  },
+  "chatly all": {
+   "cost": 0.010552,
+   "cost_share_at_risk": 0.4521,
+   "cost_share_redone": 0.1251,
+   "minutes": 9.982917,
+   "minutes_share_at_risk": 0.3269,
+   "minutes_share_redone": 0.0162,
+   "requests": 22,
+   "sessions": 16,
+   "tokens": 14526,
+   "turns": 22
+  },
+  "chatly clean": {
+   "cost": 0.005781,
+   "minutes": 6.719733,
+   "requests": 10,
+   "sessions": 5,
+   "tokens": 9638,
+   "turns": 10
+  },
+  "chatly ended_in_trouble": {
+   "cost": 0.003451,
+   "minutes": 3.10105,
+   "requests": 9,
+   "sessions": 8,
+   "tokens": 3938,
+   "turns": 9
+  },
+  "chatly redone": {
+   "cost": 0.00132,
+   "minutes": 0.162133,
+   "requests": 3,
+   "sessions": 3,
+   "tokens": 950,
+   "turns": 3
+  },
+  "total all": {
+   "cost": 0.893099,
+   "cost_share_at_risk": 0.335,
+   "cost_share_redone": 0.1305,
+   "minutes": 165.195633,
+   "minutes_share_at_risk": 0.278,
+   "minutes_share_redone": 0.0815,
+   "requests": 492,
+   "sessions": 77,
+   "tokens": 2339088,
+   "turns": 171
+  },
+  "total clean": {
+   "cost": 0.59393,
+   "minutes": 119.2729,
+   "requests": 315,
+   "sessions": 45,
+   "tokens": 1542713,
+   "turns": 120
+  },
+  "total ended_in_trouble": {
+   "cost": 0.182623,
+   "minutes": 32.46105,
+   "requests": 113,
+   "sessions": 19,
+   "tokens": 512212,
+   "turns": 34
+  },
+  "total redone": {
+   "cost": 0.116546,
+   "minutes": 13.461683,
+   "requests": 64,
+   "sessions": 13,
+   "tokens": 284163,
+   "turns": 17
+  }
+ },
+ "score_finished": {
+  "atlas": 34,
+  "beacon": 13,
+  "chatly": 4,
+  "unfinished": 13
+ },
+ "score_rework": {
+  "at_risk_vs_waste": {
+   "fn": 4,
+   "fp": 10,
+   "precision": 0.688,
+   "recall": 0.846,
+   "tp": 22
+  },
+  "cost": {
+   "estimate_at_risk": 0.335,
+   "estimate_redone": 0.1305,
+   "true_switched": 0.1305,
+   "true_waste": 0.1799
+  },
+  "minutes": {
+   "estimate_at_risk": 0.278,
+   "estimate_redone": 0.0815,
+   "true_switched": 0.0815,
+   "true_waste": 0.1298
+  },
+  "redone_vs_switched": {
+   "fn": 0,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "tp": 13
+  },
+  "trouble_vs_abandoned": {
+   "fn": 4,
+   "fp": 10,
+   "precision": 0.474,
+   "recall": 0.692,
+   "tp": 9
+  },
+  "true_fates": {
+   "abandoned": 13,
+   "completed": 51,
+   "switched": 13
+  }
+ },
+ "shares": {
+  "sessions": {
+   "atlas": 38,
+   "beacon": 23,
+   "chatly": 16
+  },
+  "task_starts": {
+   "atlas": 33,
+   "beacon": 22,
+   "chatly": 9
+  },
+  "tasks_finished": {
+   "atlas": 26,
+   "beacon": 14,
+   "chatly": 5,
+   "unfinished": 19
+  }
+ },
+ "window": {
+  "days_per_month": 21,
+  "people": 12,
+  "tasks_per_person_week": 2.67,
+  "weeks": 2.0,
+  "working_days": 10
+ }
+}

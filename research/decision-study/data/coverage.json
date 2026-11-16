@@ -1,0 +1,3083 @@
+{
+ "content_attributes": [
+  "gen_ai.input.messages",
+  "gen_ai.output.messages",
+  "gen_ai.system_instructions",
+  "gen_ai.tool.call.arguments",
+  "gen_ai.tool.call.result",
+  "gen_ai.tool.definitions"
+ ],
+ "content_loss": {
+  "D1": "link a re-ask to its first session, so a fallback is not counted as a task start (optional)",
+  "D2": "what the person asked; the visible reply, for the compact view",
+  "D3": "task type, through the label",
+  "D4": "link a re-ask to its first session; no answer, or an inability phrase",
+  "D5": "what was typed into the tool; what the agent sent to tools (optional)",
+  "D6": "what the person asked; the visible reply"
+ },
+ "coverage": {
+  "D1": {
+   "atlas": {
+    "missing": [],
+    "needs": [
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 660,
+      "k_all": 660,
+      "n": 660,
+      "n_all": 660,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.input.messages",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     }
+    ],
+    "verdict": "ready"
+   },
+   "beacon": {
+    "missing": [],
+    "needs": [
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 358,
+      "k_all": 358,
+      "n": 358,
+      "n_all": 358,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.input.messages",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     }
+    ],
+    "verdict": "ready"
+   },
+   "chatly": {
+    "missing": [],
+    "needs": [
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 44,
+      "k_all": 44,
+      "n": 44,
+      "n_all": 44,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.input.messages",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     }
+    ],
+    "verdict": "ready"
+   }
+  },
+  "D2": {
+   "atlas": {
+    "missing": [],
+    "needs": [
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 104,
+      "k_all": 104,
+      "n": 104,
+      "n_all": 106,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 660,
+      "k_all": 660,
+      "n": 660,
+      "n_all": 660,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     },
+     {
+      "k": 232,
+      "k_all": 232,
+      "n": 232,
+      "n_all": 232,
+      "name": "gen_ai.tool.name",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "execute_tool"
+     }
+    ],
+    "verdict": "ready"
+   },
+   "beacon": {
+    "missing": [],
+    "needs": [
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 40,
+      "k_all": 40,
+      "n": 40,
+      "n_all": 43,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 358,
+      "k_all": 358,
+      "n": 358,
+      "n_all": 358,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     },
+     {
+      "k": 167,
+      "k_all": 167,
+      "n": 167,
+      "n_all": 167,
+      "name": "gen_ai.tool.name",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "execute_tool"
+     }
+    ],
+    "verdict": "ready"
+   },
+   "chatly": {
+    "missing": [],
+    "needs": [
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 44,
+      "k_all": 44,
+      "n": 44,
+      "n_all": 44,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 0,
+      "n_all": 0,
+      "name": "gen_ai.tool.name",
+      "optional": true,
+      "share": null,
+      "status": "n/a",
+      "when": "all",
+      "where": "execute_tool"
+     }
+    ],
+    "verdict": "ready"
+   }
+  },
+  "D3": {
+   "atlas": {
+    "missing": [
+     "event `gen_ai.evaluation.result`: absent 0% (0/660)",
+     "external: sampled checks of answers (people or evaluators) not available"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 660,
+      "n_all": 660,
+      "name": "gen_ai.evaluation.result",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "event"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 309,
+      "k_all": 318,
+      "n": 309,
+      "n_all": 322,
+      "name": "gen_ai.usage.input_tokens",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 309,
+      "k_all": 318,
+      "n": 309,
+      "n_all": 322,
+      "name": "gen_ai.usage.output_tokens",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 309,
+      "k_all": 318,
+      "n": 309,
+      "n_all": 322,
+      "name": "gen_ai.response.model",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 660,
+      "k_all": 660,
+      "n": 660,
+      "n_all": 660,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   },
+   "beacon": {
+    "missing": [
+     "event `gen_ai.evaluation.result`: absent 0% (0/358)",
+     "external: sampled checks of answers (people or evaluators) not available"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 358,
+      "n_all": 358,
+      "name": "gen_ai.evaluation.result",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "event"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 148,
+      "k_all": 148,
+      "n": 148,
+      "n_all": 148,
+      "name": "gen_ai.usage.input_tokens",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 148,
+      "k_all": 148,
+      "n": 148,
+      "n_all": 148,
+      "name": "gen_ai.usage.output_tokens",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 148,
+      "k_all": 148,
+      "n": 148,
+      "n_all": 148,
+      "name": "gen_ai.response.model",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 358,
+      "k_all": 358,
+      "n": 358,
+      "n_all": 358,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   },
+   "chatly": {
+    "missing": [
+     "event `gen_ai.evaluation.result`: absent 0% (0/44)",
+     "external: sampled checks of answers (people or evaluators) not available"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 44,
+      "n_all": 44,
+      "name": "gen_ai.evaluation.result",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "event"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.usage.input_tokens",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.usage.output_tokens",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.response.model",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 44,
+      "k_all": 44,
+      "n": 44,
+      "n_all": 44,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   }
+  },
+  "D4": {
+   "atlas": {
+    "missing": [
+     "execute_tool `gen_ai.skill.name` (optional): partial 16.8% (39/232)",
+     "execute_tool `error.type` (optional): partial 8.2% (19/232)"
+    ],
+    "needs": [
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 104,
+      "k_all": 104,
+      "n": 104,
+      "n_all": 106,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 232,
+      "k_all": 232,
+      "n": 232,
+      "n_all": 232,
+      "name": "gen_ai.tool.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 39,
+      "k_all": 39,
+      "n": 232,
+      "n_all": 232,
+      "name": "gen_ai.skill.name",
+      "optional": true,
+      "share": 0.1681,
+      "status": "partial",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 19,
+      "k_all": 19,
+      "n": 232,
+      "n_all": 232,
+      "name": "error.type",
+      "optional": true,
+      "share": 0.0819,
+      "status": "partial",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 660,
+      "k_all": 660,
+      "n": 660,
+      "n_all": 660,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "partial"
+   },
+   "beacon": {
+    "missing": [
+     "execute_tool `gen_ai.skill.name` (optional): absent 0% (0/167)",
+     "execute_tool `error.type` (optional): partial 5.4% (9/167)"
+    ],
+    "needs": [
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 40,
+      "k_all": 40,
+      "n": 40,
+      "n_all": 43,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 167,
+      "k_all": 167,
+      "n": 167,
+      "n_all": 167,
+      "name": "gen_ai.tool.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 167,
+      "n_all": 167,
+      "name": "gen_ai.skill.name",
+      "optional": true,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 9,
+      "k_all": 9,
+      "n": 167,
+      "n_all": 167,
+      "name": "error.type",
+      "optional": true,
+      "share": 0.0539,
+      "status": "partial",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 358,
+      "k_all": 358,
+      "n": 358,
+      "n_all": 358,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "partial"
+   },
+   "chatly": {
+    "missing": [
+     "execute_tool `gen_ai.tool.name`: no execute_tool spans on this platform"
+    ],
+    "needs": [
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 0,
+      "n_all": 0,
+      "name": "gen_ai.tool.name",
+      "optional": false,
+      "share": null,
+      "status": "no such spans",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 0,
+      "n_all": 0,
+      "name": "gen_ai.skill.name",
+      "optional": true,
+      "share": null,
+      "status": "n/a",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 0,
+      "n_all": 0,
+      "name": "error.type",
+      "optional": true,
+      "share": null,
+      "status": "n/a",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 44,
+      "k_all": 44,
+      "n": 44,
+      "n_all": 44,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   }
+  },
+  "D5": {
+   "atlas": {
+    "missing": [
+     "external: sensitivity policy and label not available"
+    ],
+    "needs": [
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 232,
+      "k_all": 232,
+      "n": 232,
+      "n_all": 232,
+      "name": "gen_ai.tool.call.arguments",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 660,
+      "k_all": 660,
+      "n": 660,
+      "n_all": 660,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   },
+   "beacon": {
+    "missing": [
+     "external: sensitivity policy and label not available"
+    ],
+    "needs": [
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 167,
+      "k_all": 167,
+      "n": 167,
+      "n_all": 167,
+      "name": "gen_ai.tool.call.arguments",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 358,
+      "k_all": 358,
+      "n": 358,
+      "n_all": 358,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   },
+   "chatly": {
+    "missing": [
+     "external: sensitivity policy and label not available"
+    ],
+    "needs": [
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 0,
+      "n_all": 0,
+      "name": "gen_ai.tool.call.arguments",
+      "optional": true,
+      "share": null,
+      "status": "n/a",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 44,
+      "k_all": 44,
+      "n": 44,
+      "n_all": 44,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   }
+  },
+  "D6": {
+   "atlas": {
+    "missing": [],
+    "needs": [
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 104,
+      "k_all": 104,
+      "n": 104,
+      "n_all": 106,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 232,
+      "k_all": 232,
+      "n": 232,
+      "n_all": 232,
+      "name": "gen_ai.tool.name",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 660,
+      "k_all": 660,
+      "n": 660,
+      "n_all": 660,
+      "name": "service.name",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "ready"
+   },
+   "beacon": {
+    "missing": [],
+    "needs": [
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 40,
+      "k_all": 40,
+      "n": 40,
+      "n_all": 43,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 167,
+      "k_all": 167,
+      "n": 167,
+      "n_all": 167,
+      "name": "gen_ai.tool.name",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 358,
+      "k_all": 358,
+      "n": 358,
+      "n_all": 358,
+      "name": "service.name",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "ready"
+   },
+   "chatly": {
+    "missing": [],
+    "needs": [
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 0,
+      "n_all": 0,
+      "name": "gen_ai.tool.name",
+      "optional": true,
+      "share": null,
+      "status": "n/a",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 44,
+      "k_all": 44,
+      "n": 44,
+      "n_all": 44,
+      "name": "service.name",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "ready"
+   }
+  }
+ },
+ "coverage_without_content": {
+  "D1": {
+   "atlas": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages` (optional): absent 0% (0/106)"
+    ],
+    "needs": [
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 660,
+      "k_all": 660,
+      "n": 660,
+      "n_all": 660,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.input.messages",
+      "optional": true,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     }
+    ],
+    "verdict": "partial"
+   },
+   "beacon": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages` (optional): absent 0% (0/43)"
+    ],
+    "needs": [
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 358,
+      "k_all": 358,
+      "n": 358,
+      "n_all": 358,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.input.messages",
+      "optional": true,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     }
+    ],
+    "verdict": "partial"
+   },
+   "chatly": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages` (optional): absent 0% (0/22)"
+    ],
+    "needs": [
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 44,
+      "k_all": 44,
+      "n": 44,
+      "n_all": 44,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.input.messages",
+      "optional": true,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     }
+    ],
+    "verdict": "partial"
+   }
+  },
+  "D2": {
+   "atlas": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/106)",
+     "invoke_agent `gen_ai.output.messages`: absent 0% (0/104) [all spans: 0% (0/106)]"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 104,
+      "n_all": 106,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 660,
+      "k_all": 660,
+      "n": 660,
+      "n_all": 660,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     },
+     {
+      "k": 232,
+      "k_all": 232,
+      "n": 232,
+      "n_all": 232,
+      "name": "gen_ai.tool.name",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "execute_tool"
+     }
+    ],
+    "verdict": "blocked"
+   },
+   "beacon": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/43)",
+     "invoke_agent `gen_ai.output.messages`: absent 0% (0/40) [all spans: 0% (0/43)]"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 40,
+      "n_all": 43,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 358,
+      "k_all": 358,
+      "n": 358,
+      "n_all": 358,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     },
+     {
+      "k": 167,
+      "k_all": 167,
+      "n": 167,
+      "n_all": 167,
+      "name": "gen_ai.tool.name",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "execute_tool"
+     }
+    ],
+    "verdict": "blocked"
+   },
+   "chatly": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/22)",
+     "invoke_agent `gen_ai.output.messages`: absent 0% (0/22)"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 44,
+      "k_all": 44,
+      "n": 44,
+      "n_all": 44,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 0,
+      "n_all": 0,
+      "name": "gen_ai.tool.name",
+      "optional": true,
+      "share": null,
+      "status": "n/a",
+      "when": "all",
+      "where": "execute_tool"
+     }
+    ],
+    "verdict": "blocked"
+   }
+  },
+  "D3": {
+   "atlas": {
+    "missing": [
+     "event `gen_ai.evaluation.result`: absent 0% (0/660)",
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/106)",
+     "external: sampled checks of answers (people or evaluators) not available"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 660,
+      "n_all": 660,
+      "name": "gen_ai.evaluation.result",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "event"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 309,
+      "k_all": 318,
+      "n": 309,
+      "n_all": 322,
+      "name": "gen_ai.usage.input_tokens",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 309,
+      "k_all": 318,
+      "n": 309,
+      "n_all": 322,
+      "name": "gen_ai.usage.output_tokens",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 309,
+      "k_all": 318,
+      "n": 309,
+      "n_all": 322,
+      "name": "gen_ai.response.model",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 660,
+      "k_all": 660,
+      "n": 660,
+      "n_all": 660,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   },
+   "beacon": {
+    "missing": [
+     "event `gen_ai.evaluation.result`: absent 0% (0/358)",
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/43)",
+     "external: sampled checks of answers (people or evaluators) not available"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 358,
+      "n_all": 358,
+      "name": "gen_ai.evaluation.result",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "event"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 148,
+      "k_all": 148,
+      "n": 148,
+      "n_all": 148,
+      "name": "gen_ai.usage.input_tokens",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 148,
+      "k_all": 148,
+      "n": 148,
+      "n_all": 148,
+      "name": "gen_ai.usage.output_tokens",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 148,
+      "k_all": 148,
+      "n": 148,
+      "n_all": 148,
+      "name": "gen_ai.response.model",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 358,
+      "k_all": 358,
+      "n": 358,
+      "n_all": 358,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   },
+   "chatly": {
+    "missing": [
+     "event `gen_ai.evaluation.result`: absent 0% (0/44)",
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/22)",
+     "external: sampled checks of answers (people or evaluators) not available"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 44,
+      "n_all": 44,
+      "name": "gen_ai.evaluation.result",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "event"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.usage.input_tokens",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.usage.output_tokens",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.response.model",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "ok",
+      "where": "chat"
+     },
+     {
+      "k": 44,
+      "k_all": 44,
+      "n": 44,
+      "n_all": 44,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   }
+  },
+  "D4": {
+   "atlas": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/106)",
+     "invoke_agent `gen_ai.output.messages`: absent 0% (0/104) [all spans: 0% (0/106)]",
+     "execute_tool `gen_ai.skill.name` (optional): partial 16.8% (39/232)",
+     "execute_tool `error.type` (optional): partial 8.2% (19/232)"
+    ],
+    "needs": [
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 104,
+      "n_all": 106,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 232,
+      "k_all": 232,
+      "n": 232,
+      "n_all": 232,
+      "name": "gen_ai.tool.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 39,
+      "k_all": 39,
+      "n": 232,
+      "n_all": 232,
+      "name": "gen_ai.skill.name",
+      "optional": true,
+      "share": 0.1681,
+      "status": "partial",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 19,
+      "k_all": 19,
+      "n": 232,
+      "n_all": 232,
+      "name": "error.type",
+      "optional": true,
+      "share": 0.0819,
+      "status": "partial",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 660,
+      "k_all": 660,
+      "n": 660,
+      "n_all": 660,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   },
+   "beacon": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/43)",
+     "invoke_agent `gen_ai.output.messages`: absent 0% (0/40) [all spans: 0% (0/43)]",
+     "execute_tool `gen_ai.skill.name` (optional): absent 0% (0/167)",
+     "execute_tool `error.type` (optional): partial 5.4% (9/167)"
+    ],
+    "needs": [
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 40,
+      "n_all": 43,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 167,
+      "k_all": 167,
+      "n": 167,
+      "n_all": 167,
+      "name": "gen_ai.tool.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 167,
+      "n_all": 167,
+      "name": "gen_ai.skill.name",
+      "optional": true,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 9,
+      "k_all": 9,
+      "n": 167,
+      "n_all": 167,
+      "name": "error.type",
+      "optional": true,
+      "share": 0.0539,
+      "status": "partial",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 358,
+      "k_all": 358,
+      "n": 358,
+      "n_all": 358,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   },
+   "chatly": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/22)",
+     "invoke_agent `gen_ai.output.messages`: absent 0% (0/22)",
+     "execute_tool `gen_ai.tool.name`: no execute_tool spans on this platform"
+    ],
+    "needs": [
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 0,
+      "n_all": 0,
+      "name": "gen_ai.tool.name",
+      "optional": false,
+      "share": null,
+      "status": "no such spans",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 0,
+      "n_all": 0,
+      "name": "gen_ai.skill.name",
+      "optional": true,
+      "share": null,
+      "status": "n/a",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 0,
+      "n_all": 0,
+      "name": "error.type",
+      "optional": true,
+      "share": null,
+      "status": "n/a",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 44,
+      "k_all": 44,
+      "n": 44,
+      "n_all": 44,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   }
+  },
+  "D5": {
+   "atlas": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/106)",
+     "execute_tool `gen_ai.tool.call.arguments` (optional): absent 0% (0/232)",
+     "external: sensitivity policy and label not available"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 232,
+      "n_all": 232,
+      "name": "gen_ai.tool.call.arguments",
+      "optional": true,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 660,
+      "k_all": 660,
+      "n": 660,
+      "n_all": 660,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   },
+   "beacon": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/43)",
+     "execute_tool `gen_ai.tool.call.arguments` (optional): absent 0% (0/167)",
+     "external: sensitivity policy and label not available"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 167,
+      "n_all": 167,
+      "name": "gen_ai.tool.call.arguments",
+      "optional": true,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 358,
+      "k_all": 358,
+      "n": 358,
+      "n_all": 358,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   },
+   "chatly": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/22)",
+     "external: sensitivity policy and label not available"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 0,
+      "n_all": 0,
+      "name": "gen_ai.tool.call.arguments",
+      "optional": true,
+      "share": null,
+      "status": "n/a",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 44,
+      "k_all": 44,
+      "n": 44,
+      "n_all": 44,
+      "name": "service.name",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   }
+  },
+  "D6": {
+   "atlas": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/106)",
+     "invoke_agent `gen_ai.output.messages`: absent 0% (0/104) [all spans: 0% (0/106)]"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 104,
+      "n_all": 106,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 106,
+      "k_all": 106,
+      "n": 106,
+      "n_all": 106,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 232,
+      "k_all": 232,
+      "n": 232,
+      "n_all": 232,
+      "name": "gen_ai.tool.name",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 660,
+      "k_all": 660,
+      "n": 660,
+      "n_all": 660,
+      "name": "service.name",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   },
+   "beacon": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/43)",
+     "invoke_agent `gen_ai.output.messages`: absent 0% (0/40) [all spans: 0% (0/43)]"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 40,
+      "n_all": 43,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 43,
+      "k_all": 43,
+      "n": 43,
+      "n_all": 43,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 167,
+      "k_all": 167,
+      "n": 167,
+      "n_all": 167,
+      "name": "gen_ai.tool.name",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 358,
+      "k_all": 358,
+      "n": 358,
+      "n_all": 358,
+      "name": "service.name",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   },
+   "chatly": {
+    "missing": [
+     "invoke_agent `gen_ai.input.messages`: absent 0% (0/22)",
+     "invoke_agent `gen_ai.output.messages`: absent 0% (0/22)"
+    ],
+    "needs": [
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.input.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.output.messages",
+      "optional": false,
+      "share": 0.0,
+      "status": "absent",
+      "when": "ok",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "user.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 22,
+      "k_all": 22,
+      "n": 22,
+      "n_all": 22,
+      "name": "gen_ai.conversation.id",
+      "optional": false,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "invoke_agent"
+     },
+     {
+      "k": 0,
+      "k_all": 0,
+      "n": 0,
+      "n_all": 0,
+      "name": "gen_ai.tool.name",
+      "optional": true,
+      "share": null,
+      "status": "n/a",
+      "when": "all",
+      "where": "execute_tool"
+     },
+     {
+      "k": 44,
+      "k_all": 44,
+      "n": 44,
+      "n_all": 44,
+      "name": "service.name",
+      "optional": true,
+      "share": 1.0,
+      "status": "met",
+      "when": "all",
+      "where": "resource"
+     }
+    ],
+    "verdict": "blocked"
+   }
+  }
+ },
+ "gaps": [
+  {
+   "action": "renamed",
+   "basis": "catalogue",
+   "decisions": [],
+   "item": "finish reason tool_calls -> tool_call",
+   "note": "no decision reads this attribute",
+   "spans": {
+    "atlas": 205,
+    "beacon": 0,
+    "chatly": 0
+   }
+  },
+  {
+   "action": "renamed",
+   "basis": "catalogue",
+   "decisions": [],
+   "item": "gen_ai.usage.cached_tokens -> gen_ai.usage.cache_read.input_tokens",
+   "note": "no decision reads this attribute",
+   "spans": {
+    "atlas": 168,
+    "beacon": 0,
+    "chatly": 0
+   }
+  },
+  {
+   "action": "renamed",
+   "basis": "catalogue",
+   "decisions": [],
+   "item": "gen_ai.usage.reasoning_tokens -> gen_ai.usage.reasoning.output_tokens",
+   "note": "no decision reads this attribute",
+   "spans": {
+    "atlas": 274,
+    "beacon": 0,
+    "chatly": 0
+   }
+  },
+  {
+   "action": "restructured",
+   "basis": "catalogue",
+   "decisions": [
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "item": "gen_ai.input.text -> gen_ai.input.messages",
+   "note": "decisions that read this attribute",
+   "spans": {
+    "atlas": 106,
+    "beacon": 43,
+    "chatly": 22
+   }
+  },
+  {
+   "action": "restructured",
+   "basis": "catalogue",
+   "decisions": [
+    "D2",
+    "D4",
+    "D6"
+   ],
+   "item": "gen_ai.output.text (+ tool_calls) -> gen_ai.output.messages",
+   "note": "decisions that read this attribute",
+   "spans": {
+    "atlas": 413,
+    "beacon": 188,
+    "chatly": 44
+   }
+  },
+  {
+   "action": "inferred",
+   "basis": "judgment",
+   "decisions": [],
+   "item": "finish_reason of the output message",
+   "note": "no decision reads the finish reason; only the text and tool calls are read",
+   "spans": {
+    "atlas": 104,
+    "beacon": 188,
+    "chatly": 44
+   }
+  },
+  {
+   "action": "inferred",
+   "basis": "catalogue",
+   "decisions": [
+    "D4"
+   ],
+   "item": "gen_ai.skill.name from the load_skill arguments",
+   "note": "decisions that read this attribute",
+   "spans": {
+    "atlas": 39,
+    "beacon": 0,
+    "chatly": 0
+   }
+  },
+  {
+   "action": "inferred",
+   "basis": "judgment",
+   "decisions": [],
+   "item": "mcp.method.name from the tool-name prefix",
+   "note": "no decision reads the MCP method",
+   "spans": {
+    "atlas": 189,
+    "beacon": 167,
+    "chatly": 0
+   }
+  },
+  {
+   "action": "dropped",
+   "basis": "judgment",
+   "decisions": [
+    "D3"
+   ],
+   "item": "gen_ai.usage.cost",
+   "note": "cost is recomputed from tokens and a price table (base.cost), so it is a shadow cost, not a bill",
+   "spans": {
+    "atlas": 318,
+    "beacon": 0,
+    "chatly": 0
+   }
+  },
+  {
+   "action": "dropped",
+   "basis": "judgment",
+   "decisions": [],
+   "item": "http.status_code",
+   "note": "error.type carries the failure class",
+   "spans": {
+    "atlas": 322,
+    "beacon": 0,
+    "chatly": 0
+   }
+  },
+  {
+   "action": "dropped",
+   "basis": "judgment",
+   "decisions": [
+    "D4"
+   ],
+   "item": "mcp.server.name",
+   "note": "the server is read back from the `server__tool` prefix (base.server_of); D4 groups missing capabilities by it",
+   "spans": {
+    "atlas": 228,
+    "beacon": 167,
+    "chatly": 0
+   }
+  },
+  {
+   "action": "dropped",
+   "basis": "judgment",
+   "decisions": [
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "item": "session.turn_index",
+   "note": "derivable: order of the root spans of one conversation by start time",
+   "spans": {
+    "atlas": 106,
+    "beacon": 43,
+    "chatly": 22
+   }
+  },
+  {
+   "action": "moved_to_resource",
+   "basis": "catalogue",
+   "decisions": [
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "item": "platform -> resource service.name",
+   "note": "decisions that read this attribute",
+   "spans": {
+    "atlas": 660,
+    "beacon": 358,
+    "chatly": 44
+   }
+  },
+  {
+   "action": "required missing",
+   "basis": "judgment",
+   "decisions": [],
+   "item": "gen_ai.provider.name on chat spans",
+   "note": "none of the six decisions reads the provider; the model name is enough for price",
+   "of_spans": {
+    "atlas": 322,
+    "beacon": 148,
+    "chatly": 22
+   },
+   "spans": {
+    "atlas": 4,
+    "beacon": 148,
+    "chatly": 22
+   }
+  }
+ ],
+ "rule": [
+  "`ready`: every non-optional need is on at least 99% of its spans and every external input is available.",
+  "`blocked`: a non-optional need is absent (below 1% of its spans, or the platform has no spans of that type), or a required external input is not available.",
+  "`partial`: anything else, i.e. a non-optional need is on 1% to 99% of its spans, or only optional needs fall short.",
+  "An optional need on a platform with no spans of its type is not applicable and does not count.",
+  "A need marked `when: ok` is measured only on spans that did not fail: a failed model call has no tokens and a failed turn has no reply."
+ ],
+ "thresholds": {
+  "absent": 0.01,
+  "ready": 0.99
+ }
+}

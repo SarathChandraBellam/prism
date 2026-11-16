@@ -1,0 +1,847 @@
+{
+ "atlas:A01": {
+  "domain": "operations",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "User requested a weekly sales report, asked for it to be saved, then asked how it compared with the previous week.",
+  "task_type": "report",
+  "topics": [
+   "weekly sales report",
+   "week-over-week comparison",
+   "saving report output"
+  ]
+ },
+ "atlas:A02": {
+  "domain": "operations",
+  "n_corrections": 1,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "Weekly net revenue was verified, refined with AOV and top products, and saved to a file.",
+  "task_type": "report",
+  "topics": [
+   "weekly sales report",
+   "net revenue",
+   "AOV and top products"
+  ]
+ },
+ "atlas:A03": {
+  "domain": "operations",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 1,
+  "outcome": "failed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The assistant failed to draft the order email after grouping reorder items by supplier.",
+  "task_type": "draft",
+  "topics": [
+   "reorder list",
+   "supplier grouping",
+   "order email"
+  ]
+ },
+ "atlas:A04": {
+  "domain": "operations",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The assistant provided a breakdown of refunded October orders by product to investigate the high refund count.",
+  "task_type": "analysis",
+  "topics": [
+   "order cancellations",
+   "refunds",
+   "product analysis"
+  ]
+ },
+ "atlas:A05": {
+  "domain": "operations",
+  "n_corrections": 0,
+  "n_feedback_relays": 2,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The assistant delivered a corrected SQL query for daily net revenue, ran it, and highlighted the peak revenue day.",
+  "task_type": "report",
+  "topics": [
+   "daily net revenue",
+   "SQL query",
+   "BI tool"
+  ]
+ },
+ "atlas:A06": {
+  "domain": "operations",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "User requested three ad-hoc data analyses: customer count by city, revenue by city, and top five customers by lifetime spend with emails.",
+  "task_type": "analysis",
+  "topics": [
+   "customer distribution by city",
+   "revenue by city",
+   "top customers by lifetime spend"
+  ]
+ },
+ "atlas:A07": {
+  "domain": "operations",
+  "n_corrections": 0,
+  "n_feedback_relays": 1,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "Updated a supplier lead time in memory and analyzed its effect on an item's reorder point.",
+  "task_type": "analysis",
+  "topics": [
+   "supplier lead times",
+   "reorder point",
+   "inventory planning"
+  ]
+ },
+ "atlas:A08": {
+  "domain": "operations",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The assistant generated a weekly sales report for October, saved as out/october.md, showing net revenue, orders, and AOV for three full weeks and a total.",
+  "task_type": "report",
+  "topics": [
+   "October sales summary",
+   "weekly net revenue",
+   "orders and AOV"
+  ]
+ },
+ "atlas:A09": {
+  "domain": "operations",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The assistant looked up and reported the current stock levels for two products.",
+  "task_type": "lookup",
+  "topics": [
+   "stock levels",
+   "product inventory"
+  ]
+ },
+ "atlas:A10": {
+  "domain": "operations",
+  "n_corrections": 1,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "Computed reorder points and order quantity for grinder inventory using the shop's safety-stock formula.",
+  "task_type": "decide",
+  "topics": [
+   "inventory reorder",
+   "safety stock formula",
+   "grinder SKUs"
+  ]
+ },
+ "atlas:A11": {
+  "domain": "operations",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "User requested weekly sales reports for two weeks in October; both were generated with revenue, orders, AOV and top products, and saved to files.",
+  "task_type": "report",
+  "topics": [
+   "weekly sales report",
+   "revenue and order metrics",
+   "saving reports to files"
+  ]
+ },
+ "atlas:L01": {
+  "domain": "strategy",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "User sought advice on raising the hand grinder price, received sales data and a price-change memo, then refined the memo's risk section.",
+  "task_type": "advise",
+  "topics": [
+   "price change",
+   "hand grinder",
+   "pricing strategy"
+  ]
+ },
+ "atlas:L02": {
+  "domain": "support",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 4,
+  "outcome": "partial",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The user evaluated offering free shipping to Ireland by reviewing Irish customer data, found no orders, and asked for the cheapest way to test demand.",
+  "task_type": "decide",
+  "topics": [
+   "shipping policy",
+   "customer demand",
+   "cost analysis"
+  ]
+ },
+ "atlas:L03": {
+  "domain": "operations",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "User requested last week's sales figures and received a weekly report with revenue, order count, average order value, and top-selling products.",
+  "task_type": "report",
+  "topics": [
+   "weekly sales report",
+   "revenue",
+   "top products"
+  ]
+ },
+ "atlas:L04": {
+  "domain": "writing",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 2,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "Rewrote a product description for a gooseneck kettle, refining it twice for tone and spelling.",
+  "task_type": "draft",
+  "topics": [
+   "product description",
+   "brand voice"
+  ]
+ },
+ "atlas:L05": {
+  "domain": "operations",
+  "n_corrections": 1,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The assistant retrieved October revenue, order count, and refund rate, clarified the refund-rate basis, and condensed the figures into one paragraph.",
+  "task_type": "lookup",
+  "topics": [
+   "October sales metrics",
+   "refund rate definition",
+   "investor update"
+  ]
+ },
+ "atlas:L06": {
+  "domain": "operations",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The user asked which products sell best, had the ranking redone by revenue instead of units, and then asked what stood out, receiving a ranked table plus commentary on premium items and consumables.",
+  "task_type": "analysis",
+  "topics": [
+   "best sellers",
+   "revenue ranking",
+   "sales insights"
+  ]
+ },
+ "atlas:L07": {
+  "domain": "strategy",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The user sought advice on automation priorities, received ticket volume data, and obtained a one-week triage automation plan converted into a checklist.",
+  "task_type": "advise",
+  "topics": [
+   "automation prioritization",
+   "ticket triage",
+   "weekly plan"
+  ]
+ },
+ "atlas:L08": {
+  "domain": "support",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "Assistant identified top customers by spend and drafted a thank-you note to the highest-spending customer.",
+  "task_type": "draft",
+  "topics": [
+   "top customers by spend",
+   "customer thank-you note"
+  ]
+ },
+ "atlas:M01": {
+  "domain": "support",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The assistant confirmed a delivered hand grinder met the return and refund rules, then drafted and shortened the customer reply.",
+  "task_type": "decide",
+  "topics": [
+   "refund eligibility",
+   "return approval",
+   "customer reply drafting"
+  ]
+ },
+ "atlas:M02": {
+  "domain": "support",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "Assistant checked refund eligibility for two orders, explained the refund window, and drafted a kind customer reply.",
+  "task_type": "decide",
+  "topics": [
+   "refund eligibility",
+   "refund policy",
+   "customer reply"
+  ]
+ },
+ "atlas:M03": {
+  "domain": "support",
+  "n_corrections": 1,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The assistant checked the refund eligibility for order 5004, was corrected to simply explain the escalation rule, and then added an escalation note to ticket 9005.",
+  "task_type": "decide",
+  "topics": [
+   "refund eligibility",
+   "order escalation"
+  ]
+ },
+ "atlas:M04": {
+  "domain": "support",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The assistant triaged support tickets, identified urgent issues, formatted a summary, and drafted a customer refund reply.",
+  "task_type": "triage",
+  "topics": [
+   "ticket triage",
+   "priority classification",
+   "customer reply"
+  ]
+ },
+ "atlas:M05": {
+  "domain": "support",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The assistant looked up order 5006, checked shipping rules, determined it is late, and drafted a reply to the customer on ticket 9001.",
+  "task_type": "draft",
+  "topics": [
+   "order 5006",
+   "shipping rules",
+   "customer reply"
+  ]
+ },
+ "atlas:M06": {
+  "domain": "support",
+  "n_corrections": 1,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [
+   3
+  ],
+  "source": "round3",
+  "summary": "The assistant drafted a customer reply explaining the refund status and next steps while a support ticket is being created.",
+  "task_type": "draft",
+  "topics": [
+   "refund",
+   "customer communication",
+   "support ticket"
+  ]
+ },
+ "atlas:M07": {
+  "domain": "support",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "User asked about shipping to Ireland, then had the assistant reply to and close ticket 9006.",
+  "task_type": "draft",
+  "topics": [
+   "shipping to Ireland",
+   "ticket reply",
+   "ticket closure"
+  ]
+ },
+ "atlas:M08": {
+  "domain": "support",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "User asked for the number of open tickets, assistant listed 8 tickets and offered to triage them.",
+  "task_type": "lookup",
+  "topics": [
+   "open tickets",
+   "ticket triage"
+  ]
+ },
+ "atlas:M09": {
+  "domain": "support",
+  "n_corrections": 1,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The assistant applied the return policy to approve a partial refund for a single item, held its answer when the user claimed a mix-up, and then drafted the customer email.",
+  "task_type": "decide",
+  "topics": [
+   "refund eligibility",
+   "partial return of single item",
+   "customer reply draft"
+  ]
+ },
+ "atlas:M10": {
+  "domain": "support",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The assistant confirmed an address change was possible, updated the ticket, and drafted a customer confirmation.",
+  "task_type": "decide",
+  "topics": [
+   "address change",
+   "order status",
+   "customer reply"
+  ]
+ },
+ "atlas:M11": {
+  "domain": "writing",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The user asked for reusable 'where is my order' reply templates, requested one be made less formal, and sought a recommendation for a repeat customer, all of which were delivered.",
+  "task_type": "draft",
+  "topics": [
+   "order status reply templates",
+   "tone adjustment",
+   "template recommendation"
+  ]
+ },
+ "atlas:M12": {
+  "domain": "support",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The assistant located a support ticket regarding a hot kettle handle, retrieved the customer's email, and updated the ticket's priority to P1 and category to product.",
+  "task_type": "triage",
+  "topics": [
+   "ticket triage",
+   "customer support"
+  ]
+ },
+ "atlas:M13": {
+  "domain": "support",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round3",
+  "summary": "The assistant triaged the ticket, checked refund eligibility, and drafted a customer reply denying the return.",
+  "task_type": "draft",
+  "topics": [
+   "ticket triage",
+   "refund eligibility",
+   "customer reply"
+  ]
+ },
+ "beacon:A01": {
+  "domain": "operations",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant produced and saved a weekly sales report, then compared its key metrics with the prior week.",
+  "task_type": "report",
+  "topics": [
+   "weekly sales report",
+   "revenue comparison",
+   "order metrics"
+  ]
+ },
+ "beacon:A02": {
+  "domain": "operations",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "n_corrections": 1,
+  "n_feedback_relays": 1,
+  "n_refinements": 1,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Provided weekly revenue, net revenue, AOV, top products and saved the report to a file.",
+  "task_type": "report",
+  "topics": [
+   "weekly revenue",
+   "average order value",
+   "top products"
+  ]
+ },
+ "beacon:A03": {
+  "domain": "writing",
+  "model": "cohere/north-mini-code:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "A draft order email for Fellow Wholesale was provided.",
+  "task_type": "draft",
+  "topics": [
+   "reorder email",
+   "Fellow Wholesale",
+   "Brew Scale with Timer"
+  ]
+ },
+ "beacon:A04": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 1,
+  "n_refinements": 0,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant retrieved cancelled and refunded order counts for October and provided a product breakdown of refunded orders.",
+  "task_type": "lookup",
+  "topics": [
+   "Cancelled orders count",
+   "Refunded orders count",
+   "Refund breakdown by product"
+  ]
+ },
+ "beacon:A06": {
+  "domain": "operations",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user asked a series of ad-hoc data questions about customer counts, city revenue, and top customers by lifetime spend, and the assistant answered each with SQL-backed results.",
+  "task_type": "analysis",
+  "topics": [
+   "customer locations",
+   "revenue by city",
+   "top customers by lifetime spend"
+  ]
+ },
+ "beacon:A07": {
+  "domain": "operations",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 1,
+  "outcome": "partial",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "User updated supplier lead time information and asked for analysis of its impact on reorder points.",
+  "task_type": "analysis",
+  "topics": [
+   "supplier lead time",
+   "reorder point",
+   "inventory management"
+  ]
+ },
+ "beacon:A08": {
+  "domain": "operations",
+  "model": "cohere/north-mini-code:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant generated a detailed October sales report broken down by Monday\u2011to\u2011Sunday weeks fully inside October and saved it to out/october.md.",
+  "task_type": "report",
+  "topics": [
+   "October sales summary",
+   "weekly breakdown",
+   "Monday-to-Sunday weeks"
+  ]
+ },
+ "beacon:A09": {
+  "domain": "operations",
+  "model": "liquid/lfm-3-1.7b:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The current stock levels are 6 units for GRD-HAND and 8 units for SCL-BREW.",
+  "task_type": "lookup",
+  "topics": [
+   "current stock",
+   "inventory"
+  ]
+ },
+ "beacon:A10": {
+  "domain": "operations",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 1,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Calculated reorder points and quantities for grinders using the shop's safety-stock formula, then confirmed the quantity for one item.",
+  "task_type": "decide",
+  "topics": [
+   "reorder points",
+   "safety stock",
+   "inventory quantities"
+  ]
+ },
+ "beacon:A11": {
+  "domain": "operations",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "Assistant generated and saved weekly sales reports for the weeks of 12 and 19 October.",
+  "task_type": "report",
+  "topics": [
+   "weekly sales report",
+   "sales data",
+   "report generation"
+  ]
+ },
+ "beacon:L01": {
+  "domain": "strategy",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user requested a price increase analysis, data retrieval, memo drafting, and risk section refinement, which were completed successfully.",
+  "task_type": "draft",
+  "topics": [
+   "price change analysis",
+   "sales data lookup",
+   "memo drafting"
+  ]
+ },
+ "beacon:L02": {
+  "domain": "support",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 2,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant outlined a framework for evaluating free shipping to Ireland, noted zero existing orders, and suggested obtaining a courier quote and a low\u2011cost test.",
+  "task_type": "decide",
+  "topics": [
+   "free shipping evaluation",
+   "Irish order data",
+   "experiment design"
+  ]
+ },
+ "beacon:L03": {
+  "domain": "operations",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The user asked for last week's sales results, and the assistant summarized revenue and top-selling products from the shop data.",
+  "task_type": "analysis",
+  "topics": [
+   "weekly sales",
+   "revenue",
+   "product performance"
+  ]
+ },
+ "beacon:L04": {
+  "domain": "writing",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 2,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant rewrote the Gooseneck Kettle 0.9L product description to match British spelling and a less salesy tone.",
+  "task_type": "draft",
+  "topics": [
+   "product description",
+   "brand voice",
+   "British spelling"
+  ]
+ },
+ "beacon:L05": {
+  "domain": "operations",
+  "model": "particle-ai/particle-1:free",
+  "n_corrections": 1,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "The assistant pulled October revenue, order, and refund figures, corrected the refund-rate definition, and formatted the results into a one-paragraph investor update.",
+  "task_type": "report",
+  "topics": [
+   "October revenue metrics",
+   "refund rate definition",
+   "investor update"
+  ]
+ },
+ "beacon:L06": {
+  "domain": "operations",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 0,
+  "n_understanding_questions": 0,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "User asked for best-selling products by units and revenue, then requested surprising insights from the sales data.",
+  "task_type": "analysis",
+  "topics": [
+   "best sellers",
+   "revenue analysis",
+   "product performance"
+  ]
+ },
+ "beacon:L07": {
+  "domain": "operations",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "n_corrections": 0,
+  "n_feedback_relays": 0,
+  "n_refinements": 1,
+  "n_understanding_questions": 1,
+  "outcome": "completed",
+  "reexplained_turns": [],
+  "source": "round4",
+  "summary": "User asked for automation prioritization, received advice to start with ticket triage, then requested and refined a one-week implementation plan into a checklist.",
+  "task_type": "advise",
+  "topics": [
+   "automation prioritization",
+   "ticket triage",
+   "weekly planning"
+  ]
+ }
+}

@@ -1,23 +1,53 @@
 {
  "dropped": {
-  "gen_ai.usage.cost": 318,
-  "http.status_code": 322,
-  "mcp.server.name": 395,
-  "session.turn_index": 171
+  "gen_ai.usage.cost": {
+   "atlas": 318
+  },
+  "http.status_code": {
+   "atlas": 322
+  },
+  "mcp.server.name": {
+   "atlas": 228,
+   "beacon": 167
+  },
+  "session.turn_index": {
+   "atlas": 106,
+   "beacon": 43,
+   "chatly": 22
+  }
  },
  "inferred": {
-  "finish_reason of the output message": 336,
-  "gen_ai.skill.name from the load_skill arguments": 39,
-  "mcp.method.name from the tool-name prefix": 356
+  "finish_reason of the output message": {
+   "atlas": 104,
+   "beacon": 188,
+   "chatly": 44
+  },
+  "gen_ai.skill.name from the load_skill arguments": {
+   "atlas": 39
+  },
+  "mcp.method.name from the tool-name prefix": {
+   "atlas": 189,
+   "beacon": 167
+  }
  },
  "moved_to_resource": {
-  "platform -> resource service.name": 1062
+  "platform -> resource service.name": {
+   "atlas": 660,
+   "beacon": 358,
+   "chatly": 44
+  }
  },
  "non_standard_after_conversion": {},
  "renamed": {
-  "finish reason tool_calls -> tool_call": 205,
-  "gen_ai.usage.cached_tokens -> gen_ai.usage.cache_read.input_tokens": 168,
-  "gen_ai.usage.reasoning_tokens -> gen_ai.usage.reasoning.output_tokens": 274
+  "finish reason tool_calls -> tool_call": {
+   "atlas": 205
+  },
+  "gen_ai.usage.cached_tokens -> gen_ai.usage.cache_read.input_tokens": {
+   "atlas": 168
+  },
+  "gen_ai.usage.reasoning_tokens -> gen_ai.usage.reasoning.output_tokens": {
+   "atlas": 274
+  }
  },
  "required_missing": {
   "atlas chat": {
@@ -31,8 +61,16 @@
   }
  },
  "restructured": {
-  "gen_ai.input.text -> gen_ai.input.messages": 171,
-  "gen_ai.output.text (+ tool_calls) -> gen_ai.output.messages": 645
+  "gen_ai.input.text -> gen_ai.input.messages": {
+   "atlas": 106,
+   "beacon": 43,
+   "chatly": 22
+  },
+  "gen_ai.output.text (+ tool_calls) -> gen_ai.output.messages": {
+   "atlas": 413,
+   "beacon": 188,
+   "chatly": 44
+  }
  },
  "spans": 1062,
  "spans_by_platform_and_type": {
